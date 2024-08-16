@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        const mongoURL = process.env.MONGO_URL || "mongodb://localhost:27017";
+        const mongoURL = process.env.MONGO_URL || "mongodb://localhost:27017/sistemacurriculos";
 
         if (!mongoURL) {
             throw new Error("MONGO_URL não está definida nas variáveis de ambiente");
