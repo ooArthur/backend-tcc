@@ -1,0 +1,1 @@
+Usaremos para verificar as condições antes que as requisições cheguem aos controladores ou as respostas sejam enviadas aos clientes.

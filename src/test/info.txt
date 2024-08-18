@@ -1,0 +1,1 @@
+Usaremos esta pasta para escrever testes automatizados, ajudando a garantir que o código funcione como o esperado e facilitando a manutenção a medida que o sistema cresce.
