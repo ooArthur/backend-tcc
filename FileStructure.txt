@@ -8,7 +8,10 @@ backend-tcc
     │── config
     │   └── database.js
     │── controllers
+    │── docs
+    │   └── info.txt
     │── index.js
+    │── Logs
     │── middleware
     │   └── info.txt
     │── models
