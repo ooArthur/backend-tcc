@@ -5,6 +5,7 @@ const methodOverride = require("method-override");
 const cors = require("cors");
 const connectDB = require("./config/database");
 const router = require("./routes/router");
+const logger = require("./config/logger");
 
 const app = express();
 
@@ -13,10 +14,9 @@ app.use(bodyParser.json());
 app.use(methodOverride("_method"));
 app.use(cors("*"));
 
-
-// Logger de IP
+// Logger de IP e Requisição
 app.use((req, res, next) => {
-    console.log(`IP: ${req.ip}`);
+    logger.info(`IP: ${req.ip} - ${req.method} ${req.url}`);
     next();
 });
 
@@ -25,6 +25,10 @@ app.use("/api", router);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    connectDB();
-    console.log(`Server is running on port ${PORT}`);
+    logger.info(`Server is running on port ${PORT}`);
+});
+
+app.use((err, req, res, next) => {
+    logger.error(`Erro: ${err.message}`);
+    res.status(500).json({ error: 'Ocorreu um erro interno.' });
 });
