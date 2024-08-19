@@ -1,0 +1,32 @@
+backend-tcc
+│── .env
+│── .gitignore
+│── package-lock.json
+│── package.json
+│── README.md
+└── src
+    │── config
+    │   └── database.js
+    │── controllers
+    │── docs
+    │   └── info.txt
+    │── index.js
+    │── Logs
+    │── middleware
+    │   └── info.txt
+    │── models
+    │   │── CandidateFavorites.js
+    │   │── CandidateProfile.js
+    │   │── CompanyProfile.js
+    │   │── JobVacancy.js
+    │   │── JobVacancyFavorites.js
+    │   └── User.js
+    │── routes
+    │   │── router.js
+    │   └── userRoutes.js
+    │── test
+    │   └── info.txt
+    │── utils
+    │   └── info.txt
+    └── validators
+        └── info.txt
