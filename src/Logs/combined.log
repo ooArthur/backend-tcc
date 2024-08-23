@@ -1,0 +1,273 @@
+2024-08-23 15:02:13 [INFO]: Server is running on port 5000
+2024-08-23 15:02:13 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 15:02:17 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/company/vacancy/create-vacancy
+2024-08-23 15:02:17 [INFO]: Vaga de emprego criada com sucesso: "Desenvolvedor Backend" pela empresa: Exemplo Ltda (ID: 66c89529a04cffc0434b004f)
+2024-08-23 15:03:06 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/company/vacancy/create-vacancy
+2024-08-23 15:03:24 [INFO]: Server is running on port 5000
+2024-08-23 15:03:24 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 15:03:28 [INFO]: Server is running on port 5000
+2024-08-23 15:03:28 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 15:03:31 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/company/vacancy/create-vacancy
+2024-08-23 15:04:27 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/company/vacancy/create-vacancy
+2024-08-23 15:04:27 [ERROR]: Erro: Cannot read properties of undefined (reading 'length')
+2024-08-23 15:09:56 [INFO]: Server is running on port 5000
+2024-08-23 15:09:56 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 15:09:59 [INFO]: Server is running on port 5000
+2024-08-23 15:09:59 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 15:10:03 [INFO]: Server is running on port 5000
+2024-08-23 15:10:03 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:01:46 [INFO]: Server is running on port 5000
+2024-08-23 16:01:46 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:05:05 [INFO]: Server is running on port 5000
+2024-08-23 16:05:05 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:05:08 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:05:56 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:06:35 [INFO]: Server is running on port 5000
+2024-08-23 16:06:35 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:06:37 [INFO]: Server is running on port 5000
+2024-08-23 16:06:37 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:06:41 [INFO]: Server is running on port 5000
+2024-08-23 16:06:41 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:06:43 [INFO]: Server is running on port 5000
+2024-08-23 16:06:43 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:06:47 [INFO]: Server is running on port 5000
+2024-08-23 16:06:47 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:07:43 [INFO]: Server is running on port 5000
+2024-08-23 16:07:43 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:07:51 [INFO]: Server is running on port 5000
+2024-08-23 16:07:51 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:08:00 [INFO]: Server is running on port 5000
+2024-08-23 16:08:00 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:08:02 [INFO]: Server is running on port 5000
+2024-08-23 16:08:02 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:08:17 [INFO]: Server is running on port 5000
+2024-08-23 16:08:17 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:08:44 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:10:43 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:10:55 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:11:11 [INFO]: Server is running on port 5000
+2024-08-23 16:11:11 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:11:17 [INFO]: Server is running on port 5000
+2024-08-23 16:11:17 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:11:33 [INFO]: Server is running on port 5000
+2024-08-23 16:11:33 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:11:42 [INFO]: Server is running on port 5000
+2024-08-23 16:11:42 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:11:51 [INFO]: Server is running on port 5000
+2024-08-23 16:11:51 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:11:58 [INFO]: Server is running on port 5000
+2024-08-23 16:11:58 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:09 [INFO]: Server is running on port 5000
+2024-08-23 16:12:09 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:21 [INFO]: Server is running on port 5000
+2024-08-23 16:12:21 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:23 [INFO]: Server is running on port 5000
+2024-08-23 16:12:23 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:30 [INFO]: Server is running on port 5000
+2024-08-23 16:12:30 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:32 [INFO]: Server is running on port 5000
+2024-08-23 16:12:32 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:37 [INFO]: Server is running on port 5000
+2024-08-23 16:12:37 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:43 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:12:43 [WARN]: Tentativa invalida de atualizar o usuario 66c8c4f0ad2be459ca3d9c05. Email já cadastrado.
+2024-08-23 16:12:52 [INFO]: Server is running on port 5000
+2024-08-23 16:12:52 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:12:58 [INFO]: Server is running on port 5000
+2024-08-23 16:12:58 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:13:05 [INFO]: Server is running on port 5000
+2024-08-23 16:13:05 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:13:07 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:13:07 [WARN]: Tentativa inválida de atualizar o usuário com id:66c8c4f0ad2be459ca3d9c05. Email já cadastrado.
+2024-08-23 16:13:41 [INFO]: Server is running on port 5000
+2024-08-23 16:13:41 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:13:47 [INFO]: Server is running on port 5000
+2024-08-23 16:13:47 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:14:02 [INFO]: Server is running on port 5000
+2024-08-23 16:14:02 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:14:07 [INFO]: Server is running on port 5000
+2024-08-23 16:14:07 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:14:16 [INFO]: Server is running on port 5000
+2024-08-23 16:14:16 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:14:56 [INFO]: Server is running on port 5000
+2024-08-23 16:14:56 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:14:58 [INFO]: Server is running on port 5000
+2024-08-23 16:14:58 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:15:02 [INFO]: Server is running on port 5000
+2024-08-23 16:15:02 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:15:06 [INFO]: Server is running on port 5000
+2024-08-23 16:15:06 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:15:11 [INFO]: Server is running on port 5000
+2024-08-23 16:15:11 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:15:15 [INFO]: Server is running on port 5000
+2024-08-23 16:15:15 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:15:59 [INFO]: Server is running on port 5000
+2024-08-23 16:15:59 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:16:02 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:16:07 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:16:07 [WARN]: Tentativa inválida de atualizar o usuário com id:66c8c4f0ad2be459ca3d9c05. Email já cadastrado.
+2024-08-23 16:16:15 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:16:19 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/update-user/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:16:58 [INFO]: Server is running on port 5000
+2024-08-23 16:16:58 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:18:05 [INFO]: IP: ::ffff:127.0.0.1 - DELETE /api/user/company/vacancy/delete-vacancy/66c8c38e991c072a2db80fea
+2024-08-23 16:18:50 [INFO]: Server is running on port 5000
+2024-08-23 16:18:50 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:18:57 [INFO]: Server is running on port 5000
+2024-08-23 16:18:57 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:19:06 [INFO]: Server is running on port 5000
+2024-08-23 16:19:06 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:19:18 [INFO]: Server is running on port 5000
+2024-08-23 16:19:18 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:19:33 [INFO]: Server is running on port 5000
+2024-08-23 16:19:33 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:19:39 [INFO]: Server is running on port 5000
+2024-08-23 16:19:39 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:23:53 [INFO]: Server is running on port 5000
+2024-08-23 16:23:53 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:23:55 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/vacancy/update-vacancy/66c8c38e991c072a2db80fea
+2024-08-23 16:23:55 [WARN]: Vaga com ID 66c8c38e991c072a2db80fea não encontrada.
+2024-08-23 16:24:08 [INFO]: Server is running on port 5000
+2024-08-23 16:24:08 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:24:10 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/vacancy/update-vacancy/66c8c3fa101a8a25577a9325
+2024-08-23 16:24:12 [INFO]: Server is running on port 5000
+2024-08-23 16:24:12 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:24:31 [INFO]: Server is running on port 5000
+2024-08-23 16:24:31 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:24:36 [INFO]: Server is running on port 5000
+2024-08-23 16:24:36 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:24:39 [INFO]: Server is running on port 5000
+2024-08-23 16:24:39 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:24:42 [INFO]: Server is running on port 5000
+2024-08-23 16:24:42 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:24:49 [INFO]: Server is running on port 5000
+2024-08-23 16:24:49 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:24:50 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/vacancy/update-vacancy/66c8c3fa101a8a25577a9325
+2024-08-23 16:24:51 [INFO]: Server is running on port 5000
+2024-08-23 16:24:51 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:28 [INFO]: Server is running on port 5000
+2024-08-23 16:25:29 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:38 [INFO]: Server is running on port 5000
+2024-08-23 16:25:38 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:42 [INFO]: Server is running on port 5000
+2024-08-23 16:25:42 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:44 [INFO]: Server is running on port 5000
+2024-08-23 16:25:44 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:47 [INFO]: Server is running on port 5000
+2024-08-23 16:25:47 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:49 [INFO]: Server is running on port 5000
+2024-08-23 16:25:49 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:53 [INFO]: Server is running on port 5000
+2024-08-23 16:25:53 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:25:57 [INFO]: Server is running on port 5000
+2024-08-23 16:25:57 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:26:08 [INFO]: Server is running on port 5000
+2024-08-23 16:26:08 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:26:10 [INFO]: Server is running on port 5000
+2024-08-23 16:26:10 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:26:13 [INFO]: Server is running on port 5000
+2024-08-23 16:26:13 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:26:18 [INFO]: Server is running on port 5000
+2024-08-23 16:26:18 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:26:33 [INFO]: Server is running on port 5000
+2024-08-23 16:26:33 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:26:43 [INFO]: Server is running on port 5000
+2024-08-23 16:26:43 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:27:26 [INFO]: Server is running on port 5000
+2024-08-23 16:27:26 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:27:30 [INFO]: Server is running on port 5000
+2024-08-23 16:27:30 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:27:35 [INFO]: Server is running on port 5000
+2024-08-23 16:27:35 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:27:38 [INFO]: Server is running on port 5000
+2024-08-23 16:27:39 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:27:45 [INFO]: Server is running on port 5000
+2024-08-23 16:27:45 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:27:56 [INFO]: Server is running on port 5000
+2024-08-23 16:27:56 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:02 [INFO]: Server is running on port 5000
+2024-08-23 16:28:02 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:07 [INFO]: Server is running on port 5000
+2024-08-23 16:28:07 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:11 [INFO]: Server is running on port 5000
+2024-08-23 16:28:11 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:14 [INFO]: Server is running on port 5000
+2024-08-23 16:28:14 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:20 [INFO]: Server is running on port 5000
+2024-08-23 16:28:20 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:23 [INFO]: Server is running on port 5000
+2024-08-23 16:28:23 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:29 [INFO]: Server is running on port 5000
+2024-08-23 16:28:29 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:42 [INFO]: Server is running on port 5000
+2024-08-23 16:28:42 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:28:53 [INFO]: Server is running on port 5000
+2024-08-23 16:28:53 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:30:58 [INFO]: Server is running on port 5000
+2024-08-23 16:30:58 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:31:04 [INFO]: Server is running on port 5000
+2024-08-23 16:31:04 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:31:10 [INFO]: Server is running on port 5000
+2024-08-23 16:31:10 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:31:20 [INFO]: Server is running on port 5000
+2024-08-23 16:31:20 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:31:22 [INFO]: Server is running on port 5000
+2024-08-23 16:31:22 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:31:25 [INFO]: Server is running on port 5000
+2024-08-23 16:31:25 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:31:28 [INFO]: Server is running on port 5000
+2024-08-23 16:31:28 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:31:50 [INFO]: Server is running on port 5000
+2024-08-23 16:31:50 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:32:03 [INFO]: Server is running on port 5000
+2024-08-23 16:32:03 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:32:13 [INFO]: Server is running on port 5000
+2024-08-23 16:32:13 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:32:17 [INFO]: Server is running on port 5000
+2024-08-23 16:32:17 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:32:25 [INFO]: Server is running on port 5000
+2024-08-23 16:32:25 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:32:29 [INFO]: Server is running on port 5000
+2024-08-23 16:32:29 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:34:13 [INFO]: Server is running on port 5000
+2024-08-23 16:34:13 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:34:39 [INFO]: Server is running on port 5000
+2024-08-23 16:34:39 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:35:20 [INFO]: Server is running on port 5000
+2024-08-23 16:35:20 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:35:22 [INFO]: Server is running on port 5000
+2024-08-23 16:35:22 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:35:37 [INFO]: Server is running on port 5000
+2024-08-23 16:35:37 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:36:34 [INFO]: Server is running on port 5000
+2024-08-23 16:36:34 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:38:53 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/vacancy/update-vacancy/66c8c3fa101a8a25577a9325
+2024-08-23 16:38:53 [INFO]: Vaga atualizada com sucesso. ID: 66c8c3fa101a8a25577a9325
+2024-08-23 16:40:47 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/update-company/:id
+2024-08-23 16:40:47 [ERROR]: Erro ao atualizar empresa pelo ID: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "Company"
+2024-08-23 16:43:01 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/update-company/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:43:01 [WARN]: Empresa com ID 66c8c4f0ad2be459ca3d9c05 não encontrada.
+2024-08-23 16:43:03 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/update-company/66c8c4f0ad2be459ca3d9c05
+2024-08-23 16:43:03 [WARN]: Empresa com ID 66c8c4f0ad2be459ca3d9c05 não encontrada.
+2024-08-23 16:43:19 [INFO]: IP: ::ffff:127.0.0.1 - PUT /api/user/company/update-company/66c89529a04cffc0434b004f
+2024-08-23 16:43:19 [INFO]: Empresa atualizada com sucesso. ID: 66c89529a04cffc0434b004f
+2024-08-23 16:43:54 [INFO]: Server is running on port 5000
+2024-08-23 16:43:54 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:44:01 [INFO]: Server is running on port 5000
+2024-08-23 16:44:01 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:44:43 [INFO]: IP: ::ffff:127.0.0.1 - GET /api/user/company/list-company/66c89529a04cffc0434b004f
+2024-08-23 16:44:43 [INFO]: Empresa encontrada com sucesso. ID: 66c89529a04cffc0434b004f
+2024-08-23 16:45:39 [INFO]: Server is running on port 5000
+2024-08-23 16:45:39 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:45:44 [INFO]: Server is running on port 5000
+2024-08-23 16:45:44 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:45:49 [INFO]: Server is running on port 5000
+2024-08-23 16:45:49 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:45:53 [INFO]: Server is running on port 5000
+2024-08-23 16:45:53 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:45:56 [INFO]: Server is running on port 5000
+2024-08-23 16:45:56 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:46:20 [INFO]: Server is running on port 5000
+2024-08-23 16:46:20 [INFO]: MongoDB conectado com sucesso!
+2024-08-23 16:47:13 [INFO]: IP: ::ffff:127.0.0.1 - DELETE /api/user/delete-user/66c89529a04cffc0434b004f
+2024-08-23 16:47:13 [INFO]: Usuário com ID 66c89529a04cffc0434b004f excluído com sucesso.

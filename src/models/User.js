@@ -9,6 +9,10 @@ const UserSchema = new mongoose.Schema(
             required: true,
             enum: ['admin', 'company', 'candidate'],
             default: 'candidate'
+        },
+        emailVerified: {
+            type: Boolean,
+            default: false
         }
     },
     {
@@ -17,4 +21,4 @@ const UserSchema = new mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model("Users", UserSchema);
+module.exports = mongoose.model("User", UserSchema);

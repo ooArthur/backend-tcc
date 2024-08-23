@@ -1,9 +1,9 @@
 const VerificationCode = require('../models/VerificationCode');
+const User = require('../models/User');
 const nodemailer = require('nodemailer');
 const crypto = require('crypto');
 const logger = require('../config/logger');
 
-// Configuração do transporte de e-mail com porta 587 (TLS)
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -59,6 +59,8 @@ async function requestVerificationCode(req, res) {
         });
 
         await verificationCode.save();
+        logger.info(`Código de verificação criado e salvo para o e-mail ${email}`);
+        
         await sendVerificationEmail(email, code);
         res.status(200).json({ message: 'Código de verificação enviado.' });
     } catch (error) {
@@ -75,32 +77,29 @@ async function verifyCode(req, res) {
         // Verifica se o código possui 5 dígitos e é numérico
         if (!/^\d{5}$/.test(code)) {
             logger.warn(`Código inválido (não numérico ou não possui 5 dígitos) para o e-mail ${email}`);
-            throw new Error('Código inválido.');
+            return res.status(400).json({ message: 'Código inválido.' });
         }
 
         const verificationRecord = await VerificationCode.findOne({ email, code });
 
         if (!verificationRecord) {
             logger.warn(`Código inválido ou não encontrado para o e-mail ${email}`);
-            throw new Error('Código inválido ou expirado.');
-        }
-
-        if (verificationRecord.isVerified) {
-            logger.warn(`Código já foi utilizado para o e-mail ${email}`);
-            // Exclui o código já verificado
-            await VerificationCode.deleteOne({ _id: verificationRecord._id });
-            throw new Error('Código já foi utilizado.');
+            return res.status(400).json({ message: 'Código inválido ou expirado.' });
         }
 
         if (verificationRecord.expiresAt < new Date()) {
             logger.warn(`Código expirado para o e-mail ${email}`);
             // Exclui o código expirado
             await VerificationCode.deleteOne({ _id: verificationRecord._id });
-            throw new Error('Código expirado.');
+            return res.status400().json({ message: 'Código expirado.' });
         }
 
-        verificationRecord.isVerified = true;
-        await verificationRecord.save();
+        // Código válido, atualiza o campo emailVerified no User e remove o código do banco
+        await User.updateOne({ email }, { $set: { emailVerified: true } });
+
+        // Exclui o código após a verificação
+        await VerificationCode.deleteOne({ _id: verificationRecord._id });
+
         logger.info(`Código verificado com sucesso para o e-mail ${email}`);
         res.status(200).json({ message: 'Código verificado com sucesso.' });
     } catch (error) {

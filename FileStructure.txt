@@ -6,12 +6,20 @@ backend-tcc
 │── README.md
 └── src
     │── config
-    │   └── database.js
+    │   │── database.js
+    │   └── logger.js
     │── controllers
+    │   │── candidateController.js
+    │   │── companyController.js
+    │   │── emailVerificationController.js
+    │   │── userController.js
+    │   └── vacancyController.js
+    │── cron.js
     │── docs
     │   └── info.txt
     │── index.js
     │── Logs
+    │   └── info.txt
     │── middleware
     │   └── info.txt
     │── models
@@ -20,10 +28,15 @@ backend-tcc
     │   │── CompanyProfile.js
     │   │── JobVacancy.js
     │   │── JobVacancyFavorites.js
-    │   └── User.js
+    │   │── User.js
+    │   └── VerificationCode.js
     │── routes
+    │   │── candidateRoutes.js
+    │   │── companyRoutes.js
+    │   │── emailVerificationRoutes.js
     │   │── router.js
-    │   └── userRoutes.js
+    │   │── userRoutes.js
+    │   └── vacancyRoutes.js
     │── test
     │   └── info.txt
     │── utils
