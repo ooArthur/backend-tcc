@@ -2,6 +2,8 @@ const bcrypt = require('bcryptjs');
 const logger = require('../config/logger');
 const User = require('../models/User');
 const Candidate = require('../models/CandidateProfile');
+const CandidateFavorites = require('../models/CandidateFavorites');
+const JobVacancy = require('../models/JobVacancy');
 
 // Função para criar um novo candidato
 exports.createCandidate = async (req, res) => {
@@ -137,26 +139,105 @@ exports.updateCandidateById = async (req, res) => {
     }
 };
 
-// Função para deletar um candidato pelo ID
-exports.deleteCandidateById = async (req, res) => {
+// Função para listar todas as vagas favoritas de um candidato
+exports.listFavoriteJobVacancies = async (req, res) => {
     try {
-        const { id } = req.params;
+        const { id: candidateId } = req.params;  // Obtemos o ID do candidato dos parâmetros da URL
 
-        // Remove o candidato do banco de dados pelo ID
-        const result = await Candidate.findByIdAndDelete(id);
+        // Verifica se o candidato possui uma lista de favoritos
+        const candidateFavorites = await CandidateFavorites.findOne({ candidateId }).populate('favoriteJobVacancies');
 
-        // Se o candidato não for encontrado, retorna um erro 404
-        if (!result) {
-            logger.warn(`Candidato com ID ${id} não encontrado.`);
-            return res.status(404).json({ message: 'Candidato não encontrado.' });
+        // Se o candidato não tiver uma lista de favoritos, retorna um erro
+        if (!candidateFavorites) {
+            logger.warn(`Lista de favoritos não encontrada para o candidato com ID ${candidateId}.`);
+            return res.status(404).json({ message: 'Lista de favoritos não encontrada para o candidato.' });
         }
 
-        logger.info(`Candidato com ID ${id} excluído com sucesso.`);
-        
-        // Retorna uma mensagem de sucesso
-        res.status(200).json({ message: 'Candidato excluído com sucesso.' });
+        // Retorna as vagas favoritas como resposta
+        res.status(200).json(candidateFavorites.favoriteJobVacancies);
     } catch (error) {
-        logger.error(`Erro ao excluir candidato pelo ID: ${error.message}`);
-        res.status(500).json({ message: 'Erro ao excluir candidato', error: error.message });
+        logger.error(`Erro ao listar vagas favoritas: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao listar vagas favoritas', error: error.message });
     }
 };
+
+
+// Função para adicionar uma vaga aos favoritos de um candidato
+exports.addFavoriteJobVacancy = async (req, res) => {
+    try {
+        const { candidateId, jobVacancyId } = req.body;  // ID do candidato e da vaga no corpo da requisição
+
+        // Verifica se a vaga de emprego existe
+        const jobVacancy = await JobVacancy.findById(jobVacancyId);
+        if (!jobVacancy) {
+            logger.warn(`Vaga de emprego com ID ${jobVacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Vaga de emprego não encontrada.' });
+        }
+
+        // Verifica se o candidato já possui uma lista de favoritos
+        let candidateFavorites = await CandidateFavorites.findOne({ candidateId });
+
+        // Se o candidato ainda não tem uma lista de favoritos, cria uma nova
+        if (!candidateFavorites) {
+            candidateFavorites = new CandidateFavorites({
+                candidateId,
+                favoriteJobVacancies: [jobVacancyId],
+            });
+        } else {
+            // Verifica se a vaga já está nos favoritos
+            if (candidateFavorites.favoriteJobVacancies.includes(jobVacancyId)) {
+                logger.warn(`Vaga de emprego com ID ${jobVacancyId} já está nos favoritos do candidato.`);
+                return res.status(400).json({ message: 'Vaga de emprego já está nos favoritos.' });
+            }
+
+            // Adiciona a vaga aos favoritos do candidato
+            candidateFavorites.favoriteJobVacancies.push(jobVacancyId);
+        }
+
+        // Salva as atualizações
+        await candidateFavorites.save();
+        logger.info(`Vaga de emprego com ID ${jobVacancyId} adicionada aos favoritos do candidato com ID ${candidateId}.`);
+
+        res.status(200).json({ message: 'Vaga de emprego adicionada aos favoritos com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao adicionar vaga de emprego aos favoritos: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao adicionar vaga de emprego aos favoritos', error: error.message });
+    }
+};
+
+// Função para remover uma vaga dos favoritos de um candidato
+exports.removeFavoriteJobVacancy = async (req, res) => {
+    try {
+        const { jobVacancyId,candidateId  } = req.body;
+
+        // Verifica se o candidato possui uma lista de favoritos
+        let candidateFavorites = await CandidateFavorites.findOne({ candidateId });
+
+        // Se o candidato não tiver uma lista de favoritos, retorna um erro
+        if (!candidateFavorites) {
+            logger.warn(`Lista de favoritos não encontrada para o candidato com ID ${candidateId}.`);
+            return res.status(404).json({ message: 'Lista de favoritos não encontrada para o candidato.' });
+        }
+
+        // Verifica se a vaga está nos favoritos
+        const index = candidateFavorites.favoriteJobVacancies.indexOf(jobVacancyId);
+        if (index === -1) {
+            logger.warn(`Vaga de emprego com ID ${jobVacancyId} não está nos favoritos do candidato com ID ${candidateId}.`);
+            return res.status(400).json({ message: 'Vaga de emprego não está nos favoritos.' });
+        }
+
+        // Remove a vaga dos favoritos do candidato
+        candidateFavorites.favoriteJobVacancies.splice(index, 1);
+
+        // Salva as atualizações
+        await candidateFavorites.save();
+        logger.info(`Vaga de emprego com ID ${jobVacancyId} removida dos favoritos do candidato com ID ${candidateId}.`);
+
+        res.status(200).json({ message: 'Vaga de emprego removida dos favoritos com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao remover vaga de emprego dos favoritos: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao remover vaga de emprego dos favoritos', error: error.message });
+    }
+};
+
+

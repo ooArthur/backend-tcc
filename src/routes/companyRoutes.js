@@ -16,5 +16,13 @@ router.get("/list-company/:id", companyController.getCompanyById);
 // Rota para atualizar as empresas
 router.put("/update-company/:id", companyController.updateCompanyById);
 
+// Rota para listar os candidatos favoritos da Empresa
+router.get("/list-favorites/:companyId/:jobVacancyId", companyController.listFavoriteJobVacancies);
+
+// Rota para adicionar os candidatos favoritos da Empresa
+router.post("/add-favorites", companyController.addFavoriteCandidate);
+
+// Rota para remover os candidatos favoritos da Empresa
+router.delete("/remove-favorites", companyController.removeFavoriteCandidate);
 
 module.exports = router;

@@ -25,12 +25,13 @@ const JobVacancySchema = mongoose.Schema(
             enum: ['Full-time', 'Part-time', 'Contract', 'Temporary'],
             required: true
         },
-        applicationDeadline: { type: Date }
+        applicationDeadline: { type: Date },
+        interestedCandidates: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Candidate' }] // Adicionando a lista de candidatos interessados
     },
     {
         timestamps: true,
     }
-)
+);
 
 const JobVacancy = mongoose.model('JobVacancy', JobVacancySchema);
 

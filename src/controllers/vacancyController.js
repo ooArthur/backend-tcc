@@ -1,5 +1,6 @@
 const JobVacancy = require('../models/JobVacancy');
 const Company = require('../models/CompanyProfile');
+const Candidate = require('../models/CandidateProfile');
 const logger = require('../config/logger');
 
 // Função para remover vagas antigas
@@ -157,3 +158,104 @@ exports.updateJobVacancyById = async (req, res) => {
         res.status(500).json({ message: 'Erro ao atualizar vaga', error: error.message });
     }
 };
+
+// Função para listar todos os candidatos interessados em uma vaga
+exports.listInterestedCandidates = async (req, res) => {
+    try {
+        const { jobVacancyId } = req.params; // ID da vaga na URL
+
+        // Verifica se a vaga de emprego existe
+        const jobVacancy = await JobVacancy.findById(jobVacancyId).populate('interestedCandidates');
+        if (!jobVacancy) {
+            logger.warn(`Vaga de emprego com ID ${jobVacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Vaga de emprego não encontrada.' });
+        }
+
+        // Retorna a lista de candidatos interessados como resposta
+        res.status(200).json(jobVacancy.interestedCandidates);
+    } catch (error) {
+        logger.error(`Erro ao listar candidatos interessados: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao listar candidatos interessados', error: error.message });
+    }
+};
+
+// Função para adicionar um candidato interessado em uma vaga
+exports.addInterestedCandidate = async (req, res) => {
+    try {
+        const { candidateId, jobVacancyId } = req.body;  // ID do candidato e da vaga no corpo da requisição
+
+        // Verifica se a vaga de emprego existe
+        const jobVacancy = await JobVacancy.findById(jobVacancyId);
+        if (!jobVacancy) {
+            logger.warn(`Vaga de emprego com ID ${jobVacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Vaga de emprego não encontrada.' });
+        }
+
+        // Verifica se o candidato existe
+        const candidate = await Candidate.findById(candidateId);
+        if (!candidate) {
+            logger.warn(`Candidato com ID ${candidateId} não encontrado.`);
+            return res.status(404).json({ message: 'Candidato não encontrado.' });
+        }
+
+        // Verifica se o candidato já está na lista de interessados
+        if (jobVacancy.interestedCandidates.includes(candidateId)) {
+            logger.warn(`Candidato com ID ${candidateId} já está na lista de interessados para a vaga com ID ${jobVacancyId}.`);
+            return res.status(400).json({ message: 'Candidato já está na lista de interessados.' });
+        }
+
+        // Adiciona o candidato à lista de interessados
+        jobVacancy.interestedCandidates.push(candidateId);
+
+        // Salva as atualizações
+        await jobVacancy.save();
+        logger.info(`Candidato com ID ${candidateId} adicionado à vaga com ID ${jobVacancyId}.`);
+
+        res.status(200).json({ message: 'Candidato adicionado à vaga com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao adicionar candidato à vaga: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao adicionar candidato à vaga', error: error.message });
+    }
+};
+
+// Função para remover um candidato interessado de uma vaga
+exports.removeInterestedCandidate = async (req, res) => {
+    try {
+        const { jobVacancyId } = req.params; // ID da vaga na URL
+        const { candidateId } = req.body;  // ID do candidato no corpo da requisição
+
+        // Verifica se a vaga de emprego existe
+        const jobVacancy = await JobVacancy.findById(jobVacancyId);
+        if (!jobVacancy) {
+            logger.warn(`Vaga de emprego com ID ${jobVacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Vaga de emprego não encontrada.' });
+        }
+
+        // Verifica se o candidato existe
+        const candidate = await Candidate.findById(candidateId);
+        if (!candidate) {
+            logger.warn(`Candidato com ID ${candidateId} não encontrado.`);
+            return res.status(404).json({ message: 'Candidato não encontrado.' });
+        }
+
+        // Verifica se o candidato está na lista de interessados
+        const index = jobVacancy.interestedCandidates.indexOf(candidateId);
+        if (index === -1) {
+            logger.warn(`Candidato com ID ${candidateId} não está na lista de interessados para a vaga com ID ${jobVacancyId}.`);
+            return res.status(400).json({ message: 'Candidato não está na lista de interessados.' });
+        }
+
+        // Remove o candidato da lista de interessados
+        jobVacancy.interestedCandidates.splice(index, 1);
+
+        // Salva as atualizações
+        await jobVacancy.save();
+        logger.info(`Candidato com ID ${candidateId} removido da vaga com ID ${jobVacancyId}.`);
+
+        res.status(200).json({ message: 'Candidato removido da vaga com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao remover candidato da vaga: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao remover candidato da vaga', error: error.message });
+    }
+};
+

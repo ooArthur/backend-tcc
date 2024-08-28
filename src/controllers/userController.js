@@ -1,6 +1,11 @@
 const User = require('../models/User');
 const logger = require('../config/logger');
 const bcrypt = require('bcryptjs');
+const Candidate = require('../models/CandidateProfile');
+const Company = require('../models/CompanyProfile');
+const JobVacancyFavorites = require('../models/JobVacancyFavorites');
+const CandidateFavorites = require('../models/CandidateFavorites');
+const JobVacancy = require('../models/JobVacancy');
 
 // Função para remover usuários com email não verificado após 15 dias
 exports.removeUnverifiedUsers = async () => {
@@ -20,7 +25,7 @@ exports.removeUnverifiedUsers = async () => {
 };
 
 exports.listAllUsers = async (req, res) => {
-    try {        
+    try {
         // Busca todos os usuários no banco de dados
         const users = await User.find();
 
@@ -32,7 +37,7 @@ exports.listAllUsers = async (req, res) => {
         res.status(500).json({ message: 'Erro ao listar usuários', error: error.message });
     }
 };
- 
+
 exports.getUserById = async (req, res) => {
     try {
         const { id } = req.params;
@@ -52,28 +57,6 @@ exports.getUserById = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao buscar usuário pelo ID ${id}: ${error.message}`);
         res.status(500).json({ message: 'Erro ao buscar usuário', error: error.message });
-    }
-};
-
-exports.deleteUserById = async (req, res) => {
-    try {
-        const { id } = req.params;
-
-        // Remove o usuário do banco de dados pelo ID
-        const result = await User.findByIdAndDelete(id);
-
-        // Se o usuário não for encontrado, retorna um erro 404
-        if (!result) {
-            logger.warn(`Usuário com ID ${id} não encontrado.`);
-            return res.status(404).json({ message: 'Usuário não encontrado.' });
-        }
-
-        logger.info(`Usuário com ID ${id} excluído com sucesso.`);
-        // Retorna uma mensagem de sucesso
-        res.status(200).json({ message: 'Usuário excluído com sucesso.' });
-    } catch (error) {
-        logger.error(`Erro ao excluir usuário pelo ID ${id}: ${error.message}`);
-        res.status(500).json({ message: 'Erro ao excluir usuário', error: error.message });
     }
 };
 
@@ -112,5 +95,45 @@ exports.updateUserById = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao atualizar usuário pelo ID ${id}: ${error.message}`);
         res.status(500).json({ message: 'Erro ao atualizar usuário', error: error.message });
+    }
+};
+
+exports.deleteUserById = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Busca o usuário na coleção User
+        const user = await User.findById(id);
+        if (!user) {
+            logger.warn(`Usuário com ID ${id} não encontrado.`);
+            return res.status(404).json({ message: 'Usuário não encontrado.' });
+        }
+
+        // Verifica se o usuário é um candidato
+        const candidate = await Candidate.findById(id);
+        if (candidate) {
+            // Remove todas as vagas favoritas do candidato
+            await CandidateFavorites.deleteMany({ candidateId: id });
+            logger.info(`Candidato com ID ${id} e suas vagas favoritas foram excluídos com sucesso.`);
+        }
+
+        // Verifica se o usuário é uma empresa
+        const company = await Company.findById(id);
+        if (company) {
+            // Remove todas as vagas da empresa
+            await JobVacancy.deleteMany({ companyId: id });
+
+            // Remove todos os candidatos favoritos associados às vagas da empresa
+            await JobVacancyFavorites.deleteMany({ companyId: id });
+
+            logger.info(`Empresa com ID ${id}, suas vagas e candidatos favoritos foram excluídos com sucesso.`);
+        }
+
+        // Exclui o usuário da coleção User
+        await User.findByIdAndDelete(id);        
+        return res.status(200).json({ message: 'Usuário e seus dados associados excluídos com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao excluir usuário pelo ID ${req.params.id}: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao excluir usuário', error: error.message });
     }
 };

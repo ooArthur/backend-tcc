@@ -7,7 +7,7 @@ const { validate } = require('../middleware/validate');
 const router = Router();
 
 // Rota para criar uma vaga
-router.post('/create-vacancy', vacancyValidationRules(), validate, vacancyController.createJobVacancy);
+router.post('/create-vacancy', vacancyValidationRules(), validate, vacancyController.createJobVacancy);''
 
 // Rotas para listagem
 router.get('/list-vacancies', vacancyController.listAllJobVacancies);
@@ -19,5 +19,13 @@ router.delete('/delete-vacancy/:id', vacancyController.deleteJobVacancyById);
 // Rota para atualizar Vagas
 router.put('/update-vacancy/:id', vacancyController.updateJobVacancyById);
 
+// Rota para listar candidatos interessados em uma vaga
+router.get('/list-interested/:id', vacancyController.listInterestedCandidates);
+
+// Rota para adicioanr candidatos interessados em uma vaga
+router.post('/add-interested', vacancyController.addInterestedCandidate);
+
+// Rota para listar candidatos interessados em uma vaga
+router.delete('/remove-interested', vacancyController.removeInterestedCandidate);
 
 module.exports = router;

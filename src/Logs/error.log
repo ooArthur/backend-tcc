@@ -1,2 +1,0 @@
-2024-08-23 15:04:27 [ERROR]: Erro: Cannot read properties of undefined (reading 'length')
-2024-08-23 16:40:47 [ERROR]: Erro ao atualizar empresa pelo ID: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "Company"

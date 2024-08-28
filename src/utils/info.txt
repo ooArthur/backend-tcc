@@ -1,1 +1,0 @@
-Usaremos para funções utilitarias que podem ser reutilizadas em diferentes partes do sistema.
