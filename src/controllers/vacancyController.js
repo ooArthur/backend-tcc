@@ -33,7 +33,8 @@ exports.createJobVacancy = async (req, res) => {
             desiredSkills,
             employmentType,
             applicationDeadline,
-            companyId
+            companyId,
+            jobArea
         } = req.body;
 
         // Buscar a empresa pelo ID
@@ -54,7 +55,8 @@ exports.createJobVacancy = async (req, res) => {
             requiredQualifications,
             desiredSkills,
             employmentType,
-            applicationDeadline
+            applicationDeadline,
+            jobArea
         });
 
         // Salvando no banco de dados
@@ -162,7 +164,7 @@ exports.updateJobVacancyById = async (req, res) => {
 // Função para listar todos os candidatos interessados em uma vaga
 exports.listInterestedCandidates = async (req, res) => {
     try {
-        const { jobVacancyId } = req.params; // ID da vaga na URL
+        const jobVacancyId = req.params.id; // ID da vaga na URL
 
         // Verifica se a vaga de emprego existe
         const jobVacancy = await JobVacancy.findById(jobVacancyId).populate('interestedCandidates');
@@ -221,7 +223,7 @@ exports.addInterestedCandidate = async (req, res) => {
 // Função para remover um candidato interessado de uma vaga
 exports.removeInterestedCandidate = async (req, res) => {
     try {
-        const { jobVacancyId } = req.params; // ID da vaga na URL
+        const jobVacancyId = req.params.id; // ID da vaga na URL
         const { candidateId } = req.body;  // ID do candidato no corpo da requisição
 
         // Verifica se a vaga de emprego existe

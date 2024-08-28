@@ -13,12 +13,18 @@ const UserSchema = new mongoose.Schema(
         emailVerified: {
             type: Boolean,
             default: false
+        },
+        refreshToken: { // Novo campo para armazenar o token de atualização
+            type: String,
+            default: null
         }
     },
     {
         timestamps: true,
-        discriminatorKey: 'role'
+        discriminatorKey: 'role' // Define o campo de discriminação para diferenciar os tipos de usuário
     }
 );
 
-module.exports = mongoose.model("User", UserSchema);
+const User = mongoose.model("User", UserSchema);
+
+module.exports = User;

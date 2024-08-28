@@ -50,6 +50,10 @@ exports.login = async (req, res) => {
         // Gera os tokens de acesso e refresh
         const { accessToken, refreshToken } = generateTokens(user);
 
+        // Armazena o refresh token no banco de dados
+        user.refreshToken = refreshToken;
+        await user.save();
+
         // Retorna os tokens como resposta
         logger.info(`Usuário autenticado com sucesso: ${email}`);
         res.status(200).json({ accessToken, refreshToken });
@@ -72,9 +76,9 @@ exports.refreshToken = async (req, res) => {
         const decoded = jwt.verify(refreshToken, JWT_REFRESH_SECRET);
 
         // Busca o usuário no banco de dados
-        const user = await User.findById(decoded.id);
+        const user = await User.findOne({ _id: decoded.id, refreshToken });
         if (!user) {
-            logger.warn(`Usuário não encontrado para o token de atualização.`);
+            logger.warn(`Usuário não encontrado ou token de atualização inválido.`);
             return res.status(401).json({ error: 'Token inválido' });
         }
 
@@ -89,11 +93,23 @@ exports.refreshToken = async (req, res) => {
     }
 };
 
-// Função de logout (opcional) para invalidar tokens
+// Função de logout para invalidar tokens
 exports.logout = async (req, res) => {
     try {
-        // Aqui você pode adicionar a lógica de blacklist ou invalidar tokens em armazenamento
-        logger.info(`Usuário deslogado com sucesso.`);
+        const { refreshToken } = req.body;
+
+        if (!refreshToken) {
+            return res.status(400).json({ error: 'Token de atualização é necessário para logout' });
+        }
+
+        // Remove o token de atualização do banco de dados
+        const user = await User.findOneAndUpdate({ refreshToken }, { refreshToken: null });
+        if (!user) {
+            logger.warn('Token de atualização não encontrado durante logout.');
+            return res.status(401).json({ error: 'Token de atualização inválido' });
+        }
+
+        logger.info(`Usuário com e-mail ${user.email} deslogado com sucesso.`);
         res.status(200).json({ message: 'Logout realizado com sucesso' });
     } catch (error) {
         logger.error(`Erro ao fazer logout: ${error.message}`);

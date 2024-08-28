@@ -26,6 +26,6 @@ router.get('/list-interested/:id', vacancyController.listInterestedCandidates);
 router.post('/add-interested', vacancyController.addInterestedCandidate);
 
 // Rota para listar candidatos interessados em uma vaga
-router.delete('/remove-interested', vacancyController.removeInterestedCandidate);
+router.delete('/remove-interested/:id', vacancyController.removeInterestedCandidate);
 
 module.exports = router;

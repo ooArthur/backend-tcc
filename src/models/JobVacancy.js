@@ -26,7 +26,28 @@ const JobVacancySchema = mongoose.Schema(
             required: true
         },
         applicationDeadline: { type: Date },
-        interestedCandidates: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Candidate' }] // Adicionando a lista de candidatos interessados
+        interestedCandidates: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Candidate' }],
+        jobArea: {
+            type: String,
+            enum: [
+                'Tecnologia',
+                'Saúde',
+                'Educação',
+                'Finanças',
+                'Engenharia',
+                'Marketing',
+                'Vendas',
+                'Recursos Humanos',
+                'Administração',
+                'Jurídico',
+                'Logística',
+                'Atendimento ao Cliente',
+                'Design',
+                'Operações',
+                'Construção Civil'
+            ],
+            required: true
+        },
     },
     {
         timestamps: true,
