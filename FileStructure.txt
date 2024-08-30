@@ -9,6 +9,7 @@ backend-tcc
     │   │── database.js
     │   └── logger.js
     │── controllers
+    │   │── authController.js
     │   │── candidateController.js
     │   │── companyController.js
     │   │── emailVerificationController.js
@@ -19,9 +20,12 @@ backend-tcc
     │   └── info.txt
     │── index.js
     │── Logs
-    │   └── info.txt
+    │   │── combined.log
+    │   └── error.log
     │── middleware
-    │   └── info.txt
+    │   │── authMiddleware.js
+    │   │── roleMiddleware.js
+    │   └── validate.js
     │── models
     │   │── CandidateFavorites.js
     │   │── CandidateProfile.js
@@ -31,15 +35,15 @@ backend-tcc
     │   │── User.js
     │   └── VerificationCode.js
     │── routes
+    │   │── authRoutes.js
     │   │── candidateRoutes.js
     │   │── companyRoutes.js
     │   │── emailVerificationRoutes.js
     │   │── router.js
     │   │── userRoutes.js
     │   └── vacancyRoutes.js
-    │── test
-    │   └── info.txt
-    │── utils
-    │   └── info.txt
     └── validators
-        └── info.txt
+        │── candidateValidator.js
+        │── companyValidator.js
+        │── userValidator.js
+        └── vacancyValidator.js

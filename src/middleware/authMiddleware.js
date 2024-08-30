@@ -16,6 +16,7 @@ exports.authenticateToken = async (req, res, next) => {
 
     try {
         const decoded = jwt.verify(token, JWT_SECRET); // Verifica o token
+        console.log(decoded)
         req.user = decoded; // Adiciona as informações do usuário ao objeto req
         next(); // Passa para o próximo middleware
     } catch (error) {

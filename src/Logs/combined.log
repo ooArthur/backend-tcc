@@ -2942,3 +2942,1021 @@
 2024-08-28 16:42:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 7
 2024-08-28 16:42:58 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
 2024-08-28 16:42:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 7
+2024-08-30 08:39:26 [INFO]: Server is running on port 5000
+2024-08-30 08:39:29 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-08-30 08:40:02 [INFO]: Server is running on port 5000
+2024-08-30 08:40:04 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-08-30 08:52:17 [INFO]: Server is running on port 5000
+2024-08-30 08:52:17 [INFO]: MongoDB conectado com sucesso!
+2024-08-30 08:52:23 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:23 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:24 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:24 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:24 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:24 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:24 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:24 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:24 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:24 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:24 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:24 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:24 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:24 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:24 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:24 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:25 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:25 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:25 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:25 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:25 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:25 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:25 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:25 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:26 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:26 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:26 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:26 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:26 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:26 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:26 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:52:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:52:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:52:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:54:21 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:21 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:21 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:54:21 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:54:29 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:29 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:54:29 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:29 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:42 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:42 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:42 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:42 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:42 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:42 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:42 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:42 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:53 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:53 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:53 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:53 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:53 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:53 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:53 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:53 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:53 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:54 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:54 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:54 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:54 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:54 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:54 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:54 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:54:54 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:54 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:54:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:54:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:54:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:54:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:54:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:14 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:14 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:55:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:15 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:15 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:15 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:15 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:15 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:15 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:15 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:15 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:55:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:55:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:55:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 0
+2024-08-30 08:56:04 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/candidate/create-candidate
+2024-08-30 08:56:04 [INFO]: Perfil de candidato criado com sucesso para o usuário: johndoe@example.com
+2024-08-30 08:56:09 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/company/create-company
+2024-08-30 08:56:09 [INFO]: Perfil de empresa criado com sucesso para o usuário: arthur.aba20@gmail.com
+2024-08-30 08:56:12 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 08:56:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:56:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:56:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:56:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:56:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:56:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:56:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:56:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:56:20 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/list-user/66c89529a04cffc0434b004f
+2024-08-30 08:56:20 [WARN]: Token de autenticação não fornecido.
+2024-08-30 08:56:26 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/verify/verify-code
+2024-08-30 08:56:26 [WARN]: Código inválido ou não encontrado para o e-mail arthur.aba20@gmail.com
+2024-08-30 08:56:30 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/list-users
+2024-08-30 08:56:30 [WARN]: Token de autenticação não fornecido.
+2024-08-30 08:56:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/list-users
+2024-08-30 08:56:33 [WARN]: Token de autenticação não fornecido.
+2024-08-30 08:57:07 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:07 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:57:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:57:07 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:57:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:57:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 08:57:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:57:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:57:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:57:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:57:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:57:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:57:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:58:28 [INFO]: Server is running on port 5000
+2024-08-30 08:58:28 [INFO]: MongoDB conectado com sucesso!
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:59:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:59:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:59:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:59:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:59:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:59:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 08:59:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 08:59:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 08:59:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:00:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:00:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:00:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:00:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:00:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:00:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:00:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:00:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:00:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:01:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/list-users
+2024-08-30 09:01:15 [WARN]: Token de autenticação não fornecido.
+2024-08-30 09:01:20 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:01:20 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:01:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:01:22 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:01:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:01:28 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:01:43 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:01:44 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:01:46 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:01:47 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:05:19 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/company/vacancy/create-vacancy
+2024-08-30 09:07:05 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/company/vacancy/create-vacancy
+2024-08-30 09:07:05 [INFO]: Vaga de emprego criada com sucesso: "Desenvolvedor Full Stack" pela empresa: Exemplo Ltda (ID: 66d1b3594c38f26fa0e561aa)
+2024-08-30 09:07:56 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/company/vacancy/create-vacancy
+2024-08-30 09:07:56 [INFO]: Vaga de emprego criada com sucesso: "Abusador de Gonça" pela empresa: Exemplo Ltda (ID: 66d1b3594c38f26fa0e561aa)
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:07:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:07:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:07:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:07:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:07:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:07:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:07:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:07:58 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:07:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:08:05 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:08:05 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:08:05 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:08:05 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:08:05 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:08:05 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:08:05 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:08:05 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:08:05 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:55 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:10:43 [INFO]: IP: ::ffff:10.92.199.14 - DELETE /api/user/company/vacancy/delete-vacancy/66d1b3594c38f26fa0e561aa
+2024-08-30 09:10:43 [WARN]: Vaga com ID 66d1b3594c38f26fa0e561aa não encontrada.
+2024-08-30 09:10:47 [INFO]: IP: ::ffff:10.92.199.14 - DELETE /api/user/company/vacancy/delete-vacancy/66d1b3594c38f26fa0e561aa
+2024-08-30 09:10:47 [WARN]: Vaga com ID 66d1b3594c38f26fa0e561aa não encontrada.
+2024-08-30 09:11:16 [INFO]: IP: ::ffff:10.92.199.14 - DELETE /api/user/company/vacancy/delete-vacancy/66d1b3594c38f26fa0e561aa
+2024-08-30 09:11:16 [WARN]: Vaga com ID 66d1b3594c38f26fa0e561aa não encontrada.
+2024-08-30 09:11:20 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:20 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:11:20 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:20 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:11:32 [INFO]: IP: ::ffff:10.92.199.14 - DELETE /api/user/company/vacancy/delete-vacancy/66d1b5e96a9533ec69d81e0d
+2024-08-30 09:11:32 [INFO]: Vaga excluída com sucesso. ID: 66d1b5e96a9533ec69d81e0d
+2024-08-30 09:11:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:33 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:33 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:33 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:33 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:33 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:33 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:33 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:33 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:34 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:38 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:38 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:38 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:38 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:38 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:38 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:38 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:38 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:38 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 1
+2024-08-30 09:11:51 [INFO]: IP: ::ffff:10.92.199.14 - DELETE /api/user/company/vacancy/delete-vacancy/66d1b61c6a9533ec69d81e10
+2024-08-30 09:11:51 [INFO]: Vaga excluída com sucesso. ID: 66d1b61c6a9533ec69d81e10
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:52 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:11:52 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:52 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:52 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:52 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:52 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:11:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:11:52 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:11:52 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 0
+2024-08-30 09:12:13 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/company/vacancy/create-vacancy
+2024-08-30 09:12:13 [INFO]: Vaga de emprego criada com sucesso: "Desenvolvedor Full Stack" pela empresa: Exemplo Ltda (ID: 66d1b3594c38f26fa0e561aa)
+2024-08-30 09:12:14 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/company/vacancy/create-vacancy
+2024-08-30 09:12:14 [INFO]: Vaga de emprego criada com sucesso: "Desenvolvedor Full Stack" pela empresa: Exemplo Ltda (ID: 66d1b3594c38f26fa0e561aa)
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:12:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:12:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:12:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:12:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:12:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:12:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:12:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:12:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:12:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:38:32 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:38:32 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:38:32 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:38:32 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:38:32 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 09:38:32 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:38:32 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 09:38:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 09:38:32 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 09:39:28 [INFO]: Server is running on port 5000
+2024-08-30 09:39:28 [INFO]: MongoDB conectado com sucesso!
+2024-08-30 09:40:19 [INFO]: Server is running on port 5000
+2024-08-30 09:40:19 [INFO]: MongoDB conectado com sucesso!
+2024-08-30 09:57:04 [INFO]: Server is running on port 5000
+2024-08-30 09:57:04 [INFO]: MongoDB conectado com sucesso!
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:03:49 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:03:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:03:49 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:13 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:13 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:13 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:13 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:13 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:13 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:13 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:13 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:04:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:04:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:04:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:05:02 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:05:02 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:05:02 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:05:02 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:05:02 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:05:02 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:05:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:05:02 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:05:02 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:01 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:01 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:01 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:01 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:01 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:01 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:01 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:01 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:08 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:08 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:10 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:10 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:10 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:10 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:10 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:10 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:10 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:10 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:46 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:46 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:46 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:46 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:47 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:47 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:06:47 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:47 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:47 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:06:47 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:47 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:47 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:06:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:06:55 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:06:55 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:07:02 [INFO]: Server is running on port 5000
+2024-08-30 10:07:02 [INFO]: MongoDB conectado com sucesso!
+2024-08-30 10:07:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:07:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:07:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:07:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:07:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:07:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:07:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:07:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:07:58 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:07:58 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:07:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:07:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:07:58 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:07:58 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:07:58 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:07:58 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:12 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:12 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:25 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:25 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:08:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:25 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:25 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:26 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:26 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:08:26 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:26 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:08:26 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:08:26 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:08:26 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:08:26 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:06 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:06 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:06 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:06 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:06 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:06 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:06 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:06 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:06 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:15 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:15 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:15 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:15 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:09:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:09:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:16 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:35 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:35 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:35 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:35 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:35 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:35 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:35 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:35 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:36 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:36 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:36 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:36 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:36 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:36 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:36 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:36 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:36 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:36 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:36 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:37 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:37 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:37 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:37 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:37 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:37 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:37 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:37 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:45 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:45 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:45 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:45 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:45 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:45 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:45 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:45 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:47 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:47 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:47 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:47 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:47 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:47 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:47 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:48 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:56 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:56 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:09:57 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:09:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:09:57 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:14 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:14 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:14 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:16 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:16 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:18 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:18 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:18 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:18 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:18 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:18 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:18 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:18 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:13:59 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:13:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:13:59 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:15:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:15:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:15:07 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:07 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:15:40 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:40 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:15:40 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:40 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:15:40 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:40 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:15:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:15:40 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:15:40 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:27 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:27 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:28 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:28 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:28 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:28 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:28 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:28 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-08-30 10:17:28 [INFO]: Lista de empresas retornada com sucesso. Total de empresas: 1
+2024-08-30 10:17:28 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-08-30 10:17:28 [INFO]: Lista de vagas de emprego retornada com sucesso. Total de vagas: 2

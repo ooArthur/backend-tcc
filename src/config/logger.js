@@ -1,9 +1,10 @@
 const { createLogger, format, transports } = require('winston');
 const path = require('path');
+const DailyRotateFile = require('winston-daily-rotate-file'); // Para rotacionar logs diariamente
 
 // Configuração do logger
 const logger = createLogger({
-    level: 'info', // Nível mínimo de logs que serão registrados (info, warn, error)
+    level: 'info',
     format: format.combine(
         format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
         format.printf(({ timestamp, level, message }) => {
@@ -11,14 +12,18 @@ const logger = createLogger({
         })
     ),
     transports: [
-        // Registra logs de erro em um arquivo separado
-        new transports.File({ 
-            filename: path.join(__dirname, '../Logs/error.log'), 
-            level: 'error' 
+        // Registra logs de erro com rotação diária
+        new DailyRotateFile({
+            filename: path.join(__dirname, '../Logs/%DATE%-error.log'),
+            datePattern: 'YYYY-MM-DD',
+            level: 'error',
+            maxFiles: '14d' // Mantém arquivos de log por 14 dias
         }),
-        // Registra todos os logs (info, warn, error) em um arquivo
-        new transports.File({ 
-            filename: path.join(__dirname, '../Logs/combined.log') 
+        // Registra todos os logs com rotação diária
+        new DailyRotateFile({
+            filename: path.join(__dirname, '../Logs/%DATE%-combined.log'),
+            datePattern: 'YYYY-MM-DD',
+            maxFiles: '14d'
         }),
     ],
 });

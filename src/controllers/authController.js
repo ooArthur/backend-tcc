@@ -1,14 +1,14 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const { v4: uuidv4 } = require('uuid'); // Pacote UUID para gerar IDs únicos
 const logger = require('../config/logger');
 const User = require('../models/User');
-const Company = require('../models/CompanyProfile');
 
 // Configurações para o JWT
-const JWT_SECRET = process.env.JWT_SECRET; // Utilize uma variável de ambiente para o segredo
-const JWT_EXPIRATION = '15m'; // Tempo de expiração do token de acesso
-const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET; // Segredo para refresh tokens
-const JWT_REFRESH_EXPIRATION = '7d'; // Tempo de expiração do refresh token
+const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_EXPIRATION = '15m';
+const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
+const JWT_REFRESH_EXPIRATION = '7d';
 
 // Função para gerar tokens
 const generateTokens = (user) => {
@@ -32,7 +32,6 @@ exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
 
-        // Busca o usuário pelo email
         const user = await User.findOne({ email });
 
         if (!user) {
@@ -40,21 +39,21 @@ exports.login = async (req, res) => {
             return res.status(401).json({ error: 'Credenciais inválidas' });
         }
 
-        // Verifica a senha
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
             logger.warn(`Tentativa de login com senha incorreta para o e-mail: ${email}`);
             return res.status(401).json({ error: 'Credenciais inválidas' });
         }
 
-        // Gera os tokens de acesso e refresh
         const { accessToken, refreshToken } = generateTokens(user);
 
-        // Armazena o refresh token no banco de dados
-        user.refreshToken = refreshToken;
+        // Armazena o UUID do token de refresh no banco de dados
+        user.refreshTokenId = uuidv4();
         await user.save();
 
-        // Retorna os tokens como resposta
+        // Armazena o refresh token em um armazenamento seguro e verifica-o usando refreshTokenId
+        // Supondo que exista um serviço seguro para armazenamento
+
         logger.info(`Usuário autenticado com sucesso: ${email}`);
         res.status(200).json({ accessToken, refreshToken });
     } catch (error) {
@@ -72,21 +71,23 @@ exports.refreshToken = async (req, res) => {
     }
 
     try {
-        // Verifica e decodifica o refresh token
         const decoded = jwt.verify(refreshToken, JWT_REFRESH_SECRET);
 
-        // Busca o usuário no banco de dados
         const user = await User.findOne({ _id: decoded.id, refreshToken });
         if (!user) {
             logger.warn(`Usuário não encontrado ou token de atualização inválido.`);
             return res.status(401).json({ error: 'Token inválido' });
         }
 
-        // Gera um novo token de acesso
-        const { accessToken } = generateTokens(user);
+        // Gera um novo token de acesso e refresh token
+        const { accessToken, refreshToken: newRefreshToken } = generateTokens(user);
+
+        // Atualiza o token de refresh
+        user.refreshTokenId = uuidv4();
+        await user.save();
 
         logger.info(`Token de acesso renovado para o usuário: ${user.email}`);
-        res.status(200).json({ accessToken });
+        res.status(200).json({ accessToken, newRefreshToken });
     } catch (error) {
         logger.error(`Erro ao renovar token: ${error.message}`);
         res.status(403).json({ error: 'Token de atualização inválido ou expirado', details: error.message });
@@ -102,7 +103,6 @@ exports.logout = async (req, res) => {
             return res.status(400).json({ error: 'Token de atualização é necessário para logout' });
         }
 
-        // Remove o token de atualização do banco de dados
         const user = await User.findOneAndUpdate({ refreshToken }, { refreshToken: null });
         if (!user) {
             logger.warn('Token de atualização não encontrado durante logout.');

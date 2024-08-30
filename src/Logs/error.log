@@ -16,3 +16,10 @@
 2024-08-28 14:49:11 [ERROR]: Erro: Expected double-quoted property name in JSON at position 854
 2024-08-28 14:50:25 [ERROR]: Erro ao criar a vaga de emprego: jobArea is not defined - Empresa ID: 66cf5fda25ca5f33fb926780
 2024-08-28 16:24:45 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 08:39:29 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-08-30 08:40:04 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-08-30 08:56:12 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:01:43 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:01:44 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:01:46 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847
+2024-08-30 09:01:47 [ERROR]: Erro: Expected double-quoted property name in JSON at position 847

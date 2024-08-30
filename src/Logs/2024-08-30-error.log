@@ -1,0 +1,8 @@
+2024-08-30 15:52:14 [ERROR]: Erro ao verificar o token: invalid signature
+2024-08-30 16:06:21 [ERROR]: Erro ao verificar o token: jwt expired
+2024-08-30 16:08:05 [ERROR]: Erro ao verificar o token: jwt expired
+2024-08-30 16:08:31 [ERROR]: Erro ao verificar o token: jwt expired
+2024-08-30 16:09:03 [ERROR]: Erro ao verificar o token: jwt expired
+2024-08-30 16:09:04 [ERROR]: Erro ao verificar o token: jwt expired
+2024-08-30 16:27:28 [ERROR]: Empresa com ID 66cf130d3b1ef1b544ce4a75 não encontrada.
+2024-08-30 16:27:42 [ERROR]: Erro ao criar a vaga de emprego: JobVacancy validation failed: jobArea: Path `jobArea` is required. - Empresa ID: 66d1b3594c38f26fa0e561aa

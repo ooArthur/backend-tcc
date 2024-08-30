@@ -1,4 +1,3 @@
-
 const express = require('express');
 const { requestVerificationCode, verifyCode } = require('../controllers/emailVerificationController');
 
