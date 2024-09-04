@@ -78,8 +78,6 @@ exports.listAllJobVacancies = async (req, res) => {
         // Busca todas as vagas no banco de dados
         const jobVacancies = await JobVacancy.find().populate('companyId', 'companyName');
 
-        logger.info(`Lista de vagas de emprego retornada com sucesso. Total de vagas: ${jobVacancies.length}`);
-
         // Retorna a lista de vagas como resposta
         res.status(200).json(jobVacancies);
     } catch (error) {
@@ -101,8 +99,6 @@ exports.getJobVacancyById = async (req, res) => {
             logger.warn(`Vaga com ID ${id} não encontrada.`);
             return res.status(404).json({ message: 'Vaga não encontrada.' });
         }
-
-        logger.info(`Vaga encontrada com sucesso. ID: ${id}`);
 
         // Retorna a vaga encontrada como resposta
         res.status(200).json(jobVacancy);
@@ -150,8 +146,6 @@ exports.updateJobVacancyById = async (req, res) => {
             logger.warn(`Vaga com ID ${id} não encontrada.`);
             return res.status(404).json({ message: 'Vaga não encontrada.' });
         }
-
-        logger.info(`Vaga atualizada com sucesso. ID: ${id}`);
 
         // Retorna a vaga atualizada como resposta
         res.status(200).json(updatedJobVacancy);
@@ -260,4 +254,3 @@ exports.removeInterestedCandidate = async (req, res) => {
         res.status(500).json({ message: 'Erro ao remover candidato da vaga', error: error.message });
     }
 };
-

@@ -13,6 +13,12 @@ const router = express.Router();
 router.use('/company', companyRoutes);
 router.use('/candidate', candidateRoutes);
 
+router.post('/create-admin',
+    /* authenticateToken,
+    authorizeAdmin, */
+    userController.createAdminUser
+);
+
 // Rotas para Listar Usuários
 router.get('/list-users', 
     /* authenticateToken, 

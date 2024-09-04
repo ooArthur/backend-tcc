@@ -16,8 +16,8 @@ router.post("/create-company",
 
 // Rota para listagem das Empresas
 router.get("/list-companies",
-    authenticateToken,
-    companyController.listAllCompanies
+/*     authenticateToken,
+ */    companyController.listAllCompanies
 );
 router.get("/list-company/:id",
     /* authenticateToken,*/

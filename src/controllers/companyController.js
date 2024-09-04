@@ -68,8 +68,6 @@ exports.listAllCompanies = async (req, res) => {
         // Busca todas as empresas no banco de dados
         const companies = await Company.find();
 
-        logger.info(`Lista de empresas retornada com sucesso. Total de empresas: ${companies.length}`);
-
         // Retorna a lista de empresas como resposta
         res.status(200).json(companies);
     } catch (error) {
@@ -91,8 +89,6 @@ exports.getCompanyById = async (req, res) => {
             logger.warn(`Empresa com ID ${id} não encontrada.`);
             return res.status(404).json({ message: 'Empresa não encontrada.' });
         }
-
-        logger.info(`Empresa encontrada com sucesso. ID: ${id}`);
 
         // Retorna a empresa encontrada como resposta
         res.status(200).json(company);
@@ -220,4 +216,3 @@ exports.removeFavoriteCandidate = async (req, res) => {
         res.status(500).json({ message: 'Erro ao remover candidato dos favoritos', error: error.message });
     }
 };
-

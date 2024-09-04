@@ -1,7 +1,6 @@
 const VerificationCode = require('../models/VerificationCode');
 const User = require('../models/User');
 const nodemailer = require('nodemailer');
-const crypto = require('crypto');
 const logger = require('../config/logger');
 
 const transporter = nodemailer.createTransport({

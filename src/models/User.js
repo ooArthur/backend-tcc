@@ -14,14 +14,18 @@ const UserSchema = new mongoose.Schema(
             type: Boolean,
             default: false
         },
-        refreshToken: { // Novo campo para armazenar o token de atualização
+        refreshToken: {
+            type: String,
+            default: null
+        },
+        refreshTokenId: {
             type: String,
             default: null
         }
     },
     {
         timestamps: true,
-        discriminatorKey: 'role' // Define o campo de discriminação para diferenciar os tipos de usuário
+        discriminatorKey: 'role'
     }
 );
 

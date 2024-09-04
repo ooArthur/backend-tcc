@@ -13,13 +13,13 @@ const JWT_REFRESH_EXPIRATION = '7d';
 // Função para gerar tokens
 const generateTokens = (user) => {
     const accessToken = jwt.sign(
-        { id: user._id, type: user.type },
+        { id: user._id, type: user.type, uuid: user.refreshTokenId }, // Inclui o UUID no token de acesso
         JWT_SECRET,
         { expiresIn: JWT_EXPIRATION }
     );
 
     const refreshToken = jwt.sign(
-        { id: user._id, type: user.type },
+        { id: user._id, type: user.type, uuid: user.refreshTokenId }, // Inclui o UUID no token de atualização
         JWT_REFRESH_SECRET,
         { expiresIn: JWT_REFRESH_EXPIRATION }
     );
@@ -45,14 +45,15 @@ exports.login = async (req, res) => {
             return res.status(401).json({ error: 'Credenciais inválidas' });
         }
 
+        // Gera um UUID único para o refreshToken
+        const refreshTokenId = uuidv4();
+        user.refreshTokenId = refreshTokenId;
+
         const { accessToken, refreshToken } = generateTokens(user);
 
-        // Armazena o UUID do token de refresh no banco de dados
-        user.refreshTokenId = uuidv4();
+        // Armazena o token de refresh e o UUID gerado no banco de dados
+        user.refreshToken = refreshToken;
         await user.save();
-
-        // Armazena o refresh token em um armazenamento seguro e verifica-o usando refreshTokenId
-        // Supondo que exista um serviço seguro para armazenamento
 
         logger.info(`Usuário autenticado com sucesso: ${email}`);
         res.status(200).json({ accessToken, refreshToken });
@@ -73,8 +74,9 @@ exports.refreshToken = async (req, res) => {
     try {
         const decoded = jwt.verify(refreshToken, JWT_REFRESH_SECRET);
 
+        // Busca o usuário com o token e UUID correspondentes
         const user = await User.findOne({ _id: decoded.id, refreshToken });
-        if (!user) {
+        if (!user || user.refreshTokenId !== decoded.uuid) {
             logger.warn(`Usuário não encontrado ou token de atualização inválido.`);
             return res.status(401).json({ error: 'Token inválido' });
         }
@@ -82,12 +84,13 @@ exports.refreshToken = async (req, res) => {
         // Gera um novo token de acesso e refresh token
         const { accessToken, refreshToken: newRefreshToken } = generateTokens(user);
 
-        // Atualiza o token de refresh
+        // Gera um novo UUID para o novo refresh token
+        user.refreshToken = newRefreshToken;
         user.refreshTokenId = uuidv4();
         await user.save();
 
         logger.info(`Token de acesso renovado para o usuário: ${user.email}`);
-        res.status(200).json({ accessToken, newRefreshToken });
+        res.status(200).json({ accessToken, refreshToken: newRefreshToken });
     } catch (error) {
         logger.error(`Erro ao renovar token: ${error.message}`);
         res.status(403).json({ error: 'Token de atualização inválido ou expirado', details: error.message });
@@ -103,7 +106,7 @@ exports.logout = async (req, res) => {
             return res.status(400).json({ error: 'Token de atualização é necessário para logout' });
         }
 
-        const user = await User.findOneAndUpdate({ refreshToken }, { refreshToken: null });
+        const user = await User.findOneAndUpdate({ refreshToken }, { refreshToken: null, refreshTokenId: null });
         if (!user) {
             logger.warn('Token de atualização não encontrado durante logout.');
             return res.status(401).json({ error: 'Token de atualização inválido' });

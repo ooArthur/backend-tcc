@@ -80,7 +80,6 @@ exports.listAllCandidates = async (req, res) => {
     try {
         // Busca todos os candidatos no banco de dados
         const candidates = await Candidate.find();
-        logger.info(`Lista de todos os candidatos retornada com sucesso.`);
         
         // Retorna a lista de candidatos como resposta
         res.status(200).json(candidates);
@@ -103,8 +102,6 @@ exports.getCandidateById = async (req, res) => {
             logger.warn(`Candidato com ID ${id} não encontrado.`);
             return res.status(404).json({ message: 'Candidato não encontrado.' });
         }
-
-        logger.info(`Candidato com ID ${id} encontrado e retornado.`);
         
         // Retorna o candidato encontrado como resposta
         res.status(200).json(candidate);
@@ -161,7 +158,6 @@ exports.listFavoriteJobVacancies = async (req, res) => {
     }
 };
 
-
 // Função para adicionar uma vaga aos favoritos de um candidato
 exports.addFavoriteJobVacancy = async (req, res) => {
     try {
@@ -208,7 +204,7 @@ exports.addFavoriteJobVacancy = async (req, res) => {
 // Função para remover uma vaga dos favoritos de um candidato
 exports.removeFavoriteJobVacancy = async (req, res) => {
     try {
-        const { jobVacancyId,candidateId  } = req.body;
+        const { jobVacancyId, candidateId } = req.body;
 
         // Verifica se o candidato possui uma lista de favoritos
         let candidateFavorites = await CandidateFavorites.findOne({ candidateId });
@@ -239,5 +235,3 @@ exports.removeFavoriteJobVacancy = async (req, res) => {
         res.status(500).json({ message: 'Erro ao remover vaga de emprego dos favoritos', error: error.message });
     }
 };
-
-
