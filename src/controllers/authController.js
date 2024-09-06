@@ -13,13 +13,13 @@ const JWT_REFRESH_EXPIRATION = '7d';
 // Função para gerar tokens
 const generateTokens = (user) => {
     const accessToken = jwt.sign(
-        { id: user._id, type: user.type, uuid: user.refreshTokenId }, // Inclui o UUID no token de acesso
+        { id: user._id, type: user.type, uuid: user.refreshTokenId },
         JWT_SECRET,
         { expiresIn: JWT_EXPIRATION }
     );
 
     const refreshToken = jwt.sign(
-        { id: user._id, type: user.type, uuid: user.refreshTokenId }, // Inclui o UUID no token de atualização
+        { id: user._id, type: user.type, uuid: user.refreshTokenId },
         JWT_REFRESH_SECRET,
         { expiresIn: JWT_REFRESH_EXPIRATION }
     );
@@ -31,7 +31,6 @@ const generateTokens = (user) => {
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
-
         const user = await User.findOne({ email });
 
         if (!user) {
@@ -45,18 +44,22 @@ exports.login = async (req, res) => {
             return res.status(401).json({ error: 'Credenciais inválidas' });
         }
 
-        // Gera um UUID único para o refreshToken
         const refreshTokenId = uuidv4();
         user.refreshTokenId = refreshTokenId;
-
         const { accessToken, refreshToken } = generateTokens(user);
 
-        // Armazena o token de refresh e o UUID gerado no banco de dados
         user.refreshToken = refreshToken;
         await user.save();
 
+        // Define o refresh token como um cookie HttpOnly
+        res.cookie('refreshToken', refreshToken, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production', // Somente em HTTPS
+            sameSite: 'Strict',
+        });
+
         logger.info(`Usuário autenticado com sucesso: ${email}`);
-        res.status(200).json({ accessToken, refreshToken });
+        res.status(200).json({ accessToken });
     } catch (error) {
         logger.error(`Erro ao fazer login: ${error.message}`);
         res.status(500).json({ error: 'Erro ao fazer login', details: error.message });
@@ -65,7 +68,7 @@ exports.login = async (req, res) => {
 
 // Função para renovar o token de acesso
 exports.refreshToken = async (req, res) => {
-    const { refreshToken } = req.body;
+    const refreshToken = req.cookies.refreshToken;
 
     if (!refreshToken) {
         return res.status(400).json({ error: 'Refresh token é necessário' });
@@ -74,23 +77,26 @@ exports.refreshToken = async (req, res) => {
     try {
         const decoded = jwt.verify(refreshToken, JWT_REFRESH_SECRET);
 
-        // Busca o usuário com o token e UUID correspondentes
         const user = await User.findOne({ _id: decoded.id, refreshToken });
         if (!user || user.refreshTokenId !== decoded.uuid) {
             logger.warn(`Usuário não encontrado ou token de atualização inválido.`);
             return res.status(401).json({ error: 'Token inválido' });
         }
 
-        // Gera um novo token de acesso e refresh token
         const { accessToken, refreshToken: newRefreshToken } = generateTokens(user);
 
-        // Gera um novo UUID para o novo refresh token
         user.refreshToken = newRefreshToken;
         user.refreshTokenId = uuidv4();
         await user.save();
 
+        res.cookie('refreshToken', newRefreshToken, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'Strict',
+        });
+
         logger.info(`Token de acesso renovado para o usuário: ${user.email}`);
-        res.status(200).json({ accessToken, refreshToken: newRefreshToken });
+        res.status(200).json({ accessToken });
     } catch (error) {
         logger.error(`Erro ao renovar token: ${error.message}`);
         res.status(403).json({ error: 'Token de atualização inválido ou expirado', details: error.message });
@@ -100,7 +106,7 @@ exports.refreshToken = async (req, res) => {
 // Função de logout para invalidar tokens
 exports.logout = async (req, res) => {
     try {
-        const { refreshToken } = req.body;
+        const refreshToken = req.cookies.refreshToken;
 
         if (!refreshToken) {
             return res.status(400).json({ error: 'Token de atualização é necessário para logout' });
@@ -111,6 +117,12 @@ exports.logout = async (req, res) => {
             logger.warn('Token de atualização não encontrado durante logout.');
             return res.status(401).json({ error: 'Token de atualização inválido' });
         }
+
+        res.clearCookie('refreshToken', {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'Strict',
+        });
 
         logger.info(`Usuário com e-mail ${user.email} deslogado com sucesso.`);
         res.status(200).json({ message: 'Logout realizado com sucesso' });

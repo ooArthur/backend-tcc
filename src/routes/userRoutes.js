@@ -18,7 +18,6 @@ router.post('/create-admin',
     authorizeAdmin, */
     userController.createAdminUser
 );
-
 // Rotas para Listar Usuários
 router.get('/list-users', 
     /* authenticateToken, 
@@ -30,7 +29,6 @@ router.get('/list-user/:id',
     authorizeAdmin, */
     userController.getUserById
 );
-
 // Rotas para Atualizar Usuários
 router.put('/update-user/:id',
     /* authenticateToken,
@@ -39,12 +37,19 @@ router.put('/update-user/:id',
     validate,
     userController.updateUserById
 );
-
 // Rotas para Deletar Usuários
 router.delete('/delete-user/:id',
     /* authenticateToken,
     authorizeUser, */
     userController.deleteUserById
+);
+// Rota para solicitar a redefinição de senha
+router.post('/forgot-password',
+    userController.requestPasswordReset
+);
+// Rota para redefinir a senha
+router.post('/reset-password',
+    userController.resetPassword
 );
 
 module.exports = router;

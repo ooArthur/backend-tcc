@@ -1,11 +1,15 @@
 const User = require('../models/User');
 const logger = require('../config/logger');
+const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
 const Candidate = require('../models/CandidateProfile');
 const Company = require('../models/CompanyProfile');
 const JobVacancyFavorites = require('../models/JobVacancyFavorites');
 const CandidateFavorites = require('../models/CandidateFavorites');
 const JobVacancy = require('../models/JobVacancy');
+const ResetToken = require('../models/ResetToken');
+const { sendPasswordResetEmail } = require('./emailController');
+const VerificationCode = require('../models/VerificationCode');
 
 // Função para remover usuários com email não verificado após 15 dias
 exports.removeUnverifiedUsers = async () => {
@@ -177,5 +181,111 @@ exports.deleteUserById = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao excluir usuário pelo ID ${req.params.id}: ${error.message}`);
         res.status(500).json({ message: 'Erro ao excluir usuário', error: error.message });
+    }
+};
+
+// Solicitar Redefinição de Senha
+exports.requestPasswordReset = async (req, res) => {
+    const { email } = req.body;
+
+    try {
+        const user = await User.findOne({ email });
+
+        if (!user) {
+            logger.warn(`Tentativa de solicitação de redefinição de senha para um e-mail não registrado: ${email}`);
+            return res.status(404).json({ message: 'Usuário não encontrado.' });
+        }
+
+        // Remove códigos anteriores não utilizados
+        await ResetToken.deleteMany({ userId: user._id, isVerified: false });
+
+        // Gera um novo token de redefinição de senha
+        const resetToken = crypto.randomBytes(32).toString('hex');
+        const hashedToken = await bcrypt.hash(resetToken, 10);
+        const expiresAt = new Date(Date.now() + 3600000); // Expira em 1 hora
+
+        // Salva o novo token no banco de dados
+        const tokenRecord = new ResetToken({
+            userId: user._id,
+            token: hashedToken,
+            expiresAt,
+            isVerified: false
+        });
+
+        await tokenRecord.save();
+
+        // Envia o e-mail com o link de redefinição de senha
+        const resetLink = `${process.env.CORS_ORIGIN}/reset-password?token=${resetToken}`;
+        await sendPasswordResetEmail(user.email, resetLink);
+
+        logger.info(`Token de redefinição de senha enviado para o e-mail ${email}`);
+        res.status(200).json({ message: 'Instruções para redefinição de senha foram enviadas para o seu e-mail.' });
+    } catch (error) {
+        logger.error(`Erro ao solicitar redefinição de senha para o e-mail ${email}: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao solicitar redefinição de senha.', error: error.message });
+    }
+};
+
+// Redefinir Senha
+exports.resetPassword = async (req, res) => {
+    const { token, newPassword } = req.body;
+
+    try {
+        // Busca o token fornecido
+        const tokenRecord = await ResetToken.findOne({ token });
+
+        if (!tokenRecord || tokenRecord.expiresAt < Date.now()) {
+            logger.warn('Token inválido ou expirado para redefinição de senha.');
+            return res.status(400).json({ message: 'Token inválido ou expirado.' });
+        }
+
+        const user = await User.findById(tokenRecord.userId);
+
+        if (!user) {
+            logger.warn('Usuário não encontrado para o token fornecido.');
+            return res.status(404).json({ message: 'Usuário não encontrado.' });
+        }
+
+        // Criptografa a nova senha
+        user.password = await bcrypt.hash(newPassword, 10);
+        await user.save();
+
+        // Remove o token após a utilização
+        await ResetToken.deleteOne({ _id: tokenRecord._id });
+
+        logger.info(`Senha redefinida com sucesso para o usuário ${user.email}`);
+        res.status(200).json({ message: 'Senha redefinida com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao redefinir senha: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao redefinir senha.', error: error.message });
+    }
+};
+
+exports.cleanupExpiredCode = async () =>{
+    try {
+        // Remove códigos que expiraram e ainda não foram verificados
+        const result = await VerificationCode.deleteMany({
+            expiresAt: { $lt: new Date() },
+            isVerified: false
+        });
+
+        logger.info(`Códigos de verificação expirados removidos: ${result.deletedCount}`);
+    } catch (error) {
+        logger.error(`Erro ao remover códigos de verificação expirados: ${error.message}`);
+    }
+}
+
+// Função para remover tokens de redefinição de senha expirados
+exports.cleanupExpiredTokens = async () => {
+    try {
+        // Remove tokens que expiraram e ainda não foram utilizados
+        const result = await ResetToken.deleteMany({
+            expiresAt: { $lt: new Date() },
+            isVerified: false
+        });
+
+        logger.info(`Tokens expirados removidos: ${result.deletedCount}`);
+    } catch (error) {
+        logger.error(`Erro ao remover tokens expirados: ${error.message}`);
     }
 };

@@ -107,7 +107,25 @@ async function verifyCode(req, res) {
     }
 }
 
+async function sendPasswordResetEmail(email, resetLink) {
+    const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: 'Redefinição de Senha',
+        text: `Você solicitou a redefinição de sua senha. Clique no link a seguir para criar uma nova senha: ${resetLink}. O link expira em 1 hora.`,
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        logger.info(`E-mail de redefinição de senha enviado com sucesso para ${email}`);
+    } catch (error) {
+        logger.error(`Erro ao enviar e-mail de redefinição de senha para ${email}: ${error.message}`);
+        throw error;
+    }
+}
+
 module.exports = {
     requestVerificationCode,
-    verifyCode
+    verifyCode,
+    sendPasswordResetEmail
 };

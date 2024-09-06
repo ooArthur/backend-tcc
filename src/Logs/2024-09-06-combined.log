@@ -1,0 +1,1138 @@
+2024-09-06 08:57:12 [INFO]: Server is running on port 5000
+2024-09-06 08:57:12 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 08:57:20 [INFO]: Server is running on port 5000
+2024-09-06 08:57:20 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 08:57:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:02:34 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:03:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:04:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:04:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:06:45 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:07:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:09:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:10:10 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:40:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:35 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:40:35 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:35 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:40:35 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:35 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:40:35 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:40:37 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:49:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:50:55 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:02 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:51:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 09:58:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:00:38 [INFO]: Server is running on port 5000
+2024-09-06 10:00:38 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:01:36 [INFO]: Server is running on port 5000
+2024-09-06 10:01:37 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:01:38 [INFO]: Server is running on port 5000
+2024-09-06 10:01:38 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:01:44 [INFO]: Server is running on port 5000
+2024-09-06 10:01:44 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:13:00 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:00 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:00 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:00 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:00 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:06 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:06 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:06 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 10:13:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:14:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:25 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:16:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:16:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:20:13 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/verify/verify-code
+2024-09-06 10:20:13 [WARN]: Código inválido ou não encontrado para o e-mail arthur.aba20@gmail.com
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:21:21 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:21:30 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/login
+2024-09-06 10:21:30 [INFO]: Usuário autenticado com sucesso: arthur.admin@gmail.com
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:24:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:28:03 [INFO]: Server is running on port 5000
+2024-09-06 10:28:03 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:28:09 [INFO]: Server is running on port 5000
+2024-09-06 10:28:09 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:28:11 [INFO]: Server is running on port 5000
+2024-09-06 10:28:11 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:28:16 [INFO]: Server is running on port 5000
+2024-09-06 10:28:16 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:28:54 [INFO]: Server is running on port 5000
+2024-09-06 10:28:54 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:29:02 [INFO]: Server is running on port 5000
+2024-09-06 10:29:02 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:29:06 [INFO]: Server is running on port 5000
+2024-09-06 10:29:06 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:29:09 [INFO]: Server is running on port 5000
+2024-09-06 10:29:09 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:29:39 [INFO]: Server is running on port 5000
+2024-09-06 10:29:39 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:29:47 [INFO]: Server is running on port 5000
+2024-09-06 10:29:47 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:29:53 [INFO]: Server is running on port 5000
+2024-09-06 10:29:53 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:30:57 [INFO]: Server is running on port 5000
+2024-09-06 10:30:57 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:31:01 [INFO]: Server is running on port 5000
+2024-09-06 10:31:01 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:31:21 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 10:32:29 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 10:33:21 [INFO]: Server is running on port 5000
+2024-09-06 10:33:22 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:34:27 [INFO]: Server is running on port 5000
+2024-09-06 10:34:27 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:34:29 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 10:34:29 [INFO]: Token de acesso renovado para o usuário: arthur.admin@gmail.com
+2024-09-06 10:36:50 [INFO]: Server is running on port 5000
+2024-09-06 10:36:50 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:36:53 [INFO]: Server is running on port 5000
+2024-09-06 10:36:53 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 10:42:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:42:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:42:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:42:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:42:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:43:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:43:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:43:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:44:04 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/login
+2024-09-06 10:44:04 [INFO]: Usuário autenticado com sucesso: arthur.admin@gmail.com
+2024-09-06 10:44:27 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 10:44:27 [INFO]: Token de acesso renovado para o usuário: arthur.admin@gmail.com
+2024-09-06 10:45:06 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 10:45:06 [ERROR]: Erro ao validar token de atualização: invalid signature
+2024-09-06 10:45:16 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 10:45:16 [WARN]: Usuário não encontrado ou token de atualização inválido.
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 10:47:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 10:47:43 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 10:47:43 [WARN]: Usuário não encontrado ou token de atualização inválido.
+2024-09-06 11:16:39 [INFO]: Server is running on port 5000
+2024-09-06 11:16:39 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 11:16:42 [INFO]: Server is running on port 5000
+2024-09-06 11:16:42 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:16:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:18:37 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/refresh-token
+2024-09-06 11:18:37 [WARN]: Usuário não encontrado ou token de atualização inválido.
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:19:57 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:19:58 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 11:22:05 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 11:22:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies2024-09-06 13:24:59 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:25:19 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:25:34 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:25:36 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:26:05 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/auth/login
+2024-09-06 13:26:05 [INFO]: Usuário autenticado com sucesso: arthur.admin@gmail.com
+2024-09-06 13:26:10 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:26:10 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:26:11 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:26:33 [INFO]: Server is running on port 5000
+2024-09-06 13:26:33 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 13:26:33 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:26:33 [INFO]: IP: ::ffff:10.92.199.9 - POST /login
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:26:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:28:25 [INFO]: IP: ::ffff:10.92.199.9 - POST /api/auth/login
+2024-09-06 13:28:25 [INFO]: Usuário autenticado com sucesso: arthur.admin@gmail.com
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - POST /api/auth/login
+2024-09-06 13:29:34 [INFO]: Usuário autenticado com sucesso: arthur.admin@gmail.com
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:29:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/list-companies
+2024-09-06 13:30:18 [INFO]: IP: ::ffff:10.92.199.34 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:47 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:48 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:33:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:33:50 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:36:39 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:38:59 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:39:07 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:39:08 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:40 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:41:41 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:49:04 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:50:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:50:32 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:51:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:51:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:53:26 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:15 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:19 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:29 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:33 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:43 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:44 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:44 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:44 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:44 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:46 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:47 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:47 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:47 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:47 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:54:48 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:54:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 13:54:49 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:56:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:56:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:56:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:56:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:56:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:56:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 13:56:00 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 13:56:01 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:01:07 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:02:29 [INFO]: Server is running on port 5000
+2024-09-06 14:02:30 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:04:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:27 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:05:54 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:07:37 [INFO]: Server is running on port 5000
+2024-09-06 14:07:37 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:07:45 [INFO]: Server is running on port 5000
+2024-09-06 14:07:45 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:10:38 [INFO]: Server is running on port 5000
+2024-09-06 14:10:38 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:11:42 [INFO]: Server is running on port 5000
+2024-09-06 14:11:42 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:12:17 [INFO]: Server is running on port 5000
+2024-09-06 14:12:17 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:17:38 [INFO]: Server is running on port 5000
+2024-09-06 14:17:38 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:20:42 [INFO]: Server is running on port 5000
+2024-09-06 14:20:42 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:21:22 [INFO]: Server is running on port 5000
+2024-09-06 14:21:22 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:21:26 [INFO]: Server is running on port 5000
+2024-09-06 14:21:26 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:21:33 [INFO]: Server is running on port 5000
+2024-09-06 14:21:33 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:21:45 [INFO]: Server is running on port 5000
+2024-09-06 14:21:45 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:23:17 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/forgot-password
+2024-09-06 14:23:17 [WARN]: Tentativa de solicitação de redefinição de senha para um e-mail não registrado: undefined
+2024-09-06 14:23:36 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/forgot-password
+2024-09-06 14:23:36 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.admin@gmail.com: crypto.randomBytes is not a function
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:24:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:24:32 [INFO]: Server is running on port 5000
+2024-09-06 14:24:32 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:24:37 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/forgot-password
+2024-09-06 14:24:37 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.admin@gmail.com: sendPasswordResetEmail is not defined
+2024-09-06 14:25:31 [INFO]: Server is running on port 5000
+2024-09-06 14:25:31 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:25:34 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/forgot-password
+2024-09-06 14:25:34 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.admin@gmail.com: sendPasswordResetEmail is not defined
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:25:56 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:27:14 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/forgot-password
+2024-09-06 14:27:14 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: sendPasswordResetEmail is not defined
+2024-09-06 14:27:15 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/forgot-password
+2024-09-06 14:27:15 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: sendPasswordResetEmail is not defined
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:27:36 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:27:55 [INFO]: Server is running on port 5000
+2024-09-06 14:27:55 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:28:15 [INFO]: Server is running on port 5000
+2024-09-06 14:28:15 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:28:20 [INFO]: IP: ::ffff:10.92.199.14 - POST /api/user/forgot-password
+2024-09-06 14:28:42 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect ETIMEDOUT 142.250.0.108:465
+2024-09-06 14:28:42 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect ETIMEDOUT 142.250.0.108:465
+2024-09-06 14:29:52 [INFO]: IP: ::ffff:10.92.199.9 - POST /api/user/forgot-password
+2024-09-06 14:30:13 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect ETIMEDOUT 142.250.0.108:465
+2024-09-06 14:30:13 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect ETIMEDOUT 142.250.0.108:465
+2024-09-06 14:30:18 [INFO]: IP: ::ffff:10.92.199.9 - POST /api/user/forgot-password
+2024-09-06 14:30:39 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect ETIMEDOUT 142.250.0.108:465
+2024-09-06 14:30:39 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect ETIMEDOUT 142.250.0.108:465
+2024-09-06 14:32:01 [INFO]: Server is running on port 5000
+2024-09-06 14:32:01 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:32:39 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/forgot-password
+2024-09-06 14:32:39 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:32:39 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:24 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/forgot-password
+2024-09-06 14:33:24 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:24 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:25 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/forgot-password
+2024-09-06 14:33:25 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:25 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:26 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/forgot-password
+2024-09-06 14:33:26 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:26 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:26 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/forgot-password
+2024-09-06 14:33:26 [ERROR]: Erro ao enviar e-mail de redefinição de senha para arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:33:26 [ERROR]: Erro ao solicitar redefinição de senha para o e-mail arthur.aba20@gmail.com: connect EHOSTUNREACH 64.233.190.109:465
+2024-09-06 14:35:08 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/forgot-password
+2024-09-06 14:35:15 [INFO]: E-mail de redefinição de senha enviado com sucesso para arthur.aba20@gmail.com
+2024-09-06 14:35:15 [INFO]: Token de redefinição de senha enviado para o e-mail arthur.aba20@gmail.com
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:36:18 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:11 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:37:29 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:37:30 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:12 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:13 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:31 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:41:49 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:43:22 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:43:29 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/reset-password?token=32ac29fb639ab3e52091b31dd7c506fcf917aa993ea50a237158124f91671e32
+2024-09-06 14:43:29 [WARN]: Token inválido ou expirado para redefinição de senha.
+2024-09-06 14:44:36 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/reset-password
+2024-09-06 14:44:36 [ERROR]: Erro ao redefinir senha: Illegal arguments: undefined, number
+2024-09-06 14:45:17 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/reset-password
+2024-09-06 14:45:17 [INFO]: Senha redefinida com sucesso para o usuário arthur.aba20@gmail.com
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:45:32 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:46:52 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:58 [INFO]: IP: ::ffff:10.92.199.9 - POST /api/auth/login
+2024-09-06 14:46:58 [INFO]: Usuário autenticado com sucesso: arthur.aba20@gmail.com
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:46:59 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:47:44 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:48:09 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:48:09 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:48:09 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:48:09 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:48:12 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:53:30 [INFO]: Server is running on port 5000
+2024-09-06 14:53:30 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:54:11 [INFO]: Server is running on port 5000
+2024-09-06 14:54:11 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:56:05 [INFO]: Server is running on port 5000
+2024-09-06 14:56:05 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:56:09 [INFO]: Server is running on port 5000
+2024-09-06 14:56:09 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:56:24 [INFO]: Server is running on port 5000
+2024-09-06 14:56:24 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:57:02 [INFO]: Server is running on port 5000
+2024-09-06 14:57:02 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:57:08 [INFO]: Server is running on port 5000
+2024-09-06 14:57:08 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:57:14 [INFO]: Server is running on port 5000
+2024-09-06 14:57:14 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:57:21 [INFO]: Server is running on port 5000
+2024-09-06 14:57:21 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:57:27 [INFO]: Server is running on port 5000
+2024-09-06 14:57:27 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:57:50 [INFO]: Server is running on port 5000
+2024-09-06 14:57:50 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:57:55 [INFO]: Server is running on port 5000
+2024-09-06 14:57:55 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 14:58:15 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:15 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:58:15 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:15 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:58:15 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/list-companies
+2024-09-06 14:58:16 [INFO]: IP: ::ffff:10.92.199.14 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 15:06:18 [INFO]: Server is running on port 5000
+2024-09-06 15:06:18 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:06:22 [INFO]: Server is running on port 5000
+2024-09-06 15:06:22 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:06:32 [INFO]: Server is running on port 5000
+2024-09-06 15:06:32 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:06:44 [INFO]: Server is running on port 5000
+2024-09-06 15:06:44 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:07:16 [INFO]: Server is running on port 5000
+2024-09-06 15:07:16 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:07:33 [INFO]: Server is running on port 5000
+2024-09-06 15:07:33 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:08:11 [INFO]: Server is running on port 5000
+2024-09-06 15:08:11 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:08:16 [INFO]: Server is running on port 5000
+2024-09-06 15:08:16 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:08:31 [INFO]: Server is running on port 5000
+2024-09-06 15:08:31 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:09:12 [INFO]: Server is running on port 5000
+2024-09-06 15:09:12 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 15:49:46 [INFO]: Server is running on port 5000
+2024-09-06 15:49:46 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 16:00:00 [INFO]: Vagas removidas: 0
+2024-09-06 16:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-09-06 16:00:00 [INFO]: Tokens expirados removidos: 0
+2024-09-06 16:00:00 [INFO]: Usuários não verificados removidos: 0
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:02:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:02:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:02:22 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:23 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:02:23 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:02:23 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:20 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:07:30 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:10:05 [INFO]: Server is running on port 5000
+2024-09-06 16:10:05 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:11:43 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:03 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:04 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:15 [INFO]: Server is running on port 5000
+2024-09-06 16:12:15 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:24 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:12:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:13:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:14:41 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:15:29 [INFO]: Server is running on port 5000
+2024-09-06 16:15:29 [INFO]: MongoDB conectado com sucesso!
+2024-09-06 16:15:54 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:15:54 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:15:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:15:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:15:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:15:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:15:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:15:55 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:16:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:19:10 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:01 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:02 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:02 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:02 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:02 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:02 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:02 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:34 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:36 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/list-companies
+2024-09-06 16:30:45 [INFO]: IP: ::ffff:10.92.199.9 - GET /api/user/company/vacancy/list-vacancies
