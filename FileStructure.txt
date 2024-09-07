@@ -18,18 +18,15 @@ backend-tcc
     │   └── vacancyController.js
     │── cron.js
     │── docs
-    │   └── info.txt
+    │   └── swagger.yaml
     │── index.js
     │── Logs
-    │   │── .b522327ac456de533def688682cd647897b6528c-audit.json
-    │   │── .c81c8a4a329aa6f93a9c76983ca7c270bdb2c07c-audit.json
-    │   │── 2024-09-06-combined.log
-    │   └── 2024-09-06-error.log
     │── middleware
     │   │── authMiddleware.js
     │   │── authorizeAdmin.js
     │   │── authorizeUser.js
-    │   └── validate.js
+    │   │── validate.js
+    │   └── validateRefreshToken.js
     │── models
     │   │── CandidateFavorites.js
     │   │── CandidateProfile.js
@@ -37,6 +34,7 @@ backend-tcc
     │   │── JobVacancy.js
     │   │── JobVacancyFavorites.js
     │   │── Report.js
+    │   │── ResetToken.js
     │   │── User.js
     │   └── VerificationCode.js
     │── routes

@@ -1,0 +1,652 @@
+openapi: 3.0.0
+info:
+  title: API JobLink
+  version: 1.0.0
+  description: API para gerenciar candidatos, empresas, vagas, relatórios e autenticação.
+
+servers:
+  - url: http://localhost:5000/api
+    description: Servidor local
+
+paths:
+  /auth/login:
+    post:
+      summary: Realiza login do usuário.
+      tags:
+        - Autenticação
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Login bem-sucedido.
+        '401':
+          description: Credenciais inválidas.
+
+  /auth/refresh-token:
+    post:
+      summary: Renova o token de acesso.
+      tags:
+        - Autenticação
+      security:
+        - validateRefreshToken: []
+      responses:
+        '200':
+          description: Token renovado com sucesso.
+        '401':
+          description: Token de atualização inválido.
+
+  /auth/logout:
+    post:
+      summary: Realiza logout do usuário.
+      tags:
+        - Autenticação
+      responses:
+        '200':
+          description: Logout bem-sucedido.
+
+  /candidate/create-candidate:
+    post:
+      summary: Cria um novo candidato.
+      tags:
+        - Candidatos
+      responses:
+        '201':
+          description: Candidato criado com sucesso.
+        '400':
+          description: Dados inválidos.
+
+  /candidate/list-candidates:
+    get:
+      summary: Lista todos os candidatos.
+      tags:
+        - Candidatos
+      security:
+        - authenticateToken: []
+      responses:
+        '200':
+          description: Lista de candidatos.
+
+  /candidate/list-candidate/{id}:
+    get:
+      summary: Busca um candidato pelo ID.
+      tags:
+        - Candidatos
+      security:
+        - authenticateToken: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do candidato
+      responses:
+        '200':
+          description: Dados do candidato.
+
+  /candidate/update-candidate/{id}:
+    put:
+      summary: Atualiza os dados de um candidato.
+      tags:
+        - Candidatos
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do candidato
+      responses:
+        '200':
+          description: Candidato atualizado com sucesso.
+
+  /candidate/list-favorites/{id}:
+    get:
+      summary: Lista as vagas favoritas de um candidato.
+      tags:
+        - Candidatos
+      security:
+        - authenticateToken: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do candidato
+      responses:
+        '200':
+          description: Lista de vagas favoritas.
+
+  /candidate/add-favorite:
+    post:
+      summary: Adiciona uma vaga favorita para o candidato.
+      tags:
+        - Candidatos
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      responses:
+        '201':
+          description: Vaga adicionada aos favoritos.
+
+  /candidate/remove-favorite:
+    delete:
+      summary: Remove uma vaga favorita do candidato.
+      tags:
+        - Candidatos
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      responses:
+        '200':
+          description: Vaga removida dos favoritos.
+
+  /company/create-company:
+    post:
+      summary: Cria uma nova empresa.
+      tags:
+        - Empresas
+      responses:
+        '201':
+          description: Empresa criada com sucesso.
+
+  /company/list-companies:
+    get:
+      summary: Lista todas as empresas.
+      tags:
+        - Empresas
+      security:
+        - authenticateToken: []
+      responses:
+        '200':
+          description: Lista de empresas.
+
+  /company/list-company/{id}:
+    get:
+      summary: Busca uma empresa pelo ID.
+      tags:
+        - Empresas
+      security:
+        - authenticateToken: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID da empresa
+      responses:
+        '200':
+          description: Dados da empresa.
+
+  /company/update-company/{id}:
+    put:
+      summary: Atualiza os dados de uma empresa.
+      tags:
+        - Empresas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID da empresa
+      responses:
+        '200':
+          description: Empresa atualizada com sucesso.
+
+  /company/list-favorites/{companyId}/{jobVacancyId}:
+    get:
+      summary: Lista os candidatos favoritos de uma vaga específica de uma empresa.
+      tags:
+        - Empresas
+      security:
+        - authenticateToken: []
+      parameters:
+        - in: path
+          name: companyId
+          schema:
+            type: string
+          required: true
+          description: ID da empresa
+        - in: path
+          name: jobVacancyId
+          schema:
+            type: string
+          required: true
+          description: ID da vaga
+      responses:
+        '200':
+          description: Lista de candidatos favoritos.
+
+  /company/add-favorites:
+    post:
+      summary: Adiciona um candidato à lista de favoritos da empresa.
+      tags:
+        - Empresas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      responses:
+        '201':
+          description: Candidato adicionado aos favoritos.
+
+  /company/remove-favorites:
+    delete:
+      summary: Remove um candidato dos favoritos da empresa.
+      tags:
+        - Empresas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      responses:
+        '200':
+          description: Candidato removido dos favoritos.
+
+  /vacancy/create-vacancy:
+    post:
+      summary: Cria uma nova vaga de emprego.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JobVacancy'
+      responses:
+        '201':
+          description: Vaga criada com sucesso.
+
+  /vacancy/list-vacancies:
+    get:
+      summary: Lista todas as vagas de emprego.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+      responses:
+        '200':
+          description: Lista de vagas.
+
+  /vacancy/list-vacancy/{id}:
+    get:
+      summary: Busca uma vaga pelo ID.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID da vaga
+      responses:
+        '200':
+          description: Dados da vaga.
+
+  /vacancy/delete-vacancy/{id}:
+    delete:
+      summary: Remove uma vaga de emprego.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID da vaga
+      responses:
+        '200':
+          description: Vaga removida com sucesso.
+
+  /vacancy/update-vacancy/{id}:
+    put:
+      summary: Atualiza uma vaga de emprego.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID da vaga
+      responses:
+        '200':
+          description: Vaga atualizada com sucesso.
+
+  /vacancy/list-interested/{id}:
+    get:
+      summary: Lista candidatos interessados em uma vaga.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID da vaga
+      responses:
+        '200':
+          description: Lista de candidatos interessados.
+
+  /vacancy/add-interested:
+    post:
+      summary: Adiciona um candidato interessado em uma vaga.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                candidateId:
+                  type: string
+                jobVacancyId:
+                  type: string
+      responses:
+        '200':
+          description: Candidato adicionado à vaga com sucesso.
+
+  /vacancy/remove-interested/{id}:
+    delete:
+      summary: Remove um candidato interessado de uma vaga.
+      tags:
+        - Vagas
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID da vaga
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                candidateId:
+                  type: string
+      responses:
+        '200':
+          description: Candidato removido da vaga com sucesso.
+
+  /verify/request-code:
+    post:
+      summary: Solicita um código de verificação.
+      tags:
+        - Verificação
+      responses:
+        '200':
+          description: Código de verificação solicitado.
+
+  /verify/verify-code:
+    post:
+      summary: Verifica um código de verificação.
+      tags:
+        - Verificação
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+      responses:
+        '200':
+          description: Código verificado com sucesso.
+
+  /report/create-report:
+    post:
+      summary: Cria um novo relatório.
+      tags:
+        - Relatórios
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      responses:
+        '201':
+          description: Relatório criado com sucesso.
+
+  /report/delete-report/{id}:
+    delete:
+      summary: Remove um relatório pelo ID.
+      tags:
+        - Relatórios
+      security:
+        - authenticateToken: []
+        - authorizeAdmin: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do relatório
+      responses:
+        '200':
+          description: Relatório removido com sucesso.
+
+  /report/list-report-by-id/{id}:
+    get:
+      summary: Busca um relatório pelo ID.
+      tags:
+        - Relatórios
+      security:
+        - authenticateToken: []
+        - authorizeAdmin: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do relatório
+      responses:
+        '200':
+          description: Dados do relatório.
+
+  /report/list-reports:
+    get:
+      summary: Lista todos os relatórios.
+      tags:
+        - Relatórios
+      security:
+        - authenticateToken: []
+        - authorizeAdmin: []
+      responses:
+        '200':
+          description: Lista de relatórios.
+
+  /user/create-admin:
+    post:
+      summary: Cria um novo usuário administrador.
+      tags:
+        - Usuários
+      security:
+        - authenticateToken: []
+        - authorizeAdmin: []
+      responses:
+        '201':
+          description: Usuário administrador criado com sucesso.
+
+  /user/list-users:
+    get:
+      summary: Lista todos os usuários.
+      tags:
+        - Usuários
+      security:
+        - authenticateToken: []
+        - authorizeAdmin: []
+      responses:
+        '200':
+          description: Lista de usuários.
+
+  /user/list-user/{id}:
+    get:
+      summary: Busca um usuário pelo ID.
+      tags:
+        - Usuários
+      security:
+        - authenticateToken: []
+        - authorizeAdmin: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do usuário
+      responses:
+        '200':
+          description: Dados do usuário.
+
+  /user/update-user/{id}:
+    put:
+      summary: Atualiza os dados de um usuário.
+      tags:
+        - Usuários
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do usuário
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+      responses:
+        '200':
+          description: Usuário atualizado com sucesso.
+
+  /user/delete-user/{id}:
+    delete:
+      summary: Remove um usuário pelo ID.
+      tags:
+        - Usuários
+      security:
+        - authenticateToken: []
+        - authorizeUser: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID do usuário
+      responses:
+        '200':
+          description: Usuário removido com sucesso.
+
+  /user/forgot-password:
+    post:
+      summary: Solicita redefinição de senha.
+      tags:
+        - Usuários
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+      responses:
+        '200':
+          description: Solicitação de redefinição de senha realizada com sucesso.
+
+  /user/reset-password:
+    post:
+      summary: Redefine a senha do usuário.
+      tags:
+        - Usuários
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                newPassword:
+                  type: string
+      responses:
+        '200':
+          description: Senha redefinida com sucesso.
+
+components:
+  securitySchemes:
+    authenticateToken:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    authorizeUser:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    authorizeAdmin:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    validateRefreshToken:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
