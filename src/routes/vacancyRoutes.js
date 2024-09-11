@@ -19,7 +19,7 @@ router.post('/create-vacancy',
 
 // Rotas para listagem
 router.get('/list-vacancies',
-    /* authenticateToken, */
+    authenticateToken,
     vacancyController.listAllJobVacancies
 );
 

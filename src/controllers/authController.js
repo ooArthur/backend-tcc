@@ -6,7 +6,7 @@ const User = require('../models/User');
 
 // Configurações para o JWT
 const JWT_SECRET = process.env.JWT_SECRET;
-const JWT_EXPIRATION = '15m';
+const JWT_EXPIRATION = '0.5m';
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_REFRESH_EXPIRATION = '7d';
 
@@ -69,6 +69,7 @@ exports.login = async (req, res) => {
 // Função para renovar o token de acesso
 exports.refreshToken = async (req, res) => {
     const refreshToken = req.cookies.refreshToken;
+    console.log(refreshToken)
 
     if (!refreshToken) {
         return res.status(400).json({ error: 'Refresh token é necessário' });
@@ -103,7 +104,6 @@ exports.refreshToken = async (req, res) => {
     }
 };
 
-// Função de logout para invalidar tokens
 exports.logout = async (req, res) => {
     try {
         const refreshToken = req.cookies.refreshToken;
@@ -112,12 +112,15 @@ exports.logout = async (req, res) => {
             return res.status(400).json({ error: 'Token de atualização é necessário para logout' });
         }
 
-        const user = await User.findOneAndUpdate({ refreshToken }, { refreshToken: null, refreshTokenId: null });
+        // Busca o usuário associado ao refreshToken e limpa o refreshToken no banco de dados
+        const user = await User.findOneAndUpdate({ refreshToken }, { $set: { refreshToken: null, refreshTokenId: null } });
+        
         if (!user) {
             logger.warn('Token de atualização não encontrado durante logout.');
-            return res.status(401).json({ error: 'Token de atualização inválido' });
+            return res.status(401).json({ error: 'Token de atualização inválido ou não encontrado' });
         }
 
+        // Remove o cookie de refreshToken do cliente
         res.clearCookie('refreshToken', {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',

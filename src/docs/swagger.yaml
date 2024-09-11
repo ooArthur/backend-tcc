@@ -7,6 +7,8 @@ info:
 servers:
   - url: http://localhost:5000/api
     description: Servidor local
+  - url: https://api-joblink.onrender.com/
+    description: Servidor Hospedado
 
 paths:
   /auth/login:

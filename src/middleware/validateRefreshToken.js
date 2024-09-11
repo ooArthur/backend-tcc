@@ -5,7 +5,7 @@ const logger = require('../config/logger');
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 
 const validateRefreshToken = async (req, res, next) => {
-    const { refreshToken } = req.body;
+    const { refreshToken } = req.cookies;
 
     if (!refreshToken) {
         return res.status(400).json({ error: 'Refresh token é necessário' });
@@ -16,7 +16,10 @@ const validateRefreshToken = async (req, res, next) => {
 
         // Busca o usuário com o ID e token de refresh
         const user = await User.findOne({ _id: decoded.id, refreshToken });
-        if (!user || user.refreshTokenId !== decoded.uuid) {
+
+        if (!user || user.refreshToken !== refreshToken) {
+            console.log("refreshToken 1:", user.refreshToken)
+            console.log("refreshToken 2:", refreshToken)
             logger.warn(`Usuário não encontrado ou token de atualização inválido.`);
             return res.status(401).json({ error: 'Token inválido' });
         }

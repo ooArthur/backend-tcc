@@ -9,6 +9,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 exports.authenticateToken = async (req, res, next) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1]; // Obtém o token após "Bearer"
+    const refreshToken = req.cookies.refreshToken;
 
     if (!token) {
         logger.warn('Token de autenticação não fornecido.');
@@ -20,8 +21,8 @@ exports.authenticateToken = async (req, res, next) => {
         
         // Busca o usuário pelo ID e verifica o UUID do token de atualização
         const user = await User.findById(decoded.id);
-        if (!user || user.refreshTokenId !== decoded.uuid) {
-            logger.warn(`Usuário não encontrado ou UUID do token inválido.`);
+        if (!user || user.refreshToken !== refreshToken) {
+            logger.warn('Deu ruim')
             return res.status(403).json({ message: 'Token inválido ou expirado.' });
         }
 
