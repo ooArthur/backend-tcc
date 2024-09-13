@@ -1,35 +1,35 @@
 const jwt = require('jsonwebtoken');
-const logger = require('../config/logger');
-const User = require('../models/User'); // Importa o modelo de usuário
+const User = require('../models/User'); // Caminho para o modelo de usuário
 
-// Configurações para o JWT
-const JWT_SECRET = process.env.JWT_SECRET; 
+const JWT_SECRET = process.env.JWT_SECRET;
 
-// Middleware de autenticação
+// Middleware para autenticar o token de acesso
 exports.authenticateToken = async (req, res, next) => {
+    // Obtenha o token do cabeçalho da requisição
     const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1]; // Obtém o token após "Bearer"
-    const refreshToken = req.cookies.refreshToken;
+    const token = authHeader && authHeader.split(' ')[1];
 
     if (!token) {
-        logger.warn('Token de autenticação não fornecido.');
-        return res.status(401).json({ message: 'Autenticação necessária.' });
+        return res.status(401).json({ message: 'Token de acesso não fornecido.' });
     }
 
     try {
-        const decoded = jwt.verify(token, JWT_SECRET); // Verifica o token
-        
-        // Busca o usuário pelo ID e verifica o UUID do token de atualização
+        // Verifica se o token de acesso é válido
+        const decoded = jwt.verify(token, JWT_SECRET);
+
+        // Busca o usuário pelo ID contido no token
         const user = await User.findById(decoded.id);
-        if (!user || user.refreshToken !== refreshToken) {
-            logger.warn('Deu ruim')
-            return res.status(403).json({ message: 'Token inválido ou expirado.' });
+
+        if (!user) {
+            return res.status(401).json({ message: 'Usuário não encontrado.' });
         }
 
-        req.user = decoded; // Adiciona as informações do usuário ao objeto req
-        next(); // Passa para o próximo middleware
+        // Adiciona o usuário à requisição
+        req.user = user;
+
+        // Continua para o próximo middleware ou rota
+        next();
     } catch (error) {
-        logger.error(`Erro ao verificar o token: ${error.message}`);
-        return res.status(403).json({ message: 'Token inválido ou expirado.' });
+        return res.status(403).json({ message: 'Token de acesso inválido ou expirado.', error: error.message });
     }
 };

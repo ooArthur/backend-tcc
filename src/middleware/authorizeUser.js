@@ -12,11 +12,7 @@ exports.authorizeUser = (req, res, next) => {
         if (!userId) {
             return res.status(400).json({ message: 'ID do usuário não fornecido.' });
         }
-
-        // Log de depuração (opcional)
-        console.log("ID da requisição:", userId);
-        console.log("ID do usuário autenticado:", req.user.id);
-
+        
         // Verifica se o usuário tem permissão para acessar o perfil (mesmo ID ou administrador)
         if (req.user.id.toString() === userId.toString() || req.user.role === 'admin') {
             return next(); // Permite a continuação da requisição

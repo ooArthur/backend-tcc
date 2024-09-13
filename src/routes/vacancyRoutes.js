@@ -9,29 +9,29 @@ const { authorizeUser } = require('../middleware/authorizeUser');
 const router = Router();
 
 // Rota para criar uma vaga
-router.post('/create-vacancy', 
+router.post('/create-vacancy',
     /* authenticateToken, 
     authorizeUser, */
-    vacancyValidationRules(), 
-    validate, 
+    vacancyValidationRules(),
+    validate,
     vacancyController.createJobVacancy
 );
 
 // Rotas para listagem
 router.get('/list-vacancies',
-    authenticateToken,
-    vacancyController.listAllJobVacancies
+   authenticateToken,
+   vacancyController.listAllJobVacancies
 );
 
-router.get('/list-vacancy/:id', 
+router.get('/list-vacancy/:id',
     /* authenticateToken,*/
     vacancyController.getJobVacancyById
 );
 
 // Rota para deletar Vagas
 router.delete('/delete-vacancy/:id',
-   /*  authenticateToken,
-    authorizeUser, */
+    /*  authenticateToken,
+     authorizeUser, */
     vacancyController.deleteJobVacancyById
 );
 
@@ -43,20 +43,20 @@ router.put('/update-vacancy/:id',
 );
 
 // Rota para listar candidatos interessados em uma vaga
-router.get('/list-interested/:id', 
+router.get('/list-interested/:id',
     /* authenticateToken, */
     vacancyController.listInterestedCandidates
 );
 
 // Rota para adicioanr candidatos interessados em uma vaga
-router.post('/add-interested', 
-   /*  authenticateToken,
-    authorizeUser, */
+router.post('/add-interested',
+    /*  authenticateToken,
+     authorizeUser, */
     vacancyController.addInterestedCandidate
 );
 
 // Rota para remover candidatos interessados em uma vaga
-router.delete('/remove-interested/:id', 
+router.delete('/remove-interested/:id',
     /* authenticateToken,
     authorizeUser, */
     vacancyController.removeInterestedCandidate
