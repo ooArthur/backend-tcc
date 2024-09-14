@@ -1,0 +1,36 @@
+2024-09-13 20:38:19 [INFO]: Server is running on port 5000
+2024-09-13 20:38:19 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 20:38:24 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/create-admin
+2024-09-13 20:38:24 [WARN]: Email e senha são obrigatórios para criar um usuário administrador.
+2024-09-13 20:38:57 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/create-admin
+2024-09-13 20:38:57 [INFO]: Novo usuário administrador criado com sucesso. Email: arthur.admin@gmail.com
+2024-09-13 20:44:17 [INFO]: Server is running on port 5000
+2024-09-13 20:44:17 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 20:45:02 [INFO]: Server is running on port 5000
+2024-09-13 20:45:02 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:00:00 [INFO]: Usuários não verificados removidos: 0
+2024-09-13 21:00:00 [INFO]: Vagas removidas: 0
+2024-09-13 21:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-09-13 21:00:00 [INFO]: Tokens expirados removidos: 0
+2024-09-13 21:02:29 [INFO]: Server is running on port 5000
+2024-09-13 21:02:29 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:05:17 [INFO]: Server is running on port 5000
+2024-09-13 21:05:17 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:05:24 [INFO]: Server is running on port 5000
+2024-09-13 21:05:24 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:05:29 [INFO]: Server is running on port 5000
+2024-09-13 21:05:30 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:06:27 [INFO]: Server is running on port 5000
+2024-09-13 21:06:28 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:06:31 [INFO]: Server is running on port 5000
+2024-09-13 21:06:33 [INFO]: Server is running on port 5000
+2024-09-13 21:06:33 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:08:44 [INFO]: IP: ::ffff:127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-09-13 21:09:11 [INFO]: Server is running on port 5000
+2024-09-13 21:09:12 [INFO]: MongoDB conectado com sucesso!
+2024-09-13 21:09:12 [INFO]: IP: ::ffff:127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-09-13 21:09:27 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/candidate/add-favorite/
+2024-09-13 21:09:28 [INFO]: Vaga de emprego com ID 66e2feeb2d94f880f1ed9905 adicionada aos favoritos do candidato com ID 66e4cd11b83415198131dd17.
+2024-09-13 21:09:42 [INFO]: IP: ::ffff:127.0.0.1 - GET /api/user/company/list-companies
+2024-09-13 21:10:04 [INFO]: IP: ::ffff:127.0.0.1 - POST /api/user/company/vacancy/create-vacancy
+2024-09-13 21:10:04 [INFO]: Vaga de emprego criada com sucesso: "TESTE TESTE TESTE" pela empresa: Exemplo Ltda (ID: 66e2feaf2d94f880f1ed98ff)

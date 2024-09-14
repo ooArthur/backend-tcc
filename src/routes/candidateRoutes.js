@@ -29,8 +29,8 @@ router.put("/update-candidate/:id",
 );
 
 // Rota para listar as vagas favoritas do Candidato
-router.get("/list-favorites/:id",
-    /* authenticateToken, */
+router.get("/list-favorites",
+    authenticateToken,
     candidateController.listFavoriteJobVacancies
 );
 
