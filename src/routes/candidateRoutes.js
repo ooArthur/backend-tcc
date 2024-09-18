@@ -5,6 +5,7 @@ const router = express.Router();
 
 const { authenticateToken } = require('../middleware/authMiddleware');
 const { authorizeUser } = require('../middleware/authorizeUser');
+const { authorizeAdmin } = require('../middleware/authorizeAdmin');
 
 // Rota para criar Candidato
 router.post("/create-candidate",
@@ -14,10 +15,11 @@ router.post("/create-candidate",
 // Rota para listar Candidatos
 router.get("/list-candidates",
     /* authenticateToken,*/
+    /* authorizeAdmin, */
     candidateController.listAllCandidates
 );
-router.get("/list-candidate/:id",
-    /* authenticateToken, */
+router.get("/list-candidate",
+    authenticateToken,
     candidateController.getCandidateById
 );
 

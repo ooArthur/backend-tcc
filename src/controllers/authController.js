@@ -5,7 +5,7 @@ const User = require('../models/User');
 
 // Configurações para o JWT
 const JWT_SECRET = process.env.JWT_SECRET;
-const JWT_EXPIRATION = '0.5m'; // Ajustado para 15 minutos
+const JWT_EXPIRATION = '30m'; // Ajustado para 15 minutos
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_REFRESH_EXPIRATION = '7d'; // Ajustado para 7 dias
 
@@ -52,7 +52,7 @@ exports.login = async (req, res) => {
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production', // Somente em HTTPS
-            sameSite: 'None',
+            sameSite: 'Strict',
         });
 
         logger.info(`Usuário autenticado com sucesso: ${email}`);
@@ -88,7 +88,7 @@ exports.refreshToken = async (req, res) => {
         res.cookie('refreshToken', newRefreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            sameSite: 'None',
+            sameSite: 'Strict',
         });
 
         logger.info(`Token de acesso renovado para o usuário: ${user.email}`);
@@ -121,7 +121,7 @@ exports.logout = async (req, res) => {
         res.clearCookie('refreshToken', {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            sameSite: 'None',
+            sameSite: 'Strict',
         });
 
         logger.info(`Usuário com e-mail ${user.email} deslogado com sucesso.`);

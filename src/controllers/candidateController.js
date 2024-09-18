@@ -92,7 +92,7 @@ exports.listAllCandidates = async (req, res) => {
 // Função para buscar um candidato pelo ID
 exports.getCandidateById = async (req, res) => {
     try {
-        const { id } = req.params;
+        const id = req.user.id;
 
         // Busca o candidato no banco de dados pelo ID
         const candidate = await Candidate.findById(id);
@@ -146,7 +146,6 @@ exports.listFavoriteJobVacancies = async (req, res) => {
 
         // Se o candidato não tiver uma lista de favoritos, retorna um erro
         if (!candidateFavorites) {
-            logger.warn(`Lista de favoritos não encontrada para o candidato com ID ${candidateId}.`);
             return res.status(404).json({ message: 'Lista de favoritos não encontrada para o candidato.' });
         }
 
