@@ -52,7 +52,7 @@ exports.login = async (req, res) => {
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production', // Somente em HTTPS
-            sameSite: 'Strict',
+            sameSite: 'Lax',
         });
 
         logger.info(`Usuário autenticado com sucesso: ${email}`);
@@ -65,7 +65,7 @@ exports.login = async (req, res) => {
 
 // Função para renovar o token de acesso
 exports.refreshToken = async (req, res) => {
-    const refreshToken = req.cookies.refreshToken;
+    const { refreshToken } = req.cookies;
 
     if (!refreshToken) {
         return res.status(400).json({ error: 'Refresh token é necessário' });
@@ -88,7 +88,7 @@ exports.refreshToken = async (req, res) => {
         res.cookie('refreshToken', newRefreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            sameSite: 'Strict',
+            sameSite: 'Lax',
         });
 
         logger.info(`Token de acesso renovado para o usuário: ${user.email}`);
@@ -121,7 +121,7 @@ exports.logout = async (req, res) => {
         res.clearCookie('refreshToken', {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            sameSite: 'Strict',
+            sameSite: 'Lax',
         });
 
         logger.info(`Usuário com e-mail ${user.email} deslogado com sucesso.`);
