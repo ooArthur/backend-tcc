@@ -29,7 +29,7 @@ const logger = createLogger({
 });
 
 // Adiciona um console logger se não estiver em produção
-if (process.env.NODE_ENV !== 'productsion') {
+if (process.env.NODE_ENV !== 'produaction') {
     logger.add(new transports.Console({
         format: format.combine(
             format.colorize(), // Adiciona cores ao log para facilitar a leitura no console
