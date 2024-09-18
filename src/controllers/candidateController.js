@@ -139,7 +139,7 @@ exports.updateCandidateById = async (req, res) => {
 // Função para listar todas as vagas favoritas de um candidato
 exports.listFavoriteJobVacancies = async (req, res) => {
     try {
-        const { id: candidateId } = req.params;  // Obtemos o ID do candidato dos parâmetros da URL
+        const candidateId = req.user.id;  // Obtemos o ID do candidato dos parâmetros da URL
 
         // Verifica se o candidato possui uma lista de favoritos
         const candidateFavorites = await CandidateFavorites.findOne({ candidateId }).populate('favoriteJobVacancies');
