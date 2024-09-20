@@ -28,7 +28,9 @@ exports.createCandidate = async (req, res) => {
             candidateIdioms,
             candidateCourses,
             candidateExperience,
-            candidateQualifications
+            candidateQualifications,
+            candidateAbout, // Novo campo
+            candidateLink // Novo campo
         } = req.body;
 
         // Verifica se o email já está registrado
@@ -62,7 +64,9 @@ exports.createCandidate = async (req, res) => {
             candidateIdioms,
             candidateCourses,
             candidateExperience,
-            candidateQualifications
+            candidateQualifications,
+            candidateAbout, // Adicionado aqui
+            candidateLink // Adicionado aqui
         });
 
         await candidateProfile.save();
@@ -160,7 +164,8 @@ exports.listFavoriteJobVacancies = async (req, res) => {
 // Função para adicionar uma vaga aos favoritos de um candidato
 exports.addFavoriteJobVacancy = async (req, res) => {
     try {
-        const { candidateId, jobVacancyId } = req.body;  // ID do candidato e da vaga no corpo da requisição
+        const candidateId = req.user.id;
+        const { jobVacancyId } = req.body;
 
         // Verifica se a vaga de emprego existe
         const jobVacancy = await JobVacancy.findById(jobVacancyId);
@@ -203,7 +208,8 @@ exports.addFavoriteJobVacancy = async (req, res) => {
 // Função para remover uma vaga dos favoritos de um candidato
 exports.removeFavoriteJobVacancy = async (req, res) => {
     try {
-        const { jobVacancyId, candidateId } = req.body;
+        const candidateId = req.user.id;
+        const { jobVacancyId } = req.body;
 
         // Verifica se o candidato possui uma lista de favoritos
         let candidateFavorites = await CandidateFavorites.findOne({ candidateId });

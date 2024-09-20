@@ -48,7 +48,9 @@ const CandidateProfileSchema = new mongoose.Schema(
         candidateIdioms: [IdiomSchema],
         candidateCourses: [CourseSchema],
         candidateExperience: [ExperienceSchema],
-        candidateQualifications: [QualificationSchema]
+        candidateQualifications: [QualificationSchema],
+        candidateAbout: { type: String },  // Novo campo
+        candidateLink: { type: String }     // Novo campo
     },
     {
         timestamps: true,

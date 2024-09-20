@@ -4,7 +4,6 @@ const candidateController = require("../controllers/candidateController");
 const router = express.Router();
 
 const { authenticateToken } = require('../middleware/authMiddleware');
-const { authorizeUser } = require('../middleware/authorizeUser');
 const { authorizeAdmin } = require('../middleware/authorizeAdmin');
 
 // Rota para criar Candidato
@@ -25,8 +24,7 @@ router.get("/list-candidate",
 
 // Rota para atualizar Candidato
 router.put("/update-candidate/:id",
-    /* authenticateToken,
-    authorizeUser, */
+    authenticateToken,
     candidateController.updateCandidateById
 );
 
@@ -38,15 +36,13 @@ router.get("/list-favorites",
 
 // Rota para adicionar uma vaga favorita para o Candidato
 router.post("/add-favorite",
-    /* authenticateToken,
-    authorizeUser, */
+    authenticateToken,
     candidateController.addFavoriteJobVacancy
 );
 
 // Rota para remover uma vaga favorita do Candidato
 router.delete("/remove-favorite",
-    /* authenticateToken,
-    authorizeUser, */
+    authenticateToken,
     candidateController.removeFavoriteJobVacancy
 );
 
