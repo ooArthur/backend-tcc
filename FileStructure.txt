@@ -46,6 +46,8 @@ backend-tcc
     │   │── router.js
     │   │── userRoutes.js
     │   └── vacancyRoutes.js
+    │── services
+    │   └── openaiVagas.js
     └── validators
         │── candidateValidator.js
         │── companyValidator.js

@@ -29,8 +29,9 @@ exports.createCandidate = async (req, res) => {
             candidateCourses,
             candidateExperience,
             candidateQualifications,
-            candidateAbout, // Novo campo
-            candidateLink // Novo campo
+            candidateAbout,
+            candidateLink,
+            areaOfInterest
         } = req.body;
 
         // Verifica se o email já está registrado
@@ -65,8 +66,9 @@ exports.createCandidate = async (req, res) => {
             candidateCourses,
             candidateExperience,
             candidateQualifications,
-            candidateAbout, // Adicionado aqui
-            candidateLink // Adicionado aqui
+            candidateAbout,
+            candidateLink,
+            areaOfInterest
         });
 
         await candidateProfile.save();
@@ -84,7 +86,7 @@ exports.listAllCandidates = async (req, res) => {
     try {
         // Busca todos os candidatos no banco de dados
         const candidates = await Candidate.find();
-        
+
         // Retorna a lista de candidatos como resposta
         res.status(200).json(candidates);
     } catch (error) {
@@ -106,7 +108,7 @@ exports.getCandidateById = async (req, res) => {
             logger.warn(`Candidato com ID ${id} não encontrado.`);
             return res.status(404).json({ message: 'Candidato não encontrado.' });
         }
-        
+
         // Retorna o candidato encontrado como resposta
         res.status(200).json(candidate);
     } catch (error) {
@@ -118,7 +120,7 @@ exports.getCandidateById = async (req, res) => {
 // Função para atualizar um candidato pelo ID
 exports.updateCandidateById = async (req, res) => {
     try {
-        const { id } = req.params;
+        const id = req.user.id;
         const updates = req.body;
 
         // Atualiza o candidato no banco de dados pelo ID
@@ -131,7 +133,7 @@ exports.updateCandidateById = async (req, res) => {
         }
 
         logger.info(`Candidato com ID ${id} atualizado com sucesso.`);
-        
+
         // Retorna o candidato atualizado como resposta
         res.status(200).json(updatedCandidate);
     } catch (error) {

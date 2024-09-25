@@ -5,9 +5,9 @@ const User = require('../models/User');
 
 // Configurações para o JWT
 const JWT_SECRET = process.env.JWT_SECRET;
-const JWT_EXPIRATION = '30m'; // Ajustado para 15 minutos
+const JWT_EXPIRATION = '30m';
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
-const JWT_REFRESH_EXPIRATION = '7d'; // Ajustado para 7 dias
+const JWT_REFRESH_EXPIRATION = '7d';
 
 // Função para gerar tokens
 const generateTokens = (user) => {

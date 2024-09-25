@@ -62,4 +62,9 @@ router.delete('/remove-interested/:id',
     vacancyController.removeInterestedCandidate
 );
 
+router.get('/recommend-jobvacancies',
+    authenticateToken,
+    vacancyController.recommendJobVacancies
+);
+
 module.exports = router;

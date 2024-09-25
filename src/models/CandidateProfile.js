@@ -49,8 +49,28 @@ const CandidateProfileSchema = new mongoose.Schema(
         candidateCourses: [CourseSchema],
         candidateExperience: [ExperienceSchema],
         candidateQualifications: [QualificationSchema],
-        candidateAbout: { type: String },  // Novo campo
-        candidateLink: { type: String }     // Novo campo
+        candidateAbout: { type: String },
+        candidateLink: { type: String },
+        areaOfInterest:{
+            type: String,
+            enum: [
+                'Tecnologia',
+                'Saúde',
+                'Educação',
+                'Finanças',
+                'Engenharia',
+                'Marketing',
+                'Vendas',
+                'Recursos Humanos',
+                'Administração',
+                'Jurídico',
+                'Logística',
+                'Atendimento ao Cliente',
+                'Design',
+                'Operações',
+                'Construção Civil'
+            ],
+        }
     },
     {
         timestamps: true,

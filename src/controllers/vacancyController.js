@@ -61,7 +61,7 @@ exports.createJobVacancy = async (req, res) => {
 
         // Salvando no banco de dados
         const savedJobVacancy = await newJobVacancy.save();
-        
+
         logger.info(`Vaga de emprego criada com sucesso: "${jobTitle}" pela empresa: ${company.companyName} (ID: ${companyId})`);
 
         // Retornando a resposta com o status 201 (Criado) e a vaga criada
@@ -252,5 +252,87 @@ exports.removeInterestedCandidate = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao remover candidato da vaga: ${error.message}`);
         res.status(500).json({ message: 'Erro ao remover candidato da vaga', error: error.message });
+    }
+};
+
+exports.recommendJobVacancies = async (req, res) => {
+    try {
+        const candidateId = req.user.id;
+
+        // Buscar o perfil do candidato
+        const candidate = await Candidate.findById(candidateId);
+        if (!candidate) {
+            logger.warn(`Candidato com ID ${candidateId} não encontrado.`);
+            return res.status(404).json({ message: 'Candidato não encontrado.' });
+        }
+
+        // Requisitos do candidato
+        const qualifications = candidate.candidateQualifications.map(q => q.description); // Extrair as descrições
+        const { desiredRole, candidateTargetSalary, desiredState, areaOfInterest } = candidate;
+
+        // Definir faixa de salário aceitável (flexível até 2000 para baixo)
+        const minSalary = candidateTargetSalary - 2000;
+        const maxSalary = candidateTargetSalary + 2000;
+
+        // Construir a consulta para buscar vagas recomendadas
+        const query = {
+            jobArea: areaOfInterest,  // A vaga deve estar na mesma área de interesse do candidato
+            $or: [
+                // Verifica se as qualificações do candidato estão nas desejadas
+                { desiredSkills: { $in: qualifications } },
+                // Verifica se a vaga está no estado desejado
+                { 'jobLocation.state': desiredState },
+                // Verifica se o salário da vaga está dentro da faixa aceitável
+                {
+                    $or: [
+                        { salary: { $gte: minSalary, $lte: maxSalary } },
+                        { salary: null } // Aceitar vagas sem informação de salário
+                    ]
+                }
+            ]
+        };
+
+        // Buscar vagas que correspondem ao perfil do candidato
+        const jobVacancies = await JobVacancy.find(query);
+
+        // Filtrar vagas que atendem a pelo menos duas condições
+        const recommendedJobVacancies = jobVacancies.filter(vacancy => {
+            let conditionsMet = 0;
+
+            // Verificar área de interesse (sempre atendido pelo query)
+            conditionsMet++;
+
+            // Verificar se as qualificações do candidato estão nas desejadas pela vaga
+            if (vacancy.desiredSkills.some(skill => qualifications.includes(skill))) {
+                conditionsMet++;
+            }
+
+            // Verificar se a vaga está no estado desejado
+            if (vacancy.jobLocation.state === desiredState) {
+                conditionsMet++;
+            }
+
+            // Verificar se o salário da vaga está dentro da faixa aceitável
+            const salary = vacancy.salary ? parseInt(vacancy.salary) : null;
+            if (!salary || (salary >= minSalary && salary <= maxSalary)) {
+                conditionsMet++;
+            }
+
+            // Retornar vagas que atendam pelo menos duas condições
+            return conditionsMet >= 2;
+        });
+
+        if (recommendedJobVacancies.length === 0) {
+            logger.info(`Nenhuma vaga recomendada para o candidato com ID ${candidateId}.`);
+            return res.status(200).json({ message: 'Nenhuma vaga recomendada no momento.' });
+        }
+
+        logger.info(`Vagas recomendadas encontradas para o candidato com ID ${candidateId}.`);
+
+        // Retorna as vagas recomendadas
+        res.status(200).json(recommendedJobVacancies);
+    } catch (error) {
+        logger.error(`Erro ao recomendar vagas: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao recomendar vagas', error: error.message });
     }
 };

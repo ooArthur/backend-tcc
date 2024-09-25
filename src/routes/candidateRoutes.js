@@ -23,7 +23,7 @@ router.get("/list-candidate",
 );
 
 // Rota para atualizar Candidato
-router.put("/update-candidate/:id",
+router.put("/update-candidate",
     authenticateToken,
     candidateController.updateCandidateById
 );
