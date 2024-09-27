@@ -50,8 +50,8 @@ router.get('/list-interested/:id',
 
 // Rota para adicioanr candidatos interessados em uma vaga
 router.post('/add-interested',
-    /*  authenticateToken,
-     authorizeUser, */
+    authenticateToken,
+     /*  authorizeUser, */
     vacancyController.addInterestedCandidate
 );
 

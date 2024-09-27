@@ -1,0 +1,82 @@
+2024-09-27 09:59:00 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `Avançado` is not a valid enum value for path `level`.
+2024-09-27 09:59:08 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `tesre` is not a valid enum value for path `level`.
+2024-09-27 09:59:21 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `Avancadgerg` is not a valid enum value for path `level`.
+2024-09-27 10:03:17 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `Intermediário` is not a valid enum value for path `level`.
+2024-09-27 10:03:23 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `Avançado` is not a valid enum value for path `level`.
+2024-09-27 10:03:26 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `Fluente` is not a valid enum value for path `level`.
+2024-09-27 10:04:25 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `Avançado` is not a valid enum value for path `level`.
+2024-09-27 10:04:37 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `Avançado` is not a valid enum value for path `level`.
+2024-09-27 11:04:02 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:04:02 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:04:06 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:04:06 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:04:14 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:04:14 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:05:31 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:05:31 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:07:09 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:07:09 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:07:09 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:07:09 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:12 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:12 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:12 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:13 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:40 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:41 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:41 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:08:41 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:09:37 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:09:37 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:10:03 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:10:03 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:11:21 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:11:21 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:11:57 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:11:57 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:12:26 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:12:27 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:12:48 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:12:49 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:12:55 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:12:55 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:03 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:03 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:10 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:10 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:16 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:16 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:21 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:13:22 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:15:39 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:15:39 [ERROR]: Detalhes do erro: {"error":"Authorization header is correct, but the token seems invalid"}
+2024-09-27 11:15:39 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:15:39 [ERROR]: Detalhes do erro: {"error":"Authorization header is correct, but the token seems invalid"}
+2024-09-27 11:16:36 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:16:36 [ERROR]: Detalhes do erro: {"error":"Authorization header is correct, but the token seems invalid"}
+2024-09-27 11:16:36 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 400
+2024-09-27 11:16:36 [ERROR]: Detalhes do erro: {"error":"Authorization header is correct, but the token seems invalid"}
+2024-09-27 11:20:11 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 503
+2024-09-27 11:20:11 [ERROR]: Detalhes do erro: {"error":"Model openai-community/gpt2 is currently loading","estimated_time":21.923635482788086}
+2024-09-27 11:20:12 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 503
+2024-09-27 11:20:12 [ERROR]: Detalhes do erro: {"error":"Model openai-community/gpt2 is currently loading","estimated_time":21.923635482788086}
+2024-09-27 11:20:33 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 503
+2024-09-27 11:20:33 [ERROR]: Detalhes do erro: {"error":"Model openai-community/gpt2 is currently loading","estimated_time":21.923635482788086}
+2024-09-27 11:20:34 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 503
+2024-09-27 11:20:34 [ERROR]: Detalhes do erro: {"error":"Model openai-community/gpt2 is currently loading","estimated_time":21.923635482788086}
+2024-09-27 13:20:38 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 429
+2024-09-27 13:21:03 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 429
+2024-09-27 13:21:03 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 429
+2024-09-27 13:21:15 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 429
+2024-09-27 13:21:15 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 429
+2024-09-27 13:21:16 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 429
+2024-09-27 13:21:16 [ERROR]: Erro ao buscar recomendações da Hugging Face: Request failed with status code 429
+2024-09-27 13:27:35 [ERROR]: Erro ao buscar recomendações da Hugging Face: Todas as tentativas de chamada à API falharam
+2024-09-27 13:27:35 [ERROR]: Erro ao buscar recomendações da Hugging Face: Todas as tentativas de chamada à API falharam
+2024-09-27 13:27:54 [ERROR]: Erro ao buscar recomendações da Hugging Face: Todas as tentativas de chamada à API falharam
+2024-09-27 13:27:54 [ERROR]: Erro ao buscar recomendações da Hugging Face: Todas as tentativas de chamada à API falharam
+2024-09-27 13:28:03 [ERROR]: Erro ao buscar recomendações da Hugging Face: Todas as tentativas de chamada à API falharam
+2024-09-27 13:28:23 [ERROR]: Erro ao buscar recomendações da Hugging Face: Todas as tentativas de chamada à API falharam
+2024-09-27 16:01:39 [ERROR]: Erro ao criar denúncia: Cannot read properties of undefined (reading 'id')
+2024-09-27 16:01:54 [ERROR]: Erro ao criar denúncia: Cannot read properties of undefined (reading 'id')
+2024-09-27 16:02:04 [ERROR]: Erro ao criar denúncia: Cannot read properties of undefined (reading 'id')

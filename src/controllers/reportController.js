@@ -104,7 +104,8 @@ exports.getReportById = async (req, res) => {
 // Criar uma nova denúncia
 exports.createReport = async (req, res) => {
     try {
-        const { type, targetId, description, reportedBy } = req.body;
+        const { type, targetId, description } = req.body;
+        const reportedBy = req.user.id;
 
         // Validação
         if (!type || !targetId || !description || !reportedBy) {

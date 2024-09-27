@@ -178,7 +178,8 @@ exports.listInterestedCandidates = async (req, res) => {
 // Função para adicionar um candidato interessado em uma vaga
 exports.addInterestedCandidate = async (req, res) => {
     try {
-        const { candidateId, jobVacancyId } = req.body;  // ID do candidato e da vaga no corpo da requisição
+        const candidateId = req.user.id;
+        const { jobVacancyId } = req.body;  // ID do candidato e da vaga no corpo da requisição
 
         // Verifica se a vaga de emprego existe
         const jobVacancy = await JobVacancy.findById(jobVacancyId);
@@ -319,7 +320,7 @@ exports.recommendJobVacancies = async (req, res) => {
             }
 
             // Retornar vagas que atendam pelo menos duas condições
-            return conditionsMet >= 2;
+            return conditionsMet >= 3;
         });
 
         if (recommendedJobVacancies.length === 0) {

@@ -7,8 +7,8 @@ const { authorizeAdmin } = require('../middleware/authorizeAdmin');
 const { authorizeUser } = require('../middleware/authorizeUser');
 
 router.post('/create-report',
-    /* authenticateToken,
-    authorizeUser, */
+    authenticateToken,
+    /* authorizeUser, */
     reportController.createReport
 );
 router.delete('/delete-report/:id',

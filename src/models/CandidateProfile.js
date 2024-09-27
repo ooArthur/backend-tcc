@@ -5,7 +5,7 @@ const IdiomSchema = new mongoose.Schema({
     name: { type: String },
     level: { 
         type: String, 
-        enum: ['Basico', 'Intermediario', 'Avancado']
+        enum: ['Basico', 'Intermediario', 'Avancado', 'Fluente']
     }
 });
 
