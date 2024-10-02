@@ -14,15 +14,15 @@ const JobVacancySchema = mongoose.Schema(
             workingHours: { type: String },
             workingDays: {
                 type: [String],
-                enum: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-                default: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+                enum: ['Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado', 'Domingo'],
+                default: ['Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira']
             }
         },
         requiredQualifications: [{ type: String }],
         desiredSkills: [{ type: String }],
         employmentType: {
             type: String,
-            enum: ['Full-time', 'Part-time', 'Contract', 'Temporary'],
+            enum: ['CLT', 'PJ', 'Temporário', 'Jovem Aprendiz', 'Estágio'],
             required: true
         },
         applicationDeadline: { type: Date },

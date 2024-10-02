@@ -4,7 +4,6 @@ const reportController = require("../controllers/reportController");
 const router = express.Router();
 const { authenticateToken } = require('../middleware/authMiddleware');
 const { authorizeAdmin } = require('../middleware/authorizeAdmin');
-const { authorizeUser } = require('../middleware/authorizeUser');
 
 router.post('/create-report',
     authenticateToken,

@@ -76,7 +76,7 @@ exports.createCandidate = async (req, res) => {
 
         res.status(201).json({ message: 'Candidato criado com sucesso', candidateProfile });
     } catch (error) {
-        logger.error(`Erro ao criar candidato: ${error.message}`);
+        logger.error(`Erro ao criar candidato: ${error.message}` + "Requisição:" + req.body);
         res.status(500).json({ error: 'Erro ao criar candidato', details: error.message });
     }
 };

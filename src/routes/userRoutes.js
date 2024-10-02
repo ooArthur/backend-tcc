@@ -6,7 +6,6 @@ const { userValidationRules } = require('../validators/userValidator');
 const { validate } = require('../middleware/validate');
 const { authenticateToken } = require('../middleware/authMiddleware');
 const { authorizeAdmin } = require('../middleware/authorizeAdmin');
-const { authorizeUser } = require('../middleware/authorizeUser');
 
 const router = express.Router();
 

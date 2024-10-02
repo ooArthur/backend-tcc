@@ -5,7 +5,6 @@ const companyController = require("../controllers/companyController");
 const router = express.Router();
 
 const { authenticateToken } = require('../middleware/authMiddleware');
-const { authorizeUser } = require('../middleware/authorizeUser');
 
 router.use("/vacancy", vacancyRoutes);
 

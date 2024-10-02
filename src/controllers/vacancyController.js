@@ -1,6 +1,7 @@
 const JobVacancy = require('../models/JobVacancy');
 const Company = require('../models/CompanyProfile');
 const Candidate = require('../models/CandidateProfile');
+const JobApplicationStatus = require('../models/JobApplicationStatus');
 const logger = require('../config/logger');
 
 // Função para remover vagas antigas
@@ -204,7 +205,18 @@ exports.addInterestedCandidate = async (req, res) => {
         // Adiciona o candidato à lista de interessados
         jobVacancy.interestedCandidates.push(candidateId);
 
-        // Salva as atualizações
+        // Cria o status de candidatura com o status inicial como "enviado"
+        const newApplicationStatus = new JobApplicationStatus({
+            candidateId,
+            jobVacancyId,
+            companyId: jobVacancy.companyId,
+            status: 'Currículo Enviado'
+        });
+
+        // Salva a aplicação de status no banco de dados
+        await newApplicationStatus.save();
+
+        // Salva as atualizações na vaga
         await jobVacancy.save();
         logger.info(`Candidato com ID ${candidateId} adicionado à vaga com ID ${jobVacancyId}.`);
 
@@ -218,8 +230,8 @@ exports.addInterestedCandidate = async (req, res) => {
 // Função para remover um candidato interessado de uma vaga
 exports.removeInterestedCandidate = async (req, res) => {
     try {
-        const jobVacancyId = req.params.id; // ID da vaga na URL
-        const { candidateId } = req.body;  // ID do candidato no corpo da requisição
+        const { jobVacancyId } = req.body;
+        const candidateId = req.user.id;
 
         // Verifica se a vaga de emprego existe
         const jobVacancy = await JobVacancy.findById(jobVacancyId);
@@ -244,6 +256,12 @@ exports.removeInterestedCandidate = async (req, res) => {
 
         // Remove o candidato da lista de interessados
         jobVacancy.interestedCandidates.splice(index, 1);
+
+        // Remove o status da candidatura do banco de dados
+        await JobApplicationStatus.deleteOne({
+            candidateId,
+            jobVacancyId
+        });
 
         // Salva as atualizações
         await jobVacancy.save();
@@ -335,5 +353,84 @@ exports.recommendJobVacancies = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao recomendar vagas: ${error.message}`);
         res.status(500).json({ message: 'Erro ao recomendar vagas', error: error.message });
+    }
+};
+
+// Função para obter o status da candidatura para o candidato
+exports.getJobApplicationStatusForCandidate = async (req, res) => {
+    try {
+        const candidateId = req.user.id; // ID do candidato logado
+        const { jobVacancyId } = req.body; // Recebe o ID da vaga do corpo da requisição
+
+        const applicationStatus = await JobApplicationStatus.findOne({
+            candidateId,
+            jobVacancyId
+        }).populate('jobVacancyId', 'jobTitle').populate('companyId', 'companyName');
+
+        if (!applicationStatus) {
+            logger.warn(`Candidatura para a vaga com ID ${jobVacancyId} e candidato com ID ${candidateId} não encontrada.`);
+            return res.status(404).json({ message: 'Candidatura não encontrada.' });
+        }
+
+        res.status(200).json(applicationStatus);
+    } catch (error) {
+        logger.error(`Erro ao buscar status da candidatura: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao buscar status da candidatura', error: error.message });
+    }
+};
+
+
+// Função para a empresa atualizar o status da candidatura
+exports.setJobApplicationStatusByCompany = async (req, res) => {
+    try {
+        const companyId = req.user.id;
+        const { candidateId, jobVacancyId, status, comments } = req.body;
+
+        const jobVacancy = await JobVacancy.findOne({ _id: jobVacancyId, companyId });
+        if (!jobVacancy) {
+            logger.warn(`Vaga com ID ${jobVacancyId} não pertence à empresa com ID ${companyId}.`);
+            return res.status(404).json({ message: 'Vaga não encontrada para a empresa.' });
+        }
+
+        const application = await JobApplicationStatus.findOne({
+            candidateId,
+            jobVacancyId
+        });
+
+        if (!application) {
+            logger.warn(`Candidatura para o candidato com ID ${candidateId} e vaga com ID ${jobVacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Candidatura não encontrada.' });
+        }
+
+        application.status = status;
+        application.comments = comments || application.comments;
+        await application.save();
+
+        logger.info(`Status da candidatura atualizado para o candidato com ID ${candidateId} e vaga com ID ${jobVacancyId}. Novo status: ${status}`);
+
+        res.status(200).json(application);
+    } catch (error) {
+        logger.error(`Erro ao atualizar o status da candidatura: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao atualizar o status da candidatura', error: error.message });
+    }
+};
+
+exports.listAppliedVacancies = async (req, res) => {
+    try {
+        const candidateId = req.user.id;
+
+        const appliedVacancies = await JobVacancy.find({
+            interestedCandidates: candidateId
+        }).populate('companyId', 'companyName')
+            .select('jobTitle jobDescription salary jobArea jobLocation');
+
+        if (!appliedVacancies || appliedVacancies.length === 0) {
+            return res.status(200).json({ message: 'Nenhuma candidatura encontrada.' });
+        }
+
+        res.status(200).json(appliedVacancies);
+    } catch (error) {
+        logger.error(`Erro ao listar candidaturas: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao listar candidaturas', error: error.message });
     }
 };

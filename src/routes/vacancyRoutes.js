@@ -4,7 +4,6 @@ const vacancyController = require('../controllers/vacancyController');
 const { vacancyValidationRules } = require('../validators/vacancyValidator');
 const { validate } = require('../middleware/validate');
 const { authenticateToken } = require('../middleware/authMiddleware');
-const { authorizeUser } = require('../middleware/authorizeUser');
 
 const router = Router();
 
@@ -43,7 +42,7 @@ router.put('/update-vacancy/:id',
 );
 
 // Rota para listar candidatos interessados em uma vaga
-router.get('/list-interested/:id',
+router.get('/list-interested',
     /* authenticateToken, */
     vacancyController.listInterestedCandidates
 );
@@ -56,15 +55,30 @@ router.post('/add-interested',
 );
 
 // Rota para remover candidatos interessados em uma vaga
-router.delete('/remove-interested/:id',
-    /* authenticateToken,
-    authorizeUser, */
+router.delete('/remove-interested',
+    authenticateToken,
+    /* authorizeUser, */
     vacancyController.removeInterestedCandidate
 );
 
 router.get('/recommend-jobvacancies',
     authenticateToken,
     vacancyController.recommendJobVacancies
+);
+
+router.get('/vacancy-status',
+    authenticateToken,
+    vacancyController.getJobApplicationStatusForCandidate
+);
+
+router.post('/vacancy-status/update',
+    authenticateToken,
+    vacancyController.setJobApplicationStatusByCompany
+);
+
+router.get('/vacancies-applied',
+    authenticateToken,
+    vacancyController.listAppliedVacancies
 );
 
 module.exports = router;
