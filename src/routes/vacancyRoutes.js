@@ -68,7 +68,7 @@ router.get('/recommend-jobvacancies',
 
 router.get('/vacancy-status',
     authenticateToken,
-    vacancyController.getJobApplicationStatusForCandidate
+    vacancyController.getJobApplicationsAndStatusForCandidate
 );
 
 router.post('/vacancy-status/update',
