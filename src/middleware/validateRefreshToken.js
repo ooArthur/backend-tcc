@@ -15,11 +15,17 @@ exports.validateRefreshToken = async (req, res, next) => {
     try {
         const decoded = jwt.verify(refreshToken, JWT_REFRESH_SECRET);
 
-        // Busca o usuário pelo ID decodificado e o token de refresh
+        // Busca o usuário pelo ID decodificado
         const user = await User.findById(decoded.id);
 
-        if (!user || user.refreshToken !== refreshToken) {
-            logger.warn('Usuário não encontrado ou token de atualização inválido.');
+        if (!user) {
+            logger.warn('Usuário não encontrado.');
+            return res.status(401).json({ error: 'Usuário não encontrado' });
+        }
+
+        // Verifica se o refreshToken do usuário na base de dados corresponde ao que foi recebido
+        if (user.refreshToken !== refreshToken) {
+            logger.warn('Token de atualização inválido para o usuário.');
             return res.status(401).json({ error: 'Token inválido' });
         }
 
@@ -28,6 +34,6 @@ exports.validateRefreshToken = async (req, res, next) => {
         next();
     } catch (error) {
         logger.error(`Erro ao validar token de atualização: ${error.message}`);
-        res.status(403).json({ error: 'Token de atualização inválido ou expirado', details: error.message });
+        return res.status(403).json({ error: 'Token de atualização inválido ou expirado', details: error.message });
     }
 };

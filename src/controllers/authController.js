@@ -44,8 +44,7 @@ exports.login = async (req, res) => {
         }
 
         const { accessToken, refreshToken } = generateTokens(user);
-
-        user.refreshToken = refreshToken;
+        user.refreshToken = refreshToken; // Salva o novo refresh token no usuário
 
         await user.save();
 
@@ -73,16 +72,22 @@ exports.refreshToken = async (req, res) => {
 
     try {
         const decoded = jwt.verify(refreshToken, JWT_REFRESH_SECRET);
+        const user = await User.findById(decoded.id);
 
-        const user = await User.findOne({ _id: decoded.id });
-        if (!user || user.refreshToken !== refreshToken) {
-            logger.warn('Usuário não encontrado ou token de atualização inválido.');
+        if (!user) {
+            logger.warn('Usuário não encontrado.');
+            return res.status(401).json({ error: 'Usuário não encontrado' });
+        }
+
+        // Verifica se o refreshToken do usuário na base de dados corresponde ao que foi recebido
+        if (user.refreshToken !== refreshToken) {
+            logger.warn('Token de atualização inválido para o usuário.');
             return res.status(401).json({ error: 'Token inválido' });
         }
 
         const { accessToken, refreshToken: newRefreshToken } = generateTokens(user);
+        user.refreshToken = newRefreshToken; // Atualiza o refresh token
 
-        user.refreshToken = newRefreshToken;
         await user.save();
 
         res.cookie('refreshToken', newRefreshToken, {
