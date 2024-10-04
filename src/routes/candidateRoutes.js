@@ -4,7 +4,7 @@ const candidateController = require("../controllers/candidateController");
 const router = express.Router();
 
 const { authenticateToken } = require('../middleware/authMiddleware');
-const { authorizeAdmin } = require('../middleware/authorizeAdmin');
+const { authorizeRoles } = require('../middleware/authorizeRoles');
 
 // Rota para criar Candidato
 router.post("/create-candidate",
@@ -14,7 +14,7 @@ router.post("/create-candidate",
 // Rota para listar Candidatos
 router.get("/list-candidates",
     /* authenticateToken,*/
-    /* authorizeAdmin, */
+    /* authorizeRoles, */
     candidateController.listAllCandidates
 );
 router.get("/list-candidate",

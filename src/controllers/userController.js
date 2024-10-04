@@ -28,6 +28,14 @@ exports.removeUnverifiedUsers = async () => {
     }
 };
 
+exports.getUserRole = (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({ message: 'Usuário não autenticado.' });
+    }
+
+    res.status(200).json({ role: req.user.role });
+}
+
 exports.createAdminUser = async (req, res) => {
     try {
         const { email, password } = req.body;

@@ -5,7 +5,7 @@ const userController = require('../controllers/userController');
 const { userValidationRules } = require('../validators/userValidator');
 const { validate } = require('../middleware/validate');
 const { authenticateToken } = require('../middleware/authMiddleware');
-const { authorizeAdmin } = require('../middleware/authorizeAdmin');
+const { authorizeRoles } = require('../middleware/authorizeRoles');
 
 const router = express.Router();
 
@@ -14,18 +14,18 @@ router.use('/candidate', candidateRoutes);
 
 router.post('/create-admin',
     /* authenticateToken,
-    authorizeAdmin, */
+    authorizeRoles, */
     userController.createAdminUser
 );
 // Rotas para Listar Usuários
 router.get('/list-users', 
     /* authenticateToken, 
-    authorizeAdmin, */
+    authorizeRoles, */
     userController.listAllUsers
 );
 router.get('/list-user/:id', 
     /* authenticateToken, 
-    authorizeAdmin, */
+    authorizeRoles, */
     userController.getUserById
 );
 // Rotas para Atualizar Usuários
@@ -49,6 +49,11 @@ router.post('/forgot-password',
 // Rota para redefinir a senha
 router.post('/reset-password',
     userController.resetPassword
+);
+
+router.get('/me',
+    authenticateToken,
+    userController.getUserRole
 );
 
 module.exports = router;

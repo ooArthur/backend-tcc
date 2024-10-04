@@ -24,8 +24,13 @@ exports.authenticateToken = async (req, res, next) => {
             return res.status(401).json({ message: 'Usuário não encontrado.' });
         }
 
-        // Adiciona o usuário à requisição
-        req.user = user;
+        // Adiciona o usuário e o cargo (role) à requisição
+        req.user = {
+            id: user._id,
+            role: user.role
+        };
+
+        console.log(decoded)
 
         // Continua para o próximo middleware ou rota
         next();

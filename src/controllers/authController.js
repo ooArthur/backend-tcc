@@ -12,7 +12,7 @@ const JWT_REFRESH_EXPIRATION = '7d';
 // Função para gerar tokens
 const generateTokens = (user) => {
     const accessToken = jwt.sign(
-        { id: user._id },
+        { id: user._id, role: user.role },
         JWT_SECRET,
         { expiresIn: JWT_EXPIRATION }
     );
@@ -45,7 +45,7 @@ exports.login = async (req, res) => {
 
         const { accessToken, refreshToken } = generateTokens(user);
         user.refreshToken = refreshToken; // Salva o novo refresh token no usuário
-
+        
         await user.save();
 
         res.cookie('refreshToken', refreshToken, {
