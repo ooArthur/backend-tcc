@@ -18,8 +18,8 @@ router.get("/list-companies",
 /*     authenticateToken,
  */    companyController.listAllCompanies
 );
-router.get("/list-company/:id",
-    /* authenticateToken,*/
+router.get("/list-company",
+    authenticateToken,
     companyController.getCompanyById
 );
 

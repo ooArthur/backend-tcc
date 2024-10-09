@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema(
         role: {
             type: String,
             required: true,
-            enum: ['admin', 'company', 'candidate'],
+            enum: ['Admin', 'Company', 'Candidate'],
             default: 'candidate'
         },
         emailVerified: {

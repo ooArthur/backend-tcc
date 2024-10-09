@@ -60,7 +60,7 @@ exports.createAdminUser = async (req, res) => {
         const newUser = new User({
             email: email,
             password: hashedPassword,
-            role: 'admin',
+            role: 'Admin',
             emailVerified: true // Define como verdadeiro se você deseja que o e-mail esteja verificado por padrão
         });
 

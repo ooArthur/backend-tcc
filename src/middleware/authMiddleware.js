@@ -29,9 +29,7 @@ exports.authenticateToken = async (req, res, next) => {
             id: user._id,
             role: user.role
         };
-
-        console.log(decoded)
-
+        
         // Continua para o próximo middleware ou rota
         next();
     } catch (error) {

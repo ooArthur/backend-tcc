@@ -79,7 +79,7 @@ exports.listAllCompanies = async (req, res) => {
 // Função para buscar uma empresa pelo ID
 exports.getCompanyById = async (req, res) => {
     try {
-        const { id } = req.params;
+        const id = req.user.id;
 
         // Busca a empresa no banco de dados pelo ID
         const company = await Company.findById(id);
