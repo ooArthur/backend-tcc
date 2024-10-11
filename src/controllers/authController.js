@@ -37,6 +37,12 @@ exports.login = async (req, res) => {
             return res.status(401).json({ error: 'Credenciais inválidas' });
         }
 
+        // Verifica se o usuário está banido
+        if (user.banned) {
+            logger.warn(`Tentativa de login de um usuário banido: ${email}`);
+            return res.status(403).json({ error: 'Usuário banido' });
+        }
+
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
             logger.warn(`Tentativa de login com senha incorreta para o e-mail: ${email}`);
@@ -77,6 +83,12 @@ exports.refreshToken = async (req, res) => {
         if (!user) {
             logger.warn('Usuário não encontrado.');
             return res.status(401).json({ error: 'Usuário não encontrado' });
+        }
+
+        // Verifica se o usuário está banido
+        if (user.banned) {
+            logger.warn(`Tentativa de renovação de token de um usuário banido: ${user.email}`);
+            return res.status(403).json({ error: 'Usuário banido' });
         }
 
         // Verifica se o refreshToken do usuário na base de dados corresponde ao que foi recebido

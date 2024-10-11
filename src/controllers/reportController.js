@@ -33,7 +33,11 @@ exports.getReports = async (req, res) => {
             return {
                 id: report._id,
                 type: report.type,
-                target: targetDetails, // Inclui todos os detalhes do alvo da denúncia
+                target: {
+                    ...targetDetails._doc,
+                    banned: targetDetails.banned,  // Inclui status de banimento
+                    warnings: targetDetails.warnings  // Inclui número de avisos
+                },
                 description: report.description,
                 reportedBy: {
                     id: report.reportedBy._id,
@@ -86,7 +90,11 @@ exports.getReportById = async (req, res) => {
         res.status(200).json({
             id: report._id,
             type: report.type,
-            target: targetDetails, // Inclui todos os detalhes do alvo da denúncia
+            target: {
+                ...targetDetails._doc,
+                banned: targetDetails.banned,  // Inclui status de banimento
+                warnings: targetDetails.warnings  // Inclui número de avisos
+            },
             description: report.description,
             reportedBy: {
                 id: report.reportedBy._id,
@@ -146,5 +154,103 @@ exports.deleteReport = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao excluir denúncia: ${error.message}`);
         res.status(500).json({ message: 'Erro ao excluir denúncia', error: error.message });
+    }
+};
+
+// Emitir aviso para Candidato ou Empresa
+exports.giveWarning = async (req, res) => {
+    try {
+        const { type, targetId } = req.body;
+
+        // Validar o tipo (empresa ou candidato)
+        if (!['company', 'candidate'].includes(type)) {
+            return res.status(400).json({ message: 'Tipo inválido. Deve ser company ou candidate.' });
+        }
+
+        let target;
+
+        // Buscar a entidade alvo (empresa ou candidato)
+        if (type === 'company') {
+            target = await Company.findById(targetId).exec();
+        } else if (type === 'candidate') {
+            target = await Candidate.findById(targetId).exec();
+        }
+
+        // Verificar se o alvo foi encontrado
+        if (!target) {
+            return res.status(404).json({ message: `${type} não encontrado.` });
+        }
+
+        // Incrementar o número de avisos
+        target.warnings = (target.warnings || 0) + 1;
+
+        // Se os avisos forem >= 5, banir o alvo
+        if (target.warnings >= 5) {
+            target.banned = true;  // Marca a conta como banida
+            logger.info(`Conta ${targetId} foi banida após 5 avisos.`);
+        }
+
+        await target.save(); // Salva as alterações no banco
+
+        res.status(200).json({ message: `${type} recebeu um aviso. Total de avisos: ${target.warnings}` });
+    } catch (error) {
+        logger.error(`Erro ao emitir aviso: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao emitir aviso', error: error.message });
+    }
+};
+
+// Função para exibir avisos e contas banidas
+exports.getWarningsAndBannedAccounts = async (req, res) => {
+    try {
+        // Contar o número total de avisos e contas banidas de empresas
+        const companiesWithWarnings = await Company.aggregate([
+            {
+                $match: { warnings: { $gte: 1 } }
+            },
+            {
+                $group: {
+                    _id: null,
+                    totalWarnings: { $sum: "$warnings" }, // Soma o total de avisos
+                    bannedCount: { $sum: { $cond: [{ $eq: ["$banned", true] }, 1, 0] } } // Conta as empresas banidas
+                }
+            }
+        ]);
+
+        // Contar o número total de avisos e contas banidas de candidatos
+        const candidatesWithWarnings = await Candidate.aggregate([
+            {
+                $match: { warnings: { $gte: 1 } } // Busca candidatos com ao menos 1 aviso
+            },
+            {
+                $group: {
+                    _id: null,
+                    totalWarnings: { $sum: "$warnings" }, // Soma o total de avisos
+                    bannedCount: { $sum: { $cond: [{ $eq: ["$banned", true] }, 1, 0] } } // Conta os candidatos banidos
+                }
+            }
+        ]);
+
+        // Extrair os resultados
+        const companyWarnings = companiesWithWarnings[0] || { totalWarnings: 0, bannedCount: 0 };
+        const candidateWarnings = candidatesWithWarnings[0] || { totalWarnings: 0, bannedCount: 0 };
+
+        // Somar avisos e contas banidas de empresas e candidatos
+        const totalWarnings = companyWarnings.totalWarnings + candidateWarnings.totalWarnings;
+        const totalBanned = companyWarnings.bannedCount + candidateWarnings.bannedCount;
+
+        logger.info('Consulta de avisos e contas banidas realizada com sucesso.');
+
+        // Retornar os dados no formato esperado para o dashboard
+        res.status(200).json({
+            totalWarnings,
+            totalBanned,
+            companyWarnings: companyWarnings.totalWarnings,
+            candidateWarnings: candidateWarnings.totalWarnings,
+            companyBanned: companyWarnings.bannedCount,
+            candidateBanned: candidateWarnings.bannedCount
+        });
+    } catch (error) {
+        logger.error(`Erro ao consultar avisos e contas banidas: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao consultar avisos e contas banidas', error: error.message });
     }
 };

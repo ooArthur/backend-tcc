@@ -28,14 +28,13 @@ const JobApplicationStatusSchema = new mongoose.Schema(
             default: 'Currículo Enviado',
             required: true
         },
-        comments: { type: String }, // Comentários adicionais, se houver
+        comments: { type: String },
     },
     {
         timestamps: true
     }
 );
 
-// Criando o índice composto para evitar duplicações de candidaturas para a mesma vaga
 JobApplicationStatusSchema.index({ jobVacancyId: 1, candidateId: 1 }, { unique: true });
 
 module.exports = mongoose.model('JobApplicationStatus', JobApplicationStatusSchema);

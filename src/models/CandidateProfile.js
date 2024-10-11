@@ -70,7 +70,9 @@ const CandidateProfileSchema = new mongoose.Schema(
                 'Operações',
                 'Construção Civil'
             ],
-        }
+        },
+        warnings: { type: Number, default: 0 }, // Contador de avisos
+        banned: { type: Boolean, default: false }, // Status de banimento
     },
     {
         timestamps: true,

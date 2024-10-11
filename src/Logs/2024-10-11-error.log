@@ -1,0 +1,2 @@
+2024-10-11 08:30:36 [ERROR]: Empresa com ID 66d1b3594c38f26fa0e561aa não encontrada.
+2024-10-11 11:22:02 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `` is not a valid enum value for path `level`.
