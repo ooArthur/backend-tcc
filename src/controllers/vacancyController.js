@@ -196,6 +196,24 @@ exports.addInterestedCandidate = async (req, res) => {
             return res.status(404).json({ message: 'Candidato não encontrado.' });
         }
 
+        // Obtém a data de início e fim do dia atual
+        const startOfDay = new Date();
+        startOfDay.setHours(0, 0, 0, 0);  // 00:00:00 de hoje
+        const endOfDay = new Date();
+        endOfDay.setHours(23, 59, 59, 999);  // 23:59:59 de hoje
+
+        // Verifica quantas candidaturas o candidato já fez hoje
+        const dailyApplicationsCount = await JobApplicationStatus.countDocuments({
+            candidateId: candidateId,
+            createdAt: { $gte: startOfDay, $lte: endOfDay }
+        });
+
+        // Se o candidato já atingiu o limite de 10 candidaturas no dia, retorna um erro
+        if (dailyApplicationsCount >= 10) {
+            logger.warn(`Candidato com ID ${candidateId} já atingiu o limite diário de 10 candidaturas.`);
+            return res.status(400).json({ message: 'Você atingiu o limite diário de 10 candidaturas.' });
+        }
+
         // Verifica se o candidato já está na lista de interessados
         if (jobVacancy.interestedCandidates.includes(candidateId)) {
             logger.warn(`Candidato com ID ${candidateId} já está na lista de interessados para a vaga com ID ${jobVacancyId}.`);
@@ -210,7 +228,8 @@ exports.addInterestedCandidate = async (req, res) => {
             candidateId,
             jobVacancyId,
             companyId: jobVacancy.companyId,
-            status: 'Currículo Enviado'
+            status: 'Currículo Enviado',
+            createdAt: new Date()  // Adiciona a data e hora da criação
         });
 
         // Salva a aplicação de status no banco de dados
@@ -224,6 +243,34 @@ exports.addInterestedCandidate = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao adicionar candidato à vaga: ${error.message}`);
         res.status(500).json({ message: 'Erro ao adicionar candidato à vaga', error: error.message });
+    }
+};
+
+exports.getDailyApplicationCount = async (req, res) => {
+    try {
+        const candidateId = req.user.id;
+
+        // Obtém a data de início e fim do dia atual
+        const startOfDay = new Date();
+        startOfDay.setHours(0, 0, 0, 0);  // 00:00:00 de hoje
+        const endOfDay = new Date();
+        endOfDay.setHours(23, 59, 59, 999);  // 23:59:59 de hoje
+
+        // Verifica quantas candidaturas o candidato já fez hoje
+        const dailyApplicationsCount = await JobApplicationStatus.countDocuments({
+            candidateId: candidateId,
+            createdAt: { $gte: startOfDay, $lte: endOfDay }
+        });
+
+        // Retorna a contagem das candidaturas feitas hoje
+        res.status(200).json({ 
+            candidateId, 
+            date: startOfDay.toISOString().split('T')[0],  // Formato YYYY-MM-DD
+            dailyApplicationsCount 
+        });
+    } catch (error) {
+        logger.error(`Erro ao obter a contagem de candidaturas diárias: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao obter a contagem de candidaturas diárias', error: error.message });
     }
 };
 

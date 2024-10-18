@@ -4,13 +4,14 @@ const vacancyController = require('../controllers/vacancyController');
 const { vacancyValidationRules } = require('../validators/vacancyValidator');
 const { validate } = require('../middleware/validate');
 const { authenticateToken } = require('../middleware/authMiddleware');
+const { authorizeRoles } = require('../middleware/authorizeRoles');
 
 const router = Router();
 
 // Rota para criar uma vaga
 router.post('/create-vacancy',
-    /* authenticateToken, 
-    authorizeUser, */
+    authenticateToken, 
+    authorizeRoles('Company', 'Admin'),
     vacancyValidationRules(),
     validate,
     vacancyController.createJobVacancy
@@ -79,6 +80,12 @@ router.post('/vacancy-status/update',
 router.get('/vacancies-applied',
     authenticateToken,
     vacancyController.listAppliedVacancies
+);
+
+router.get('/applications-today',
+    authenticateToken,
+    authorizeRoles('Candidate', 'Admin'),
+    vacancyController.getDailyApplicationCount
 );
 
 module.exports = router;

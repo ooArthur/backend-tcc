@@ -5,7 +5,7 @@ const User = require('../models/User');
 
 // Configurações para o JWT
 const JWT_SECRET = process.env.JWT_SECRET;
-const JWT_EXPIRATION = '30m';
+const JWT_EXPIRATION = '45m';
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_REFRESH_EXPIRATION = '7d';
 
@@ -119,7 +119,7 @@ exports.refreshToken = async (req, res) => {
 // Função de logout
 exports.logout = async (req, res) => {
     try {
-        const refreshToken = req.cookies.refreshToken;
+        const { refreshToken } = req.cookies;
 
         if (!refreshToken) {
             return res.status(400).json({ error: 'Token de atualização é necessário para logout' });
