@@ -1,0 +1,279 @@
+2024-10-19 20:08:39 [INFO]: Server is running on port 5000
+2024-10-19 20:08:44 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-19 20:24:32 [INFO]: Server is running on port 5000
+2024-10-19 20:24:37 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-19 20:27:13 [INFO]: Server is running on port 5000
+2024-10-19 20:27:13 [INFO]: MongoDB conectado com sucesso!
+2024-10-19 20:28:57 [INFO]: Server is running on port 5000
+2024-10-19 20:28:57 [INFO]: MongoDB conectado com sucesso!
+2024-10-19 20:30:25 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:30:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:30:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:30:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:30:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:30:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:31:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:31:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:31:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:31:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:31:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:31:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:32:32 [INFO]: Server is running on port 5000
+2024-10-19 20:32:32 [INFO]: MongoDB conectado com sucesso!
+2024-10-19 20:32:51 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:32:51 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:32:51 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:32:51 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:32:51 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:32:51 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:32:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:32:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:32:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:32:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:32:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:32:52 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:37:15 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:37:15 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:37:15 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:37:15 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:37:15 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:37:15 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:40:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:40:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:40:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:40:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:40:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:40:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:41:05 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:41:05 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:41:05 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:41:05 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:41:05 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:41:05 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:41:44 [INFO]: Server is running on port 5000
+2024-10-19 20:41:45 [INFO]: MongoDB conectado com sucesso!
+2024-10-19 20:41:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:41:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:41:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:41:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:41:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:41:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:41:58 [INFO]: IP: ::ffff:192.168.100.130 - OPTIONS /api/auth/login
+2024-10-19 20:42:34 [INFO]: Server is running on port 5000
+2024-10-19 20:42:35 [INFO]: MongoDB conectado com sucesso!
+2024-10-19 20:42:37 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:42:37 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:42:37 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:42:37 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:42:37 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:42:37 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:43:13 [INFO]: Server is running on port 5000
+2024-10-19 20:43:13 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:43:13 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:43:13 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:43:13 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:43:13 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:43:13 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:43:13 [INFO]: MongoDB conectado com sucesso!
+2024-10-19 20:43:16 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/auth/login
+2024-10-19 20:43:16 [WARN]: Tentativa de login com e-mail não registrado: teste@example.com
+2024-10-19 20:43:38 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:38 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:38 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:38 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:40 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:40 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:40 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:40 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:40 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:40 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:43 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:44 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:44 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:43:44 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:44:46 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/create-candidate
+2024-10-19 20:44:46 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress: Path `candidateAddress` is required.Requisição:[object Object]
+2024-10-19 20:46:10 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:46:10 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:46:10 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:46:10 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:46:10 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:46:10 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:46:19 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:46:20 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:46:20 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:46:20 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:46:28 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:47:00 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/create-candidate
+2024-10-19 20:47:00 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress: Path `candidateAddress` is required.Requisição:[object Object]
+2024-10-19 20:52:24 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:52:24 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:52:24 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:52:24 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:52:24 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:52:24 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:52:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:52:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:52:34 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:52:35 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:53:22 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/create-candidate
+2024-10-19 20:53:22 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress: Path `candidateAddress` is required.Requisição:[object Object]
+2024-10-19 20:55:00 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:55:00 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:55:00 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:55:00 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 20:55:00 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 20:55:00 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 20:55:06 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:55:06 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:55:06 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:55:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 20:55:30 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/create-candidate
+2024-10-19 20:55:31 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress: Cast to string failed for value "{
+  publicPlace: 'Rua Alcides Mendes Barros',
+  neighborhood: 'Vila Silviânia',
+  city: 'Carapicuíba',
+  state: 'SP',
+  cep: '06382330',
+  number: ''
+}" (type Object) at path "candidateAddress"Requisição:[object Object]
+2024-10-19 21:00:00 [INFO]: Vagas removidas: 0
+2024-10-19 21:00:00 [INFO]: Tokens expirados removidos: 0
+2024-10-19 21:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-10-19 21:00:00 [INFO]: Usuários não verificados removidos: 2
+2024-10-19 21:01:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:01:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 21:01:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 21:01:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:01:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 21:01:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 21:01:28 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 21:01:28 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 21:01:29 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 21:01:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 21:01:31 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-19 21:02:00 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/create-candidate
+2024-10-19 21:02:00 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress: Cast to string failed for value "{
+  publicPlace: 'Rua Alcides Mendes Barros',
+  neighborhood: 'Vila Silviânia',
+  city: 'Carapicuíba',
+  state: 'SP',
+  cep: '06382-330',
+  number: '365'
+}" (type Object) at path "candidateAddress"Requisição:[object Object]
+2024-10-19 21:04:22 [INFO]: Server is running on port 5000
+2024-10-19 21:04:22 [INFO]: MongoDB conectado com sucesso!
+2024-10-19 21:04:28 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/create-candidate
+2024-10-19 21:04:28 [INFO]: Perfil de candidato criado com sucesso para o usuário: teste2@example.com
+2024-10-19 21:05:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 21:05:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 21:05:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 21:05:30 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 21:05:38 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/auth/login
+2024-10-19 21:05:38 [INFO]: Usuário autenticado com sucesso: teste2@example.com
+2024-10-19 21:05:38 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:39 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:05:39 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:05:39 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:05:53 [INFO]: IP: ::ffff:192.168.100.130 - PUT /api/user/candidate/update-candidate/
+2024-10-19 21:05:53 [INFO]: Candidato com ID 6714490c0c64aa00105de4d8 atualizado com sucesso.
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/me
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:05:54 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:05:54 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:05:55 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:05:55 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:05:55 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:06:02 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:02 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:06:02 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancy-status
+2024-10-19 21:06:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancy-status
+2024-10-19 21:06:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-19 21:06:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:07 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-19 21:06:08 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:15 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/add-favorite
+2024-10-19 21:06:15 [INFO]: Vaga de emprego com ID 66e4d45c2a5585f4cff07c2f adicionada aos favoritos do candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:06:16 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:16 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancy-status
+2024-10-19 21:06:16 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancy-status
+2024-10-19 21:06:16 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:17 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:19 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:19 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-19 21:06:19 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:19 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-19 21:06:20 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/add-favorite
+2024-10-19 21:06:20 [INFO]: Vaga de emprego com ID 66e2feeb2d94f880f1ed9905 adicionada aos favoritos do candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:06:20 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/add-favorite
+2024-10-19 21:06:21 [INFO]: Vaga de emprego com ID 66fe0db1f7b4d12f15b52276 adicionada aos favoritos do candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:06:21 [INFO]: IP: ::ffff:192.168.100.130 - POST /api/user/candidate/add-favorite
+2024-10-19 21:06:21 [INFO]: Vaga de emprego com ID 66fe056c69cee239bdce7054 adicionada aos favoritos do candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:06:22 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:22 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:22 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:22 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-19 21:06:26 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:26 [INFO]: IP: ::ffff:192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-19 21:06:26 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6714490c0c64aa00105de4d8.
