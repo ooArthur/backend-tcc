@@ -13,7 +13,7 @@ router.post("/create-candidate",
 
 // Rota para listar Candidatos
 router.get("/list-candidates",
-    /* authenticateToken,*/
+    authenticateToken,
     /* authorizeRoles, */
     candidateController.listAllCandidates
 );
