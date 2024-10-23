@@ -441,7 +441,6 @@ exports.getJobApplicationsAndStatusForCandidate = async (req, res) => {
     }
 };
 
-
 // Função para a empresa atualizar o status da candidatura
 exports.setJobApplicationStatusByCompany = async (req, res) => {
     try {
@@ -494,5 +493,30 @@ exports.listAppliedVacancies = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao listar candidaturas: ${error.message}`);
         res.status(500).json({ message: 'Erro ao listar candidaturas', error: error.message });
+    }
+};
+
+exports.getJobVacanciesByCompanyId = async (req, res) => {
+    const companyId = req.user.id;
+
+    try {
+        // Buscar todas as vagas onde o companyId corresponde
+        const jobVacancies = await JobVacancy.find({ companyId });
+
+        if (!jobVacancies || jobVacancies.length === 0) {
+
+            logger.warn("Nenhuma vaga encontrada para essa empresa. Id da empresa: " + companyId)
+            
+            return res.status(404).json({ message: 'Nenhuma vaga encontrada para essa empresa.' +  companyId});
+        }
+
+        // Retornar as vagas encontradas
+        res.status(200).json(jobVacancies);
+
+        logger.info("Vagas encontradas para empresa: " + companyId);
+    } catch (error) {
+        console.error('Erro ao buscar as vagas:', error);
+        logger.error("Erro ao buscar vagas da empresa: " + companyId)
+        res.status(500).json({ message: 'Erro ao buscar as vagas.' });
     }
 };

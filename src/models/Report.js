@@ -12,6 +12,26 @@ const reportSchema = new mongoose.Schema(
             required: true,
             refPath: 'type'
         },
+        reportReason: {
+            type: String,
+            enum: [
+                'Conteúdo Inadequado',
+                'Discriminação ou Assédio',
+                'Informações Falsas',
+                'Spam ou Golpe',
+                'Atividade Suspeita',
+                'Linguagem Ofensiva',
+                'Violação de Privacidade',
+                'Violência ou Ameaça',
+                'Falsificação de Identidade',
+                'Fraude ou Informações Enganosas',
+                'Comportamento Desrespeitoso',
+                'Vaga Enganosa',
+                'Conteúdo Ilegal',
+                'Outro'    
+            ],
+            required: true
+        },
         description: {
             type: String,
             required: true

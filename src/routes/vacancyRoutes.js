@@ -23,15 +23,15 @@ router.get('/list-vacancies',
    vacancyController.listAllJobVacancies
 );
 
-router.get('/list-vacancy/:id',
-    /* authenticateToken,*/
+router.get('/list-vacancy',
+    authenticateToken,
     vacancyController.getJobVacancyById
 );
 
 // Rota para deletar Vagas
 router.delete('/delete-vacancy/:id',
-    /*  authenticateToken,
-     authorizeUser, */
+    authenticateToken,
+    authorizeRoles('Company', 'Admin'),
     vacancyController.deleteJobVacancyById
 );
 
@@ -87,5 +87,11 @@ router.get('/applications-today',
     authorizeRoles('Candidate', 'Admin'),
     vacancyController.getDailyApplicationCount
 );
+
+router.get('/company-vacancies/',
+    authenticateToken,
+    authorizeRoles('Company', 'Admin'),
+    vacancyController.getJobVacanciesByCompanyId
+)
 
 module.exports = router;

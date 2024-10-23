@@ -29,6 +29,24 @@ exports.getReports = async (req, res) => {
                     return res.status(400).json({ message: 'Tipo de denúncia inválido.' });
             }
 
+            // Verificar se o alvo foi encontrado
+            if (!targetDetails) {
+                return {
+                    id: report._id,
+                    type: report.type,
+                    target: null,
+                    reportReason: report.reportReason,
+                    description: report.description,
+                    reportedBy: {
+                        id: report.reportedBy._id,
+                        email: report.reportedBy.email
+                    },
+                    createdAt: report.createdAt,
+                    updatedAt: report.updatedAt,
+                    error: 'Detalhes do alvo não encontrados'
+                };
+            }
+
             // Retornar o relatório detalhado
             return {
                 id: report._id,
@@ -38,6 +56,7 @@ exports.getReports = async (req, res) => {
                     banned: targetDetails.banned,  // Inclui status de banimento
                     warnings: targetDetails.warnings  // Inclui número de avisos
                 },
+                reportReason: report.reportReason,
                 description: report.description,
                 reportedBy: {
                     id: report.reportedBy._id,
@@ -95,6 +114,7 @@ exports.getReportById = async (req, res) => {
                 banned: targetDetails.banned,  // Inclui status de banimento
                 warnings: targetDetails.warnings  // Inclui número de avisos
             },
+            reportReason: report.reportReason,
             description: report.description,
             reportedBy: {
                 id: report.reportedBy._id,
@@ -112,11 +132,11 @@ exports.getReportById = async (req, res) => {
 // Criar uma nova denúncia
 exports.createReport = async (req, res) => {
     try {
-        const { type, targetId, description } = req.body;
+        const { type, targetId, reportReason, description } = req.body;
         const reportedBy = req.user.id;
 
         // Validação
-        if (!type || !targetId || !description || !reportedBy) {
+        if (!type || !targetId || !reportReason || !description || !reportedBy) {
             return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
         }
 
@@ -124,6 +144,7 @@ exports.createReport = async (req, res) => {
         const newReport = new Report({
             type,
             targetId,
+            reportReason,
             description,
             reportedBy
         });
@@ -192,6 +213,13 @@ exports.giveWarning = async (req, res) => {
 
         await target.save(); // Salva as alterações no banco
 
+        // Excluir a denúncia associada
+        const report = await Report.findOne({ targetId, type: type === 'company' ? 'company' : 'candidate' });
+        if (report) {
+            await Report.findByIdAndDelete(report._id);
+            logger.info(`Denúncia com ID ${report._id} excluída após aviso.`);
+        }
+
         res.status(200).json({ message: `${type} recebeu um aviso. Total de avisos: ${target.warnings}` });
     } catch (error) {
         logger.error(`Erro ao emitir aviso: ${error.message}`);
@@ -252,5 +280,82 @@ exports.getWarningsAndBannedAccounts = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao consultar avisos e contas banidas: ${error.message}`);
         res.status(500).json({ message: 'Erro ao consultar avisos e contas banidas', error: error.message });
+    }
+};
+
+exports.deleteVacancyAndReport = async (req, res) => {
+    const vacancyId = req.params.id;
+
+    try {
+        // Buscar a vaga pelo ID
+        const jobVacancy = await JobVacancy.findById(vacancyId);
+        if (!jobVacancy) {
+            logger.warn(`Vaga com ID ${vacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Vaga não encontrada.' });
+        }
+
+        // Buscar a denúncia associada à vaga
+        const report = await Report.findOne({ targetId: vacancyId, type: 'vacancy' });
+        if (!report) {
+            logger.warn(`Denúncia para a vaga com ID ${vacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Denúncia não encontrada.' });
+        }
+
+        // Excluir a vaga
+        await JobVacancy.findByIdAndDelete(vacancyId);
+        // Excluir a denúncia
+        await Report.findByIdAndDelete(report._id);
+        logger.info(`Denúncia com ID ${report._id} excluída com sucesso e Vaga com ID ${vacancyId} excluída com sucesso.`);
+
+        res.status(200).json({ message: 'Vaga e denúncia excluídas com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao excluir vaga e denúncia: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao excluir vaga e denúncia', error: error.message });
+    }
+};
+
+exports.banUserAndDeleteReport = async (req, res) => {
+    const { userId, reportId } = req.params; // O ID do usuário e o ID da denúncia a serem processados
+
+    try {
+        let user;
+
+        // Verificar se o usuário é um candidato
+        user = await Candidate.findById(userId);
+        if (!user) {
+            // Se não for candidato, verificar se é uma empresa
+            user = await Company.findById(userId);
+        }
+
+        // Se o usuário não for encontrado, retornar erro 404
+        if (!user) {
+            logger.warn(`Usuário com ID ${userId} não encontrado.`);
+            return res.status(404).json({ message: 'Usuário não encontrado.' });
+        }
+
+        // Verificar se o usuário já está banido
+        if (user.banned) {
+            logger.warn(`Usuário com ID ${userId} já está banido.`);
+            return res.status(400).json({ message: 'Usuário já está banido.' });
+        }
+
+        // Banir o usuário
+        user.banned = true;
+
+        // Buscar e excluir apenas a denúncia específica associada
+        const report = await Report.findById(reportId);
+        if (!report || report.targetId.toString() !== userId) {
+            logger.warn(`Denúncia com ID ${reportId} não encontrada ou não corresponde ao usuário ${userId}.`);
+            return res.status(404).json({ message: 'Denúncia não encontrada ou não corresponde ao usuário.' });
+        }
+
+        await Report.findByIdAndDelete(reportId);
+        await user.save();
+        logger.info(`Usuário ${userId} foi banido com sucesso. Denúncia com ID ${reportId} excluída com sucesso.`);
+
+        res.status(200).json({ message: 'Usuário banido e denúncia específica excluída com sucesso.' });
+    } catch (error) {
+        logger.error(`Erro ao banir usuário e excluir denúncia: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao banir usuário e excluir denúncia', error: error.message });
     }
 };

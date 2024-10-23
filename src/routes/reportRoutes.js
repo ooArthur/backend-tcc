@@ -12,7 +12,18 @@ router.post('/create-report',
 router.delete('/delete-report/:id',
     authenticateToken,
     authorizeRoles('Admin'),
-    reportController.deleteReport);
+    reportController.deleteReport
+);
+router.delete('/deletevacancy-report/:id',
+    authenticateToken,
+    authorizeRoles('Admin'),
+    reportController.deleteVacancyAndReport
+);
+router.post('/ban-user/:userId/report/:reportId',
+    authenticateToken,
+    authorizeRoles('Admin'),
+    reportController.banUserAndDeleteReport
+);
 router.get('/list-report-by-id/:id',
     authenticateToken,
     authorizeRoles('Admin'),

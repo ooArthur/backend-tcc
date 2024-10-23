@@ -120,7 +120,7 @@ exports.getCandidateById = async (req, res) => {
 // Função para atualizar um candidato pelo ID
 exports.updateCandidateById = async (req, res) => {
     try {
-        const id = req.user.id;
+        const { id } = req.params;
         const updates = req.body;
 
         // Atualiza o candidato no banco de dados pelo ID

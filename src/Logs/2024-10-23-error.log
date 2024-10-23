@@ -1,0 +1,64 @@
+2024-10-23 08:00:22 [ERROR]: Erro ao criar empresa: Company validation failed: employerCompanyData.socialReason: Path `socialReason` is required., employerCompanyData.cnpj: Path `cnpj` is required. - Dados: {"email":"empresateste1@gmail.com","companyName":"Empresa testando","password":"123","confirmPassword":"123","branchOfActivity":"Saúde","employerCompanyData":{"fantasyName":"Nome Fantasia"},"positionInTheCompany":"Dono","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"Bandeiras","city":"Osasco","state":"SP","cep":"06160180","number":"333"},"telephone":"(11) 96785-0988","description":"HAHAHAH","type":"Empresa Empregadora"}
+2024-10-23 08:36:55 [ERROR]: Erro ao fazer login: Candidate validation failed: candidateAddress.number: Path `candidateAddress.number` is required., candidateAddress.cep: Path `candidateAddress.cep` is required., candidateAddress.state: Path `candidateAddress.state` is required., candidateAddress.city: Path `candidateAddress.city` is required., candidateAddress.neighborhood: Path `candidateAddress.neighborhood` is required., candidateAddress.publicPlace: Path `candidateAddress.publicPlace` is required.
+2024-10-23 08:37:13 [ERROR]: Erro ao fazer login: Candidate validation failed: candidateAddress.number: Path `candidateAddress.number` is required., candidateAddress.cep: Path `candidateAddress.cep` is required., candidateAddress.state: Path `candidateAddress.state` is required., candidateAddress.city: Path `candidateAddress.city` is required., candidateAddress.neighborhood: Path `candidateAddress.neighborhood` is required., candidateAddress.publicPlace: Path `candidateAddress.publicPlace` is required.
+2024-10-23 08:37:15 [ERROR]: Erro ao fazer login: Candidate validation failed: candidateAddress.number: Path `candidateAddress.number` is required., candidateAddress.cep: Path `candidateAddress.cep` is required., candidateAddress.state: Path `candidateAddress.state` is required., candidateAddress.city: Path `candidateAddress.city` is required., candidateAddress.neighborhood: Path `candidateAddress.neighborhood` is required., candidateAddress.publicPlace: Path `candidateAddress.publicPlace` is required.
+2024-10-23 08:45:32 [ERROR]: Erro ao fazer login: Candidate validation failed: candidateAddress.number: Path `candidateAddress.number` is required., candidateAddress.cep: Path `candidateAddress.cep` is required., candidateAddress.state: Path `candidateAddress.state` is required., candidateAddress.city: Path `candidateAddress.city` is required., candidateAddress.neighborhood: Path `candidateAddress.neighborhood` is required., candidateAddress.publicPlace: Path `candidateAddress.publicPlace` is required.
+2024-10-23 08:46:22 [ERROR]: Erro ao criar empresa: Company validation failed: address.number: Path `address.number` is required. - Dados: {"email":"empresateste0@gmail.com","companyName":"Empresa Teste","password":"123","confirmPassword":"123","branchOfActivity":"Saúde","liberalProfessionalData":{"registrationDocument":"1111111111111","registrationNumber":"111","cpf":"203203932093290"},"positionInTheCompany":"Dono","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"Bandeiras","city":"Osasco","state":"SP","cep":"06160180","number":""},"telephone":"(11) 96785-0988","description":"dqdfqfwef","type":"Profissional Liberal"}
+2024-10-23 08:47:27 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.1.level: `` is not a valid enum value for path `level`., candidateIdioms.2.level: `` is not a valid enum value for path `level`.
+2024-10-23 08:47:32 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.1.level: `` is not a valid enum value for path `level`.
+2024-10-23 10:25:08 [ERROR]: Erro: Cannot read properties of undefined (reading 'id')
+2024-10-23 10:25:22 [ERROR]: Erro: Cannot read properties of undefined (reading 'id')
+2024-10-23 10:25:39 [ERROR]: Erro: Cannot read properties of undefined (reading 'id')
+2024-10-23 11:24:13 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:24:56 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:25:00 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:25:00 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:25:05 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:25:20 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:25:53 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:25:54 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 11:25:55 [ERROR]: Erro ao criar denúncia: Report validation failed: reportReason: Path `reportReason` is required.
+2024-10-23 13:31:10 [ERROR]: Erro ao criar a vaga de emprego: JobVacancy validation failed: employmentType: `Full-time` is not a valid enum value for path `employmentType`., workSchedule.workingDays.0: `Monday` is not a valid enum value for path `workSchedule.workingDays.0`., workSchedule.workingDays.1: `Tuesday` is not a valid enum value for path `workSchedule.workingDays.1`., workSchedule.workingDays.2: `Wednesday` is not a valid enum value for path `workSchedule.workingDays.2`., workSchedule.workingDays.3: `Thursday` is not a valid enum value for path `workSchedule.workingDays.3`., workSchedule.workingDays.4: `Friday` is not a valid enum value for path `workSchedule.workingDays.4`. - Empresa ID: 6718e22687c77d3c592c17af
+2024-10-23 14:41:06 [ERROR]: Erro ao excluir vaga pelo ID: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "JobVacancy"
+2024-10-23 14:41:47 [ERROR]: Erro ao excluir vaga pelo ID: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "JobVacancy"
+2024-10-23 14:42:14 [ERROR]: Erro ao excluir vaga pelo ID: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "JobVacancy"
+2024-10-23 14:45:48 [ERROR]: Erro ao excluir vaga pelo ID: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "JobVacancy"
+2024-10-23 14:47:48 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:47:49 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:47:51 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:47:51 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:47:55 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:47:55 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:48:29 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:48:29 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:48:58 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:48:58 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:49:01 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:49:01 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:49:05 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:49:05 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:20 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:21 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:22 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:22 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:22 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:51 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:52 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:52 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:52 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:52 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:53 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:53 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:53 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:53 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:54 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:54 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:54 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 14:52:54 [ERROR]: Erro ao listar denúncias: Cannot read properties of null (reading '_doc')
+2024-10-23 15:01:26 [ERROR]: Erro ao excluir vaga pelo ID: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "JobVacancy"
+2024-10-23 15:05:11 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.0.level: `` is not a valid enum value for path `level`.
+2024-10-23 16:07:01 [ERROR]: Erro ao banir usuário e excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Candidate"
+2024-10-23 16:07:08 [ERROR]: Erro ao banir usuário e excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Candidate"
+2024-10-23 16:07:27 [ERROR]: Erro ao banir usuário e excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-10-23 16:11:15 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress.number: Path `candidateAddress.number` is required., desiredRole: Path `desiredRole` is required., candidateGender: Path `candidateGender` is required.Requisição:[object Object]
+2024-10-23 16:14:14 [ERROR]: Erro ao banir usuário e excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
