@@ -23,7 +23,7 @@ router.get('/list-vacancies',
    vacancyController.listAllJobVacancies
 );
 
-router.get('/list-vacancy',
+router.get('/list-vacancy/:id',
     authenticateToken,
     vacancyController.getJobVacancyById
 );

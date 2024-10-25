@@ -1,6 +1,5 @@
 backend-tcc
 │── .env
-│── .gitignore
 │── package-lock.json
 │── package.json
 │── README.md
@@ -22,10 +21,6 @@ backend-tcc
     │   └── swagger.yaml
     │── index.js
     │── Logs
-    │   │── .b522327ac456de533def688682cd647897b6528c-audit.json
-    │   │── .c81c8a4a329aa6f93a9c76983ca7c270bdb2c07c-audit.json
-    │   │── 2024-10-04-combined.log
-    │   └── 2024-10-04-error.log
     │── middleware
     │   │── authMiddleware.js
     │   │── authorizeRoles.js

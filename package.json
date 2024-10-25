@@ -13,6 +13,7 @@
     "axios": "^1.7.7",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+    "chokidar": "^4.0.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -26,9 +27,11 @@
     "node-cron": "^3.0.3",
     "nodemailer": "^6.9.14",
     "nodemon": "^3.1.7",
+    "pdfkit": "^0.15.0",
     "swagger-ui-express": "^5.0.1",
     "uuid": "^10.0.0",
     "winston": "^3.14.2",
-    "winston-daily-rotate-file": "^5.0.0"
+    "winston-daily-rotate-file": "^5.0.0",
+    "ws": "^8.18.0"
   }
 }

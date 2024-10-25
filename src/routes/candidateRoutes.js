@@ -46,4 +46,9 @@ router.delete("/remove-favorite",
     candidateController.removeFavoriteJobVacancy
 );
 
+router.get("/generate-pdf",
+    authenticateToken,
+    candidateController.generateStyledResumePDF
+);
+
 module.exports = router;

@@ -1,9 +1,11 @@
 const bcrypt = require('bcryptjs');
 const logger = require('../config/logger');
+const PDFDocument = require('pdfkit');
 const User = require('../models/User');
 const Candidate = require('../models/CandidateProfile');
 const CandidateFavorites = require('../models/CandidateFavorites');
 const JobVacancy = require('../models/JobVacancy');
+const moment = require('moment');
 
 // Função para criar um novo candidato
 exports.createCandidate = async (req, res) => {
@@ -249,3 +251,157 @@ exports.removeFavoriteJobVacancy = async (req, res) => {
         res.status(500).json({ message: 'Erro ao remover vaga de emprego dos favoritos', error: error.message });
     }
 };
+
+exports.generateStyledResumePDF = async (req, res) => {
+    try {
+        const { id } = req.user;
+        logger.info(`Iniciando a geração do PDF estilizado para o candidato com ID: ${id}`);
+
+        // Buscando os dados do candidato no banco de dados
+        const candidate = await Candidate.findById(id);
+        if (!candidate) {
+            logger.warn(`Candidato com ID: ${id} não encontrado.`);
+            return res.status(404).json({ message: "Candidato não encontrado" });
+        }
+
+        logger.info(`Dados do candidato com ID: ${id} recuperados com sucesso.`);
+
+        // Criar um novo documento PDF
+        const doc = new PDFDocument({
+            size: 'A4',
+            margins: { top: 50, bottom: 50, left: 50, right: 50 }
+        });
+
+        // Configurar cabeçalho da resposta HTTP para download do PDF
+        res.setHeader('Content-Disposition', `attachment; filename=${candidate.candidateName}-curriculo.pdf`);
+        res.setHeader('Content-Type', 'application/pdf');
+
+        // ** ESTILIZAÇÃO DO PDF **
+
+        // 1. Cabeçalho com informações do candidato
+        doc.font('Helvetica-Bold').fontSize(24).fillColor('#333333')
+            .text(candidate.candidateName.toUpperCase(), { align: 'center' });
+        doc.fontSize(14).fillColor('#666666')
+            .text(`• ${candidate.desiredRole.toLowerCase()} •`, { align: 'center' });
+
+        // Linha colorida centralizada abaixo do nome
+        const centerX = (doc.page.width - 400) / 2;
+        doc.moveTo(centerX, doc.y + 10).lineTo(centerX + 400, doc.y + 10)
+            .strokeColor('#d3f1e0').lineWidth(1).stroke();
+
+        // 2. Sobre Mim - alinhado ao topo
+        doc.moveDown(15); // Espaço reduzido antes da seção
+
+        addSectionHeader(doc, 'Sobre Mim');
+        const aboutText = candidate.candidateAbout || 'Descrição não fornecida.';
+        doc.fontSize(12).fillColor('#333333').text(aboutText, { width: doc.page.width - 100, align: 'left' });
+
+        // 3. Educação - abaixo de "Sobre Mim"
+        doc.moveDown(10); // Espaço reduzido antes da seção
+        addSectionHeader(doc, 'Educação');
+
+        const educationText = Array.isArray(candidate.candidateCourses) 
+            ? candidate.candidateCourses.map(course => `${course.conclusionYear} • ${course.institution} - ${course.name}`).join('\n') 
+            : 'Sem informações de educação.';
+        
+        doc.fontSize(12).fillColor('#333333').text(educationText, { width: doc.page.width - 100, align: 'left' });
+
+        // 4. Experiência - abaixo de "Educação"
+        doc.moveDown(10); // Espaço reduzido antes da seção de Experiência
+        addSectionHeader(doc, 'Experiência');
+
+        if (Array.isArray(candidate.candidateExperience)) {
+            candidate.candidateExperience.forEach(exp => {
+                doc.font('Helvetica-Bold').fontSize(12).fillColor('#333333')
+                    .text(`${moment(exp.startDate).format('YYYY')} • ${exp.company}`, { continued: true });
+                doc.font('Helvetica').text(` - ${exp.role}`);
+                doc.fontSize(10).fillColor('#666666').list(exp.mainActivities.split('\n').map(a => `${a}`));
+            });
+        }
+
+        // 5. Habilidades com qualificações e idiomas
+        const skillsYPosition = doc.y + 20; // Espaço mínimo antes de Habilidades
+        doc.moveTo(50, skillsYPosition);
+        addSectionHeader(doc, 'Habilidades');
+
+        // Habilidades
+        const qualifications = candidate.candidateQualifications.map(qual => ({
+            name: qual.description
+        }));
+
+        const idioms = candidate.candidateIdioms.map(idiom => ({
+            name: idiom.name,
+            level: idiom.level
+        }));
+
+        // Alinhar a altura de ambas as seções de habilidades
+        const startY = doc.y; // Salva a altura inicial para alinhamento
+
+        // Renderizar Qualificações na coluna da esquerda
+        renderQualifications(doc, qualifications, 50, startY);
+
+        // Renderizar Idiomas na coluna da direita
+        renderIdioms(doc, idioms, 320, startY);
+
+        // 6. Rodapé com Contato - centralizado
+        doc.moveDown(3);
+        doc.font('Helvetica').fontSize(10).fillColor('#666666')
+            .text(`${candidate.candidatePhone} • ${candidate.email} • ${candidate.candidateLink}`, { align: 'center' });
+
+        // Finalizar e enviar o PDF como resposta
+        logger.info(`PDF estilizado gerado com sucesso para o candidato com ID: ${id}. Enviando resposta.`);
+        doc.pipe(res);
+        doc.end();
+    } catch (error) {
+        logger.error(`Erro ao gerar PDF estilizado para o candidato com ID: ${req.params.id}. Detalhes: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao gerar PDF.' });
+    }
+};
+
+// Função para adicionar cabeçalhos de seção com estilo
+function addSectionHeader(doc, text) {
+    doc.moveDown();
+    doc.font('Helvetica-Bold').fontSize(14).fillColor('#333333').text(text.toUpperCase(), { underline: true });
+    doc.moveDown();
+}
+
+// Função para renderizar as qualificações
+function renderQualifications(doc, qualifications, xPosition, yPosition) {
+    doc.font('Helvetica').fontSize(12).fillColor('#333333');
+    qualifications.forEach((qual, index) => {
+        doc.text(qual.name, xPosition, yPosition + index * 20);
+    });
+}
+
+// Função para renderizar os idiomas com nível de proficiência
+function renderIdioms(doc, idioms, xPosition, yPosition) {
+    const skillHeight = 20;
+    const barHeight = 8;
+    const barMaxWidth = 100;
+
+    idioms.forEach((idiom, index) => {
+        doc.font('Helvetica').fontSize(12).fillColor('#333333')
+            .text(idiom.name, xPosition, yPosition + index * skillHeight);
+
+        // Mapeando níveis de proficiência
+        const levels = { basico: 1, intermediario: 2, avancado: 3, fluente: 4 };
+        const barWidth = (barMaxWidth * (levels[idiom.level.toLowerCase()] || 1)) / 4; // Valor padrão 1 se não definido
+
+        // Renderizar a barra da habilidade
+        doc.rect(
+            xPosition + 120, // Alinhamento da barra ao lado da habilidade
+            yPosition + index * skillHeight + 5, // Altura da barra alinhada com a habilidade
+            barMaxWidth, // Largura máxima da barra
+            barHeight // Altura da barra
+        )
+            .fillOpacity(0.2).fillColor('#d3f1e0').fill(); // Barra base (cinza claro)
+
+        doc.rect(
+            xPosition + 120,
+            yPosition + index * skillHeight + 5,
+            barWidth, // Tamanho da barra baseado no nível da habilidade
+            barHeight
+        )
+            .fillOpacity(1).fillColor('#98d9b9').fill(); // Barra preenchida (verde claro)
+    });
+}

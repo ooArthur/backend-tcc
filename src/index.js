@@ -11,8 +11,10 @@ const logger = require("./config/logger");
 const swaggerUi = require("swagger-ui-express");
 const fs = require("fs");
 const yaml = require("js-yaml");
+const http = require("http");
 
 const app = express();
+const server = http.createServer(app); // Cria o servidor HTTP do Express
 
 // Middleware
 app.use(bodyParser.json());
@@ -44,7 +46,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use("/api", router);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => { // Configura o servidor para escutar em 0.0.0.0
     logger.info(`Server is running on port ${PORT}`);
 });
 

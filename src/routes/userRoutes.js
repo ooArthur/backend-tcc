@@ -6,6 +6,8 @@ const { userValidationRules } = require('../validators/userValidator');
 const { validate } = require('../middleware/validate');
 const { authenticateToken } = require('../middleware/authMiddleware');
 const { authorizeRoles } = require('../middleware/authorizeRoles');
+const path = require("path");
+const fs = require("fs");
 
 const router = express.Router();
 
@@ -17,6 +19,7 @@ router.post('/create-admin',
     authorizeRoles, */
     userController.createAdminUser
 );
+
 // Rotas para Listar Usuários
 router.get('/list-users', 
     /* authenticateToken, 
@@ -55,5 +58,25 @@ router.get('/me',
     authenticateToken,
     userController.getUserRole
 );
+
+/* Logs */
+
+// Mudança para o método POST
+router.post('/logs', (req, res) => {
+    const logDate = req.body.date;
+    const logFilePath = path.resolve(__dirname, `../Logs/${logDate}-combined.log`);
+
+    fs.access(logFilePath, fs.constants.F_OK, (err) => {
+        if (err) {
+            return res.status(404).json({ error: 'Arquivo de log não encontrado.' });
+        }
+        fs.readFile(logFilePath, 'utf8', (err, data) => {
+            if (err) {
+                return res.status(500).json({ error: 'Erro ao ler o arquivo de log.' });
+            }
+            res.json({ logs: data });
+        });
+    });
+});
 
 module.exports = router;

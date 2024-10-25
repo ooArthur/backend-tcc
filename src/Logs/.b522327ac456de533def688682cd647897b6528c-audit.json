@@ -6,24 +6,9 @@
     "auditLog": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\.b522327ac456de533def688682cd647897b6528c-audit.json",
     "files": [
         {
-            "date": 1728644558780,
-            "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-10-11-combined.log",
-            "hash": "be625ba95c87dce209c2edd840ff890a1940f3bb66142fc010067c55be7c073b"
-        },
-        {
-            "date": 1729075592184,
-            "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-10-16-combined.log",
-            "hash": "6420a1de5688e704f20a92aebfb3bd9ea1bfa1d723e0f17247b5dce7a13d2db7"
-        },
-        {
-            "date": 1729248635637,
-            "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-10-18-combined.log",
-            "hash": "0bba9d3c49b5422d5aaaaecad808dc3c2878612646760e85bf4100a4788520fa"
-        },
-        {
-            "date": 1729681012099,
-            "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-10-23-combined.log",
-            "hash": "c615f2782873c4cc799a643e141a25232b5b4dffb1c7c8a8761c0d6316381d6c"
+            "date": 1729855337492,
+            "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-10-25-combined.log",
+            "hash": "971803a543b26da09b7289aa7101d48fc15c900cd012a72abc4a215791ea056c"
         }
     ],
     "hashType": "sha256"

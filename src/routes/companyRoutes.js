@@ -18,7 +18,7 @@ router.get("/list-companies",
 /*     authenticateToken,
  */    companyController.listAllCompanies
 );
-router.get("/list-company",
+router.get("/list-company/:id",
     authenticateToken,
     companyController.getCompanyById
 );
