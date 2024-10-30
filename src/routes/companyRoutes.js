@@ -18,15 +18,15 @@ router.get("/list-companies",
 /*     authenticateToken,
  */    companyController.listAllCompanies
 );
-router.get("/list-company/:id",
+router.get("/list-company",
     authenticateToken,
     companyController.getCompanyById
 );
 
 // Rota para atualizar as empresas
 router.put("/update-company/:id",
-     authenticateToken,
-     /* authorizeUser, */
+    authenticateToken,
+    /* authorizeUser, */
     companyController.updateCompanyById
 );
 

@@ -51,7 +51,7 @@ exports.login = async (req, res) => {
 
         const { accessToken, refreshToken } = generateTokens(user);
         user.refreshToken = refreshToken; // Salva o novo refresh token no usuário
-        
+
         await user.save();
 
         res.cookie('refreshToken', refreshToken, {
@@ -116,7 +116,6 @@ exports.refreshToken = async (req, res) => {
     }
 };
 
-// Função de logout
 exports.logout = async (req, res) => {
     try {
         const { refreshToken } = req.cookies;
@@ -125,15 +124,22 @@ exports.logout = async (req, res) => {
             return res.status(400).json({ error: 'Token de atualização é necessário para logout' });
         }
 
-        const user = await User.findOneAndUpdate(
-            { refreshToken },
-            { $set: { refreshToken: null } }
-        );
+        const user = await User.findOne({ refreshToken });
 
         if (!user) {
             logger.warn('Token de atualização não encontrado durante logout.');
+            // Mesmo que o *refresh token* não seja encontrado, você pode ainda limpar o cookie:
+            res.clearCookie('refreshToken', {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: 'Strict',
+            });
             return res.status(401).json({ error: 'Token de atualização inválido ou não encontrado' });
         }
+
+        // Invalida o refreshTken do usuário
+        user.refreshToken = null;
+        await user.save();
 
         res.clearCookie('refreshToken', {
             httpOnly: true,

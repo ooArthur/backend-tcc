@@ -180,7 +180,7 @@ exports.listInterestedCandidates = async (req, res) => {
 exports.addInterestedCandidate = async (req, res) => {
     try {
         const candidateId = req.user.id;
-        const { jobVacancyId } = req.body;  // ID do candidato e da vaga no corpo da requisição
+        const { jobVacancyId } = req.body;  // ID da vaga no corpo da requisição
 
         // Verifica se a vaga de emprego existe
         const jobVacancy = await JobVacancy.findById(jobVacancyId);
@@ -215,7 +215,8 @@ exports.addInterestedCandidate = async (req, res) => {
         }
 
         // Verifica se o candidato já está na lista de interessados
-        if (jobVacancy.interestedCandidates.includes(candidateId)) {
+        const isAlreadyInterested = jobVacancy.interestedCandidates.includes(candidateId);
+        if (isAlreadyInterested) {
             logger.warn(`Candidato com ID ${candidateId} já está na lista de interessados para a vaga com ID ${jobVacancyId}.`);
             return res.status(400).json({ message: 'Candidato já está na lista de interessados.' });
         }
@@ -223,7 +224,7 @@ exports.addInterestedCandidate = async (req, res) => {
         // Adiciona o candidato à lista de interessados
         jobVacancy.interestedCandidates.push(candidateId);
 
-        // Cria o status de candidatura com o status inicial como "enviado"
+        // Cria o status de candidatura com o status inicial como "Currículo Enviado"
         const newApplicationStatus = new JobApplicationStatus({
             candidateId,
             jobVacancyId,
@@ -246,6 +247,7 @@ exports.addInterestedCandidate = async (req, res) => {
     }
 };
 
+// Função para obter a contagem de candidaturas diárias
 exports.getDailyApplicationCount = async (req, res) => {
     try {
         const candidateId = req.user.id;

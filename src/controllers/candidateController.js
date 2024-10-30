@@ -255,7 +255,6 @@ exports.removeFavoriteJobVacancy = async (req, res) => {
 exports.generateStyledResumePDF = async (req, res) => {
     try {
         const { id } = req.user;
-        logger.info(`Iniciando a geração do PDF estilizado para o candidato com ID: ${id}`);
 
         // Buscando os dados do candidato no banco de dados
         const candidate = await Candidate.findById(id);
@@ -263,8 +262,6 @@ exports.generateStyledResumePDF = async (req, res) => {
             logger.warn(`Candidato com ID: ${id} não encontrado.`);
             return res.status(404).json({ message: "Candidato não encontrado" });
         }
-
-        logger.info(`Dados do candidato com ID: ${id} recuperados com sucesso.`);
 
         // Criar um novo documento PDF
         const doc = new PDFDocument({
@@ -290,24 +287,24 @@ exports.generateStyledResumePDF = async (req, res) => {
             .strokeColor('#d3f1e0').lineWidth(1).stroke();
 
         // 2. Sobre Mim - alinhado ao topo
-        doc.moveDown(15); // Espaço reduzido antes da seção
+        doc.moveDown(0.5); // Espaço ajustado antes da seção
 
         addSectionHeader(doc, 'Sobre Mim');
         const aboutText = candidate.candidateAbout || 'Descrição não fornecida.';
         doc.fontSize(12).fillColor('#333333').text(aboutText, { width: doc.page.width - 100, align: 'left' });
 
         // 3. Educação - abaixo de "Sobre Mim"
-        doc.moveDown(10); // Espaço reduzido antes da seção
+        doc.moveDown(0.5); // Espaço ajustado antes da seção
         addSectionHeader(doc, 'Educação');
 
-        const educationText = Array.isArray(candidate.candidateCourses) 
-            ? candidate.candidateCourses.map(course => `${course.conclusionYear} • ${course.institution} - ${course.name}`).join('\n') 
+        const educationText = Array.isArray(candidate.candidateCourses)
+            ? candidate.candidateCourses.map(course => `${course.conclusionYear} • ${course.institution} - ${course.name}`).join('\n')
             : 'Sem informações de educação.';
-        
+
         doc.fontSize(12).fillColor('#333333').text(educationText, { width: doc.page.width - 100, align: 'left' });
 
         // 4. Experiência - abaixo de "Educação"
-        doc.moveDown(10); // Espaço reduzido antes da seção de Experiência
+        doc.moveDown(0.5); // Espaço ajustado antes da seção de Experiência
         addSectionHeader(doc, 'Experiência');
 
         if (Array.isArray(candidate.candidateExperience)) {
@@ -315,12 +312,12 @@ exports.generateStyledResumePDF = async (req, res) => {
                 doc.font('Helvetica-Bold').fontSize(12).fillColor('#333333')
                     .text(`${moment(exp.startDate).format('YYYY')} • ${exp.company}`, { continued: true });
                 doc.font('Helvetica').text(` - ${exp.role}`);
-                doc.fontSize(10).fillColor('#666666').list(exp.mainActivities.split('\n').map(a => `${a}`));
+                doc.fontSize(10).fillColor('#666666').list(exp.mainActivities.split('\n').map(a => `${a}`), { bulletRadius: 2 });
             });
         }
 
         // 5. Habilidades com qualificações e idiomas
-        const skillsYPosition = doc.y + 20; // Espaço mínimo antes de Habilidades
+        const skillsYPosition = doc.y + 10; // Espaço ajustado antes de Habilidades
         doc.moveTo(50, skillsYPosition);
         addSectionHeader(doc, 'Habilidades');
 
@@ -344,14 +341,14 @@ exports.generateStyledResumePDF = async (req, res) => {
         renderIdioms(doc, idioms, 320, startY);
 
         // 6. Rodapé com Contato - centralizado
-        doc.moveDown(3);
+        doc.moveDown(0.5);
         doc.font('Helvetica').fontSize(10).fillColor('#666666')
             .text(`${candidate.candidatePhone} • ${candidate.email} • ${candidate.candidateLink}`, { align: 'center' });
-
-        // Finalizar e enviar o PDF como resposta
-        logger.info(`PDF estilizado gerado com sucesso para o candidato com ID: ${id}. Enviando resposta.`);
         doc.pipe(res);
         doc.end();
+        // Finalizar e enviar o PDF como resposta
+        logger.info(`PDF estilizado gerado com sucesso para o candidato com ID: ${id}. Enviando resposta.`);
+
     } catch (error) {
         logger.error(`Erro ao gerar PDF estilizado para o candidato com ID: ${req.params.id}. Detalhes: ${error.message}`);
         res.status(500).json({ message: 'Erro ao gerar PDF.' });
@@ -360,22 +357,22 @@ exports.generateStyledResumePDF = async (req, res) => {
 
 // Função para adicionar cabeçalhos de seção com estilo
 function addSectionHeader(doc, text) {
-    doc.moveDown();
+    doc.moveDown(2);
     doc.font('Helvetica-Bold').fontSize(14).fillColor('#333333').text(text.toUpperCase(), { underline: true });
-    doc.moveDown();
+    doc.moveDown(1);
 }
 
 // Função para renderizar as qualificações
 function renderQualifications(doc, qualifications, xPosition, yPosition) {
     doc.font('Helvetica').fontSize(12).fillColor('#333333');
     qualifications.forEach((qual, index) => {
-        doc.text(qual.name, xPosition, yPosition + index * 20);
+        doc.text(qual.name, xPosition, yPosition + index * 16); // Espaçamento ajustado entre qualificações
     });
 }
 
 // Função para renderizar os idiomas com nível de proficiência
 function renderIdioms(doc, idioms, xPosition, yPosition) {
-    const skillHeight = 20;
+    const skillHeight = 16; // Ajustando o espaçamento para manter os itens próximos
     const barHeight = 8;
     const barMaxWidth = 100;
 
@@ -390,7 +387,7 @@ function renderIdioms(doc, idioms, xPosition, yPosition) {
         // Renderizar a barra da habilidade
         doc.rect(
             xPosition + 120, // Alinhamento da barra ao lado da habilidade
-            yPosition + index * skillHeight + 5, // Altura da barra alinhada com a habilidade
+            yPosition + index * skillHeight + 4, // Ajustando a posição da barra
             barMaxWidth, // Largura máxima da barra
             barHeight // Altura da barra
         )
@@ -398,7 +395,7 @@ function renderIdioms(doc, idioms, xPosition, yPosition) {
 
         doc.rect(
             xPosition + 120,
-            yPosition + index * skillHeight + 5,
+            yPosition + index * skillHeight + 4,
             barWidth, // Tamanho da barra baseado no nível da habilidade
             barHeight
         )
