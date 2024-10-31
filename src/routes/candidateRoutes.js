@@ -17,9 +17,15 @@ router.get("/list-candidates",
     /* authorizeRoles, */
     candidateController.listAllCandidates
 );
+
 router.get("/list-candidate",
     authenticateToken,
     candidateController.getCandidateById
+);
+
+router.get("/list-candidate/:id",
+    authenticateToken,
+    candidateController.getCandidateByIdP
 );
 
 // Rota para atualizar Candidato

@@ -9212,3 +9212,1089 @@
 2024-10-30 16:59:04 [INFO]: IP: 10.92.199.17 - GET /api/user/candidate/list-candidates
 2024-10-30 16:59:04 [INFO]: Listagem de denúncias realizada com sucesso.
 2024-10-30 16:59:04 [INFO]: IP: 10.92.199.17 - GET /api/user/candidate/list-candidates
+2024-10-30 20:42:41 [INFO]: Server is running on port 5000
+2024-10-30 20:42:46 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:43:46 [INFO]: Server is running on port 5000
+2024-10-30 20:43:51 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:45:48 [INFO]: Server is running on port 5000
+2024-10-30 20:45:51 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 20:45:51 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 20:45:51 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 20:45:51 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 20:45:51 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 20:45:51 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 20:45:53 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:46:24 [INFO]: Server is running on port 5000
+2024-10-30 20:46:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 20:46:29 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:46:45 [INFO]: Server is running on port 5000
+2024-10-30 20:46:50 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:52:03 [INFO]: Server is running on port 5000
+2024-10-30 20:52:08 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:53:55 [INFO]: Server is running on port 5000
+2024-10-30 20:54:00 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:55:17 [INFO]: Server is running on port 5000
+2024-10-30 20:55:22 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 20:56:06 [INFO]: Server is running on port 5000
+2024-10-30 20:56:11 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 21:35:39 [INFO]: Server is running on port 5000
+2024-10-30 21:35:44 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 21:36:00 [INFO]: Server is running on port 5000
+2024-10-30 21:36:05 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 21:36:43 [INFO]: Server is running on port 5000
+2024-10-30 21:36:48 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 21:37:08 [INFO]: Server is running on port 5000
+2024-10-30 21:37:13 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 21:37:19 [INFO]: Server is running on port 5000
+2024-10-30 21:37:24 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 21:39:00 [INFO]: Server is running on port 5000
+2024-10-30 21:39:05 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-10-30 21:39:24 [INFO]: Server is running on port 5000
+2024-10-30 21:39:24 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 21:39:32 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:39:32 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:39:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:39:33 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:39:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:39:33 [INFO]: Rota do candidato acessada!
+2024-10-30 21:39:33 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:39:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:39:33 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:39:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:39:33 [INFO]: Rota do candidato acessada!
+2024-10-30 21:39:33 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:40:02 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:40:02 [INFO]: Rota do candidato acessada!
+2024-10-30 21:40:02 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:40:09 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:40:09 [INFO]: Rota do candidato acessada!
+2024-10-30 21:40:09 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:40:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:40:18 [INFO]: Rota do candidato acessada!
+2024-10-30 21:40:18 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:40:27 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:40:27 [INFO]: Rota do candidato acessada!
+2024-10-30 21:40:27 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:44:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:44:38 [INFO]: Rota do candidato acessada!
+2024-10-30 21:44:38 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:45:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:45:01 [INFO]: Rota do candidato acessada!
+2024-10-30 21:45:01 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:45:17 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:45:17 [INFO]: Rota do candidato acessada!
+2024-10-30 21:45:17 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:45:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:45:33 [INFO]: Rota do candidato acessada!
+2024-10-30 21:45:33 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:45:36 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:45:36 [INFO]: Rota do candidato acessada!
+2024-10-30 21:45:36 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:46:06 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:46:06 [INFO]: Rota do candidato acessada!
+2024-10-30 21:46:06 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:46:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:46:25 [INFO]: Rota do candidato acessada!
+2024-10-30 21:46:25 [INFO]: Candidato encontrado com o id: 671d5241e1ea57f040b49069
+2024-10-30 21:46:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:46:41 [INFO]: IP: 192.168.100.130 - POST /api/auth/refresh-token
+2024-10-30 21:46:41 [WARN]: Refresh token é necessário.
+2024-10-30 21:46:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671d5241e1ea57f040b49069
+2024-10-30 21:47:14 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:47:14 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:47:14 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:47:14 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:47:14 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:47:14 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - POST /api/auth/login
+2024-10-30 21:48:10 [INFO]: Usuário autenticado com sucesso: teste@example.com
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:48:10 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722c837f023b49d163be287.
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 21:48:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 21:48:10 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722c837f023b49d163be287.
+2024-10-30 21:48:15 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 21:48:15 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-30 21:48:15 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 21:48:15 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-30 21:48:16 [INFO]: IP: 192.168.100.130 - POST /api/auth/logout
+2024-10-30 21:48:17 [INFO]: IP: 192.168.100.130 - POST /api/auth/logout
+2024-10-30 21:48:17 [INFO]: IP: 192.168.100.130 - POST /api/auth/logout
+2024-10-30 21:48:22 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:48:22 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:48:22 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:48:22 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:48:22 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:48:22 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:48:26 [INFO]: IP: 192.168.100.130 - POST /api/auth/login
+2024-10-30 21:48:26 [INFO]: Usuário autenticado com sucesso: testeempresa@gmail.com
+2024-10-30 21:48:26 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:48:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 21:48:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 21:48:26 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 21:48:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 21:48:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 21:48:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 21:48:26 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 21:48:27 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 21:48:27 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 21:48:27 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 21:48:27 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 21:48:27 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 21:48:27 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 21:48:27 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 21:48:27 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 21:48:27 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 21:48:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:48:38 [INFO]: Rota do candidato acessada!
+2024-10-30 21:48:38 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:48:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:48:38 [INFO]: Rota do candidato acessada!
+2024-10-30 21:48:38 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:49:05 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:49:05 [INFO]: Rota do candidato acessada!
+2024-10-30 21:49:05 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:49:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:49:41 [INFO]: Rota do candidato acessada!
+2024-10-30 21:49:41 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:49:49 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:49:49 [INFO]: Rota do candidato acessada!
+2024-10-30 21:49:49 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:50:22 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:50:22 [INFO]: Rota do candidato acessada!
+2024-10-30 21:50:22 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:50:34 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:50:34 [INFO]: Rota do candidato acessada!
+2024-10-30 21:50:34 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:50:44 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:50:44 [INFO]: Rota do candidato acessada!
+2024-10-30 21:50:44 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:51:36 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:51:36 [INFO]: Rota do candidato acessada!
+2024-10-30 21:51:36 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:51:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:51:38 [INFO]: Rota do candidato acessada!
+2024-10-30 21:51:38 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:52:01 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:52:01 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:52:12 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:52:12 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:52:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:52:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:52:13 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:52:13 [INFO]: Rota do candidato acessada!
+2024-10-30 21:52:13 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:52:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:52:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:52:13 [INFO]: Rota do candidato acessada!
+2024-10-30 21:52:13 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:52:13 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:52:19 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:52:19 [INFO]: Rota do candidato acessada!
+2024-10-30 21:52:19 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:52:50 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:52:50 [INFO]: Rota do candidato acessada!
+2024-10-30 21:52:50 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:53:15 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:53:15 [INFO]: Rota do candidato acessada!
+2024-10-30 21:53:15 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:53:27 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:53:27 [INFO]: Rota do candidato acessada!
+2024-10-30 21:53:27 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:55:27 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:27 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:30 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:30 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:37 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:37 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:43 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:43 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:53 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:53 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:58 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:55:58 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:56:05 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:56:05 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:56:42 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:56:42 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:57:07 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:57:07 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:26 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:26 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:28 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:28 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:28 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:28 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:28 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:58:28 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:28 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:28 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:28 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:28 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:58:44 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:44 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:46 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:46 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:46 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:46 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:46 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:58:46 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:46 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:46 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:46 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:46 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:58:50 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:50 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:52 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:52 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:52 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:52 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:52 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:58:52 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:52 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:52 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:52 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:52 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:58:58 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:58 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 21:58:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:59 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:59 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:59 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 21:58:59 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 21:58:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 21:58:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 21:58:59 [INFO]: Rota do candidato acessada!
+2024-10-30 21:58:59 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:00 [INFO]: Usuários não verificados removidos: 0
+2024-10-30 22:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-10-30 22:00:00 [INFO]: Vagas removidas: 0
+2024-10-30 22:00:00 [INFO]: Tokens expirados removidos: 0
+2024-10-30 22:00:09 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:00:09 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:00:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:00:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:00:10 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:10 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:00:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:00:10 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:10 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:30 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:30 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:30 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:31 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:31 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:31 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:38 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:38 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:40 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:40 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:40 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:41 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:41 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:42 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:42 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:42 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:47 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:47 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:47 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:00:53 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:00:53 [INFO]: Rota do candidato acessada!
+2024-10-30 22:00:53 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:01:14 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:01:14 [INFO]: Rota do candidato acessada!
+2024-10-30 22:01:14 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:01:15 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:01:15 [INFO]: Rota do candidato acessada!
+2024-10-30 22:01:15 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:01:43 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:01:43 [INFO]: Rota do candidato acessada!
+2024-10-30 22:01:43 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:01:51 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:01:51 [INFO]: Rota do candidato acessada!
+2024-10-30 22:01:51 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:01:56 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:01:56 [INFO]: Rota do candidato acessada!
+2024-10-30 22:01:56 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:06 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:06 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:06 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:11 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:11 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:11 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:15 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:15 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:15 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:23 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:23 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:23 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:28 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:28 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:28 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:33 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:33 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:42 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:02:42 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:02:44 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:44 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:02:44 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:02:44 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:44 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:44 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:02:44 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:44 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:02:44 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:44 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:46 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:02:46 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:02:47 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:47 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:02:47 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:02:47 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:47 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:02:47 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:02:47 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:02:47 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:02:47 [INFO]: Rota do candidato acessada!
+2024-10-30 22:02:47 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:03:40 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:03:40 [INFO]: Rota do candidato acessada!
+2024-10-30 22:03:40 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:03:55 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:03:55 [INFO]: Rota do candidato acessada!
+2024-10-30 22:03:55 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:03:58 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:03:58 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:03:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:03:59 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:03:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:03:59 [INFO]: Rota do candidato acessada!
+2024-10-30 22:03:59 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:03:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:03:59 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:03:59 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:03:59 [INFO]: Rota do candidato acessada!
+2024-10-30 22:03:59 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:04:08 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:04:08 [INFO]: Rota do candidato acessada!
+2024-10-30 22:04:08 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:04:21 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:04:21 [INFO]: Rota do candidato acessada!
+2024-10-30 22:04:21 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:02 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:02 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:02 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:13 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:13 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:23 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:23 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:24 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:24 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:24 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:24 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:24 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:24 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:24 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:24 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:24 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:24 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:25 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:25 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:26 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:26 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:26 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:26 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:29 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:29 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:30 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:30 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:30 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:30 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:30 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:30 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:30 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:30 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:30 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:30 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:32 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:32 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:33 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:33 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:33 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:33 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:33 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:33 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:34 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:34 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:35 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:35 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:35 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:35 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:35 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:35 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:35 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:35 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:35 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:35 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:39 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:39 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:05:40 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:40 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:40 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:40 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:40 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:40 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:40 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:05:40 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:05:40 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:40 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:05:57 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:05:57 [INFO]: Rota do candidato acessada!
+2024-10-30 22:05:57 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:06:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:06:01 [INFO]: Rota do candidato acessada!
+2024-10-30 22:06:01 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:06:07 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:06:07 [INFO]: Rota do candidato acessada!
+2024-10-30 22:06:07 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:06:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:06:13 [INFO]: Rota do candidato acessada!
+2024-10-30 22:06:13 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:06:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:06:26 [INFO]: Rota do candidato acessada!
+2024-10-30 22:06:26 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:06:37 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:06:37 [INFO]: Rota do candidato acessada!
+2024-10-30 22:06:37 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:07:02 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:07:02 [INFO]: Rota do candidato acessada!
+2024-10-30 22:07:02 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:07:39 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:07:39 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:07:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:07:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:07:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:07:41 [INFO]: Rota do candidato acessada!
+2024-10-30 22:07:41 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:07:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:07:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:07:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:07:41 [INFO]: Rota do candidato acessada!
+2024-10-30 22:07:41 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:07:47 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:07:47 [INFO]: Rota do candidato acessada!
+2024-10-30 22:07:47 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:07:56 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:07:56 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:07:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:07:58 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:07:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:07:58 [INFO]: Rota do candidato acessada!
+2024-10-30 22:07:58 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:07:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:07:58 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:07:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:07:58 [INFO]: Rota do candidato acessada!
+2024-10-30 22:07:58 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:07:59 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:07:59 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:08:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:01 [INFO]: Rota do candidato acessada!
+2024-10-30 22:08:01 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:08:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:08:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:01 [INFO]: Rota do candidato acessada!
+2024-10-30 22:08:01 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:08:02 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:08:02 [INFO]: Rota do candidato acessada!
+2024-10-30 22:08:02 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:08:05 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:08:05 [INFO]: Rota do candidato acessada!
+2024-10-30 22:08:05 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:08:13 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:13 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:13 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:13 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:13 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - POST /api/auth/login
+2024-10-30 22:08:18 [INFO]: Usuário autenticado com sucesso: candidatoteste@gmail.com
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:08:18 [INFO]: Nenhuma vaga recomendada para o candidato com ID 671535fd004cfb6caa3d517b.
+2024-10-30 22:08:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:08:18 [INFO]: Nenhuma vaga recomendada para o candidato com ID 671535fd004cfb6caa3d517b.
+2024-10-30 22:08:22 [INFO]: IP: 192.168.100.130 - POST /api/auth/logout
+2024-10-30 22:08:23 [INFO]: IP: 192.168.100.130 - POST /api/auth/logout
+2024-10-30 22:08:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-30 22:08:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:08:26 [INFO]: Nenhuma vaga recomendada para o candidato com ID 671535fd004cfb6caa3d517b.
+2024-10-30 22:08:26 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:08:26 [INFO]: Nenhuma vaga recomendada para o candidato com ID 671535fd004cfb6caa3d517b.
+2024-10-30 22:08:33 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:33 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:33 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:33 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:33 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:40 [INFO]: IP: 192.168.100.130 - POST /api/auth/login
+2024-10-30 22:08:40 [WARN]: Tentativa de login com e-mail não registrado: teste@gmail.com
+2024-10-30 22:08:56 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:56 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:08:56 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:56 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:08:56 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:56 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:08:59 [INFO]: IP: 192.168.100.130 - POST /api/auth/login
+2024-10-30 22:09:00 [INFO]: Usuário autenticado com sucesso: teste@example.com
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:09:00 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722c837f023b49d163be287.
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:09:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:09:00 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722c837f023b49d163be287.
+2024-10-30 22:09:24 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:09:24 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-30 22:09:24 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:09:24 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-30 22:09:26 [INFO]: IP: 192.168.100.130 - POST /api/user/company/vacancy/add-interested
+2024-10-30 22:09:26 [ERROR]: Erro ao adicionar candidato à vaga: JobVacancy validation failed: employmentType: `Full-time` is not a valid enum value for path `employmentType`., workSchedule.workingDays.0: `Monday` is not a valid enum value for path `workSchedule.workingDays.0`., workSchedule.workingDays.1: `Tuesday` is not a valid enum value for path `workSchedule.workingDays.1`., workSchedule.workingDays.2: `Wednesday` is not a valid enum value for path `workSchedule.workingDays.2`., workSchedule.workingDays.3: `Thursday` is not a valid enum value for path `workSchedule.workingDays.3`., workSchedule.workingDays.4: `Friday` is not a valid enum value for path `workSchedule.workingDays.4`.
+2024-10-30 22:09:31 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:09:31 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:09:31 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:09:31 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:09:31 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:09:31 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:09:43 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:09:44 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:10:11 [INFO]: IP: 192.168.100.130 - POST /api/user/candidate/create-candidate
+2024-10-30 22:10:11 [INFO]: Perfil de candidato criado com sucesso para o usuário: candidatoteste1@gmail.com
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - POST /api/auth/login
+2024-10-30 22:10:25 [INFO]: Usuário autenticado com sucesso: candidatoteste1@gmail.com
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:10:25 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:10:25 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:10:25 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:10:37 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:10:38 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:10:38 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:10:38 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:10:39 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:10:39 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:10:40 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:10:40 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:12:24 [INFO]: Server is running on port 5000
+2024-10-30 22:12:24 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:12:27 [INFO]: Server is running on port 5000
+2024-10-30 22:12:28 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:12:42 [INFO]: Server is running on port 5000
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:12:42 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:12:42 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:12:43 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:12:43 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:12:43 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:12:43 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:12:43 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:12:43 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:12:43 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:12:43 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:12:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:12:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:12:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:12:58 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:13:00 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:13:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:13:00 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:13:36 [INFO]: Server is running on port 5000
+2024-10-30 22:13:36 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:13:37 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:13:37 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:13:38 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:38 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:38 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:38 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:13:38 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:38 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:38 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:38 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:38 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:38 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:38 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:13:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:13:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:13:41 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:41 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:13:41 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:41 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:41 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:13:41 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:41 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:13:41 [INFO]: Rota do candidato acessada!
+2024-10-30 22:13:41 [ERROR]: Erro ao buscar candidato pelo ID: Cast to ObjectId failed for value "<Buffer 67 22 d8 f3 5e 8e 6c 49 24 20 8d 7b>" (type Buffer) at path "_id" for model "Candidate"
+2024-10-30 22:13:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:13:41 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:14:17 [INFO]: Server is running on port 5000
+2024-10-30 22:14:17 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:14:17 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:14:17 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:14:18 [INFO]: Rota do candidato acessada!
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:14:18 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:14:18 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:14:18 [INFO]: Rota do candidato acessada!
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:14:18 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:14:18 [INFO]: Rota do candidato acessada!
+2024-10-30 22:14:18 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:14:18 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:14:18 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:14:18 [INFO]: Rota do candidato acessada!
+2024-10-30 22:14:18 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:14:38 [INFO]: IP: 192.168.100.130 - PUT /api/user/candidate/update-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:14:38 [INFO]: Candidato com ID 6722d8f35e8e6c4924208d7b atualizado com sucesso.
+2024-10-30 22:14:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:14:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:14:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:15:15 [INFO]: Server is running on port 5000
+2024-10-30 22:15:15 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:19 [INFO]: Server is running on port 5000
+2024-10-30 22:15:19 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:29 [INFO]: Server is running on port 5000
+2024-10-30 22:15:29 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:31 [INFO]: Server is running on port 5000
+2024-10-30 22:15:31 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:37 [INFO]: Server is running on port 5000
+2024-10-30 22:15:37 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:41 [INFO]: Server is running on port 5000
+2024-10-30 22:15:41 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:46 [INFO]: Server is running on port 5000
+2024-10-30 22:15:46 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:51 [INFO]: Server is running on port 5000
+2024-10-30 22:15:51 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:55 [INFO]: Server is running on port 5000
+2024-10-30 22:15:55 [INFO]: MongoDB conectado com sucesso!
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:15:55 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/671535fd004cfb6caa3d517b
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:15:55 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:15:55 [INFO]: Candidato encontrado com o id: 671535fd004cfb6caa3d517b
+2024-10-30 22:15:59 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:15:59 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/job-vacancy/list-interested
+2024-10-30 22:16:00 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/applications-today
+2024-10-30 22:16:00 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:16:00 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-10-30 22:16:01 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:16:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:16:01 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6722d8f35e8e6c4924208d7b.
+2024-10-30 22:16:01 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/
+2024-10-30 22:16:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:16:01 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:06 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:06 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:06 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:06 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:06 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:08 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:08 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:08 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:08 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:08 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:08 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:08 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:08 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:08 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:16:08 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:16:09 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:09 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:10 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:16:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:10 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:16:14 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:14 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:14 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:14 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:37 [INFO]: IP: 192.168.100.130 - PUT /api/user/candidate/update-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:37 [INFO]: Candidato com ID 6722d8f35e8e6c4924208d7b atualizado com sucesso.
+2024-10-30 22:16:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:16:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:16:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:16:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:16:41 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:16:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:16:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:16:41 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:01 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:03 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:03 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:22 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:22 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:29 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:29 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:30 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:30 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:37 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:37 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:39 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:39 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:17:40 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:17:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:17:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:17:41 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:41 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:17:41 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:17:41 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:53 [INFO]: IP: 192.168.100.130 - PUT /api/user/candidate/update-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:53 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/list-vacancies
+2024-10-30 22:17:53 [INFO]: Candidato com ID 6722d8f35e8e6c4924208d7b atualizado com sucesso.
+2024-10-30 22:17:55 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:17:55 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:17:56 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:56 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:17:56 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:17:56 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:56 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:17:56 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:17:56 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:17:56 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:19:43 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:19:43 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:19:44 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:19:44 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:19:45 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:19:45 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:19:45 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:19:45 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:19:45 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidate/6722d8f35e8e6c4924208d7b
+2024-10-30 22:19:45 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:19:45 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:19:45 [INFO]: Candidato encontrado com o id: 6722d8f35e8e6c4924208d7b
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:01 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:23:01 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:23:01 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:01 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:23:01 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:02 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:02 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:02 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:02 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:02 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:02 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:02 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:02 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:02 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:23:02 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:23:03 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:03 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:23:03 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:23:03 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:23:03 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:23:03 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:24:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:11 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:24:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:11 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:12 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:12 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:12 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:12 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:12 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:20 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:24:20 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:20 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:21 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:24:21 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:21 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:21 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:21 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:21 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-candidates
+2024-10-30 22:24:23 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:23 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:23 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:23 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:23 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:23 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:23 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:23 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:23 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:23 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:28 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:24:28 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:24:29 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:24:29 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:29 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:24:29 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:24:29 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:27:49 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:27:49 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:27:49 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:27:49 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:27:49 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:27:49 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:27:49 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:27:49 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:27:49 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:27:49 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:27:59 [INFO]: IP: 192.168.100.130 - POST /api/user/company/vacancy/create
+2024-10-30 22:28:44 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:28:44 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:28:51 [INFO]: IP: 192.168.100.130 - POST /api/user/company/vacancy/create-vacancy
+2024-10-30 22:30:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:30:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:11 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:30:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:11 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:11 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:11 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:11 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:20 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:20 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:36 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:30:36 [INFO]: IP: 192.168.100.130 - GET /api/user/me
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:30:37 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/company/list-company/
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/vacancies-applied
+2024-10-30 22:30:37 [INFO]: IP: 192.168.100.130 - GET /api/user/candidate/list-favorites
+2024-10-30 22:30:37 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:38 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3
+2024-10-30 22:30:38 [INFO]: IP: 192.168.100.130 - GET /api/user/company/vacancy/company-vacancies/
+2024-10-30 22:30:38 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 671505a804358230a2fdcab3

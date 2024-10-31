@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\User\\Desktop\\Vítor\\Projetos\\JobLink\\Back\\backend-tcc\\src\\Logs\\.9e61ae13a8ee744faf2933f340ed19ac8c88dfc9-audit.json",
+    "files": [
+        {
+            "date": 1730331760193,
+            "name": "C:\\Users\\User\\Desktop\\Vítor\\Projetos\\JobLink\\Back\\backend-tcc\\src\\Logs\\2024-10-30-combined.log",
+            "hash": "ca36bde925b5f59a51a9850e7ab73bbf68b76a3a04a6093ffccfe1279290ab32"
+        }
+    ],
+    "hashType": "sha256"
+}

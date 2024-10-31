@@ -100,7 +100,8 @@ exports.listAllCandidates = async (req, res) => {
 // Função para buscar um candidato pelo ID
 exports.getCandidateById = async (req, res) => {
     try {
-        const id = req.user.id;
+        const id  = req.user.id;
+       /*  const { id } = req.params; */
 
         // Busca o candidato no banco de dados pelo ID
         const candidate = await Candidate.findById(id);
@@ -112,6 +113,30 @@ exports.getCandidateById = async (req, res) => {
         }
 
         // Retorna o candidato encontrado como resposta
+        logger.info("Candidato encontrado com o id: " + id)
+        res.status(200).json(candidate);
+    } catch (error) {
+        logger.error(`Erro ao buscar candidato pelo ID: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao buscar candidato', error: error.message });
+    }
+};
+
+/* Função pra pré vizualização funcionar */
+exports.getCandidateByIdP = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Busca o candidato no banco de dados pelo ID
+        const candidate = await Candidate.findById(id);
+
+        // Se o candidato não for encontrado, retorna um erro 404
+        if (!candidate) {
+            logger.warn(`Candidato com ID ${id} não encontrado.`);
+            return res.status(404).json({ message: 'Candidato não encontrado.' });
+        }
+
+        // Retorna o candidato encontrado como resposta
+        logger.info("Candidato encontrado com o id: " + id)
         res.status(200).json(candidate);
     } catch (error) {
         logger.error(`Erro ao buscar candidato pelo ID: ${error.message}`);
