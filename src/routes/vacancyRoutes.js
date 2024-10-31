@@ -37,8 +37,11 @@ router.delete('/delete-vacancy/:id',
 
 // Rota para atualizar Vagas
 router.put('/update-vacancy/:id',
-    /* authenticateToken,
-    authorizeUser,  */
+    authenticateToken,
+    /* authorizeRoles('Company', 'Admin'),
+    vacancyValidationRules(),
+    validate, */
+    /* authorizeUser,  */
     vacancyController.updateJobVacancyById
 );
 

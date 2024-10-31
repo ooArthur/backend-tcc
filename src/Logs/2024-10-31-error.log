@@ -1,0 +1,5 @@
+2024-10-31 09:15:04 [ERROR]: Erro ao criar a vaga de emprego: Cast to ObjectId failed for value "ID_DA_EMPRESA" (type string) at path "_id" for model "Company" - Empresa ID: ID_DA_EMPRESA
+2024-10-31 09:16:27 [ERROR]: Erro ao criar a vaga de emprego: Cast to ObjectId failed for value "ID_DA_EMPRESA" (type string) at path "_id" for model "Company" - Empresa ID: ID_DA_EMPRESA
+2024-10-31 09:16:29 [ERROR]: Erro ao criar a vaga de emprego: Cast to ObjectId failed for value "ID_DA_EMPRESA" (type string) at path "_id" for model "Company" - Empresa ID: ID_DA_EMPRESA
+2024-10-31 09:17:00 [ERROR]: Erro ao criar a vaga de emprego: Cast to ObjectId failed for value "ID_DA_EMPRESA" (type string) at path "_id" for model "Company" - Empresa ID: ID_DA_EMPRESA
+2024-10-31 09:19:44 [ERROR]: Empresa com ID undefined não encontrada.
