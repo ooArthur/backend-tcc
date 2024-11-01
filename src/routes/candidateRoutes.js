@@ -43,6 +43,7 @@ router.get("/list-favorites",
 // Rota para adicionar uma vaga favorita para o Candidato
 router.post("/add-favorite",
     authenticateToken,
+    authorizeRoles('Admin', 'Candidate'),
     candidateController.addFavoriteJobVacancy
 );
 

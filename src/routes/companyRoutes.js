@@ -5,6 +5,7 @@ const companyController = require("../controllers/companyController");
 const router = express.Router();
 
 const { authenticateToken } = require('../middleware/authMiddleware');
+const { authorizeRoles } = require("../middleware/authorizeRoles");
 
 router.use("/vacancy", vacancyRoutes);
 
@@ -15,8 +16,8 @@ router.post("/create-company",
 
 // Rota para listagem das Empresas
 router.get("/list-companies",
-/*     authenticateToken,
- */    companyController.listAllCompanies
+       authenticateToken,
+        companyController.listAllCompanies
 );
 router.get("/list-company",
     authenticateToken,
@@ -31,22 +32,22 @@ router.put("/update-company/:id",
 );
 
 // Rota para listar os candidatos favoritos da Empresa
-router.get("/list-favorites/:companyId/:jobVacancyId",
-    /* authenticateToken,*/
-    companyController.listFavoriteJobVacancies
+router.get("/list-favorites",
+    authenticateToken,
+    companyController.listFavoriteCandidates
 );
 
 // Rota para adicionar os candidatos favoritos da Empresa
-router.post("/add-favorites",
-    /* authenticateToken,
-    authorizeUser, */
+router.post("/add-favorite",
+    authenticateToken,
+    authorizeRoles('Company', 'Admin'),
     companyController.addFavoriteCandidate
 );
 
 // Rota para remover os candidatos favoritos da Empresa
-router.delete("/remove-favorites",
-    /* authenticateToken,
-    authorizeUser, */
+router.delete("/remove-favorite",
+    authenticateToken,
+    authorizeRoles('Admin', 'Company'),
     companyController.removeFavoriteCandidate
 );
 

@@ -34,19 +34,19 @@ exports.login = async (req, res) => {
 
         if (!user) {
             logger.warn(`Tentativa de login com e-mail não registrado: ${email}`);
-            return res.status(401).json({ error: 'Credenciais inválidas' });
+            return res.status(401).json({ error: 'Verifique se o e-mail está correto e tente novamente.' });
         }
 
         // Verifica se o usuário está banido
         if (user.banned) {
             logger.warn(`Tentativa de login de um usuário banido: ${email}`);
-            return res.status(403).json({ error: 'Usuário banido' });
+            return res.status(403).json({ error: 'Usuário banido. Entre em contato com o suporte.' });
         }
 
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
             logger.warn(`Tentativa de login com senha incorreta para o e-mail: ${email}`);
-            return res.status(401).json({ error: 'Credenciais inválidas' });
+            return res.status(401).json({ error: 'Senha incorreta. Tente novamente.' });
         }
 
         const { accessToken, refreshToken } = generateTokens(user);

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const JobVacancyFavoritesSchema = new mongoose.Schema(
     {
         companyId: { type: mongoose.Schema.Types.ObjectId, ref: 'Company', required: true },
-        jobVacancyId: { type: mongoose.Schema.Types.ObjectId, ref: 'JobVacancy', required: true },
+        jobVacancyId: { type: mongoose.Schema.Types.ObjectId, ref: 'JobVacancy' },
         favoriteCandidates: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Candidate', required: true }]
     },
     {

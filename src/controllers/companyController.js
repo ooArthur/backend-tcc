@@ -123,21 +123,23 @@ exports.updateCompanyById = async (req, res) => {
     }
 };
 
-// Função para listar todos os candidatos favoritos de uma vaga de emprego para uma empresa
-exports.listFavoriteJobVacancies = async (req, res) => {
+// Função para listar todos os candidatos favoritos gerais ou por vaga específica
+exports.listFavoriteCandidates = async (req, res) => {
     try {
-        const { companyId, jobVacancyId } = req.params; 
-        
-        // Verifica se a empresa possui candidatos favoritos para a vaga de emprego específica
-        const jobVacancyFavorites = await JobVacancyFavorites.findOne({ companyId, jobVacancyId }).populate('favoriteCandidates');
+        const companyId = req.user.id;
+        const { jobVacancyId } = req.body;
 
-        // Se não houver favoritos, retorna um erro
+        const query = { companyId };
+        if (jobVacancyId) query.jobVacancyId = jobVacancyId; // Filtra por vaga se o ID for fornecido
+        else query.jobVacancyId = null; // Caso contrário, busca favoritos gerais
+
+        const jobVacancyFavorites = await JobVacancyFavorites.findOne(query).populate('favoriteCandidates');
+
         if (!jobVacancyFavorites) {
-            logger.warn(`Lista de candidatos favoritos não encontrada para a vaga com ID ${jobVacancyId} e empresa com ID ${companyId}.`);
-            return res.status(404).json({ message: 'Lista de candidatos favoritos não encontrada.' });
+            logger.warn(`Nenhum candidato favorito encontrado para ${jobVacancyId ? `a vaga com ID ${jobVacancyId}` : 'favoritos gerais'} da empresa ${companyId}.`);
+            return res.status(404).json({ message: 'Nenhum candidato favorito encontrado.' });
         }
 
-        // Retorna os candidatos favoritos como resposta
         res.status(200).json(jobVacancyFavorites.favoriteCandidates);
     } catch (error) {
         logger.error(`Erro ao listar candidatos favoritos: ${error.message}`);
@@ -145,36 +147,35 @@ exports.listFavoriteJobVacancies = async (req, res) => {
     }
 };
 
-// Função para adicionar um candidato aos favoritos de uma vaga de emprego para uma empresa
+// Função para adicionar um candidato aos favoritos gerais ou por vaga específica
 exports.addFavoriteCandidate = async (req, res) => {
     try {
-        const { companyId, jobVacancyId, candidateId } = req.body;
-        
-        // Verifica se a vaga de emprego e a empresa estão associadas com candidatos favoritos
-        let jobVacancyFavorites = await JobVacancyFavorites.findOne({ companyId, jobVacancyId });
+        const companyId = req.user.id;
+        const { jobVacancyId, candidateId } = req.body;
 
-        // Se não houver um documento para essa combinação, cria um novo
+        if (!candidateId) {
+            logger.warn(`ID do candidato é obrigatório para adicionar aos favoritos.`);
+            return res.status(400).json({ message: 'ID do candidato é obrigatório.' });
+        }
+
+        const query = { companyId, jobVacancyId: jobVacancyId || null }; // Define `null` para favoritos gerais
+        let jobVacancyFavorites = await JobVacancyFavorites.findOne(query);
+
         if (!jobVacancyFavorites) {
             jobVacancyFavorites = new JobVacancyFavorites({
                 companyId,
-                jobVacancyId,
+                jobVacancyId: jobVacancyId || null,
                 favoriteCandidates: [candidateId]
             });
+        } else if (jobVacancyFavorites.favoriteCandidates.includes(candidateId)) {
+            logger.warn(`Candidato ${candidateId} já nos favoritos para ${jobVacancyId ? `vaga ${jobVacancyId}` : 'favoritos gerais'}.`);
+            return res.status(400).json({ message: 'Candidato já está nos favoritos.' });
         } else {
-            // Verifica se o candidato já está na lista de favoritos
-            if (jobVacancyFavorites.favoriteCandidates.includes(candidateId)) {
-                logger.warn(`Candidato com ID ${candidateId} já está nos favoritos para a vaga com ID ${jobVacancyId} da empresa com ID ${companyId}.`);
-                return res.status(400).json({ message: 'Candidato já está nos favoritos.' });
-            }
-
-            // Adiciona o candidato aos favoritos
             jobVacancyFavorites.favoriteCandidates.push(candidateId);
         }
 
-        // Salva as atualizações
         await jobVacancyFavorites.save();
-        logger.info(`Candidato com ID ${candidateId} adicionado aos favoritos para a vaga com ID ${jobVacancyId} da empresa com ID ${companyId}.`);
-
+        logger.info(`Candidato ${candidateId} adicionado aos favoritos para ${jobVacancyId ? `vaga ${jobVacancyId}` : 'favoritos gerais'}.`);
         res.status(200).json({ message: 'Candidato adicionado aos favoritos com sucesso.' });
     } catch (error) {
         logger.error(`Erro ao adicionar candidato aos favoritos: ${error.message}`);
@@ -182,34 +183,29 @@ exports.addFavoriteCandidate = async (req, res) => {
     }
 };
 
-// Função para remover um candidato dos favoritos de uma vaga de emprego para uma empresa
+// Função para remover um candidato dos favoritos gerais ou de uma vaga específica
 exports.removeFavoriteCandidate = async (req, res) => {
     try {
-        const { candidateId, companyId, jobVacancyId } = req.body; // ID do candidato, empresa e vaga no corpo da requisição
+        const companyId = req.user.id;
+        const { jobVacancyId, candidateId } = req.body;
 
-        // Verifica se a vaga de emprego e a empresa estão associadas com candidatos favoritos
-        let jobVacancyFavorites = await JobVacancyFavorites.findOne({ companyId, jobVacancyId });
+        const query = { companyId, jobVacancyId: jobVacancyId || null }; // Define `null` para favoritos gerais
+        const jobVacancyFavorites = await JobVacancyFavorites.findOne(query);
 
-        // Se não houver um documento para essa combinação, retorna um erro
         if (!jobVacancyFavorites) {
-            logger.warn(`Lista de candidatos favoritos não encontrada para a vaga com ID ${jobVacancyId} da empresa com ID ${companyId}.`);
-            return res.status(404).json({ message: 'Lista de candidatos favoritos não encontrada.' });
+            logger.warn(`Lista de favoritos não encontrada para ${jobVacancyId ? `vaga ${jobVacancyId}` : 'favoritos gerais'}.`);
+            return res.status(404).json({ message: 'Lista de favoritos não encontrada.' });
         }
 
-        // Verifica se o candidato está na lista de favoritos
         const index = jobVacancyFavorites.favoriteCandidates.indexOf(candidateId);
         if (index === -1) {
-            logger.warn(`Candidato com ID ${candidateId} não está nos favoritos para a vaga com ID ${jobVacancyId} da empresa com ID ${companyId}.`);
+            logger.warn(`Candidato ${candidateId} não está nos favoritos para ${jobVacancyId ? `vaga ${jobVacancyId}` : 'favoritos gerais'}.`);
             return res.status(400).json({ message: 'Candidato não está nos favoritos.' });
         }
 
-        // Remove o candidato dos favoritos
         jobVacancyFavorites.favoriteCandidates.splice(index, 1);
-
-        // Salva as atualizações
         await jobVacancyFavorites.save();
-        logger.info(`Candidato com ID ${candidateId} removido dos favoritos para a vaga com ID ${jobVacancyId} da empresa com ID ${companyId}.`);
-
+        logger.info(`Candidato ${candidateId} removido dos favoritos para ${jobVacancyId ? `vaga ${jobVacancyId}` : 'favoritos gerais'}.`);
         res.status(200).json({ message: 'Candidato removido dos favoritos com sucesso.' });
     } catch (error) {
         logger.error(`Erro ao remover candidato dos favoritos: ${error.message}`);
