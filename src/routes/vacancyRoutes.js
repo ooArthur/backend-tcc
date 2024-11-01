@@ -46,8 +46,8 @@ router.put('/update-vacancy/:id',
 );
 
 // Rota para listar candidatos interessados em uma vaga
-router.get('/list-interested',
-    /* authenticateToken, */
+router.get('/list-interested/:id',
+    authenticateToken,
     vacancyController.listInterestedCandidates
 );
 
