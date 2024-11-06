@@ -43,7 +43,6 @@ const CandidateProfileSchema = new mongoose.Schema(
             neighborhood: { type: String, required: true },
             city: { type: String, required: true },
             state: { type: String, required: true },
-            cep: { type: String, required: true },
             number: { type: String, required: true },
         },
         candidateComplement: { type: String },

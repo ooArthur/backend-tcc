@@ -78,8 +78,37 @@ exports.createCandidate = async (req, res) => {
 
         res.status(201).json({ message: 'Candidato criado com sucesso', candidateProfile });
     } catch (error) {
-        logger.error(`Erro ao criar candidato: ${error.message}` + "Requisição:" + req.body);
+        logger.error(`Erro ao criar candidato: ${error.message}` + "Requisição:" + JSON.stringify(req.body, null, 2));
         res.status(500).json({ error: 'Erro ao criar candidato', details: error.message });
+
+        console.log("Conteúdo do req.body recebido:", JSON.stringify(req.body, null, 2));
+
+// Exemplo de verificação manual de campos obrigatórios
+const requiredFields = [
+    "candidateName",
+    "candidatePhone",
+    "desiredRole",
+    "desiredState",
+    "desiredCity",
+    "candidateCEP",
+    "candidateAddress.publicPlace",
+    "candidateAddress.neighborhood",
+    "candidateAddress.city",
+    "candidateAddress.state",
+    "candidateAddress.number",
+    "candidateBirth",
+    "candidateGender"
+];
+
+const missingFields = requiredFields.filter(field => {
+    const [parent, child] = field.split(".");
+    return child ? !(req.body[parent] && req.body[parent][child]) : !req.body[field];
+});
+
+if (missingFields.length > 0) {
+    console.error("Campos obrigatórios ausentes:", missingFields);
+    return res.status(400).json({ error: "Campos obrigatórios ausentes", missingFields });
+}        
     }
 };
 

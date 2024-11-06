@@ -1,7 +1,9 @@
+const mongoose = require('mongoose');
 const JobVacancy = require('../models/JobVacancy');
 const Company = require('../models/CompanyProfile');
 const Candidate = require('../models/CandidateProfile');
 const JobApplicationStatus = require('../models/JobApplicationStatus');
+const CandidateFavorites = require('../models/CandidateFavorites');
 const logger = require('../config/logger');
 
 // Função para remover vagas antigas
@@ -68,7 +70,7 @@ exports.createJobVacancy = async (req, res) => {
         // Retornando a resposta com o status 201 (Criado) e a vaga criada
         res.status(201).json(savedJobVacancy);
     } catch (error) {
-        logger.error(`Erro ao criar a vaga de emprego: ${error.message} - Empresa ID: ${req.body.companyId}`);
+        logger.error(`Erro ao criar a vaga de emprego: ${error.message} - Empresa ID: ${req.body}`);
         res.status(500).json({ message: 'Erro ao criar a vaga de emprego', error: error.message });
     }
 };
@@ -109,27 +111,44 @@ exports.getJobVacancyById = async (req, res) => {
     }
 };
 
-// Função de deletar vaga
+// Função de deletar vaga e dados relacionados (status e favoritos)
 exports.deleteJobVacancyById = async (req, res) => {
     try {
         const { id } = req.params;
 
-        // Remove a vaga do banco de dados pelo ID
-        const result = await JobVacancy.findByIdAndDelete(id);
+        // Primeiro, buscamos a vaga para garantir que ela existe
+        const jobVacancy = await JobVacancy.findById(id);
 
-        // Se a vaga não for encontrada, retorna um erro 404
-        if (!result) {
+        if (!jobVacancy) {
             logger.warn(`Vaga com ID ${id} não encontrada.`);
             return res.status(404).json({ message: 'Vaga não encontrada.' });
+        }
+
+        // Excluindo os status de candidatura relacionados a essa vaga
+        const deleteStatusResult = await JobApplicationStatus.deleteMany({ jobVacancyId: id });
+        logger.info(`Status de candidaturas excluídos: ${deleteStatusResult.deletedCount}`);
+
+        // Excluindo os favoritos (supondo que exista uma coleção que guarda os favoritos)
+        const deleteFavoritesResult = await CandidateFavorites.deleteMany({ jobVacancyId: id });
+        logger.info(`Favoritos excluídos: ${deleteFavoritesResult.deletedCount}`);
+
+        // Agora, removemos a vaga
+        const deleteVacancyResult = await JobVacancy.findByIdAndDelete(id);
+
+        // Verifica se a vaga foi realmente excluída
+        if (!deleteVacancyResult) {
+            logger.warn(`Falha ao excluir a vaga com ID ${id}.`);
+            return res.status(500).json({ message: 'Erro ao excluir a vaga.' });
         }
 
         logger.info(`Vaga excluída com sucesso. ID: ${id}`);
 
         // Retorna uma mensagem de sucesso
-        res.status(200).json({ message: 'Vaga excluída com sucesso.' });
+        res.status(200).json({ message: 'Vaga e dados relacionados excluídos com sucesso.' });
+
     } catch (error) {
-        logger.error(`Erro ao excluir vaga pelo ID: ${error.message}`);
-        res.status(500).json({ message: 'Erro ao excluir vaga', error: error.message });
+        logger.error(`Erro ao excluir a vaga e dados relacionados. ${error.message}`);
+        res.status(500).json({ message: 'Erro ao excluir a vaga e dados relacionados', error: error.message });
     }
 };
 
@@ -229,8 +248,7 @@ exports.addInterestedCandidate = async (req, res) => {
             candidateId,
             jobVacancyId,
             companyId: jobVacancy.companyId,
-            status: 'Currículo Enviado',
-            createdAt: new Date()  // Adiciona a data e hora da criação
+            status: 'Em Análise',
         });
 
         // Salva a aplicação de status no banco de dados
@@ -265,10 +283,10 @@ exports.getDailyApplicationCount = async (req, res) => {
         });
 
         // Retorna a contagem das candidaturas feitas hoje
-        res.status(200).json({ 
-            candidateId, 
+        res.status(200).json({
+            candidateId,
             date: startOfDay.toISOString().split('T')[0],  // Formato YYYY-MM-DD
-            dailyApplicationsCount 
+            dailyApplicationsCount
         });
     } catch (error) {
         logger.error(`Erro ao obter a contagem de candidaturas diárias: ${error.message}`);
@@ -417,7 +435,7 @@ exports.getJobApplicationsAndStatusForCandidate = async (req, res) => {
         const appliedVacancies = await JobVacancy.find({
             interestedCandidates: candidateId
         }).populate('companyId', 'companyName')
-          .select('jobTitle jobDescription salary jobArea jobLocation');
+            .select('jobTitle jobDescription salary jobArea jobLocation');
 
         if (!appliedVacancies || appliedVacancies.length === 0) {
             return res.status(200).json({ message: 'Nenhuma candidatura encontrada.' });
@@ -508,8 +526,8 @@ exports.getJobVacanciesByCompanyId = async (req, res) => {
         if (!jobVacancies || jobVacancies.length === 0) {
 
             logger.warn("Nenhuma vaga encontrada para essa empresa. Id da empresa: " + companyId)
-            
-            return res.status(404).json({ message: 'Nenhuma vaga encontrada para essa empresa.' +  companyId});
+
+            return res.status(404).json({ message: 'Nenhuma vaga encontrada para essa empresa.' + companyId });
         }
 
         // Retornar as vagas encontradas
@@ -520,5 +538,96 @@ exports.getJobVacanciesByCompanyId = async (req, res) => {
         console.error('Erro ao buscar as vagas:', error);
         logger.error("Erro ao buscar vagas da empresa: " + companyId)
         res.status(500).json({ message: 'Erro ao buscar as vagas.' });
+    }
+};
+
+// Função para contar candidatos por status no sistema
+exports.getCandidateStatusCounts = async (req, res) => {
+    try {
+        // Contagem de candidatos para cada status
+        const approvedCount = await JobApplicationStatus.countDocuments({ status: 'Aprovado' });
+        const inAnalysisCount = await JobApplicationStatus.countDocuments({ status: 'Em Análise' });
+        const dismissedCount = await JobApplicationStatus.countDocuments({ status: 'Dispensado' });
+
+        // Retorna as contagens como resposta JSON
+        res.status(200).json({
+            approved: approvedCount,
+            inAnalysis: inAnalysisCount,
+            dismissed: dismissedCount
+        });
+    } catch (error) {
+        logger.error(`Erro ao contar candidatos por status: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao obter contagem de candidatos por status', error: error.message });
+    }
+};
+
+// Função para contar o número de candidaturas por status para uma empresa
+exports.countApplicationsByStatus = async (req, res) => {
+    const companyId = req.user.id;
+
+    try {
+        // Conta as candidaturas e agrupa pelo campo de status
+        const statusCounts = await JobApplicationStatus.aggregate([
+            { $match: { companyId: companyId } },  // Filtra para candidaturas da empresa
+            { $group: { _id: "$status", count: { $sum: 1 } } } // Agrupa pelo campo status e conta cada um
+        ]);
+
+        // Verifica se há dados e retorna a resposta apropriada
+        if (statusCounts.length === 0) {
+            return res.status(200).json({ message: 'Nenhuma candidatura encontrada para esta empresa.' });
+        }
+
+        // Formata o resultado como um objeto com pares de chave-valor
+        const formattedStatusCounts = statusCounts.reduce((acc, curr) => {
+            acc[curr._id] = curr.count;
+            return acc;
+        }, {});
+
+        res.status(200).json(formattedStatusCounts);
+
+        logger.info(`Contagem de status das candidaturas para a empresa com ID ${companyId} realizada com sucesso.`);
+    } catch (error) {
+        logger.error(`Erro ao contar status das candidaturas para a empresa com ID ${companyId}: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao contar status das candidaturas.', error: error.message });
+    }
+};
+
+// Função para obter contagem de status das candidaturas para uma vaga específica
+exports.getJobApplicationStatusCount = async (req, res) => {
+    const {jobVacancyId} = req.params; // ID da vaga vindo da URL
+    const companyId = req.user.id; // ID da empresa autenticada, assumindo que está em `req.user.id`
+
+    try {
+        // Verificar se a vaga pertence à empresa autenticada
+        const jobVacancy = await JobVacancy.findOne({ _id: jobVacancyId, companyId });
+
+        if (!jobVacancy) {
+            logger.warn(`Tentativa de acesso não autorizada: Empresa ${companyId} tentou acessar status da vaga ${jobVacancyId}`);
+            return res.status(403).json({ message: 'Você não tem permissão para visualizar os status desta vaga.' });
+        }
+
+        // Contar as candidaturas por status
+        const statusCount = await JobApplicationStatus.aggregate([
+            { $match: { jobVacancyId: new mongoose.Types.ObjectId(jobVacancyId) } },
+            { $group: { _id: "$status", count: { $sum: 1 } } },
+            { $project: { _id: 0, status: "$_id", count: 1 } }
+        ]);
+
+        // Lista de status possíveis para garantir que todos sejam exibidos, mesmo que a contagem seja zero
+        const statuses = ['Em Análise', 'Aprovado', 'Dispensado'];
+        const result = statuses.map(status => {
+            const found = statusCount.find(item => item.status === status);
+            return { status, count: found ? found.count : 0 };
+        });
+
+        console.log(result)
+
+        logger.info(`Status das candidaturas obtido para a vaga ${jobVacancyId} da empresa ${companyId}`);
+
+        res.status(200).json(result); // Retornando a contagem de status
+
+    } catch (error) {
+        logger.error(`Erro ao obter contagem de status para a vaga ${jobVacancyId}: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao obter contagem de status das candidaturas', error: error.message });
     }
 };

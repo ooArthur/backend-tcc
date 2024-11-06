@@ -1,0 +1,304 @@
+2024-11-06 08:12:55 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:16:03 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:17:05 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:18:27 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:24:11 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:24:29 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:30:24 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:31:10 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:38:52 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:[object Object]
+2024-11-06 08:40:41 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:{
+  "candidateName": "Pedro",
+  "candidatePhone": "(11) 96785-0768",
+  "desiredRole": "Desenvolvedor Front-End",
+  "candidateTargetSalary": "R$ 5000",
+  "desiredState": "São Paulo",
+  "desiredCity": "São Paulo",
+  "candidateCEP": "06160180",
+  "candidateAddress": {
+    "publicPlace": "aa",
+    "neighborhood": "aa",
+    "city": "aa",
+    "state": "aa",
+    "number": "455"
+  },
+  "candidateBirth": "2000-12-20",
+  "candidateGender": "Masculino",
+  "areaOfInterest": "Atendimento ao Cliente"
+}
+2024-11-06 08:46:36 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:{
+  "candidateName": "Candidato Assombrado",
+  "candidatePhone": "(11) 99999-9999",
+  "desiredRole": "Desenvolvedor Back-end",
+  "candidateTargetSalary": "5000",
+  "desiredState": "São Paulo",
+  "desiredCity": "São Paulo",
+  "candidateCEP": "01000-000",
+  "candidateAddress": "Rua das Almas, 666",
+  "candidateComplement": "Apartamento 13",
+  "candidateBirth": "2005-09-06T00:00:00.000Z",
+  "candidateGender": "Masculino",
+  "candidateCivilStatus": "Solteiro",
+  "candidateLastJob": "Desenvolvedor Júnior",
+  "candidateHierarchicalArea": "Tecnologia",
+  "candidateIdioms": [
+    {
+      "name": "Inglês",
+      "level": "Avancado"
+    },
+    {
+      "name": "Espanhol",
+      "level": "Intermediario"
+    }
+  ],
+  "candidateCourses": [
+    {
+      "name": "Ciência da Computação",
+      "institution": "Universidade Assombrada",
+      "duration": "4 anos",
+      "conclusionYear": 2015
+    }
+  ],
+  "candidateExperience": [
+    {
+      "role": "Desenvolvedor Júnior",
+      "company": "Tech Ghost Corp",
+      "startDate": "2018-01-15",
+      "endDate": "2020-10-31",
+      "salary": "4000",
+      "mainActivities": "Desenvolvimento de APIs e microserviços."
+    }
+  ],
+  "candidateQualifications": [
+    {
+      "description": "Certificação em Node.js"
+    },
+    {
+      "description": "Fluente em inglês técnico"
+    }
+  ],
+  "candidateAbout": "Sou um desenvolvedor apaixonado por resolver problemas complexos.",
+  "candidateLink": "https://www.linkedin.com/in/candidato-assombrado",
+  "areaOfInterest": "Tecnologia"
+}
+2024-11-06 08:46:42 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:{
+  "candidateName": "Candidato Assombrado",
+  "candidatePhone": "(11) 99999-9999",
+  "desiredRole": "Desenvolvedor Back-end",
+  "candidateTargetSalary": "5000",
+  "desiredState": "São Paulo",
+  "desiredCity": "São Paulo",
+  "candidateCEP": "01000-000",
+  "candidateAddress": "Rua das Almas, 666",
+  "candidateComplement": "Apartamento 13",
+  "candidateBirth": "2005-09-06T00:00:00.000Z",
+  "candidateGender": "Masculino",
+  "candidateCivilStatus": "Solteiro",
+  "candidateLastJob": "Desenvolvedor Júnior",
+  "candidateHierarchicalArea": "Tecnologia",
+  "candidateIdioms": [
+    {
+      "name": "Inglês",
+      "level": "Avancado"
+    },
+    {
+      "name": "Espanhol",
+      "level": "Intermediario"
+    }
+  ],
+  "candidateCourses": [
+    {
+      "name": "Ciência da Computação",
+      "institution": "Universidade Assombrada",
+      "duration": "4 anos",
+      "conclusionYear": 2015
+    }
+  ],
+  "candidateExperience": [
+    {
+      "role": "Desenvolvedor Júnior",
+      "company": "Tech Ghost Corp",
+      "startDate": "2018-01-15",
+      "endDate": "2020-10-31",
+      "salary": "4000",
+      "mainActivities": "Desenvolvimento de APIs e microserviços."
+    }
+  ],
+  "candidateQualifications": [
+    {
+      "description": "Certificação em Node.js"
+    },
+    {
+      "description": "Fluente em inglês técnico"
+    }
+  ],
+  "candidateAbout": "Sou um desenvolvedor apaixonado por resolver problemas complexos.",
+  "candidateLink": "https://www.linkedin.com/in/candidato-assombrado",
+  "areaOfInterest": "Tecnologia"
+}
+2024-11-06 08:47:12 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:{
+  "candidateName": "Candidato Assombrado",
+  "candidatePhone": "(11) 99999-9999",
+  "desiredRole": "Desenvolvedor Back-end",
+  "candidateTargetSalary": "5000",
+  "desiredState": "São Paulo",
+  "desiredCity": "São Paulo",
+  "candidateCEP": "01000-000",
+  "candidateComplement": "Apartamento 13",
+  "candidateBirth": "2005-09-06T00:00:00.000Z",
+  "candidateGender": "Masculino",
+  "candidateCivilStatus": "Solteiro",
+  "candidateLastJob": "Desenvolvedor Júnior",
+  "candidateHierarchicalArea": "Tecnologia",
+  "candidateIdioms": [
+    {
+      "name": "Inglês",
+      "level": "Avancado"
+    },
+    {
+      "name": "Espanhol",
+      "level": "Intermediario"
+    }
+  ],
+  "candidateCourses": [
+    {
+      "name": "Ciência da Computação",
+      "institution": "Universidade Assombrada",
+      "duration": "4 anos",
+      "conclusionYear": 2015
+    }
+  ],
+  "candidateExperience": [
+    {
+      "role": "Desenvolvedor Júnior",
+      "company": "Tech Ghost Corp",
+      "startDate": "2018-01-15",
+      "endDate": "2020-10-31",
+      "salary": "4000",
+      "mainActivities": "Desenvolvimento de APIs e microserviços."
+    }
+  ],
+  "candidateQualifications": [
+    {
+      "description": "Certificação em Node.js"
+    },
+    {
+      "description": "Fluente em inglês técnico"
+    }
+  ],
+  "candidateAbout": "Sou um desenvolvedor apaixonado por resolver problemas complexos.",
+  "candidateLink": "https://www.linkedin.com/in/candidato-assombrado",
+  "areaOfInterest": "Tecnologia"
+}
+2024-11-06 08:49:43 [ERROR]: Erro ao criar empresa: Company validation failed: telephone: Path `telephone` is required. - Dados: {"email":"felixempresa@gmail.com","companyName":"Empresa Felix","password":"123","confirmPassword":"123","branchOfActivity":"Sabonete Liquido","liberalProfessionalData":{"registrationDocument":"123123123123","registrationNumber":"123123123123","cpf":"123123123123"},"positionInTheCompany":"Aquela la bem alta","address":{"publicPlace":"Rua São Bento do Sapucaí","neighborhood":"Vila Dirce","city":"Carapicuíba","state":"SP","cep":"06343560","number":"1"},"description":"No McDonald's, cada lanche é feito para satisfazer seu apetite e alegrar o seu dia! Desde o sabor clássico do Big Mac até o irresistível McChicken e o surpreendente McFlurry para a sobremesa, aqui tem uma opção para cada gosto!  🌟 Ofertas especiais? Claro! Aproveite os combos com batata frita crocante e aquele refrigerante geladinho! E quem não ama um bom McLanche Feliz? Um presente para toda a família!  🚀 Está com pressa? Peça pelo app e receba sua refeição onde estiver!  McDonald's: Sempre perto de você, sempre mais gostoso! 🌟","type":"Profissional Liberal"}
+2024-11-06 08:50:31 [ERROR]: Erro ao criar candidato: Illegal arguments: undefined, numberRequisição:{
+  "candidateName": "Vítor Lima Ferreira",
+  "candidatePhone": "(11)96785-0709",
+  "desiredRole": "Desenvolvedor Front-End",
+  "candidateTargetSalary": "R$ 5000",
+  "desiredState": "São Paulo",
+  "desiredCity": "São Paulo",
+  "candidateCEP": "06160180",
+  "candidateAddress": {
+    "publicPlace": "aa",
+    "neighborhood": "aa",
+    "city": "aa",
+    "state": "aa",
+    "number": "200"
+  },
+  "candidateBirth": "2024-11-04",
+  "candidateGender": "Masculino",
+  "areaOfInterest": "Atendimento ao Cliente"
+}
+2024-11-06 09:10:31 [ERROR]: Erro ao criar empresa: Illegal arguments: undefined, number - Dados: {"companyName":"empresa1","companyEmail":"","companyPassword":"","companyAddress":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","email":"empresa2@gmail.com","branchOfActivity":"Saúde","telephone":"(11) 96785-0906","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"qwfew","address.state":"SP","description":"fewfffewfewfewf","employeerNumber":"100","type":"Empresa de CRH","crhCompanyData.cnpj":"12.345.678/0001-90","crhCompanyData.socialReason":"Legal em","crhCompanyData.fantasyName":"Empresando","site":"grehh"}
+2024-11-06 09:11:30 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"Empresa Teste2","email":"empresa@gmail.com","password":"123","companyAddress":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","address.state":"SP","description":"qwfqf","employeerNumber":"40","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 09:13:05 [ERROR]: Erro ao remover vaga de emprego dos favoritos: No matching document found for id "672b5755087e1693ef7b7701" version 0 modifiedPaths "favoriteJobVacancies"
+2024-11-06 09:13:13 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"Empresa Teste2","email":"empresa@gmail.com","password":"123","companyAddress":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","address.state":"SP","description":"qwfqf","employeerNumber":"40","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 09:53:01 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"empresa10","email":"empresateste12@gmail.com","password":"123","companyAddress":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","address.state":"SP","description":"uyluffktuyf","employeerNumber":"5","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 09:54:18 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"empresa100","email":"empresa120@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","address.state":"SP","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","description":"jklghbiygv","employeerNumber":"3","type":"Profissional Liberal","liberalProfessionalData.registrationDocument":"1111111111111","liberalProfessionalData.registrationNumber":"111","liberalProfessionalData.cpf":"203203932093290","site":"grehh"}
+2024-11-06 09:56:21 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"empresa100","email":"empresa120@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","address.state":"SP","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","description":"jklghbiygv","employeerNumber":"3","type":"Profissional Liberal","liberalProfessionalData.registrationDocument":"1111111111111","liberalProfessionalData.registrationNumber":"111","liberalProfessionalData.cpf":"203203932093290","site":"grehh"}
+2024-11-06 09:58:17 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"empresa100","email":"empresa120@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","address.state":"SP","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","description":"jklghbiygv","employeerNumber":"3","type":"Profissional Liberal","liberalProfessionalData.registrationDocument":"1111111111111","liberalProfessionalData.registrationNumber":"111","liberalProfessionalData.cpf":"203203932093290","site":"grehh"}
+2024-11-06 10:00:14 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"empresa100","email":"empresa120@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","address.state":"SP","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","description":"jklghbiygv","employeerNumber":"3","type":"Profissional Liberal","liberalProfessionalData.registrationDocument":"1111111111111","liberalProfessionalData.registrationNumber":"111","liberalProfessionalData.cpf":"203203932093290","site":"grehh"}
+2024-11-06 10:01:43 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"empresa100","email":"empresa120@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","address.state":"SP","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.number":"333","address.complement":"wqwef","address.city":"Osasco","description":"jklghbiygv","employeerNumber":"3","type":"Profissional Liberal","liberalProfessionalData.registrationDocument":"1111111111111","liberalProfessionalData.registrationNumber":"111","liberalProfessionalData.cpf":"203203932093290","site":"grehh"}
+2024-11-06 13:15:35 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"Empresa testando","email":"empresa50@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","address.publicPlace":"Rua Juan Vicente","address.city":"Osasco","address.state":"SP","address.number":"333","address.cep":"06160180","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0999","description":"ewfewf","employeerNumber":"45","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 13:16:19 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"Empresa testando","email":"empresa50@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","address.publicPlace":"Rua Juan Vicente","address.city":"Osasco","address.state":"SP","address.number":"333","address.cep":"06160180","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0999","description":"ewfewf","employeerNumber":"45","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 13:17:33 [ERROR]: Erro ao criar empresa: Company validation failed: address.state: Path `address.state` is required., address.city: Path `address.city` is required., address.number: Path `address.number` is required., address.publicPlace: Path `address.publicPlace` is required., address.cep: Path `address.cep` is required. - Dados: {"companyName":"Empresa Teste2","email":"empresa25@gmail.com","password":"123","address":{"publicPlace":"","neighborhood":"","city":"","state":"","number":""},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-9090","address.cep":"06160180","address.publicPlace":"Rua Juan Vicente","address.city":"Osasco","address.state":"SP","address.number":"333","description":"frwegrhwh","employeerNumber":"34","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 13:25:12 [ERROR]: Erro ao criar empresa: Dados de empresa empregadora são obrigatórios. - Dados: {"companyName":"Empresa Testefefew","email":"empresa50@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"hth","state":"hh","number":"234","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","description":"rggeger","employeerNumber":"21","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 13:33:33 [ERROR]: Erro ao atualizar empresa pelo ID: Validation failed: branchOfActivity: Path `branchOfActivity` is required.
+2024-11-06 13:35:55 [ERROR]: Erro ao criar empresa: Dados de empresa empregadora são obrigatórios. - Dados: {"companyName":"Empresa Testefefew","email":"empresa50@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"Osasco","state":"SP","number":"321","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0999","description":"jopijyoh","employeerNumber":"100","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 13:36:30 [ERROR]: Erro ao criar empresa: Dados de empresa empregadora são obrigatórios. - Dados: {"companyName":"Empresa Testefefew","email":"empresa50@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"Osasco","state":"SP","number":"321","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0999","description":"jopijyoh","employeerNumber":"100","type":"Empresa Empregadora","employerCompanyData.cnpj":"99.999.999","employerCompanyData.socialReason":"Razão Social","employerCompanyData.fantasyName":"Nome Fantasia","site":"grehh"}
+2024-11-06 13:37:22 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress.state: Path `candidateAddress.state` is required., candidateAddress.city: Path `candidateAddress.city` is required., candidateAddress.neighborhood: Path `candidateAddress.neighborhood` is required., candidateAddress.publicPlace: Path `candidateAddress.publicPlace` is required.Requisição:{
+  "candidateName": "Paulo Souza Lima ",
+  "email": "paulolima@gmail.com",
+  "password": "P12345",
+  "confirmPassword": "P12345",
+  "candidateBirth": "2005-11-15",
+  "candidatePhone": "(11) 99999-9999",
+  "cpf": "44444444444",
+  "candidateAddress": {
+    "number": "20",
+    "cep": "00000-000"
+  },
+  "candidateCivilStatus": "casado",
+  "candidateEducationLevel": "100000",
+  "candidateLastJob": "desenvolvedor de sistemas",
+  "desiredRole": "desenvolvedor de sistemas",
+  "candidateTargetSalary": "5000",
+  "desiredCity": "Barueri",
+  "desiredState": "SP",
+  "candidateGender": "Masculino",
+  "candidateCEP": "00000-000"
+}
+2024-11-06 13:37:22 [ERROR]: Erro: Cannot set headers after they are sent to the client
+2024-11-06 13:38:00 [ERROR]: Erro ao criar candidato: Candidate validation failed: candidateAddress.state: Path `candidateAddress.state` is required., candidateAddress.city: Path `candidateAddress.city` is required., candidateAddress.neighborhood: Path `candidateAddress.neighborhood` is required., candidateAddress.publicPlace: Path `candidateAddress.publicPlace` is required.Requisição:{
+  "candidateName": "Paulo Souza Lima ",
+  "email": "paulolima@teste.com",
+  "password": "P12345",
+  "confirmPassword": "P12345",
+  "candidateBirth": "2005-11-15",
+  "candidatePhone": "(11) 99999-9999",
+  "cpf": "44444444444",
+  "candidateAddress": {
+    "number": "20",
+    "cep": "00000-000"
+  },
+  "candidateCivilStatus": "casado",
+  "candidateEducationLevel": "100000",
+  "candidateLastJob": "desenvolvedor de sistemas",
+  "desiredRole": "desenvolvedor de sistemas",
+  "candidateTargetSalary": "5000",
+  "desiredCity": "Barueri",
+  "desiredState": "SP",
+  "candidateGender": "Masculino",
+  "candidateCEP": "00000-000"
+}
+2024-11-06 13:38:00 [ERROR]: Erro: Cannot set headers after they are sent to the client
+2024-11-06 13:42:42 [ERROR]: Erro ao criar empresa: Company validation failed: employerCompanyData.cnpj: Path `cnpj` is required., employerCompanyData.socialReason: Path `socialReason` is required., employerCompanyData.fantasyName: Path `fantasyName` is required. - Dados: {"companyName":"Empresa Teste","email":"empresa12@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"Osasco","state":"SP","number":"321","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","employerCompanyData":{"cnpj":"","socialReason":"","fantasyName":""},"branchOfActivity":"Saúde","positionInTheCompany":"Dono","telephone":"(11) 96785-9090","description":"fewgfgwe","site":"grehh","employeerNumber":"100","type":"Empresa de CRH","crhCompanyData.cnpj":"12.345.678/0001-90","crhCompanyData.socialReason":"Legal em","crhCompanyData.fantasyName":"weg"}
+2024-11-06 13:49:22 [ERROR]: Erro ao criar empresa: Company validation failed: employerCompanyData.fantasyName: Path `fantasyName` is required., liberalProfessionalData.registrationDocument: Path `registrationDocument` is required., liberalProfessionalData.registrationNumber: Path `registrationNumber` is required., liberalProfessionalData.cpf: Path `cpf` is required. - Dados: {"companyName":"Empresa Teste","email":"empresa22@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"Osasco","state":"SP","number":"333","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","employerCompanyData":{"cnpj":"99.999.999","socialReason":"Razão Social","fantasyName":""},"crhCompanyData":{"cnpj":"12.345.678/0001-90","socialReason":"Legal em","fantasyName":"weg"},"liberalProfessionalData":{"registrationDocument":"","registrationNumber":"","cpf":""},"positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0906","description":"wgwegwggw","employeerNumber":"56","type":"Empresa de CRH","site":"grehh"}
+2024-11-06 13:50:36 [ERROR]: Erro ao criar empresa: Company validation failed: employerCompanyData.fantasyName: Path `fantasyName` is required., crhCompanyData.fantasyName: Path `fantasyName` is required. - Dados: {"companyName":"Empresa Teste","email":"empresa22@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"Osasco","state":"SP","number":"333","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","employerCompanyData":{"cnpj":"99.999.999","socialReason":"Razão Social","fantasyName":""},"crhCompanyData":{"cnpj":"12.345.678/0001-90","socialReason":"Legal em","fantasyName":""},"liberalProfessionalData":{"registrationDocument":"1111111111111","registrationNumber":"111","cpf":"203203932093290"},"positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0906","description":"wgwegwggw","employeerNumber":"56","type":"Profissional Liberal","site":"grehh"}
+2024-11-06 13:50:44 [ERROR]: Erro ao criar empresa: Company validation failed: crhCompanyData.fantasyName: Path `fantasyName` is required. - Dados: {"companyName":"Empresa Teste","email":"empresa22@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"Osasco","state":"SP","number":"333","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","employerCompanyData":{"cnpj":"99.999.999","socialReason":"Razão Social","fantasyName":"Nome Fantasia"},"crhCompanyData":{"cnpj":"12.345.678/0001-90","socialReason":"Legal em","fantasyName":""},"liberalProfessionalData":{"registrationDocument":"1111111111111","registrationNumber":"111","cpf":"203203932093290"},"positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0906","description":"wgwegwggw","employeerNumber":"56","type":"Empresa Empregadora","site":"grehh"}
+2024-11-06 13:52:08 [ERROR]: Erro ao criar empresa: Company validation failed: employerCompanyData.cnpj: Path `cnpj` is required., employerCompanyData.socialReason: Path `socialReason` is required., employerCompanyData.fantasyName: Path `fantasyName` is required., liberalProfessionalData.registrationDocument: Path `registrationDocument` is required., liberalProfessionalData.registrationNumber: Path `registrationNumber` is required., liberalProfessionalData.cpf: Path `cpf` is required. - Dados: {"companyName":"Empresa Testefefew","email":"empresa33@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"qwfew","state":"SP","number":"333","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","employerCompanyData":{"cnpj":"","socialReason":"","fantasyName":""},"crhCompanyData":{"cnpj":"12.345.678/0001-90","socialReason":"Legal em","fantasyName":"weg"},"liberalProfessionalData":{"registrationDocument":"","registrationNumber":"","cpf":""},"positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","description":"regg","employeerNumber":"33","type":"Empresa de CRH","site":"grehh"}
+2024-11-06 13:55:57 [ERROR]: Erro ao criar empresa: Company validation failed: employerCompanyData.cnpj: Path `cnpj` is required., employerCompanyData.socialReason: Path `socialReason` is required., employerCompanyData.fantasyName: Path `fantasyName` is required., liberalProfessionalData.registrationDocument: Path `registrationDocument` is required., liberalProfessionalData.registrationNumber: Path `registrationNumber` is required., liberalProfessionalData.cpf: Path `cpf` is required. - Dados: {"companyName":"Empresa Testefefew","email":"empresa332@gmail.com","password":"123","address":{"publicPlace":"Rua Juan Vicente","neighborhood":"ghgeh","city":"Osasco","state":"SP","number":"333","cep":"06160180"},"companyCEP":"","companyCity":"","companyState":"","employerCompanyData":{"cnpj":"","socialReason":"","fantasyName":""},"crhCompanyData":{"cnpj":"12.345.678/0001-90","socialReason":"Legal em","fantasyName":"weg"},"liberalProfessionalData":{"registrationDocument":"","registrationNumber":"","cpf":""},"positionInTheCompany":"Dono","branchOfActivity":"Saúde","telephone":"(11) 96785-0707","description":"trhtheheh","employeerNumber":"11","type":"Empresa de CRH","site":"grehh"}
+2024-11-06 13:56:08 [ERROR]: Erro: mongoose is not defined
+2024-11-06 13:56:08 [ERROR]: Erro: mongoose is not defined
+2024-11-06 13:56:39 [ERROR]: Erro: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 13:56:39 [ERROR]: Erro: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 13:59:51 [ERROR]: Erro: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 13:59:51 [ERROR]: Erro: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 14:00:39 [ERROR]: Erro: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 14:00:39 [ERROR]: Erro: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 14:25:48 [ERROR]: Erro ao adicionar candidato à vaga: JobApplicationStatus validation failed: status: `Currículo Enviado` is not a valid enum value for path `status`.
+2024-11-06 14:26:13 [ERROR]: Erro ao adicionar candidato à vaga: JobApplicationStatus validation failed: status: `Currículo Enviado` is not a valid enum value for path `status`.
+2024-11-06 14:27:43 [ERROR]: Erro ao adicionar candidato à vaga: JobApplicationStatus validation failed: status: `Currículo Enviado` is not a valid enum value for path `status`.
+2024-11-06 15:44:16 [ERROR]: Erro: mongoose is not defined
+2024-11-06 15:44:16 [ERROR]: Erro: mongoose is not defined
+2024-11-06 15:57:02 [ERROR]: Erro ao adicionar candidato à vaga: E11000 duplicate key error collection: sistemacurriculos.jobapplicationstatuses index: jobVacancyId_1_candidateId_1 dup key: { jobVacancyId: ObjectId('672ba6566983bb2f5ee4fe82'), candidateId: ObjectId('672bafae518dd7ac0ed770be') }
+2024-11-06 15:57:02 [ERROR]: Erro ao adicionar candidato à vaga: E11000 duplicate key error collection: sistemacurriculos.jobapplicationstatuses index: jobVacancyId_1_candidateId_1 dup key: { jobVacancyId: ObjectId('672ba6566983bb2f5ee4fe82'), candidateId: ObjectId('672bafae518dd7ac0ed770be') }
+2024-11-06 16:25:25 [ERROR]: Erro ao obter contagem de status para a vaga 672bbc1d85313b38ff9dd27d: mongoose is not defined
+2024-11-06 16:25:25 [ERROR]: Erro ao obter contagem de status para a vaga 672bbc1d85313b38ff9dd27d: mongoose is not defined
+2024-11-06 16:25:45 [ERROR]: Erro ao obter contagem de status para a vaga 672b9fed2c549224d8fd3ad6: mongoose is not defined
+2024-11-06 16:25:45 [ERROR]: Erro ao obter contagem de status para a vaga 672b9fed2c549224d8fd3ad6: mongoose is not defined
+2024-11-06 16:25:51 [ERROR]: Erro ao obter contagem de status para a vaga 672bacd8cde628ec3a913942: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 16:25:51 [ERROR]: Erro ao obter contagem de status para a vaga 672bacd8cde628ec3a913942: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 16:25:54 [ERROR]: Erro ao obter contagem de status para a vaga 672bbc1d85313b38ff9dd27d: Class constructor ObjectId cannot be invoked without 'new'
+2024-11-06 16:25:54 [ERROR]: Erro ao obter contagem de status para a vaga 672bbc1d85313b38ff9dd27d: Class constructor ObjectId cannot be invoked without 'new'

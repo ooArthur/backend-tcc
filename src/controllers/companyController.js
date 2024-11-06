@@ -97,6 +97,26 @@ exports.getCompanyById = async (req, res) => {
         res.status(500).json({ message: 'Erro ao buscar empresa', error: error.message });
     }
 };
+exports.getCompanyById2 = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Busca a empresa no banco de dados pelo ID
+        const company = await Company.findById(id);
+
+        // Se a empresa não for encontrada, retorna um erro 404
+        if (!company) {
+            logger.warn(`Empresa com ID ${id} não encontrada.`);
+            return res.status(404).json({ message: 'Empresa não encontrada.' });
+        }
+
+        // Retorna a empresa encontrada como resposta
+        res.status(200).json(company);
+    } catch (error) {
+        logger.error(`Erro ao buscar empresa pelo ID: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao buscar empresa', error: error.message });
+    }
+};
 
 // Função para atualizar uma empresa pelo ID
 exports.updateCompanyById = async (req, res) => {

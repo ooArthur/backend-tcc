@@ -116,6 +116,7 @@ exports.refreshToken = async (req, res) => {
     }
 };
 
+// Função de logout
 exports.logout = async (req, res) => {
     try {
         const { refreshToken } = req.cookies;

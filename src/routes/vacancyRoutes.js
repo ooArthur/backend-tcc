@@ -54,7 +54,6 @@ router.get('/list-interested/:id',
 // Rota para adicioanr candidatos interessados em uma vaga
 router.post('/add-interested',
     authenticateToken,
-     /*  authorizeUser, */
     vacancyController.addInterestedCandidate
 );
 
@@ -96,5 +95,23 @@ router.get('/company-vacancies/',
     authorizeRoles('Company', 'Admin'),
     vacancyController.getJobVacanciesByCompanyId
 )
+
+router.get('/admin/candidate-status-counts',
+    authenticateToken,
+    authorizeRoles('Admin'),
+    vacancyController.getCandidateStatusCounts
+);
+
+router.get('/candidate-status-counts',
+    authenticateToken,
+    authorizeRoles('Admin', 'Company'),
+    vacancyController.countApplicationsByStatus
+);
+
+router.get('/:jobVacancyId/status-count',
+    authenticateToken,
+    authorizeRoles('Admin', 'Company'),
+    vacancyController.getJobApplicationStatusCount
+);
 
 module.exports = router;

@@ -20,12 +20,11 @@ const JobApplicationStatusSchema = new mongoose.Schema(
         status: {
             type: String,
             enum: [
-                'Currículo Enviado',
                 'Em Análise',
                 'Aprovado',
                 'Dispensado'
             ],
-            default: 'Currículo Enviado',
+            default: 'Em Análise',
             required: true
         },
         comments: { type: String },
