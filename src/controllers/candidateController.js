@@ -83,32 +83,32 @@ exports.createCandidate = async (req, res) => {
 
         console.log("Conteúdo do req.body recebido:", JSON.stringify(req.body, null, 2));
 
-// Exemplo de verificação manual de campos obrigatórios
-const requiredFields = [
-    "candidateName",
-    "candidatePhone",
-    "desiredRole",
-    "desiredState",
-    "desiredCity",
-    "candidateCEP",
-    "candidateAddress.publicPlace",
-    "candidateAddress.neighborhood",
-    "candidateAddress.city",
-    "candidateAddress.state",
-    "candidateAddress.number",
-    "candidateBirth",
-    "candidateGender"
-];
+        // Exemplo de verificação manual de campos obrigatórios
+        const requiredFields = [
+            "candidateName",
+            "candidatePhone",
+            "desiredRole",
+            "desiredState",
+            "desiredCity",
+            "candidateCEP",
+            "candidateAddress.publicPlace",
+            "candidateAddress.neighborhood",
+            "candidateAddress.city",
+            "candidateAddress.state",
+            "candidateAddress.number",
+            "candidateBirth",
+            "candidateGender"
+        ];
 
-const missingFields = requiredFields.filter(field => {
-    const [parent, child] = field.split(".");
-    return child ? !(req.body[parent] && req.body[parent][child]) : !req.body[field];
-});
+        const missingFields = requiredFields.filter(field => {
+            const [parent, child] = field.split(".");
+            return child ? !(req.body[parent] && req.body[parent][child]) : !req.body[field];
+        });
 
-if (missingFields.length > 0) {
-    console.error("Campos obrigatórios ausentes:", missingFields);
-    return res.status(400).json({ error: "Campos obrigatórios ausentes", missingFields });
-}        
+        if (missingFields.length > 0) {
+            console.error("Campos obrigatórios ausentes:", missingFields);
+            return res.status(400).json({ error: "Campos obrigatórios ausentes", missingFields });
+        }
     }
 };
 
@@ -129,8 +129,8 @@ exports.listAllCandidates = async (req, res) => {
 // Função para buscar um candidato pelo ID
 exports.getCandidateById = async (req, res) => {
     try {
-        const id  = req.user.id;
-       /*  const { id } = req.params; */
+        const id = req.user.id;
+        /*  const { id } = req.params; */
 
         // Busca o candidato no banco de dados pelo ID
         const candidate = await Candidate.findById(id);
@@ -176,6 +176,7 @@ exports.getCandidateByIdP = async (req, res) => {
 // Função para atualizar um candidato pelo ID
 exports.updateCandidateById = async (req, res) => {
     try {
+        
         const { id } = req.params;
         const updates = req.body;
 
@@ -310,83 +311,96 @@ exports.generateStyledResumePDF = async (req, res) => {
     try {
         const { id } = req.user;
 
-        // Buscando os dados do candidato no banco de dados
+        // Busca os dados do candidato no banco de dados
         const candidate = await Candidate.findById(id);
         if (!candidate) {
             logger.warn(`Candidato com ID: ${id} não encontrado.`);
             return res.status(404).json({ message: "Candidato não encontrado" });
         }
 
-        // Criar um novo documento PDF
+        // Cria um novo documento PDF
         const doc = new PDFDocument({
             size: 'A4',
             margins: { top: 50, bottom: 50, left: 50, right: 50 }
         });
 
-        // Configurar cabeçalho da resposta HTTP para download do PDF
-        res.setHeader('Content-Disposition', `attachment; filename=${candidate.candidateName}-curriculo.pdf`);
+        // Configura os cabeçalhos de resposta para download do PDF
+        res.setHeader('Content-Disposition', `attachment; filename=${candidate.candidateName || "Candidato"}-curriculo.pdf`);
         res.setHeader('Content-Type', 'application/pdf');
 
-        // ** ESTILIZAÇÃO DO PDF **
+        // Envia o PDF para o cliente como uma resposta (streaming)
+        doc.pipe(res);
 
-        // 1. Cabeçalho com informações do candidato
+        // ** Estilização do PDF **
+
+        // Cabeçalho com informações do candidato
+        const candidateName = candidate.candidateName || "Não Informado";
+        const desiredRole = candidate.desiredRole || "Não Informado";
+        
         doc.font('Helvetica-Bold').fontSize(24).fillColor('#333333')
-            .text(candidate.candidateName.toUpperCase(), { align: 'center' });
+            .text(candidateName.toUpperCase(), { align: 'center' });
         doc.fontSize(14).fillColor('#666666')
-            .text(`• ${candidate.desiredRole.toLowerCase()} •`, { align: 'center' });
+            .text(`• ${desiredRole.toLowerCase()} •`, { align: 'center' });
 
         // Linha colorida centralizada abaixo do nome
         const centerX = (doc.page.width - 400) / 2;
         doc.moveTo(centerX, doc.y + 10).lineTo(centerX + 400, doc.y + 10)
             .strokeColor('#d3f1e0').lineWidth(1).stroke();
 
-        // 2. Sobre Mim - alinhado ao topo
-        doc.moveDown(0.5); // Espaço ajustado antes da seção
-
+        // 2. Sobre Mim
+        doc.moveDown(0.5);
         addSectionHeader(doc, 'Sobre Mim');
-        const aboutText = candidate.candidateAbout || 'Descrição não fornecida.';
+        const aboutText = candidate.candidateAbout || 'Não Informado';
         doc.fontSize(12).fillColor('#333333').text(aboutText, { width: doc.page.width - 100, align: 'left' });
 
-        // 3. Educação - abaixo de "Sobre Mim"
-        doc.moveDown(0.5); // Espaço ajustado antes da seção
+        // 3. Educação
+        doc.moveDown(0.5);
         addSectionHeader(doc, 'Educação');
-
-        const educationText = Array.isArray(candidate.candidateCourses)
-            ? candidate.candidateCourses.map(course => `${course.conclusionYear} • ${course.institution} - ${course.name}`).join('\n')
+        const educationText = Array.isArray(candidate.candidateCourses) && candidate.candidateCourses.length > 0
+            ? candidate.candidateCourses.map(course => {
+                const year = course.conclusionYear || "Ano Não Informado";
+                const institution = course.institution || "Instituição Não Informada";
+                const name = course.name || "Curso Não Informado";
+                return `${year} • ${institution} - ${name}`;
+            }).join('\n')
             : 'Sem informações de educação.';
-
         doc.fontSize(12).fillColor('#333333').text(educationText, { width: doc.page.width - 100, align: 'left' });
 
-        // 4. Experiência - abaixo de "Educação"
-        doc.moveDown(0.5); // Espaço ajustado antes da seção de Experiência
+        // 4. Experiência
+        doc.moveDown(0.5);
         addSectionHeader(doc, 'Experiência');
-
-        if (Array.isArray(candidate.candidateExperience)) {
+        if (Array.isArray(candidate.candidateExperience) && candidate.candidateExperience.length > 0) {
             candidate.candidateExperience.forEach(exp => {
+                const startDate = exp.startDate ? moment(exp.startDate).format('YYYY') : "Data Não Informada";
+                const company = exp.company || "Empresa Não Informada";
+                const role = exp.role || "Cargo Não Informado";
+                const mainActivities = exp.mainActivities ? exp.mainActivities.split('\n') : ["Atividades Não Informadas"];
+
                 doc.font('Helvetica-Bold').fontSize(12).fillColor('#333333')
-                    .text(`${moment(exp.startDate).format('YYYY')} • ${exp.company}`, { continued: true });
-                doc.font('Helvetica').text(` - ${exp.role}`);
-                doc.fontSize(10).fillColor('#666666').list(exp.mainActivities.split('\n').map(a => `${a}`), { bulletRadius: 2 });
+                    .text(`${startDate} • ${company}`, { continued: true });
+                doc.font('Helvetica').text(` - ${role}`);
+                doc.fontSize(10).fillColor('#666666').list(mainActivities, { bulletRadius: 2 });
             });
+        } else {
+            doc.fontSize(12).fillColor('#333333').text("Sem informações de experiência.");
         }
 
         // 5. Habilidades com qualificações e idiomas
-        const skillsYPosition = doc.y + 10; // Espaço ajustado antes de Habilidades
+        const skillsYPosition = doc.y + 10;
         doc.moveTo(50, skillsYPosition);
         addSectionHeader(doc, 'Habilidades');
 
         // Habilidades
-        const qualifications = candidate.candidateQualifications.map(qual => ({
-            name: qual.description
+        const qualifications = (candidate.candidateQualifications || []).map(qual => ({
+            name: qual.description || "Qualificação Não Informada"
         }));
 
-        const idioms = candidate.candidateIdioms.map(idiom => ({
-            name: idiom.name,
-            level: idiom.level
+        const idioms = (candidate.candidateIdioms || []).map(idiom => ({
+            name: idiom.name || "Idioma Não Informado",
+            level: idiom.level || "Nível Não Informado"
         }));
 
-        // Alinhar a altura de ambas as seções de habilidades
-        const startY = doc.y; // Salva a altura inicial para alinhamento
+        const startY = doc.y;
 
         // Renderizar Qualificações na coluna da esquerda
         renderQualifications(doc, qualifications, 50, startY);
@@ -394,65 +408,78 @@ exports.generateStyledResumePDF = async (req, res) => {
         // Renderizar Idiomas na coluna da direita
         renderIdioms(doc, idioms, 320, startY);
 
-        // 6. Rodapé com Contato - centralizado
-        doc.moveDown(0.5);
-        doc.font('Helvetica').fontSize(10).fillColor('#666666')
-            .text(`${candidate.candidatePhone} • ${candidate.email} • ${candidate.candidateLink}`, { align: 'center' });
-        doc.pipe(res);
-        doc.end();
-        // Finalizar e enviar o PDF como resposta
-        logger.info(`PDF estilizado gerado com sucesso para o candidato com ID: ${id}. Enviando resposta.`);
+        // Adiciona um espaço antes do rodapé de contato
+        doc.moveDown(5); // Move para baixo para garantir que o rodapé fique separado
 
+        // Rodapé com Contato centralizado no final da página
+        const phone = candidate.candidatePhone || "Telefone não Informado";
+        const email = candidate.email || "Email não Informado";
+        const link = candidate.candidateLink || "Linkedin não Informado";
+
+        // Posiciona o rodapé próximo ao final da página
+        const footerYPosition = doc.page.height - 70; // 50 unidades de distância do final da página
+        doc.fontSize(10).fillColor('#333333')
+            .text(`${phone} • ${email} • ${link}`, 0, footerYPosition, { align: 'center' });
+
+        // Finalizar o PDF e enviar para o cliente
+        doc.end();
+
+        logger.info(`PDF estilizado gerado com sucesso para o candidato com ID: ${id}. Enviando resposta.`);
     } catch (error) {
         logger.error(`Erro ao gerar PDF estilizado para o candidato com ID: ${req.params.id}. Detalhes: ${error.message}`);
         res.status(500).json({ message: 'Erro ao gerar PDF.' });
     }
 };
 
-// Função para adicionar cabeçalhos de seção com estilo
+// Funções auxiliares para adicionar seções e renderizar dados
 function addSectionHeader(doc, text) {
     doc.moveDown(2);
     doc.font('Helvetica-Bold').fontSize(14).fillColor('#333333').text(text.toUpperCase(), { underline: true });
     doc.moveDown(1);
 }
 
-// Função para renderizar as qualificações
 function renderQualifications(doc, qualifications, xPosition, yPosition) {
     doc.font('Helvetica').fontSize(12).fillColor('#333333');
-    qualifications.forEach((qual, index) => {
-        doc.text(qual.name, xPosition, yPosition + index * 16); // Espaçamento ajustado entre qualificações
-    });
+    if (qualifications.length === 0) {
+        doc.text("Sem qualificações informadas", xPosition, yPosition);
+    } else {
+        qualifications.forEach((qual, index) => {
+            doc.text(qual.name, xPosition, yPosition + index * 16);
+        });
+    }
 }
 
-// Função para renderizar os idiomas com nível de proficiência
 function renderIdioms(doc, idioms, xPosition, yPosition) {
-    const skillHeight = 16; // Ajustando o espaçamento para manter os itens próximos
+    const skillHeight = 16;
     const barHeight = 8;
     const barMaxWidth = 100;
 
-    idioms.forEach((idiom, index) => {
+    if (idioms.length === 0) {
         doc.font('Helvetica').fontSize(12).fillColor('#333333')
-            .text(idiom.name, xPosition, yPosition + index * skillHeight);
+            .text("Sem idiomas informados", xPosition, yPosition);
+    } else {
+        idioms.forEach((idiom, index) => {
+            doc.font('Helvetica').fontSize(12).fillColor('#333333')
+                .text(idiom.name, xPosition, yPosition + index * skillHeight);
 
-        // Mapeando níveis de proficiência
-        const levels = { basico: 1, intermediario: 2, avancado: 3, fluente: 4 };
-        const barWidth = (barMaxWidth * (levels[idiom.level.toLowerCase()] || 1)) / 4; // Valor padrão 1 se não definido
+            const levels = { basico: 1, intermediario: 2, avancado: 3, fluente: 4 };
+            const barWidth = (barMaxWidth * (levels[idiom.level.toLowerCase()] || 1)) / 4;
 
-        // Renderizar a barra da habilidade
-        doc.rect(
-            xPosition + 120, // Alinhamento da barra ao lado da habilidade
-            yPosition + index * skillHeight + 4, // Ajustando a posição da barra
-            barMaxWidth, // Largura máxima da barra
-            barHeight // Altura da barra
-        )
-            .fillOpacity(0.2).fillColor('#d3f1e0').fill(); // Barra base (cinza claro)
+            doc.rect(
+                xPosition + 120,
+                yPosition + index * skillHeight + 4,
+                barMaxWidth,
+                barHeight
+            )
+                .fillOpacity(0.2).fillColor('#d3f1e0').fill();
 
-        doc.rect(
-            xPosition + 120,
-            yPosition + index * skillHeight + 4,
-            barWidth, // Tamanho da barra baseado no nível da habilidade
-            barHeight
-        )
-            .fillOpacity(1).fillColor('#98d9b9').fill(); // Barra preenchida (verde claro)
-    });
+            doc.rect(
+                xPosition + 120,
+                yPosition + index * skillHeight + 4,
+                barWidth,
+                barHeight
+            )
+                .fillOpacity(1).fillColor('#98d9b9').fill();
+        });
+    }
 }

@@ -51,10 +51,16 @@ router.get('/list-interested/:id',
     vacancyController.listInterestedCandidates
 );
 
-// Rota para adicioanr candidatos interessados em uma vaga
+// Rota para adicionar candidatos interessados em uma vaga
 router.post('/add-interested',
     authenticateToken,
     vacancyController.addInterestedCandidate
+);
+
+// Rota para adicionar interesse em várias vagas
+router.post('/add-interested-batch',
+    authenticateToken,
+    vacancyController.addInterestedBatch
 );
 
 // Rota para remover candidatos interessados em uma vaga
@@ -94,6 +100,12 @@ router.get('/company-vacancies/',
     authenticateToken,
     authorizeRoles('Company', 'Admin'),
     vacancyController.getJobVacanciesByCompanyId
+)
+
+router.get('/company-vacancies/:id',
+    authenticateToken,
+    authorizeRoles('Candidate', 'Admin'),
+    vacancyController.getJobVacanciesByCompanyId2
 )
 
 router.get('/admin/candidate-status-counts',

@@ -195,19 +195,19 @@ exports.listInterestedCandidates = async (req, res) => {
     }
 };
 
-// Função para adicionar um candidato interessado em uma vaga
+// Função para adicionar UM candidato interessado em uma vaga
 exports.addInterestedCandidate = async (req, res) => {
     try {
-        const candidateId = req.user.id;
         const { jobVacancyId } = req.body;  // ID da vaga no corpo da requisição
 
         // Verifica se a vaga de emprego existe
         const jobVacancy = await JobVacancy.findById(jobVacancyId);
-        if (!jobVacancy) {
-            logger.warn(`Vaga de emprego com ID ${jobVacancyId} não encontrada.`);
+       /*  if (!jobVacancy) {;
             return res.status(404).json({ message: 'Vaga de emprego não encontrada.' });
-        }
+        } */
 
+        const candidateId = req.user.id;
+        
         // Verifica se o candidato existe
         const candidate = await Candidate.findById(candidateId);
         if (!candidate) {
@@ -261,7 +261,56 @@ exports.addInterestedCandidate = async (req, res) => {
         res.status(200).json({ message: 'Candidato adicionado à vaga com sucesso.' });
     } catch (error) {
         logger.error(`Erro ao adicionar candidato à vaga: ${error.message}`);
-        res.status(500).json({ message: 'Erro ao adicionar candidato à vaga', error: error.message });
+       /*  res.status(500).json({ message: 'Erro ao adicionar candidato à vaga', error: error.message }); */
+    }
+};
+
+// Função para adicionar várias candidaturas de uma vez só
+exports.addInterestedBatch = async (req, res) => {
+    try {
+        const { jobVacancyIds } = req.body;
+        const candidateId = req.user.id;
+
+        console.log("IDs de vagas recebidos:", jobVacancyIds);
+
+        const failedApplications = [];
+
+        for (const jobVacancyId of jobVacancyIds) {
+            console.log("Buscando vaga com ID:", jobVacancyId);
+
+            const jobVacancy = await JobVacancy.findById(jobVacancyId);
+
+            const isAlreadyInterested = jobVacancy.interestedCandidates.includes(candidateId);
+
+            if (isAlreadyInterested) {
+                failedApplications.push({ jobVacancyId, message: 'Candidato já está na lista de interessados.' });
+                continue;
+            }
+
+            jobVacancy.interestedCandidates.push(candidateId);
+
+            const newApplicationStatus = new JobApplicationStatus({
+                candidateId,
+                jobVacancyId,
+                companyId: jobVacancy.companyId,
+                status: 'Em Análise',
+            });
+
+            await newApplicationStatus.save();
+            await jobVacancy.save();
+            console.log(`Candidato ${candidateId} adicionado à vaga ${jobVacancyId}`);
+        }
+
+        if (failedApplications.length > 0) {
+            return res.status(207).json({
+                message: 'Processo concluído com alguns erros.',
+                failedApplications
+            });
+        }
+
+        res.status(200).json({ message: 'Candidaturas enviadas com sucesso.' });
+    } catch (error) {
+        console.error(`Erro ao adicionar candidatos às vagas: ${error.message}`);
     }
 };
 
@@ -352,62 +401,56 @@ exports.recommendJobVacancies = async (req, res) => {
             return res.status(404).json({ message: 'Candidato não encontrado.' });
         }
 
-        // Requisitos do candidato
-        const qualifications = candidate.candidateQualifications.map(q => q.description); // Extrair as descrições
+        // Extrair as qualificações e preferências do candidato
+        const qualifications = candidate.candidateQualifications.map(q => q.description);
         const { desiredRole, candidateTargetSalary, desiredState, areaOfInterest } = candidate;
 
-        // Definir faixa de salário aceitável (flexível até 2000 para baixo)
+        // Definir faixa de salário aceitável (com tolerância de até 2000)
         const minSalary = candidateTargetSalary - 2000;
         const maxSalary = candidateTargetSalary + 2000;
 
         // Construir a consulta para buscar vagas recomendadas
         const query = {
-            jobArea: areaOfInterest,  // A vaga deve estar na mesma área de interesse do candidato
+            jobArea: areaOfInterest, // Vaga deve estar na mesma área de interesse
             $or: [
-                // Verifica se as qualificações do candidato estão nas desejadas
-                { desiredSkills: { $in: qualifications } },
-                // Verifica se a vaga está no estado desejado
-                { 'jobLocation.state': desiredState },
-                // Verifica se o salário da vaga está dentro da faixa aceitável
-                {
+                { desiredSkills: { $in: qualifications } }, // Qualificações compatíveis
+                { 'jobLocation.state': desiredState }, // Estado desejado
+                { 
                     $or: [
                         { salary: { $gte: minSalary, $lte: maxSalary } },
-                        { salary: null } // Aceitar vagas sem informação de salário
+                        { salary: null } // Incluir vagas sem salário especificado
                     ]
                 }
             ]
         };
 
-        // Buscar vagas que correspondem ao perfil do candidato e populando o nome da empresa
+        // Buscar vagas e preencher o nome da empresa
         const jobVacancies = await JobVacancy.find(query).populate({
-            path: 'companyId', // O campo que referencia a empresa
-            select: 'companyName' // Seleciona apenas o nome da empresa
+            path: 'companyId',
+            select: 'companyName'
         });
 
-        // Filtrar vagas que atendem a pelo menos duas condições
+        // Filtrar vagas que atendem a pelo menos três das condições
         const recommendedJobVacancies = jobVacancies.filter(vacancy => {
-            let conditionsMet = 0;
+            let conditionsMet = 1; // A área de interesse já é garantida na query
 
-            // Verificar área de interesse (sempre atendido pelo query)
-            conditionsMet++;
-
-            // Verificar se as qualificações do candidato estão nas desejadas pela vaga
+            // Contabilizar qualificações correspondentes
             if (vacancy.desiredSkills.some(skill => qualifications.includes(skill))) {
                 conditionsMet++;
             }
 
-            // Verificar se a vaga está no estado desejado
-            if (vacancy.jobLocation.state === desiredState) {
+            // Contabilizar se o estado da vaga corresponde ao desejado
+            if (vacancy.jobLocation?.state === desiredState) {
                 conditionsMet++;
             }
 
-            // Verificar se o salário da vaga está dentro da faixa aceitável
+            // Contabilizar se o salário está dentro da faixa desejada ou se é indeterminado
             const salary = vacancy.salary ? parseInt(vacancy.salary) : null;
             if (!salary || (salary >= minSalary && salary <= maxSalary)) {
                 conditionsMet++;
             }
 
-            // Retornar vagas que atendam pelo menos duas condições
+            // Retornar vagas que atendem pelo menos três condições
             return conditionsMet >= 3;
         });
 
@@ -418,11 +461,11 @@ exports.recommendJobVacancies = async (req, res) => {
 
         logger.info(`Vagas recomendadas encontradas para o candidato com ID ${candidateId}.`);
 
-        // Retorna as vagas recomendadas, incluindo o nome da empresa
-        res.status(200).json(recommendedJobVacancies);
+        // Retorna as vagas recomendadas com o nome da empresa
+        return res.status(200).json(recommendedJobVacancies);
     } catch (error) {
         logger.error(`Erro ao recomendar vagas: ${error.message}`);
-        res.status(500).json({ message: 'Erro ao recomendar vagas', error: error.message });
+        return res.status(500).json({ message: 'Erro ao recomendar vagas', error: error.message });
     }
 };
 
@@ -540,6 +583,30 @@ exports.getJobVacanciesByCompanyId = async (req, res) => {
         res.status(500).json({ message: 'Erro ao buscar as vagas.' });
     }
 };
+
+exports.getJobVacanciesByCompanyId2 = async (req, res) => {
+    const companyId = req.params.id;
+
+    try {
+        // Buscar todas as vagas onde o companyId corresponde
+        const jobVacancies = await JobVacancy.find({ companyId: companyId });
+
+        if (!jobVacancies || jobVacancies.length === 0) {
+            logger.warn("Nenhuma vaga encontrada para essa empresa. Id da empresa: " + companyId);
+            return res.status(404).json({ message: 'Nenhuma vaga encontrada para essa empresa.' + companyId });
+        }
+
+        // Retornar as vagas encontradas
+        res.status(200).json(jobVacancies);
+
+        logger.info("Vagas encontradas para empresa: " + companyId);
+    } catch (error) {
+        console.error('Erro ao buscar as vagas:', error);
+        logger.error("Erro ao buscar vagas da empresa: " + companyId);
+        res.status(500).json({ message: 'Erro ao buscar as vagas.' });
+    }
+};
+
 
 // Função para contar candidatos por status no sistema
 exports.getCandidateStatusCounts = async (req, res) => {
