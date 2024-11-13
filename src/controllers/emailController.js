@@ -124,8 +124,43 @@ async function sendPasswordResetEmail(email, resetLink) {
     }
 }
 
+async function sendApplicationStatusEmail(email, candidateName, jobTitle, status, feedback) {
+    let subject, text;
+
+    if (status === 'Aprovado') {
+        subject = `Parabéns! Você foi aprovado(a) para a vaga de ${jobTitle}`;
+        text = `Olá, ${candidateName}!\n\nTemos o prazer de informar que você foi aprovado(a) para a vaga de "${jobTitle}". Parabéns!\n\n` +
+               `A empresa orientou que você aguarde contato para a próxima etapa, que será informada por um dos meios fornecidos no seu currículo.\n\n` +
+               (feedback ? `Observação da empresa: ${feedback}\n\n` : '') +
+               `Atenciosamente,\nEquipe de Recrutamento.`;
+    } else if (status === 'Dispensado') {
+        subject = `Atualização sobre sua candidatura para a vaga de ${jobTitle}`;
+        text = `Olá, ${candidateName}.\n\nAgradecemos seu interesse na vaga de "${jobTitle}". Após uma análise cuidadosa, informamos que sua candidatura não foi selecionada para prosseguir neste processo.\n\n` +
+               (feedback ? `Observação da empresa: ${feedback}\n\n` : 'Desejamos muito sucesso em suas futuras buscas.\n\n') +
+               `Atenciosamente,\nEquipe de Recrutamento.`;
+    } else {
+        return; // Não envia e-mail se o status não for "Aprovado" ou "Dispensado"
+    }
+
+    const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject,
+        text,
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        logger.info(`E-mail de status de candidatura (${status}) enviado com sucesso para ${email}`);
+    } catch (error) {
+        logger.error(`Erro ao enviar e-mail de status de candidatura para ${email}: ${error.message}`);
+        throw error;
+    }
+}
+
 module.exports = {
     requestVerificationCode,
     verifyCode,
-    sendPasswordResetEmail
+    sendPasswordResetEmail,
+    sendApplicationStatusEmail,
 };

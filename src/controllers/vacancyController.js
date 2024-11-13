@@ -4,6 +4,7 @@ const Company = require('../models/CompanyProfile');
 const Candidate = require('../models/CandidateProfile');
 const JobApplicationStatus = require('../models/JobApplicationStatus');
 const CandidateFavorites = require('../models/CandidateFavorites');
+const { sendApplicationStatusEmail } = require('./emailController');    
 const logger = require('../config/logger');
 
 // Função para remover vagas antigas
@@ -510,27 +511,34 @@ exports.setJobApplicationStatusByCompany = async (req, res) => {
         const companyId = req.user.id;
         const { candidateId, jobVacancyId, status, comments } = req.body;
 
+        // Obtém a vaga e verifica se ela pertence à empresa
         const jobVacancy = await JobVacancy.findOne({ _id: jobVacancyId, companyId });
         if (!jobVacancy) {
             logger.warn(`Vaga com ID ${jobVacancyId} não pertence à empresa com ID ${companyId}.`);
             return res.status(404).json({ message: 'Vaga não encontrada para a empresa.' });
         }
 
-        const application = await JobApplicationStatus.findOne({
-            candidateId,
-            jobVacancyId
-        });
-
+        // Busca a candidatura específica
+        const application = await JobApplicationStatus.findOne({ candidateId, jobVacancyId });
         if (!application) {
             logger.warn(`Candidatura para o candidato com ID ${candidateId} e vaga com ID ${jobVacancyId} não encontrada.`);
             return res.status(404).json({ message: 'Candidatura não encontrada.' });
         }
 
+        // Atualiza o status e o feedback da candidatura
         application.status = status;
         application.comments = comments || application.comments;
         await application.save();
 
         logger.info(`Status da candidatura atualizado para o candidato com ID ${candidateId} e vaga com ID ${jobVacancyId}. Novo status: ${status}`);
+
+        // Envia o e-mail de notificação se o status for "Aprovado" ou "Dispensado"
+        if (status === 'Aprovado' || status === 'Dispensado') {
+            const candidate = await Candidate.findById(candidateId); // Busca o candidato para obter o e-mail e nome
+            if (candidate) {
+                await sendApplicationStatusEmail(candidate.email, candidate.name, jobVacancy.title, status, comments);
+            }
+        }
 
         res.status(200).json(application);
     } catch (error) {
