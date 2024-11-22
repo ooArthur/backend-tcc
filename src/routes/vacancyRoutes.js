@@ -126,4 +126,10 @@ router.get('/:jobVacancyId/status-count',
     vacancyController.getJobApplicationStatusCount
 );
 
+router.get('/candidate-details/:jobVacancyId/:candidateId',
+    authenticateToken,
+    authorizeRoles('Company', 'Admin'),
+    vacancyController.viewCandidateDetails
+);
+
 module.exports = router;

@@ -24,17 +24,54 @@ exports.createCompany = async (req, res) => {
             site
         } = req.body;
 
-        // Verifica se o email já está registrado
+        if (!email || !password || !companyName || !telephone || !type || !address) {
+            return res.status(400).json({ error: 'Todos os campos obrigatórios devem ser preenchidos.' });
+        }
+
+        if (password.length < 8) {
+            return res.status(400).json({ error: 'A senha deve ter no mínimo 8 caracteres.' });
+        }
+
+        const telephoneRegex = /^\(\d{2}\) \d{5}-\d{4}$/;
+        if (!telephoneRegex.test(telephone)) {
+            return res.status(400).json({ error: 'O telefone da empresa deve seguir o formato (XX) XXXXX-XXXX.' });
+        }
+
+        const cepRegex = /^\d{8}$/;
+        if (!address.cep || !cepRegex.test(address.cep)) {
+            return res.status(400).json({ error: 'O CEP deve conter exatamente 8 números (exemplo: 06160180).' });
+        }
+
+        if (type === 'Empresa Empregadora') {
+            const cnpjRegex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
+            if (!employerCompanyData?.cnpj || !cnpjRegex.test(employerCompanyData.cnpj)) {
+                return res.status(400).json({ error: 'CNPJ inválido para Empresa Empregadora. Formato: 12.345.678/0001-90.' });
+            }
+        } else if (type === 'Empresa de CRH') {
+            const cnpjRegex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
+            if (!crhCompanyData?.cnpj || !cnpjRegex.test(crhCompanyData.cnpj)) {
+                return res.status(400).json({ error: 'CNPJ inválido para Empresa de CRH. Formato: 12.345.678/0001-90.' });
+            }
+        } else if (type === 'Profissional Liberal') {
+            const rgRegex = /^\d{2}\.\d{3}\.\d{3}-\d{1}$/;
+            const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+            if (!liberalProfessionalData?.registrationDocument || !rgRegex.test(liberalProfessionalData.registrationDocument)) {
+                return res.status(400).json({ error: 'RG inválido para Profissional Liberal. Formato: 11.111.111-1.' });
+            }
+            if (!liberalProfessionalData?.cpf || !cpfRegex.test(liberalProfessionalData.cpf)) {
+                return res.status(400).json({ error: 'CPF inválido para Profissional Liberal. Formato: 111.111.111-11.' });
+            }
+        } else {
+            return res.status(400).json({ error: 'Tipo de empresa inválido.' });
+        }
+
         const existingUser = await User.findOne({ email });
         if (existingUser) {
-            logger.warn(`Tentativa de registro com e-mail já existente: ${email}`);
             return res.status(400).json({ error: 'Email já registrado.' });
         }
 
-        // Criptografa a senha
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // Cria o perfil da empresa
         const companyProfile = new Company({
             email,
             password: hashedPassword,
@@ -53,11 +90,8 @@ exports.createCompany = async (req, res) => {
         });
 
         await companyProfile.save();
-        logger.info(`Perfil de empresa criado com sucesso para o usuário: ${email}`);
-
-        res.status(201).json({ message: 'Empresa criada com sucesso', companyProfile });
+        res.status(201).json({ message: 'Empresa criada com sucesso, CEP: ' + address.cep, companyProfile });
     } catch (error) {
-        logger.error(`Erro ao criar empresa: ${error.message} - Dados: ${JSON.stringify(req.body)}`);
         res.status(500).json({ error: 'Erro ao criar empresa', details: error.message });
     }
 };

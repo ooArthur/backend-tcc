@@ -36,17 +36,30 @@ exports.createCandidate = async (req, res) => {
             areaOfInterest
         } = req.body;
 
-        // Verifica se o email já está registrado
+        if (password.length < 8) {
+            logger.warn('A senha deve ter no mínimo 8 caracteres.')
+            return res.status(400).json({ error: 'A senha deve ter no mínimo 8 caracteres.' });
+        }
+
+        if (!candidatePhone || !/^\(\d{2}\) \d{5}-\d{4}$/.test(candidatePhone)) {
+            logger.warn('O telefone deve estar no formato (XX) XXXXX-XXXX e ter 13 caracteres.');
+            return res.status(400).json({ error: 'O telefone deve estar no formato (XX) XXXXX-XXXX e ter 13 caracteres.' });
+        }
+
+        const cleanCEP = candidateCEP.replace(/[^\d\-]/g, ''); 
+        if (!cleanCEP || !/^\d{5}-\d{3}$/.test(cleanCEP)) {
+            logger.warn('O CEP deve estar no formato XXXXX-XXX e ter 10 caracteres.');
+            return res.status(400).json({ error: 'O CEP deve estar no formato XXXXX-XXX e ter 10 caracteres.' });
+        }
+
         const existingUser = await User.findOne({ email });
         if (existingUser) {
             logger.warn(`Tentativa de registro com e-mail já existente: ${email}`);
             return res.status(400).json({ error: 'Email já registrado.' });
         }
 
-        // Criptografa a senha
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // Cria o perfil do candidato
         const candidateProfile = new Candidate({
             email,
             password: hashedPassword,
@@ -78,12 +91,11 @@ exports.createCandidate = async (req, res) => {
 
         res.status(201).json({ message: 'Candidato criado com sucesso', candidateProfile });
     } catch (error) {
-        logger.error(`Erro ao criar candidato: ${error.message}` + "Requisição:" + JSON.stringify(req.body, null, 2));
+        logger.error(`Erro ao criar candidato: ${error.message} - Dados: ${JSON.stringify(req.body)}`);
         res.status(500).json({ error: 'Erro ao criar candidato', details: error.message });
 
         console.log("Conteúdo do req.body recebido:", JSON.stringify(req.body, null, 2));
 
-        // Exemplo de verificação manual de campos obrigatórios
         const requiredFields = [
             "candidateName",
             "candidatePhone",
@@ -111,6 +123,7 @@ exports.createCandidate = async (req, res) => {
         }
     }
 };
+
 
 // Função para listar todos os candidatos
 exports.listAllCandidates = async (req, res) => {

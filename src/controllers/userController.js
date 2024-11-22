@@ -11,16 +11,44 @@ const ResetToken = require('../models/ResetToken');
 const { sendPasswordResetEmail } = require('./emailController');
 const VerificationCode = require('../models/VerificationCode');
 
-// Função para remover usuários com email não verificado após 15 dias
 exports.removeUnverifiedUsers = async () => {
     try {
         const fifteenDaysAgo = new Date(Date.now() - 15 * 24 * 60 * 60 * 1000);
 
-        // Remove todos os usuários que não verificaram o email e que foram criados há mais de 15 dias
-        const result = await User.deleteMany({
+        // Encontre todos os usuários que serão removidos
+        const unverifiedUsers = await User.find({
             emailVerified: false,
             createdAt: { $lt: fifteenDaysAgo }
         });
+
+        if (!unverifiedUsers || unverifiedUsers.length === 0) {
+            logger.info('Nenhum usuário não verificado para remover.');
+            return;
+        }
+
+        // Recolha todos os IDs dos usuários que serão excluídos
+        const userIds = unverifiedUsers.map(user => user._id);
+
+        // Inicie as exclusões em cascata
+        await Promise.all([
+            CandidateFavorites.deleteMany({ candidateId: { $in: userIds } }),
+            JobApplicationStatus.deleteMany({ candidateId: { $in: userIds } }),
+            JobApplicationStatus.deleteMany({ companyId: { $in: userIds } }),
+            JobVacancyFavorites.deleteMany({ favoriteCandidates: { $in: userIds } }),
+            JobVacancyFavorites.updateMany(
+                {},
+                { $pull: { favoriteCandidates: { $in: userIds } } }
+            ),
+            Report.deleteMany({ reportedBy: { $in: userIds } }),
+            Report.deleteMany({ targetId: { $in: userIds } }),
+            ResetToken.deleteMany({ userId: { $in: userIds } }),
+            VerificationCode.deleteMany({ email: { $in: unverifiedUsers.map(u => u.email) } }),
+            Candidate.deleteMany({ _id: { $in: userIds } }),
+            Company.deleteMany({ _id: { $in: userIds } }),
+        ]);
+
+        // Exclua os usuários não verificados
+        const result = await User.deleteMany({ _id: { $in: userIds } });
 
         logger.info(`Usuários não verificados removidos: ${result.deletedCount}`);
     } catch (error) {

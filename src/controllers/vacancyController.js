@@ -4,7 +4,9 @@ const Company = require('../models/CompanyProfile');
 const Candidate = require('../models/CandidateProfile');
 const JobApplicationStatus = require('../models/JobApplicationStatus');
 const CandidateFavorites = require('../models/CandidateFavorites');
-const { sendApplicationStatusEmail } = require('./emailController');    
+const JobVacancyFavorites = require('../models/JobVacancyFavorites');
+const Report = require('../models/Report');
+const { sendApplicationStatusEmail } = require('./emailController');
 const logger = require('../config/logger');
 
 // Função para remover vagas antigas
@@ -13,12 +15,30 @@ exports.removeOldJobVacancies = async () => {
         // Define o prazo de 3 meses atrás
         const threeMonthsAgo = new Date(Date.now() - 3 * 30 * 24 * 60 * 60 * 1000);
 
-        // Remove todas as vagas que foram criadas há mais de 3 meses
-        const result = await JobVacancy.deleteMany({
+        // Encontre todas as vagas que serão removidas
+        const oldJobVacancies = await JobVacancy.find({
             createdAt: { $lt: threeMonthsAgo }
         });
 
-        logger.info(`Vagas removidas: ${result.deletedCount}`);
+        if (!oldJobVacancies || oldJobVacancies.length === 0) {
+            logger.info('Nenhuma vaga antiga para remover.');
+            return;
+        }
+
+        // Recolha todos os IDs das vagas que serão excluídas
+        const jobVacancyIds = oldJobVacancies.map(vacancy => vacancy._id);
+
+        // Inicie as exclusões em cascata
+        await Promise.all([
+            JobApplicationStatus.deleteMany({ jobVacancyId: { $in: jobVacancyIds } }),
+            JobVacancyFavorites.deleteMany({ jobVacancyId: { $in: jobVacancyIds } }),
+            Report.deleteMany({ targetId: { $in: jobVacancyIds }, type: 'vacancy' }),
+        ]);
+
+        // Exclua as vagas antigas
+        const result = await JobVacancy.deleteMany({ _id: { $in: jobVacancyIds } });
+
+        logger.info(`Vagas antigas removidas: ${result.deletedCount}`);
     } catch (error) {
         logger.error(`Erro ao remover vagas antigas: ${error.message}`);
     }
@@ -203,12 +223,12 @@ exports.addInterestedCandidate = async (req, res) => {
 
         // Verifica se a vaga de emprego existe
         const jobVacancy = await JobVacancy.findById(jobVacancyId);
-       /*  if (!jobVacancy) {;
+        if (!jobVacancy) {
             return res.status(404).json({ message: 'Vaga de emprego não encontrada.' });
-        } */
+        }
 
         const candidateId = req.user.id;
-        
+
         // Verifica se o candidato existe
         const candidate = await Candidate.findById(candidateId);
         if (!candidate) {
@@ -249,7 +269,7 @@ exports.addInterestedCandidate = async (req, res) => {
             candidateId,
             jobVacancyId,
             companyId: jobVacancy.companyId,
-            status: 'Em Análise',
+            status: 'Currículo Enviado',
         });
 
         // Salva a aplicação de status no banco de dados
@@ -262,24 +282,24 @@ exports.addInterestedCandidate = async (req, res) => {
         res.status(200).json({ message: 'Candidato adicionado à vaga com sucesso.' });
     } catch (error) {
         logger.error(`Erro ao adicionar candidato à vaga: ${error.message}`);
-       /*  res.status(500).json({ message: 'Erro ao adicionar candidato à vaga', error: error.message }); */
+        res.status(500).json({ message: 'Erro ao adicionar candidato à vaga', error: error.message });
     }
 };
 
-// Função para adicionar várias candidaturas de uma vez só
 exports.addInterestedBatch = async (req, res) => {
     try {
         const { jobVacancyIds } = req.body;
         const candidateId = req.user.id;
 
-        console.log("IDs de vagas recebidos:", jobVacancyIds);
-
         const failedApplications = [];
 
         for (const jobVacancyId of jobVacancyIds) {
-            console.log("Buscando vaga com ID:", jobVacancyId);
-
             const jobVacancy = await JobVacancy.findById(jobVacancyId);
+
+            if (!jobVacancy) {
+                failedApplications.push({ jobVacancyId, message: 'Vaga não encontrada.' });
+                continue;
+            }
 
             const isAlreadyInterested = jobVacancy.interestedCandidates.includes(candidateId);
 
@@ -299,21 +319,22 @@ exports.addInterestedBatch = async (req, res) => {
 
             await newApplicationStatus.save();
             await jobVacancy.save();
-            console.log(`Candidato ${candidateId} adicionado à vaga ${jobVacancyId}`);
         }
 
-        if (failedApplications.length > 0) {
+        /* if (failedApplications.length > 0) {
             return res.status(207).json({
                 message: 'Processo concluído com alguns erros.',
-                failedApplications
+                failedApplications,
             });
-        }
+        } */
 
         res.status(200).json({ message: 'Candidaturas enviadas com sucesso.' });
     } catch (error) {
         console.error(`Erro ao adicionar candidatos às vagas: ${error.message}`);
+        res.status(500).json({ message: 'Erro interno no servidor.', error: error.message });
     }
 };
+
 
 // Função para obter a contagem de candidaturas diárias
 exports.getDailyApplicationCount = async (req, res) => {
@@ -416,7 +437,7 @@ exports.recommendJobVacancies = async (req, res) => {
             $or: [
                 { desiredSkills: { $in: qualifications } }, // Qualificações compatíveis
                 { 'jobLocation.state': desiredState }, // Estado desejado
-                { 
+                {
                     $or: [
                         { salary: { $gte: minSalary, $lte: maxSalary } },
                         { salary: null } // Incluir vagas sem salário especificado
@@ -669,7 +690,7 @@ exports.countApplicationsByStatus = async (req, res) => {
 
 // Função para obter contagem de status das candidaturas para uma vaga específica
 exports.getJobApplicationStatusCount = async (req, res) => {
-    const {jobVacancyId} = req.params; // ID da vaga vindo da URL
+    const { jobVacancyId } = req.params; // ID da vaga vindo da URL
     const companyId = req.user.id; // ID da empresa autenticada, assumindo que está em `req.user.id`
 
     try {
@@ -695,8 +716,6 @@ exports.getJobApplicationStatusCount = async (req, res) => {
             return { status, count: found ? found.count : 0 };
         });
 
-        console.log(result)
-
         logger.info(`Status das candidaturas obtido para a vaga ${jobVacancyId} da empresa ${companyId}`);
 
         res.status(200).json(result); // Retornando a contagem de status
@@ -704,5 +723,51 @@ exports.getJobApplicationStatusCount = async (req, res) => {
     } catch (error) {
         logger.error(`Erro ao obter contagem de status para a vaga ${jobVacancyId}: ${error.message}`);
         res.status(500).json({ message: 'Erro ao obter contagem de status das candidaturas', error: error.message });
+    }
+};
+
+exports.viewCandidateDetails = async (req, res) => {
+    try {
+        const { candidateId, jobVacancyId } = req.params;
+
+        // Verifica se o candidato e a vaga existem
+        const candidate = await Candidate.findById(candidateId);
+        const jobVacancy = await JobVacancy.findById(jobVacancyId);
+
+        if (!candidate) {
+            logger.warn(`Candidato com ID ${candidateId} não encontrado.`);
+            return res.status(404).json({ message: 'Candidato não encontrado.' });
+        }
+        if (!jobVacancy) {
+            logger.warn(`Vaga com ID ${jobVacancyId} não encontrada.`);
+            return res.status(404).json({ message: 'Vaga não encontrada.' });
+        }
+
+        // Busca o status de candidatura
+        let applicationStatus = await JobApplicationStatus.findOne({ candidateId, jobVacancyId });
+
+        if (!applicationStatus) {
+            // Cria novo status apenas se não existir
+            applicationStatus = new JobApplicationStatus({
+                candidateId,
+                jobVacancyId,
+                companyId: jobVacancy.companyId,
+                status: 'Em Análise',
+            });
+            await applicationStatus.save();
+        } else if (applicationStatus.status === 'Currículo Enviado') {
+            // Atualiza o status para "Em Análise" apenas se for "Currículo Enviado"
+            applicationStatus.status = 'Em Análise';
+            await applicationStatus.save();
+        }
+
+        logger.info(`Detalhes do candidato com ID ${candidateId} carregados.`);
+
+        // Retorna os detalhes do candidato e status atualizado
+        const candidateDetails = await Candidate.findById(candidateId).lean();
+        res.status(200).json({ candidate: candidateDetails, status: applicationStatus });
+    } catch (error) {
+        logger.error(`Erro ao exibir detalhes do candidato: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao exibir detalhes do candidato', error: error.message });
     }
 };
