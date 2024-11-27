@@ -6,14 +6,14 @@
     "auditLog": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\.c81c8a4a329aa6f93a9c76983ca7c270bdb2c07c-audit.json",
     "files": [
         {
-            "date": 1731494762806,
-            "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-11-13-error.log",
-            "hash": "a25f7fef368107464b9f1d305ed6565265bf59abf1f3464901e6c7eaba2f2408"
-        },
-        {
             "date": 1732272189054,
             "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-11-22-error.log",
             "hash": "edc85c001a61438ad680704f3433585cd0741a14925cd0adb58c9f3c76a2b79f"
+        },
+        {
+            "date": 1732704886668,
+            "name": "C:\\Users\\DevSesi2\\Desktop\\backend-tcc\\src\\Logs\\2024-11-27-error.log",
+            "hash": "40140d197b0f0615b46f9b8fa695eb3504185a0362bad5a3fbfb5c217062245e"
         }
     ],
     "hashType": "sha256"

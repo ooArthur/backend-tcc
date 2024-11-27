@@ -2,8 +2,6 @@ const express = require("express");
 const companyRoutes = require('./companyRoutes');
 const candidateRoutes = require('./candidateRoutes');
 const userController = require('../controllers/userController');
-const { userValidationRules } = require('../validators/userValidator');
-const { validate } = require('../middleware/validate');
 const { authenticateToken } = require('../middleware/authMiddleware');
 const { authorizeRoles } = require('../middleware/authorizeRoles');
 const path = require("path");
@@ -33,10 +31,7 @@ router.get('/list-user/:id',
 );
 // Rotas para Atualizar Usuários
 router.put('/update-user/:id',
-    /* authenticateToken,
-    authorizeUser, */
-    userValidationRules(),
-    validate,
+    authenticateToken,
     userController.updateUserById
 );
 // Rotas para Deletar Usuários
@@ -56,7 +51,7 @@ router.post('/reset-password',
 
 router.get('/me',
     authenticateToken,
-    userController.getUserRole
+    userController.getUserInfo
 );
 
 /* Logs */

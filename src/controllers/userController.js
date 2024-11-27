@@ -56,13 +56,29 @@ exports.removeUnverifiedUsers = async () => {
     }
 };
 
-exports.getUserRole = (req, res) => {
-    if (!req.user) {
-        return res.status(401).json({ message: 'Usuário não autenticado.' });
-    }
+exports.getUserInfo = async (req, res) => {
+    try {
+        if (!req.user) {
+            return res.status(401).json({ message: 'Usuário não autenticado.' });
+        }
 
-    res.status(200).json({ role: req.user.role });
-}
+        // Buscar as informações completas do usuário
+        const user = await User.findById(req.user.id).select('-password'); // Exclui a senha dos dados retornados
+
+        if (!user) {
+            return res.status(404).json({ message: 'Usuário não encontrado.' });
+        }
+        
+        res.status(200).json({
+            email: user.email,
+            role: user.role,
+            emailVerified: user.emailVerified,
+        });
+    } catch (error) {
+        console.error('Erro ao obter informações do usuário:', error);
+        res.status(500).json({ message: 'Erro ao obter informações do usuário.', error: error.message });
+    }
+};
 
 exports.createAdminUser = async (req, res) => {
     try {
@@ -144,7 +160,7 @@ exports.updateUserById = async (req, res) => {
         const { id } = req.params;
         const updates = req.body;
 
-        // Verifica se o email está sendo atualizado
+        // Verifica se o e-mail está sendo atualizado
         if (updates.email) {
             const existingUser = await User.findOne({ email: updates.email });
             if (existingUser && existingUser._id.toString() !== id) {
@@ -152,27 +168,33 @@ exports.updateUserById = async (req, res) => {
                 return res.status(400).json({ message: 'O email já está em uso por outro usuário.' });
             }
 
-            // Se o email for atualizado, define isEmailVerified como false
-            updates.isEmailVerified = false;
-            logger.info(`Usuário com ID ${id}: O email foi alterado para ${updates.email}. O campo isEmailVerified será definido como false.`);
+            // Se o email for atualizado, define emailVerified como false e envia o código de verificação
+            updates.emailVerified = false;
+
+            const code = generateCode();
+            const expiresAt = new Date(Date.now() + 15 * 60000); // Expira em 15 minutos
+            await VerificationCode.deleteMany({ email: updates.email }); // Remove códigos anteriores
+            await VerificationCode.create({ email: updates.email, code, expiresAt });
+
+            await sendVerificationEmail(updates.email, code);
+
+            logger.info(`Código de verificação enviado para o novo email ${updates.email}.`);
         }
+
         // Criptografa a nova senha se fornecida
         if (updates.password) {
-            logger.info(`Criptografando senha para o usuário com ID ${id}.`);
             updates.password = await bcrypt.hash(updates.password, 10);
         }
 
         // Atualiza o usuário no banco de dados pelo ID
         const updatedUser = await User.findByIdAndUpdate(id, updates, { new: true, runValidators: true });
 
-        // Se o usuário não for encontrado, retorna um erro 404
         if (!updatedUser) {
             logger.warn(`Usuário com ID ${id} não encontrado.`);
             return res.status(404).json({ message: 'Usuário não encontrado.' });
         }
 
         logger.info(`Usuário com ID ${id} atualizado com sucesso.`);
-        // Retorna o usuário atualizado como resposta
         res.status(200).json(updatedUser);
     } catch (error) {
         logger.error(`Erro ao atualizar usuário pelo ID ${id}: ${error.message}`);
@@ -251,7 +273,7 @@ exports.requestPasswordReset = async (req, res) => {
         await tokenRecord.save();
 
         // Envia o e-mail com o link de redefinição de senha
-        const resetLink = `${process.env.CORS_ORIGIN}/reset-password?token=${resetToken}`;
+        const resetLink = `${process.env.CORS_ORIGIN}/reset-password?token=${hashedToken}`;
         await sendPasswordResetEmail(user.email, resetLink);
 
         logger.info(`Token de redefinição de senha enviado para o e-mail ${email}`);
@@ -264,7 +286,8 @@ exports.requestPasswordReset = async (req, res) => {
 
 // Redefinir Senha
 exports.resetPassword = async (req, res) => {
-    const { token, newPassword } = req.body;
+    const { token } = req.query;
+    const { newPassword } = req.body;
 
     try {
         // Busca o token fornecido

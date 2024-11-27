@@ -163,4 +163,5 @@ module.exports = {
     verifyCode,
     sendPasswordResetEmail,
     sendApplicationStatusEmail,
+    generateCode
 };

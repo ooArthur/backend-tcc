@@ -8,14 +8,29 @@ const logger = require('../config/logger');
 // Listar todas as denúncias com detalhes completos
 exports.getReports = async (req, res) => {
     try {
-        // Buscar todas as denúncias
+        // Buscar todas as denúncias e garantir que a população de 'reportedBy' seja feita
         const reports = await Report.find().populate('reportedBy');
 
-        // Populando os detalhes de cada denúncia com base no tipo
+        // Verificar se o campo 'reportedBy' existe para cada denúncia
         const detailedReports = await Promise.all(reports.map(async (report) => {
             let targetDetails;
 
-            // Buscar os detalhes com base no tipo
+            // Verificar se 'reportedBy' está presente
+            if (!report.reportedBy) {
+                return {
+                    _id: report.id,
+                    type: report.type,
+                    target: null,
+                    reportReason: report.reportReason,
+                    description: report.description,
+                    reportedBy: null, // Caso não haja 'reportedBy', definir como null
+                    createdAt: report.createdAt,
+                    updatedAt: report.updatedAt,
+                    error: 'Usuário que fez a denúncia não encontrado'
+                };
+            }
+
+            // Buscar os detalhes com base no tipo de denúncia
             switch (report.type) {
                 case 'vacancy':
                     targetDetails = await JobVacancy.findById(report.targetId).exec();
@@ -33,7 +48,7 @@ exports.getReports = async (req, res) => {
             // Verificar se o alvo foi encontrado
             if (!targetDetails) {
                 return {
-                    id: report._id,
+                    _id: report.id,
                     type: report.type,
                     target: null,
                     reportReason: report.reportReason,
@@ -50,7 +65,7 @@ exports.getReports = async (req, res) => {
 
             // Retornar o relatório detalhado
             return {
-                id: report._id,
+                _id: report.id,
                 type: report.type,
                 target: {
                     ...targetDetails._doc,
@@ -161,6 +176,10 @@ exports.createReport = async (req, res) => {
 exports.deleteReport = async (req, res) => {
     try {
         const { id } = req.params;
+
+        if (!id) {
+            return res.status(400).json({ message: 'ID da denúncia é obrigatório.' });
+        }
 
         const report = await Report.findById(id);
         if (!report) {
