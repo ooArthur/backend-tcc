@@ -1,0 +1,2 @@
+2024-11-27 11:30:29 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-11-27 11:53:24 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017

@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\rafae\\backend-tcc\\src\\Logs\\.4778f79fab38f1956abdac0670677bdd3156fd09-audit.json",
+    "files": [
+        {
+            "date": 1732717822051,
+            "name": "C:\\Users\\rafae\\backend-tcc\\src\\Logs\\2024-11-27-combined.log",
+            "hash": "1f2d4cc5c1a0d8fb06e139671b4033cb85c70634e927754d72dc2f62040ea648"
+        }
+    ],
+    "hashType": "sha256"
+}

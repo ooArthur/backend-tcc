@@ -1,0 +1,33 @@
+2024-11-27 11:30:24 [INFO]: Server is running on port 5000
+2024-11-27 11:30:29 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-11-27 11:53:19 [INFO]: Server is running on port 5000
+2024-11-27 11:53:24 [ERROR]: Erro ao conectar ao MongoDB: connect ECONNREFUSED 127.0.0.1:27017
+2024-11-27 11:56:41 [INFO]: Server is running on port 5000
+2024-11-27 11:56:41 [INFO]: MongoDB conectado com sucesso!
+2024-11-27 12:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-11-27 12:00:00 [INFO]: Tokens expirados removidos: 0
+2024-11-27 12:00:00 [INFO]: Nenhuma vaga antiga para remover.
+2024-11-27 12:00:00 [INFO]: Nenhum usuário não verificado para remover.
+2024-11-27 13:28:36 [INFO]: Server is running on port 5000
+2024-11-27 13:28:37 [INFO]: MongoDB conectado com sucesso!
+2024-11-27 13:28:47 [INFO]: IP: 192.168.0.108 - GET /
+2024-11-27 14:00:00 [INFO]: Tokens expirados removidos: 0
+2024-11-27 14:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-11-27 14:00:00 [INFO]: Nenhuma vaga antiga para remover.
+2024-11-27 14:00:00 [INFO]: Nenhum usuário não verificado para remover.
+2024-11-27 15:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-11-27 15:00:00 [INFO]: Tokens expirados removidos: 0
+2024-11-27 15:00:00 [INFO]: Nenhum usuário não verificado para remover.
+2024-11-27 15:00:00 [INFO]: Nenhuma vaga antiga para remover.
+2024-11-27 16:00:01 [INFO]: Tokens expirados removidos: 0
+2024-11-27 16:00:01 [INFO]: Nenhum usuário não verificado para remover.
+2024-11-27 16:00:01 [INFO]: Códigos de verificação expirados removidos: 0
+2024-11-27 16:00:01 [INFO]: Nenhuma vaga antiga para remover.
+2024-11-27 18:00:01 [INFO]: Códigos de verificação expirados removidos: 0
+2024-11-27 18:00:01 [INFO]: Tokens expirados removidos: 0
+2024-11-27 18:00:01 [INFO]: Nenhum usuário não verificado para remover.
+2024-11-27 18:00:01 [INFO]: Nenhuma vaga antiga para remover.
+2024-11-27 19:00:00 [INFO]: Tokens expirados removidos: 0
+2024-11-27 19:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-11-27 19:00:00 [INFO]: Nenhum usuário não verificado para remover.
+2024-11-27 19:00:01 [INFO]: Nenhuma vaga antiga para remover.
