@@ -47,7 +47,7 @@ exports.createCandidate = async (req, res) => {
         }
 
         const cleanCEP = candidateCEP.replace(/[^\d\-]/g, ''); 
-        if (!cleanCEP || !/^\d{5}-\d{3}$/.test(cleanCEP)) {
+        if (!cleanCEP || !/^\d{5}\d{3}$/.test(cleanCEP)) {
             logger.warn('O CEP deve estar no formato XXXXX-XXX e ter 10 caracteres.');
             return res.status(400).json({ error: 'O CEP deve estar no formato XXXXX-XXX e ter 10 caracteres.' });
         }

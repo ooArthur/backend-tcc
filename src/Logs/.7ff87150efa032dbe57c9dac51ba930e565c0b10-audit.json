@@ -6,14 +6,9 @@
     "auditLog": "C:\\Users\\User\\Desktop\\Vítor\\Projetos\\JobLink\\Back\\backend-tcc\\src\\Logs\\.7ff87150efa032dbe57c9dac51ba930e565c0b10-audit.json",
     "files": [
         {
-            "date": 1730331760082,
-            "name": "C:\\Users\\User\\Desktop\\Vítor\\Projetos\\JobLink\\Back\\backend-tcc\\src\\Logs\\2024-10-30-error.log",
-            "hash": "6d576fa4875f4d14920de3e1febd02a00668e3961ce3756b541935636bb910bb"
-        },
-        {
-            "date": 1730376231629,
-            "name": "C:\\Users\\User\\Desktop\\Vítor\\Projetos\\JobLink\\Back\\backend-tcc\\src\\Logs\\2024-10-31-error.log",
-            "hash": "c22e838e96d17db1e587e31055c6e6dd6e7bb6730c056f5350c3a24103d95756"
+            "date": 1732829408179,
+            "name": "C:\\Users\\User\\Desktop\\Vítor\\Projetos\\JobLink\\Back\\backend-tcc\\src\\Logs\\2024-11-28-error.log",
+            "hash": "e4abbdc274cb1c3a63d62713b718723a98d53a75fee613c90f22c5423613dc04"
         }
     ],
     "hashType": "sha256"
