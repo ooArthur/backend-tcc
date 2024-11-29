@@ -37,7 +37,7 @@ router.put('/update-user/:id',
 // Rotas para Deletar Usuários
 router.delete('/delete-user/:id',
     authenticateToken,
-    authorizeRoles('Admin', 'Company', 'Candidate'),
+    authorizeRoles('Admin'),
     userController.deleteUserById
 );
 // Rota para solicitar a redefinição de senha

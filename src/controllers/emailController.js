@@ -59,7 +59,7 @@ async function requestVerificationCode(req, res) {
 
         await verificationCode.save();
         logger.info(`Código de verificação criado e salvo para o e-mail ${email}`);
-        
+
         await sendVerificationEmail(email, code);
         res.status(200).json({ message: 'Código de verificação enviado.' });
     } catch (error) {
@@ -128,16 +128,16 @@ async function sendApplicationStatusEmail(email, candidateName, jobTitle, status
     let subject, text;
 
     if (status === 'Aprovado') {
-        subject = `Parabéns! Você foi aprovado(a) para a vaga de ${jobTitle}`;
+        subject = `Parabéns! Você foi aprovado(a) para a vaga: ${jobTitle}`;
         text = `Olá, ${candidateName}!\n\nTemos o prazer de informar que você foi aprovado(a) para a vaga de "${jobTitle}". Parabéns!\n\n` +
-               `A empresa orientou que você aguarde contato para a próxima etapa, que será informada por um dos meios fornecidos no seu currículo.\n\n` +
-               (feedback ? `Observação da empresa: ${feedback}\n\n` : '') +
-               `Atenciosamente,\nEquipe de Recrutamento.`;
+            `A empresa orientou que você aguarde contato para a próxima etapa, que será informada por um dos meios fornecidos no seu currículo.\n\n` +
+            (feedback ? `Observação da empresa: ${feedback}\n\n` : '') +
+            `Atenciosamente,\nEquipe de Recrutamento.`;
     } else if (status === 'Dispensado') {
-        subject = `Atualização sobre sua candidatura para a vaga de ${jobTitle}`;
-        text = `Olá, ${candidateName}.\n\nAgradecemos seu interesse na vaga de "${jobTitle}". Após uma análise cuidadosa, informamos que sua candidatura não foi selecionada para prosseguir neste processo.\n\n` +
-               (feedback ? `Observação da empresa: ${feedback}\n\n` : 'Desejamos muito sucesso em suas futuras buscas.\n\n') +
-               `Atenciosamente,\nEquipe de Recrutamento.`;
+        subject = `Atualização sobre sua candidatura para a vaga: ${jobTitle}`;
+        text = `Olá, ${candidateName}.\n\nAgradecemos seu interesse na vaga: "${jobTitle}". Após uma análise cuidadosa, informamos que sua candidatura não foi selecionada para prosseguir neste processo.\n\n` +
+            (feedback ? `Observação da empresa: ${feedback}\n\n` : 'Desejamos muito sucesso em suas futuras buscas.\n\n') +
+            `Atenciosamente,\nEquipe de Recrutamento.`;
     } else {
         return; // Não envia e-mail se o status não for "Aprovado" ou "Dispensado"
     }
@@ -158,10 +158,62 @@ async function sendApplicationStatusEmail(email, candidateName, jobTitle, status
     }
 }
 
+// Enviar email ao responsável por vaga deletada
+async function sendVacancyDeletionEmail(email, jobTitle, reason) {
+    const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: `Aviso: Sua vaga "${jobTitle}" foi excluída`,
+        text: `Olá,\n\nA vaga "${jobTitle}" foi excluída do sistema.\nMotivo: ${reason}\n\n` +
+            `Caso tenha dúvidas, entre em contato com nossa equipe de suporte.\n\nAtenciosamente,\nEquipe de Moderação.`,
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        logger.info(`Email de exclusão de vaga enviado para ${email}`);
+    } catch (error) {
+        logger.error(`Erro ao enviar email de exclusão de vaga para ${email}: ${error.message}`);
+        throw error;
+    }
+}
+
+async function sendWarningEmail(email, type, reason, jobDetails = null) {
+    const typeTranslation = {
+        company: 'Empresa',
+        candidate: 'Candidato',
+        vacancy: 'Vaga'
+    };
+
+    const translatedType = typeTranslation[type] || 'desconhecido';
+
+    // Formatar os detalhes da vaga
+    const jobInfo = jobDetails
+        ? `Detalhes da vaga:\n- Título: ${jobDetails.title}\n- Descrição da vaga: ${jobDetails.description}\n- Criada em: ${jobDetails.createdAt}\n\n`
+        : '';
+
+    const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: 'Aviso de Moderação',
+        text: `Olá,\n\nSua conta associada a um(a) "${translatedType}" recebeu um aviso.\n\n${jobInfo}${reason}\n\n` +
+            `Recomendamos que revise as políticas da nossa plataforma para evitar penalidades futuras.\n\nAtenciosamente,\nEquipe de Moderação.`,
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        logger.info(`Email de aviso enviado para ${email}`);
+    } catch (error) {
+        logger.error(`Erro ao enviar email de aviso para ${email}: ${error.message}`);
+        throw error;
+    }
+}
+
 module.exports = {
     requestVerificationCode,
     verifyCode,
     sendPasswordResetEmail,
     sendApplicationStatusEmail,
-    generateCode
+    generateCode,
+    sendWarningEmail,
+    sendVacancyDeletionEmail,
 };

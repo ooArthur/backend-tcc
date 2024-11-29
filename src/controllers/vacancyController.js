@@ -559,7 +559,7 @@ exports.setJobApplicationStatusByCompany = async (req, res) => {
         if (status === 'Aprovado' || status === 'Dispensado') {
             const candidate = await Candidate.findById(candidateId); // Busca o candidato para obter o e-mail e nome
             if (candidate) {
-                await sendApplicationStatusEmail(candidate.email, candidate.name, jobVacancy.title, status, comments);
+                await sendApplicationStatusEmail(candidate.email, candidate.candidateName, jobVacancy.jobTitle, status, comments);
             }
         }
 

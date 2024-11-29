@@ -2,7 +2,7 @@ const Report = require('../models/Report');
 const JobVacancy = require('../models/JobVacancy');
 const Company = require('../models/CompanyProfile');
 const Candidate = require('../models/CandidateProfile');
-const { subDays } = require('date-fns');
+const { sendWarningEmail, sendVacancyDeletionEmail } = require('../controllers/emailController');
 const logger = require('../config/logger');
 
 // Listar todas as denúncias com detalhes completos
@@ -10,7 +10,7 @@ exports.getReports = async (req, res) => {
     try {
         // Buscar todas as denúncias e garantir que a população de 'reportedBy' seja feita
         const reports = await Report.find().populate('reportedBy');
-
+        
         // Verificar se o campo 'reportedBy' existe para cada denúncia
         const detailedReports = await Promise.all(reports.map(async (report) => {
             let targetDetails;
@@ -195,21 +195,18 @@ exports.deleteReport = async (req, res) => {
     }
 };
 
-// Emitir aviso para Candidato, Empresa ou Vaga
 exports.giveWarning = async (req, res) => {
     try {
-        const { type, targetId } = req.body; // Removido 'reason'
+        const { type, targetId } = req.body;
 
-        // Validar o tipo (empresa, candidato ou vaga)
         if (!['company', 'candidate', 'vacancy'].includes(type)) {
             return res.status(400).json({ message: 'Tipo inválido. Deve ser company, candidate ou vacancy.' });
         }
 
         let target;
-        let reportTargetId = targetId; // ID da denúncia associada, será usado para exclusão
         let jobVacancy = null;
 
-        // Buscar a entidade alvo (empresa, candidato ou vaga)
+        // Recuperar a entidade alvo
         if (type === 'company') {
             target = await Company.findById(targetId).exec();
         } else if (type === 'candidate') {
@@ -220,56 +217,87 @@ exports.giveWarning = async (req, res) => {
                 return res.status(404).json({ message: 'Vaga ou empresa associada não encontrada.' });
             }
             target = await Company.findById(jobVacancy.companyId).exec();
-            reportTargetId = targetId;  // Manter o ID da vaga para exclusão correta da denúncia
         }
 
-        // Verificar se o alvo foi encontrado
         if (!target) {
             return res.status(404).json({ message: `${type === 'vacancy' ? 'Empresa associada à vaga' : type} não encontrada.` });
         }
 
-        // Incrementar o número de avisos sem considerar o motivo
+        // Recuperar a denúncia associada para obter o motivo
+        const report = await Report.findOne({ targetId, type });
+        const reportReason = report?.reportReason || 'Motivo não especificado';
+        const reportDescription = report?.description || '';
+
+        // Incrementar avisos
         if (type === 'vacancy') {
             jobVacancy.warnings = jobVacancy.warnings || [];
             jobVacancy.warnings.push({ date: new Date() });
 
-            // Se houver 5 avisos, excluir a vaga e dar um aviso à empresa associada
             if (jobVacancy.warnings.length >= 5) {
                 await JobVacancy.findByIdAndDelete(jobVacancy._id);
                 logger.info(`Vaga ${jobVacancy._id} foi excluída após 5 avisos.`);
 
-                // Dar um aviso à empresa associada
+                if (target.email) {
+                    await sendVacancyDeletionEmail(
+                        target.email,
+                        jobVacancy.jobTitle,
+                        `Excluída após 5 avisos. Motivo da denúncia: ${reportReason}. Descrição: ${reportDescription}`
+                    );
+                }
+
                 target.warnings = (target.warnings || 0) + 1;
             }
 
             await jobVacancy.save();
         } else {
-            // Se o tipo é empresa ou candidato, incrementa diretamente o número de avisos
             target.warnings = (target.warnings || 0) + 1;
         }
 
-        // Se a empresa tiver acumulado 5 avisos, banir e excluir todas as suas vagas
+        // Banir a empresa caso tenha muitos avisos
         if (type === 'company' || (type === 'vacancy' && target.warnings >= 5)) {
             if (target.warnings >= 5) {
                 target.banned = true;
                 await JobVacancy.deleteMany({ companyId: target._id });
-                logger.info(`Empresa ${target._id} foi banida e todas as vagas excluídas após 5 avisos.`);
+                logger.info(`Empresa ${target._id} foi banida após 5 avisos.`);
+
+                if (target.email) {
+                    await sendWarningEmail(
+                        target.email,
+                        'empresa',
+                        `Banida após 5 avisos. Último motivo: ${reportReason}. Descrição: ${reportDescription}`
+                    );
+                }
             }
         }
 
         await target.save();
 
-        // Excluir a denúncia associada após emitir o aviso
-        const report = await Report.findOne({
-            targetId: reportTargetId,
-            type: 'vacancy'  // Se o tipo é 'vacancy', usar 'vacancy' como type
-        });
-        if (report) {
-            await Report.findByIdAndDelete(report._id);
-            logger.info(`Denúncia com ID ${report._id} excluída após aviso.`);
+        // Preparar os detalhes da vaga para o email (se for tipo 'vacancy')
+        const jobDetails = jobVacancy ? {
+            title: jobVacancy.jobTitle || 'Título não disponível',
+            description: jobVacancy.jobDescription || 'Descrição não disponível',
+            createdAt: jobVacancy.createdAt
+                ? new Date(jobVacancy.createdAt).toLocaleDateString('pt-BR')
+                : 'Data de criação não disponível',
+        } : null;
+
+        // Enviar o email de aviso
+        if (target.email) {
+            await sendWarningEmail(
+                target.email,
+                type,
+                `Aviso emitido. Motivo: ${reportReason}. Descrição: ${reportDescription}`,
+                jobDetails
+            );
         }
 
-        res.status(200).json({ message: `${type === 'vacancy' ? 'Empresa associada à vaga' : type} recebeu um aviso. Total de avisos: ${target.warnings || jobVacancy.warnings.length}` });
+        // Excluir a denúncia associada após emitir o aviso
+        if (report) {
+            await Report.findByIdAndDelete(report._id);
+            logger.info(`Denúncia com ID ${report._id} excluída após emissão de aviso.`);
+        }
+
+        res.status(200).json({ message: `${type === 'vacancy' ? 'Empresa associada à vaga' : type} recebeu um aviso. Total de avisos: ${type === 'vacancy' ? jobVacancy.warnings.length : target.warnings}` });
     } catch (error) {
         logger.error(`Erro ao emitir aviso: ${error.message}`);
         res.status(500).json({ message: 'Erro ao emitir aviso', error: error.message });
@@ -336,23 +364,24 @@ exports.deleteVacancyAndReport = async (req, res) => {
     const vacancyId = req.params.id;
 
     try {
-        // Buscar a vaga pelo ID
         const jobVacancy = await JobVacancy.findById(vacancyId);
         if (!jobVacancy) {
             logger.warn(`Vaga com ID ${vacancyId} não encontrada.`);
             return res.status(404).json({ message: 'Vaga não encontrada.' });
         }
 
-        // Buscar a denúncia associada à vaga
         const report = await Report.findOne({ targetId: vacancyId, type: 'vacancy' });
         if (!report) {
             logger.warn(`Denúncia para a vaga com ID ${vacancyId} não encontrada.`);
             return res.status(404).json({ message: 'Denúncia não encontrada.' });
         }
 
-        // Excluir a vaga
+        const company = await Company.findById(jobVacancy.companyId);
+        if (company && company.email) {
+            await sendVacancyDeletionEmail(company.email, jobVacancy.jobTitle, 'Violação das regras da plataforma.');
+        }
+
         await JobVacancy.findByIdAndDelete(vacancyId);
-        // Excluir a denúncia
         await Report.findByIdAndDelete(report._id);
         logger.info(`Denúncia com ID ${report._id} excluída com sucesso e Vaga com ID ${vacancyId} excluída com sucesso.`);
 
