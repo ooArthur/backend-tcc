@@ -294,10 +294,11 @@ exports.addInterestedBatch = async (req, res) => {
         const failedApplications = [];
 
         for (const jobVacancyId of jobVacancyIds) {
-            const jobVacancy = await JobVacancy.findById(jobVacancyId);
+            // Certificando-se de que o ID está no formato correto de ObjectId
+            const jobVacancy = await JobVacancy.findById(new mongoose.Types.ObjectId(jobVacancyId));
 
             if (!jobVacancy) {
-                failedApplications.push({ jobVacancyId, message: 'Vaga não encontrada.' });
+                failedApplications.push({ jobVacancyId, message: 'Vaga não encontrada.'});
                 continue;
             }
 
@@ -321,12 +322,12 @@ exports.addInterestedBatch = async (req, res) => {
             await jobVacancy.save();
         }
 
-        /* if (failedApplications.length > 0) {
+        if (failedApplications.length > 0) {
             return res.status(207).json({
                 message: 'Processo concluído com alguns erros.',
                 failedApplications,
             });
-        } */
+        }
 
         res.status(200).json({ message: 'Candidaturas enviadas com sucesso.' });
     } catch (error) {
@@ -334,6 +335,7 @@ exports.addInterestedBatch = async (req, res) => {
         res.status(500).json({ message: 'Erro interno no servidor.', error: error.message });
     }
 };
+
 
 
 // Função para obter a contagem de candidaturas diárias
