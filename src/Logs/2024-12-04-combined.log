@@ -15422,3 +15422,606 @@
 2024-12-04 16:55:07 [INFO]: Candidato encontrado com o id: 67509438cdfb8fadb1d87847
 2024-12-04 16:55:07 [INFO]: IP: 10.92.199.35 - GET /api/user/company/vacancy/vacancies-applied
 2024-12-04 16:55:07 [INFO]: IP: 10.92.199.35 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 18:49:48 [INFO]: Server is running on port 5000
+2024-12-04 18:49:48 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 18:50:06 [INFO]: Server is running on port 5000
+2024-12-04 18:50:06 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 18:51:04 [INFO]: Server is running on port 5000
+2024-12-04 18:51:05 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 18:51:11 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:11 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: 123  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:22 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:22 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: 12345678  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:30 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:30 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: @Ba061006  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:32 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:33 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: ab0610  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:36 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:36 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: ab061006  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:37 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:38 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: 12  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:39 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:39 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: 123  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:42 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:43 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: 1234  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:46 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:46 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: 123456  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:51:49 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 18:51:49 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.admin@gmail.com e a senha correta é: 12345678  $2a$10$RXCJ32NBmhvKbj2/xgUDKeclxEzFLn9HQk4U6AJH4.buOgN/WWbhi
+2024-12-04 18:56:40 [INFO]: IP: 127.0.0.1 - POST /api/user/company/create-company
+2024-12-04 19:00:00 [ERROR]: Erro ao remover usuários não verificados: JobApplicationStatus is not defined
+2024-12-04 19:00:00 [INFO]: Nenhuma vaga antiga para remover.
+2024-12-04 19:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-12-04 19:00:00 [INFO]: Tokens expirados removidos: 0
+2024-12-04 19:02:24 [INFO]: IP: 127.0.0.1 - POST /api/user/company/create-company
+2024-12-04 19:02:24 [INFO]: IP: 127.0.0.1 - GET /login
+2024-12-04 19:04:53 [INFO]: IP: 127.0.0.1 - POST /api/user/candidate/create-candidate
+2024-12-04 19:04:53 [INFO]: Perfil de candidato criado com sucesso para o usuário: arthur.candidato@gmail.com
+2024-12-04 19:06:24 [INFO]: IP: 127.0.0.1 - POST /api/user/candidate/create-candidate
+2024-12-04 19:06:24 [INFO]: Perfil de candidato criado com sucesso para o usuário: arthur.dsdsada@gmail.com
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 19:06:39 [INFO]: Usuário autenticado com sucesso: arthur.empresa@gmail.com
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-favorites
+2024-12-04 19:06:39 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 6750d018d04193472e2608ae.
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-favorites
+2024-12-04 19:06:39 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 6750d018d04193472e2608ae.
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:39 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:39 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:06:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:52 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:52 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:52 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:52 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:53 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:53 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:53 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:06:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:06:53 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:06:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:06:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:06:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:01 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:01 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:01 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:07:05 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:05 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:07:05 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:22 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:22 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:22 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:07:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:07:22 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:07:23 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:23 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:07:23 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:07:23 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:07:23 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:07:23 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:38 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:11:38 [INFO]: Token de acesso renovado para o usuário: arthur.empresa@gmail.com
+2024-12-04 19:11:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:39 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:39 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:11:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:44 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:44 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:44 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:44 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:11:45 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:11:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:11:45 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:20:10 [INFO]: Server is running on port 5000
+2024-12-04 19:20:11 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 19:30:30 [INFO]: Server is running on port 5000
+2024-12-04 19:30:31 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 19:30:35 [INFO]: Server is running on port 5000
+2024-12-04 19:30:49 [INFO]: Server is running on port 5000
+2024-12-04 19:30:49 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 19:32:35 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:32:35 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:32:35 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:32:36 [INFO]: Token de acesso renovado para o usuário: arthur.empresa@gmail.com
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-favorites
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:32:36 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 6750d018d04193472e2608ae.
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-favorites
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:32:36 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 6750d018d04193472e2608ae.
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-favorites
+2024-12-04 19:32:36 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 6750d018d04193472e2608ae.
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:32:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:32:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:32:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:32:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:32:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:32:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:32:37 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:32:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 19:32:37 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 19:32:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:32:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:32:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:32:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:32:51 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:32:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:32:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:32:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:32:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:32:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:33:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:33:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:33:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:33:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:33:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:34:26 [INFO]: Token de acesso renovado para o usuário: arthur.empresa@gmail.com
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:34:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:35:08 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:35:08 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:35:08 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:35:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:35:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:35:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:35:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:35:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:35:12 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 19:35:12 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 19:35:12 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 19:35:12 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:38:53 [INFO]: IP: 127.0.0.1 - POST /api/user/create-admin
+2024-12-04 19:38:53 [WARN]: Tentativa de criar usuário com email arthur.admin@gmail.com que já está em uso.
+2024-12-04 19:39:03 [INFO]: IP: 127.0.0.1 - POST /api/user/create-admin
+2024-12-04 19:39:03 [INFO]: Novo usuário administrador criado com sucesso. Email: arthuradmin@gmail.com
+2024-12-04 19:39:08 [INFO]: IP: 127.0.0.1 - POST /api/auth/logout
+2024-12-04 19:39:08 [INFO]: Usuário com e-mail arthur.empresa@gmail.com deslogado com sucesso.
+2024-12-04 19:39:33 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 19:39:33 [INFO]: Usuário autenticado com sucesso: arthuradmin@gmail.com
+2024-12-04 19:39:33 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:39:33 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:39:33 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:39:34 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:39:34 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:39:34 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:39:34 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:39:34 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:39:34 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:39:47 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:39:47 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:39:47 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:39:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:39:47 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:39:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:39:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:39:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:39:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:39:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:39:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:39:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:39:58 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:39:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:13 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:13 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:13 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:13 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:21 [INFO]: IP: 127.0.0.1 - DELETE /api/report/delete-report/6748f4aefb3d09b228c3e943
+2024-12-04 19:40:21 [INFO]: Denúncia com ID 6748f4aefb3d09b228c3e943 excluída com sucesso.
+2024-12-04 19:40:25 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:25 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:25 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:25 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:27 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:40:27 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:27 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:40:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:40:28 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:40:28 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:28 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:40:28 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:40:47 [INFO]: Token de acesso renovado para o usuário: arthuradmin@gmail.com
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:40:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:40:52 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:52 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:52 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:52 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:40:54 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:40:54 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:40:54 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:40:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:40:54 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:40:55 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:40:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:40:55 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:40:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:40:55 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:43:06 [INFO]: Server is running on port 5000
+2024-12-04 19:43:06 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:43:50 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:43:50 [INFO]: Token de acesso renovado para o usuário: arthuradmin@gmail.com
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:43:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:43:50 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:43:59 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:43:59 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:43:59 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:43:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:43:59 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:43:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:44:00 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:44:00 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:44:00 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:44:00 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:44:00 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:44:00 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:44:31 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:44:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:44:31 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:44:31 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:44:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:44:31 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:44:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:44:31 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:44:31 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:44:31 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:44:39 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:44:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:44:39 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:44:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:44:39 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:44:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:44:39 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:44:39 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:44:39 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:44:56 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:44:56 [INFO]: Token de acesso renovado para o usuário: arthuradmin@gmail.com
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:44:56 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:44:56 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:44:56 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:09 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:45:09 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:45:09 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:09 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:09 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:10 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:10 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:10 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:10 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:10 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:10 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:11 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:11 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:11 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:11 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:11 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:11 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:11 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:11 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:11 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:12 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:39 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:39 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:39 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:39 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:39 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:39 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:42 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:42 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:42 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:42 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:42 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:42 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:45 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:45 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:45 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:46 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:46 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:46 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:46 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:48 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:48 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:48 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:48 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:48 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:49 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:49 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:49 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:49 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:49 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:49 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:49 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:50 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:53 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:53 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:53 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:53 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:54 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:54 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:54 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:56 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:45:57 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:45:57 [INFO]: Token de acesso renovado para o usuário: arthuradmin@gmail.com
+2024-12-04 19:45:57 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:57 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:57 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:57 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:57 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:57 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:45:57 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:45:57 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:45:59 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:45:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:45:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:45:59 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:45:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:45:59 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:45:59 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:46:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:46:00 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:46:00 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:47:46 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:47:46 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:47:46 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:47:46 [INFO]: Token de acesso renovado para o usuário: arthuradmin@gmail.com
+2024-12-04 19:47:46 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:47:46 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:47:47 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:47:47 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:47:47 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:47:47 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:47:47 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:47:47 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.

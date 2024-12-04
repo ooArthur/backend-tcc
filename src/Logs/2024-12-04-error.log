@@ -14,3 +14,4 @@
 2024-12-04 16:21:59 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
 2024-12-04 16:23:07 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
 2024-12-04 16:31:47 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.8.level: `` is not a valid enum value for path `level`.
+2024-12-04 19:00:00 [ERROR]: Erro ao remover usuários não verificados: JobApplicationStatus is not defined

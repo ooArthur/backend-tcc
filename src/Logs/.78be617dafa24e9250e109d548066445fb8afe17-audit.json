@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\arthu\\Desktop\\backend-tcc\\src\\Logs\\.78be617dafa24e9250e109d548066445fb8afe17-audit.json",
+    "files": [
+        {
+            "date": 1733348986912,
+            "name": "C:\\Users\\arthu\\Desktop\\backend-tcc\\src\\Logs\\2024-12-04-combined.log",
+            "hash": "120cb781d9f18c7a1c58579c8576a756e22b13a8df18e49405cf410064402538"
+        }
+    ],
+    "hashType": "sha256"
+}

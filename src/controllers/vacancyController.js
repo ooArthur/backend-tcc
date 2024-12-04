@@ -773,3 +773,37 @@ exports.viewCandidateDetails = async (req, res) => {
         res.status(500).json({ message: 'Erro ao exibir detalhes do candidato', error: error.message });
     }
 };
+
+// Nova função para calcular vagas e candidaturas por empresa
+exports.getCompanyJobStats = async (req, res) => {
+    const companyId = req.user.id;
+
+    try {
+        // Contar vagas criadas pela empresa
+        const jobCount = await JobVacancy.countDocuments({ companyId });
+
+        // Contar candidaturas relacionadas às vagas da empresa
+        const candidateCount = await JobApplicationStatus.countDocuments({ companyId });
+
+        res.status(200).json({ jobCount, candidateCount });
+    } catch (error) {
+        logger.error(`Erro ao calcular estatísticas para a empresa ${companyId}: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao obter estatísticas da empresa', error: error.message });
+    }
+};
+
+// Função para obter o total de vagas e candidaturas do sistema
+exports.getSystemStats = async (req, res) => {
+    try {
+        // Total de vagas
+        const totalVacancies = await JobVacancy.countDocuments();
+
+        // Total de candidaturas
+        const totalApplications = await JobApplicationStatus.countDocuments();
+
+        res.status(200).json({ totalVacancies, totalApplications });
+    } catch (error) {
+        logger.error(`Erro ao calcular estatísticas do sistema: ${error.message}`);
+        res.status(500).json({ message: 'Erro ao obter estatísticas do sistema', error: error.message });
+    }
+};
