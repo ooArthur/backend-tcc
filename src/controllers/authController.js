@@ -26,6 +26,15 @@ const generateTokens = (user) => {
     return { accessToken, refreshToken };
 };
 
+const isProduction = process.env.NODE_ENV === 'production';
+
+const cookieOptions = {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? 'Strict' : 'Lax',
+    domain: isProduction ? '.joblinkbr.com' : undefined,
+};
+
 // Função de login
 exports.login = async (req, res) => {
     try {
@@ -54,12 +63,7 @@ exports.login = async (req, res) => {
 
         await user.save();
 
-        res.cookie('refreshToken', refreshToken, {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'Strict',
-            domain: process.env.NODE_ENV === 'production' ? '.joblinkbr.com' : undefined,
-        });
+        res.cookie('refreshToken', refreshToken, cookieOptions);
 
         logger.info(`Usuário autenticado com sucesso: ${email}`);
         res.status(200).json({ accessToken });
@@ -103,12 +107,7 @@ exports.refreshToken = async (req, res) => {
 
         await user.save();
 
-        res.cookie('refreshToken', newRefreshToken, {
-            httpOnly: true, // Para evitar acesso via JavaScript no navegador
-            secure: process.env.NODE_ENV === 'production', // Somente HTTPS em produção
-            sameSite: 'Strict', // Restringe envio de cookies ao mesmo domínio
-            domain: process.env.NODE_ENV === 'production' ? '.joblinkbr.com' : undefined,
-        });
+        res.cookie('refreshToken', refreshToken, cookieOptions);
 
         logger.info(`Token de acesso renovado para o usuário: ${user.email}`);
         res.status(200).json({ accessToken });
@@ -132,23 +131,14 @@ exports.logout = async (req, res) => {
         if (!user) {
             logger.warn('Token de atualização não encontrado durante logout.');
             // Mesmo que o *refresh token* não seja encontrado, você pode ainda limpar o cookie:
-            res.clearCookie('refreshToken', {
-                httpOnly: true, // Para evitar acesso via JavaScript no navegador
-                secure: process.env.NODE_ENV === 'production', // Somente HTTPS em produção
-                sameSite: 'Strict', // Restringe envio de cookies ao mesmo domínio
-                domain: process.env.NODE_ENV === 'production' ? '.joblinkbr.com' : undefined,
-            });
+            res.clearCookie('refreshToken', cookieOptions);
             return res.status(401).json({ error: 'Token de atualização inválido ou não encontrado' });
         }
 
         // Invalida o refreshTken do usuário
         user.refreshToken = null;
 
-        res.clearCookie('refreshToken', {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'Strict',
-        });
+        res.clearCookie('refreshToken', cookieOptions);
 
         await user.save();
 
