@@ -286,7 +286,8 @@ exports.requestPasswordReset = async (req, res) => {
 
 // Redefinir Senha
 exports.resetPassword = async (req, res) => {
-    const { token } = req.query;
+    const token = req.headers['authorization']?.split(' ')[1]; 
+
     const { newPassword } = req.body;
 
     try {
@@ -295,7 +296,7 @@ exports.resetPassword = async (req, res) => {
 
         if (!tokenRecord || tokenRecord.expiresAt < Date.now()) {
             logger.warn('Token inválido ou expirado para redefinição de senha.');
-            return res.status(400).json({ message: 'Token inválido ou expirado.' });
+            return res.status(400).json({ message: 'Token inválido ou expirado.'});
         }
 
         const user = await User.findById(tokenRecord.userId);
