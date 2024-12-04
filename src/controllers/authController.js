@@ -5,7 +5,7 @@ const User = require('../models/User');
 
 // Configurações para o JWT
 const JWT_SECRET = process.env.JWT_SECRET;
-const JWT_EXPIRATION = '45m';
+const JWT_EXPIRATION = '1m';
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_REFRESH_EXPIRATION = '7d';
 
@@ -45,12 +45,12 @@ exports.login = async (req, res) => {
 
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
-            logger.warn(`Tentativa de login com senha incorreta para o e-mail: ${email}`);
+            logger.warn(`Tentativa de login com senha incorreta para o e-mail: ${email} e a senha correta é: ${password}  ${user.password}`);
             return res.status(401).json({ error: 'Senha incorreta. Tente novamente.' });
         }
 
         const { accessToken, refreshToken } = generateTokens(user);
-        user.refreshToken = refreshToken; // Salva o novo refresh token no usuário
+        user.refreshToken = refreshToken;
 
         await user.save();
 
@@ -140,13 +140,14 @@ exports.logout = async (req, res) => {
 
         // Invalida o refreshTken do usuário
         user.refreshToken = null;
-        await user.save();
 
         res.clearCookie('refreshToken', {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
             sameSite: 'Strict',
         });
+
+        await user.save();
 
         logger.info(`Usuário com e-mail ${user.email} deslogado com sucesso.`);
         res.status(200).json({ message: 'Logout realizado com sucesso' });

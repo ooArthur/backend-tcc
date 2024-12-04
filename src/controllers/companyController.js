@@ -156,7 +156,14 @@ exports.getCompanyById2 = async (req, res) => {
 exports.updateCompanyById = async (req, res) => {
     try {
         const { id } = req.params;
-        const updates = req.body;
+        let updates = { ...req.body };
+
+        // Verifica se o campo password foi incluído nas atualizações
+        if (updates.password) {
+            // Encripta a nova senha antes de salvar
+            const hashedPassword = await bcrypt.hash(updates.password, 10);
+            updates.password = hashedPassword;
+        }
 
         // Atualiza a empresa no banco de dados pelo ID
         const updatedCompany = await Company.findByIdAndUpdate(id, updates, { new: true, runValidators: true });

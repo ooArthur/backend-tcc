@@ -124,7 +124,6 @@ exports.createCandidate = async (req, res) => {
     }
 };
 
-
 // Função para listar todos os candidatos
 exports.listAllCandidates = async (req, res) => {
     try {
@@ -189,12 +188,22 @@ exports.getCandidateByIdP = async (req, res) => {
 // Função para atualizar um candidato pelo ID
 exports.updateCandidateById = async (req, res) => {
     try {
-        
         const { id } = req.params;
-        const updates = req.body;
+        let updates = { ...req.body };
+
+        // Verifica se o campo password está presente nas atualizações
+        if (updates.password) {
+            // Encripta a nova senha
+            const hashedPassword = await bcrypt.hash(updates.password, 10);
+            updates.password = hashedPassword;
+        }
 
         // Atualiza o candidato no banco de dados pelo ID
-        const updatedCandidate = await Candidate.findByIdAndUpdate(id, updates, { new: true, runValidators: true });
+        const updatedCandidate = await Candidate.findByIdAndUpdate(
+            id,
+            updates,
+            { new: true, runValidators: true }
+        );
 
         // Se o candidato não for encontrado, retorna um erro 404
         if (!updatedCandidate) {

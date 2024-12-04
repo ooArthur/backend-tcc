@@ -1,4 +1,4 @@
-const User = require('../models/User');
+    const User = require('../models/User');
 const logger = require('../config/logger');
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
@@ -286,7 +286,7 @@ exports.requestPasswordReset = async (req, res) => {
 
 // Redefinir Senha
 exports.resetPassword = async (req, res) => {
-    const token = req.headers['authorization']?.split(' ')[1]; 
+    const token = req.query; 
 
     const { newPassword } = req.body;
 
