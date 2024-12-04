@@ -16025,3 +16025,128 @@
 2024-12-04 19:47:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
 2024-12-04 19:47:47 [INFO]: Listagem de denúncias realizada com sucesso.
 2024-12-04 19:47:47 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:50:30 [INFO]: Server is running on port 5000
+2024-12-04 19:50:31 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:50:31 [INFO]: Token de acesso renovado para o usuário: arthuradmin@gmail.com
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:31 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:31 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:50:38 [INFO]: IP: 127.0.0.1 - DELETE /api/user/delete-user/673bbd45793b10a68b29ba04
+2024-12-04 19:50:38 [INFO]: Candidato com ID 673bbd45793b10a68b29ba04 e suas vagas favoritas foram excluídos com sucesso.
+2024-12-04 19:50:38 [INFO]: IP: 127.0.0.1 - DELETE /api/user/delete-user/6748e1d784d3d5c02b4dcfe8
+2024-12-04 19:50:38 [INFO]: Candidato com ID 6748e1d784d3d5c02b4dcfe8 e suas vagas favoritas foram excluídos com sucesso.
+2024-12-04 19:50:41 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:41 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:50:41 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:41 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:50:41 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:41 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:44 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:44 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:44 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:50:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:44 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:50:45 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:50:45 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:50:45 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:50:45 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:50:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:50:45 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:50:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:50:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:55 [INFO]: IP: 127.0.0.1 - DELETE /api/user/delete-user/6750d170d04193472e2608b6
+2024-12-04 19:50:57 [INFO]: Empresa com ID 6750d170d04193472e2608b6, suas vagas e candidatos favoritos foram excluídos com sucesso.
+2024-12-04 19:50:57 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:50:58 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:50:58 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 19:51:21 [INFO]: IP: 127.0.0.1 - DELETE /api/user/company/vacancy/delete-vacancy/6724b498790c62de1d5edd2f
+2024-12-04 19:51:21 [INFO]: Status de candidaturas excluídos: 3
+2024-12-04 19:51:21 [INFO]: Favoritos excluídos: 0
+2024-12-04 19:51:21 [INFO]: Vaga excluída com sucesso. ID: 6724b498790c62de1d5edd2f
+2024-12-04 19:51:21 [INFO]: IP: 127.0.0.1 - DELETE /api/user/company/vacancy/delete-vacancy/67237c7475099146d5760f6e
+2024-12-04 19:51:21 [INFO]: Status de candidaturas excluídos: 2
+2024-12-04 19:51:21 [INFO]: Favoritos excluídos: 0
+2024-12-04 19:51:22 [INFO]: Vaga excluída com sucesso. ID: 67237c7475099146d5760f6e
+2024-12-04 19:51:22 [INFO]: IP: 127.0.0.1 - DELETE /api/user/company/vacancy/delete-vacancy/672378e375099146d5760b76
+2024-12-04 19:51:22 [INFO]: Status de candidaturas excluídos: 2
+2024-12-04 19:51:22 [INFO]: Favoritos excluídos: 0
+2024-12-04 19:51:22 [INFO]: Vaga excluída com sucesso. ID: 672378e375099146d5760b76
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:51:25 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:51:25 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:51:25 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:51:25 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:51:25 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:51:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:51:25 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - POST /api/auth/refresh-token
+2024-12-04 19:52:19 [INFO]: Token de acesso renovado para o usuário: arthuradmin@gmail.com
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:52:19 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 19:52:21 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/list-users
+2024-12-04 19:52:21 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:52:21 [INFO]: Lista de todos os usuários retornada com sucesso.
+2024-12-04 19:52:21 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/report/list-reports
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/system-stats
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/report/warn-overview
+2024-12-04 19:52:21 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/admin/candidate-status-counts
+2024-12-04 19:52:21 [INFO]: Listagem de denúncias realizada com sucesso.
+2024-12-04 19:52:21 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
+2024-12-04 19:52:29 [INFO]: IP: 127.0.0.1 - POST /api/auth/logout
+2024-12-04 19:52:29 [INFO]: Usuário com e-mail arthuradmin@gmail.com deslogado com sucesso.

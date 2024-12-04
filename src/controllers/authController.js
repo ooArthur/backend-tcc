@@ -56,8 +56,9 @@ exports.login = async (req, res) => {
 
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production', // Somente em HTTPS
+            secure: process.env.NODE_ENV === 'production',
             sameSite: 'Strict',
+            domain: process.env.NODE_ENV === 'production' ? '.joblinkbr.com' : undefined,
         });
 
         logger.info(`Usuário autenticado com sucesso: ${email}`);
@@ -103,9 +104,10 @@ exports.refreshToken = async (req, res) => {
         await user.save();
 
         res.cookie('refreshToken', newRefreshToken, {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'Strict',
+            httpOnly: true, // Para evitar acesso via JavaScript no navegador
+            secure: process.env.NODE_ENV === 'production', // Somente HTTPS em produção
+            sameSite: 'Strict', // Restringe envio de cookies ao mesmo domínio
+            domain: process.env.NODE_ENV === 'production' ? '.joblinkbr.com' : undefined,
         });
 
         logger.info(`Token de acesso renovado para o usuário: ${user.email}`);
@@ -131,9 +133,10 @@ exports.logout = async (req, res) => {
             logger.warn('Token de atualização não encontrado durante logout.');
             // Mesmo que o *refresh token* não seja encontrado, você pode ainda limpar o cookie:
             res.clearCookie('refreshToken', {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
-                sameSite: 'Strict',
+                httpOnly: true, // Para evitar acesso via JavaScript no navegador
+                secure: process.env.NODE_ENV === 'production', // Somente HTTPS em produção
+                sameSite: 'Strict', // Restringe envio de cookies ao mesmo domínio
+                domain: process.env.NODE_ENV === 'production' ? '.joblinkbr.com' : undefined,
             });
             return res.status(401).json({ error: 'Token de atualização inválido ou não encontrado' });
         }
