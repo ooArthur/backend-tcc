@@ -3,6 +3,8 @@ const logger = require('../config/logger');
 const User = require('../models/User');
 const Company = require('../models/CompanyProfile');
 const JobVacancyFavorites = require('../models/JobVacancyFavorites');
+const JobVacancy = require('../models/JobVacancy');
+const Candidate = require('../models/CandidateProfile');
 
 // Função para criar uma empresa
 exports.createCompany = async (req, res) => {
@@ -156,7 +158,14 @@ exports.getCompanyById2 = async (req, res) => {
 exports.updateCompanyById = async (req, res) => {
     try {
         const { id } = req.params;
-        const updates = req.body;
+        let updates = { ...req.body };
+
+        // Verifica se o campo password foi incluído nas atualizações
+        if (updates.password) {
+            // Encripta a nova senha antes de salvar
+            const hashedPassword = await bcrypt.hash(updates.password, 10);
+            updates.password = hashedPassword;
+        }
 
         // Atualiza a empresa no banco de dados pelo ID
         const updatedCompany = await Company.findByIdAndUpdate(id, updates, { new: true, runValidators: true });
@@ -266,3 +275,102 @@ exports.removeFavoriteCandidate = async (req, res) => {
         res.status(500).json({ message: 'Erro ao remover candidato dos favoritos', error: error.message });
     }
 };
+
+exports.recommendCandidates = async (req, res) => {
+    try {
+        const companyId = req.user.id;
+
+        // Buscar o perfil da empresa
+        const company = await Company.findById(companyId);
+        if (!company) {
+            logger.warn(`Empresa com ID ${companyId} não encontrada.`);
+            return res.status(404).json({ message: 'Empresa não encontrada.' });
+        }
+
+        // Buscar as vagas da empresa
+        const jobVacancies = await JobVacancy.find({ companyId: company._id }).populate({
+            path: 'companyId',
+            select: 'companyName'
+        });
+
+        // Buscar os candidatos que podem estar interessados
+        const candidates = await Candidate.find({ areaOfInterest: { $in: jobVacancies.map(vacancy => vacancy.jobArea) } });
+
+        // Função para contar palavras comuns em duas descrições
+        const countCommonWords = (str1, str2) => {
+            if (!str1 || !str2) return 0; // Verifica se as strings são válidas
+            const words1 = str1.toLowerCase().split(/\W+/);
+            const words2 = str2.toLowerCase().split(/\W+/);
+            const commonWords = words1.filter(word => words2.includes(word));
+            return [...new Set(commonWords)].length;  // Retorna a quantidade de palavras comuns únicas
+        };
+
+        // Filtrar candidatos que atendem a pelo menos três condições
+        const recommendedCandidates = candidates.filter(candidate => {
+            let conditionsMet = 0;
+
+            // Comparação de área de interesse
+            if (jobVacancies.some(vacancy => vacancy.jobArea === candidate.areaOfInterest)) {
+                conditionsMet++;
+            }
+
+            // Comparação de qualificações (pelo menos 3 qualificações em comum)
+            const matchingQualifications = jobVacancies.some(vacancy =>
+                vacancy.desiredSkills.filter(skill => candidate.candidateQualifications.some(q => q.description === skill)).length >= 3
+            );
+            if (matchingQualifications) conditionsMet++;
+
+            // Comparação de localização (estado e cidade)
+            const isLocationMatch = jobVacancies.some(vacancy =>
+                vacancy.jobLocation.state.toLowerCase() === candidate.desiredState.toLowerCase() ||
+                vacancy.jobLocation.city.toLowerCase() === candidate.desiredCity.toLowerCase()
+            );
+            if (isLocationMatch) conditionsMet++;
+
+            // Comparação de salário (considerando faixa salarial)
+            const salary = candidate.candidateTargetSalary ? candidate.candidateTargetSalary : null;
+            const salaryMatch = jobVacancies.some(vacancy => {
+                const vacancySalary = vacancy.salary ? parseInt(vacancy.salary) : null;
+                return !vacancySalary || (vacancySalary >= (candidate.candidateTargetSalary - 2000) && vacancySalary <= (candidate.candidateTargetSalary + 2000));
+            });
+            if (salaryMatch) conditionsMet++;
+
+            // Comparação de descrição do candidato com a descrição da vaga (5 palavras em comum)
+            const commonWordsCount = jobVacancies.some(vacancy => countCommonWords(candidate.candidateAbout, vacancy.jobDescription) >= 5);
+            if (commonWordsCount) conditionsMet++;
+
+            // Comparação de cargo desejado com a descrição da vaga
+            const isRoleMatch = jobVacancies.some(vacancy =>
+                vacancy.jobDescription.toLowerCase().includes(candidate.desiredRole.toLowerCase())
+            );
+            if (isRoleMatch) conditionsMet++;
+
+            // Comparação de idiomas do candidato com qualificações e habilidades da vaga
+            const matchingIdioms = jobVacancies.some(vacancy =>
+                candidate.candidateIdioms.some(idiom => vacancy.requiredQualifications.includes(idiom.name) || vacancy.desiredSkills.includes(idiom.name))
+            );
+            if (matchingIdioms) conditionsMet++;
+
+            // Verificar se a vaga não exige qualificação/experiência
+            const noExperienceRequired = jobVacancies.some(vacancy => !vacancy.requiredQualifications || vacancy.requiredQualifications.length === 0);
+            if (noExperienceRequired) conditionsMet++;
+
+            // Retornar candidatos que atendem a pelo menos 3 condições
+            return conditionsMet >= 3;
+        });
+
+        if (recommendedCandidates.length === 0) {
+            logger.info(`Nenhum candidato recomendado para a empresa com ID ${companyId}.`);
+            return res.status(200).json({ message: 'Nenhum candidato recomendado no momento.' });
+        }
+
+        logger.info(`Candidatos recomendados encontrados para a empresa com ID ${companyId}.`);
+
+        // Retorna os candidatos recomendados
+        return res.status(200).json(recommendedCandidates);
+    } catch (error) {
+        logger.error(`Erro ao recomendar candidatos: ${error.message}`);
+        return res.status(500).json({ message: 'Erro ao recomendar candidatos', error: error.message });
+    }
+};
+
