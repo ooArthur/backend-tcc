@@ -298,7 +298,7 @@ exports.addInterestedBatch = async (req, res) => {
             const jobVacancy = await JobVacancy.findById(new mongoose.Types.ObjectId(jobVacancyId));
 
             if (!jobVacancy) {
-                failedApplications.push({ jobVacancyId, message: 'Vaga não encontrada.'});
+                failedApplications.push({ jobVacancyId, message: 'Vaga não encontrada.' });
                 continue;
             }
 
@@ -426,8 +426,16 @@ exports.recommendJobVacancies = async (req, res) => {
         }
 
         // Extrair as qualificações e preferências do candidato
-        const qualifications = candidate.candidateQualifications.map(q => q.description);
-        const { desiredRole, candidateTargetSalary, desiredState, desiredCity, areaOfInterest, candidateAbout, candidateIdioms } = candidate;
+        const qualifications = (candidate.candidateQualifications || []).map(q => q.description || '');
+        const {
+            desiredRole = '',
+            candidateTargetSalary = 0,
+            desiredState = '',
+            desiredCity = '',
+            areaOfInterest = '',
+            candidateAbout = '',
+            candidateIdioms = []
+        } = candidate;
 
         // Definir faixa de salário aceitável (com tolerância de até 2000)
         const minSalary = candidateTargetSalary - 2000;
@@ -441,14 +449,16 @@ exports.recommendJobVacancies = async (req, res) => {
 
         // Função para contar palavras comuns em duas descrições
         const countCommonWords = (str1, str2) => {
+            if (!str1 || !str2) return 0; // Retorna 0 se uma das strings for undefined
             const words1 = str1.toLowerCase().split(/\W+/);
             const words2 = str2.toLowerCase().split(/\W+/);
             const commonWords = words1.filter(word => words2.includes(word));
-            return [...new Set(commonWords)].length;  // Retorna a quantidade de palavras comuns únicas
+            return [...new Set(commonWords)].length; // Retorna a quantidade de palavras comuns únicas
         };
 
         // Função para verificar semelhança entre duas strings
         const compareStrings = (str1, str2) => {
+            if (!str1 || !str2) return false; // Retorna falso se uma das strings for undefined
             return str1.toLowerCase().includes(str2.toLowerCase()) || str2.toLowerCase().includes(str1.toLowerCase());
         };
 
@@ -456,35 +466,45 @@ exports.recommendJobVacancies = async (req, res) => {
         const recommendedJobVacancies = jobVacancies.filter(vacancy => {
             let conditionsMet = 0;
 
+            // Verificar os campos da vaga para evitar erros de undefined
+            const jobArea = vacancy.jobArea || '';
+            const jobLocation = vacancy.jobLocation || {};
+            const jobDescription = vacancy.jobDescription || '';
+            const salary = vacancy.salary ? parseInt(vacancy.salary) : null;
+            const requiredQualifications = vacancy.requiredQualifications || [];
+            const desiredSkills = vacancy.desiredSkills || [];
+
             // Comparação de área de interesse
-            if (compareStrings(vacancy.jobArea, areaOfInterest)) conditionsMet++;
+            if (compareStrings(jobArea, areaOfInterest)) conditionsMet++;
 
             // Comparação de qualificações (pelo menos 3 qualificações em comum)
-            const matchingQualifications = vacancy.desiredSkills.filter(skill => qualifications.some(q => compareStrings(skill, q)));
+            const matchingQualifications = desiredSkills.filter(skill =>
+                qualifications.some(q => compareStrings(skill, q))
+            );
             if (matchingQualifications.length >= 3) conditionsMet++;
 
             // Comparação de localização (estado e cidade)
-            if (compareStrings(vacancy.jobLocation.state, desiredState) || compareStrings(vacancy.jobLocation.city, desiredCity)) conditionsMet++;
+            if (compareStrings(jobLocation.state, desiredState) || compareStrings(jobLocation.city, desiredCity)) conditionsMet++;
 
             // Comparação de salário (considerando faixa salarial)
-            const salary = vacancy.salary ? parseInt(vacancy.salary) : null;
             if (!salary || (salary >= minSalary && salary <= maxSalary)) conditionsMet++;
 
             // Comparação de descrição do candidato com a descrição da vaga (5 palavras em comum)
-            const commonWordsCount = countCommonWords(candidateAbout, vacancy.jobDescription);
+            const commonWordsCount = countCommonWords(candidateAbout, jobDescription);
             if (commonWordsCount >= 5) conditionsMet++;
 
             // Comparação de cargo desejado com a descrição da vaga
-            if (compareStrings(vacancy.jobDescription, desiredRole)) conditionsMet++;
+            if (compareStrings(jobDescription, desiredRole)) conditionsMet++;
 
             // Comparação de idiomas do candidato com qualificações e habilidades da vaga
-            const matchingIdioms = candidateIdioms.filter(idiom => 
-                vacancy.requiredQualifications.some(req => compareStrings(req, idiom.name)) || vacancy.desiredSkills.some(skill => compareStrings(skill, idiom.name))
+            const matchingIdioms = candidateIdioms.filter(idiom =>
+                requiredQualifications.some(req => compareStrings(req, idiom.name)) ||
+                desiredSkills.some(skill => compareStrings(skill, idiom.name))
             );
             if (matchingIdioms.length > 0) conditionsMet++;
 
             // Verificar se a vaga não exige qualificação/experiência
-            if (!vacancy.requiredQualifications || vacancy.requiredQualifications.length === 0) {
+            if (!requiredQualifications || requiredQualifications.length === 0) {
                 conditionsMet++;
             }
 
@@ -506,9 +526,6 @@ exports.recommendJobVacancies = async (req, res) => {
         return res.status(500).json({ message: 'Erro ao recomendar vagas', error: error.message });
     }
 };
-
-
-
 
 // Função para listar todas as vagas aplicadas pelo candidato junto com o status da candidatura
 exports.getJobApplicationsAndStatusForCandidate = async (req, res) => {
