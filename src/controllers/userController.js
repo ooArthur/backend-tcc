@@ -10,6 +10,7 @@ const JobVacancy = require('../models/JobVacancy');
 const ResetToken = require('../models/ResetToken');
 const { sendPasswordResetEmail } = require('./emailController');
 const VerificationCode = require('../models/VerificationCode');
+const JobApplicationStatus = require('../models/JobApplicationStatus')
 
 exports.removeUnverifiedUsers = async () => {
     try {

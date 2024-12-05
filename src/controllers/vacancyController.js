@@ -507,9 +507,6 @@ exports.recommendJobVacancies = async (req, res) => {
     }
 };
 
-
-
-
 // Função para listar todas as vagas aplicadas pelo candidato junto com o status da candidatura
 exports.getJobApplicationsAndStatusForCandidate = async (req, res) => {
     try {

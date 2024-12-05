@@ -297,3 +297,373 @@
 2024-12-05 00:33:29 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751162a8e190b94d0bd4500.
 2024-12-05 00:33:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
 2024-12-05 00:33:29 [INFO]: Candidato encontrado com o id: 6751162a8e190b94d0bd4500
+2024-12-05 11:44:25 [INFO]: Server is running on port 5000
+2024-12-05 11:44:26 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 11:44:32 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 11:44:32 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com e a senha correta é: 12345678  $2a$10$vN.g2TqIW4CnWYy8fb54Pua4sdkR23bURuC.CYtXTdvNZULEd6yu.
+2024-12-05 11:44:41 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 11:44:41 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com e a senha correta é: 12345678  $2a$10$vN.g2TqIW4CnWYy8fb54Pua4sdkR23bURuC.CYtXTdvNZULEd6yu.
+2024-12-05 11:44:46 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 11:44:46 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com e a senha correta é: 12345678  $2a$10$vN.g2TqIW4CnWYy8fb54Pua4sdkR23bURuC.CYtXTdvNZULEd6yu.
+2024-12-05 11:46:24 [INFO]: Server is running on port 5000
+2024-12-05 11:46:24 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 11:46:37 [INFO]: IP: 127.0.0.1 - POST /api/user/candidate/create-candidate
+2024-12-05 11:46:37 [INFO]: Perfil de candidato criado com sucesso para o usuário: arthurcandidato@gmail.com
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 11:46:47 [INFO]: Usuário autenticado com sucesso: arthurcandidato@gmail.com
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:46:47 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:46:47 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:46:47 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:46:48 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:46:48 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:46:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:46:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:46:48 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:46:48 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:46:48 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:46:48 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:46:48 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:46:48 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:46:48 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:46:53 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:46:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-05 11:46:53 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:46:53 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:46:53 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:46:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-05 11:46:55 [INFO]: IP: 127.0.0.1 - POST /api/auth/logout
+2024-12-05 11:46:55 [INFO]: Usuário com e-mail arthurcandidato@gmail.com deslogado com sucesso.
+2024-12-05 11:47:02 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 11:47:02 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com e a senha correta é: 12345678  $2a$10$vN.g2TqIW4CnWYy8fb54Pua4sdkR23bURuC.CYtXTdvNZULEd6yu.
+2024-12-05 11:47:35 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 11:47:35 [INFO]: Usuário autenticado com sucesso: arthurcandidato@gmail.com
+2024-12-05 11:47:35 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:47:35 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:35 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:35 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:36 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:36 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:36 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:36 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:36 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:36 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:36 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:38 [INFO]: IP: 127.0.0.1 - PUT /api/user/candidate/update-candidate/6751bccd566814230ccc6a68
+2024-12-05 11:47:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:47:38 [INFO]: Candidato com ID 6751bccd566814230ccc6a68 atualizado com sucesso.
+2024-12-05 11:47:43 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:43 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:43 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:43 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:43 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:43 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:43 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:43 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:50 [INFO]: IP: 127.0.0.1 - PUT /api/user/candidate/update-candidate/6751bccd566814230ccc6a68
+2024-12-05 11:47:50 [INFO]: Candidato com ID 6751bccd566814230ccc6a68 atualizado com sucesso.
+2024-12-05 11:47:51 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:51 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:51 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:51 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:51 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:51 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:51 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:51 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:51 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:47:51 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:54 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:54 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:54 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:54 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:55 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:47:55 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:55 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:55 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:59 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:59 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:47:59 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:47:59 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:47:59 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:47:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:47:59 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:48:20 [INFO]: Server is running on port 5000
+2024-12-05 11:48:21 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:48:25 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:48:25 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:48:25 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:48:25 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:48:25 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:48:25 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:48:25 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:05 [INFO]: Server is running on port 5000
+2024-12-05 11:50:05 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 11:50:14 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:50:14 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:50:15 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:50:15 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:50:15 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:50:15 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:15 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:15 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:15 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:21 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:50:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:50:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:50:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:50:59 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:59 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:50:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:50:59 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:50:59 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:51:00 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:51:01 [INFO]: IP: 127.0.0.1 - POST /api/user/candidate/add-favorite/
+2024-12-05 11:51:01 [INFO]: Vaga de emprego com ID 66e2feeb2d94f880f1ed9905 adicionada aos favoritos do candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:51:02 [INFO]: IP: 127.0.0.1 - POST /api/user/candidate/add-favorite/
+2024-12-05 11:51:02 [INFO]: Vaga de emprego com ID 66e4d45c2a5585f4cff07c2f adicionada aos favoritos do candidato com ID 6751bccd566814230ccc6a68.
+2024-12-05 11:51:04 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancy-status
+2024-12-05 11:51:04 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:04 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:04 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancy-status
+2024-12-05 11:51:04 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:04 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:05 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:05 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:05 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:05 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:05 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:19 [INFO]: IP: 127.0.0.1 - PUT /api/user/candidate/update-candidate/6751bccd566814230ccc6a68
+2024-12-05 11:51:19 [INFO]: Candidato com ID 6751bccd566814230ccc6a68 atualizado com sucesso.
+2024-12-05 11:51:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:51:24 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:24 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:51:24 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:51:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:24 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:51:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:51:24 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:51:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:51:24 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:52:45 [INFO]: Server is running on port 5000
+2024-12-05 11:52:45 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 11:53:27 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:27 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:53:27 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:27 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancy-status
+2024-12-05 11:53:28 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:28 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancy-status
+2024-12-05 11:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:29 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:29 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:29 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:53:29 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:08 [INFO]: Server is running on port 5000
+2024-12-05 11:54:08 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 11:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:54:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:54:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:54:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:54:22 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:42 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:42 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:42 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:42 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:42 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:43 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:43 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:43 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:43 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:44 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancy-status
+2024-12-05 11:54:44 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:44 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:44 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:44 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancy-status
+2024-12-05 11:54:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:54:45 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:45 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:54:45 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:54:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:54:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:54:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:55:17 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:55:17 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:55:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:55:18 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:55:18 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:55:18 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-05 11:55:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-05 11:55:18 [INFO]: Candidato encontrado com o id: 6751bccd566814230ccc6a68
+2024-12-05 11:56:47 [INFO]: Server is running on port 5000
+2024-12-05 11:56:48 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 12:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-12-05 12:00:00 [ERROR]: Erro ao remover usuários não verificados: JobApplicationStatus is not defined
+2024-12-05 12:00:00 [INFO]: Nenhuma vaga antiga para remover.
+2024-12-05 12:00:00 [INFO]: Tokens expirados removidos: 0
+2024-12-05 12:04:32 [INFO]: Server is running on port 5000
+2024-12-05 12:04:32 [INFO]: MongoDB conectado com sucesso!
