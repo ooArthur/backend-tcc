@@ -427,54 +427,68 @@ exports.recommendJobVacancies = async (req, res) => {
 
         // Extrair as qualificações e preferências do candidato
         const qualifications = candidate.candidateQualifications.map(q => q.description);
-        const { desiredRole, candidateTargetSalary, desiredState, areaOfInterest } = candidate;
+        const { desiredRole, candidateTargetSalary, desiredState, desiredCity, areaOfInterest, candidateAbout, candidateIdioms } = candidate;
 
         // Definir faixa de salário aceitável (com tolerância de até 2000)
         const minSalary = candidateTargetSalary - 2000;
         const maxSalary = candidateTargetSalary + 2000;
 
-        // Construir a consulta para buscar vagas recomendadas
-        const query = {
-            jobArea: areaOfInterest, // Vaga deve estar na mesma área de interesse
-            $or: [
-                { desiredSkills: { $in: qualifications } }, // Qualificações compatíveis
-                { 'jobLocation.state': desiredState }, // Estado desejado
-                {
-                    $or: [
-                        { salary: { $gte: minSalary, $lte: maxSalary } },
-                        { salary: null } // Incluir vagas sem salário especificado
-                    ]
-                }
-            ]
-        };
-
-        // Buscar vagas e preencher o nome da empresa
-        const jobVacancies = await JobVacancy.find(query).populate({
+        // Buscar as vagas de acordo com a área de interesse
+        const jobVacancies = await JobVacancy.find({ jobArea: areaOfInterest }).populate({
             path: 'companyId',
             select: 'companyName'
         });
 
-        // Filtrar vagas que atendem a pelo menos três das condições
+        // Função para contar palavras comuns em duas descrições
+        const countCommonWords = (str1, str2) => {
+            const words1 = str1.toLowerCase().split(/\W+/);
+            const words2 = str2.toLowerCase().split(/\W+/);
+            const commonWords = words1.filter(word => words2.includes(word));
+            return [...new Set(commonWords)].length;  // Retorna a quantidade de palavras comuns únicas
+        };
+
+        // Função para verificar semelhança entre duas strings
+        const compareStrings = (str1, str2) => {
+            return str1.toLowerCase().includes(str2.toLowerCase()) || str2.toLowerCase().includes(str1.toLowerCase());
+        };
+
+        // Filtrar vagas que atendem a pelo menos três condições
         const recommendedJobVacancies = jobVacancies.filter(vacancy => {
-            let conditionsMet = 1; // A área de interesse já é garantida na query
+            let conditionsMet = 0;
 
-            // Contabilizar qualificações correspondentes
-            if (vacancy.desiredSkills.some(skill => qualifications.includes(skill))) {
-                conditionsMet++;
-            }
+            // Comparação de área de interesse
+            if (compareStrings(vacancy.jobArea, areaOfInterest)) conditionsMet++;
 
-            // Contabilizar se o estado da vaga corresponde ao desejado
-            if (vacancy.jobLocation?.state === desiredState) {
-                conditionsMet++;
-            }
+            // Comparação de qualificações (pelo menos 3 qualificações em comum)
+            const matchingQualifications = vacancy.desiredSkills.filter(skill => qualifications.some(q => compareStrings(skill, q)));
+            if (matchingQualifications.length >= 3) conditionsMet++;
 
-            // Contabilizar se o salário está dentro da faixa desejada ou se é indeterminado
+            // Comparação de localização (estado e cidade)
+            if (compareStrings(vacancy.jobLocation.state, desiredState) || compareStrings(vacancy.jobLocation.city, desiredCity)) conditionsMet++;
+
+            // Comparação de salário (considerando faixa salarial)
             const salary = vacancy.salary ? parseInt(vacancy.salary) : null;
-            if (!salary || (salary >= minSalary && salary <= maxSalary)) {
+            if (!salary || (salary >= minSalary && salary <= maxSalary)) conditionsMet++;
+
+            // Comparação de descrição do candidato com a descrição da vaga (5 palavras em comum)
+            const commonWordsCount = countCommonWords(candidateAbout, vacancy.jobDescription);
+            if (commonWordsCount >= 5) conditionsMet++;
+
+            // Comparação de cargo desejado com a descrição da vaga
+            if (compareStrings(vacancy.jobDescription, desiredRole)) conditionsMet++;
+
+            // Comparação de idiomas do candidato com qualificações e habilidades da vaga
+            const matchingIdioms = candidateIdioms.filter(idiom => 
+                vacancy.requiredQualifications.some(req => compareStrings(req, idiom.name)) || vacancy.desiredSkills.some(skill => compareStrings(skill, idiom.name))
+            );
+            if (matchingIdioms.length > 0) conditionsMet++;
+
+            // Verificar se a vaga não exige qualificação/experiência
+            if (!vacancy.requiredQualifications || vacancy.requiredQualifications.length === 0) {
                 conditionsMet++;
             }
 
-            // Retornar vagas que atendem pelo menos três condições
+            // Retornar vagas que atendem pelo menos 3 condições
             return conditionsMet >= 3;
         });
 
@@ -492,6 +506,9 @@ exports.recommendJobVacancies = async (req, res) => {
         return res.status(500).json({ message: 'Erro ao recomendar vagas', error: error.message });
     }
 };
+
+
+
 
 // Função para listar todas as vagas aplicadas pelo candidato junto com o status da candidatura
 exports.getJobApplicationsAndStatusForCandidate = async (req, res) => {
