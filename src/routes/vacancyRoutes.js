@@ -132,4 +132,16 @@ router.get('/candidate-details/:jobVacancyId/:candidateId',
     vacancyController.viewCandidateDetails
 );
 
+router.get('/get-company-job-stats',
+    authenticateToken,
+    authorizeRoles('Company', 'Admin'),
+    vacancyController.getCompanyJobStats
+);
+
+router.get('/system-stats', 
+    authenticateToken,
+    authorizeRoles('Admin'),
+    vacancyController.getSystemStats
+);
+
 module.exports = router;

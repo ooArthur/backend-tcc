@@ -1,0 +1,17 @@
+2024-12-04 10:28:52 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:28:53 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:29:00 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:29:00 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:29:02 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:29:51 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:29:51 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:29:51 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:30:21 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:30:21 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:30:21 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 10:35:18 [ERROR]: Erro ao criar candidato: E11000 duplicate key error collection: sistemacurriculos.users index: email_1 dup key: { email: "canela@canela.canela" } - Dados: {"candidateName":"Vendo Canela","email":"canela@canela.canela","password":"12345678","confirmPassword":"12345678","candidateBirth":"2000-02-18","candidatePhone":"(11) 95547-3359","candidateAddress":{"publicPlace":"Rua Pelicano","neighborhood":"Jardim Nova Coimbra","city":"Cotia","state":"SP","cep":"06703450","number":"90"},"candidateCivilStatus":"Fiel a ex.","candidateEducationLevel":"Ensino Superior","candidateLastJob":"Vendedor de canela no Vaticano","desiredRole":"Vender canela em Pau Torto - Alagoas","desiredCity":"Pau torto","desiredState":"Alagoas","candidateGender":"Feminino","candidateTargetSalary":"R$ 19999","candidateCEP":"06703450"}
+2024-12-04 16:18:55 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 16:21:59 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 16:23:07 [ERROR]: Erro ao excluir denúncia: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Report"
+2024-12-04 16:31:47 [ERROR]: Erro ao atualizar candidato pelo ID: Validation failed: candidateIdioms.8.level: `` is not a valid enum value for path `level`.
+2024-12-04 19:00:00 [ERROR]: Erro ao remover usuários não verificados: JobApplicationStatus is not defined

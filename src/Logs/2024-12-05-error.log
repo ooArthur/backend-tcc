@@ -1,4 +1,17 @@
-2024-12-05 12:05:32 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
-2024-12-05 12:05:32 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
-2024-12-05 12:05:59 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
-2024-12-05 12:05:59 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+
+2024-12-05 00:00:02 [ERROR]: Erro ao remover usuários não verificados: JobApplicationStatus is not defined
+2024-12-05 00:28:31 [ERROR]: Erro ao redefinir senha: Cast to string failed for value "{
+  token: '$2a$10$xOjJY.am9CH7HkrP5tMnaO3gPyPxYsTGJWpZ27FXlG/uWIpmLFggK'
+}" (type Object) at path "token" for model "ResetToken"
+2024-12-05 11:50:15 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:50:15 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:50:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:50:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:51:24 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:51:24 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:54:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:54:22 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:55:17 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 11:55:18 [ERROR]: Erro ao recomendar vagas: Cannot read properties of undefined (reading 'toLowerCase')
+2024-12-05 12:00:00 [ERROR]: Erro ao remover usuários não verificados: JobApplicationStatus is not defined
+

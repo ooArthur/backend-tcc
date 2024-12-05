@@ -1,4 +1,4 @@
-const User = require('../models/User');
+    const User = require('../models/User');
 const logger = require('../config/logger');
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
@@ -10,6 +10,7 @@ const JobVacancy = require('../models/JobVacancy');
 const ResetToken = require('../models/ResetToken');
 const { sendPasswordResetEmail } = require('./emailController');
 const VerificationCode = require('../models/VerificationCode');
+const JobApplicationStatus = require('../models/JobApplicationStatus')
 
 exports.removeUnverifiedUsers = async () => {
     try {
@@ -286,7 +287,7 @@ exports.requestPasswordReset = async (req, res) => {
 
 // Redefinir Senha
 exports.resetPassword = async (req, res) => {
-    const token = req.headers['authorization']?.split(' ')[1]; 
+    const token = req.query.token; 
 
     const { newPassword } = req.body;
 

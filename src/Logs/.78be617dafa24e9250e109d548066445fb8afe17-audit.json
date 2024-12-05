@@ -6,9 +6,14 @@
     "auditLog": "C:\\Users\\arthu\\Desktop\\backend-tcc\\src\\Logs\\.78be617dafa24e9250e109d548066445fb8afe17-audit.json",
     "files": [
         {
-            "date": 1733411121083,
+            "date": 1733348986912,
+            "name": "C:\\Users\\arthu\\Desktop\\backend-tcc\\src\\Logs\\2024-12-04-combined.log",
+            "hash": "120cb781d9f18c7a1c58579c8576a756e22b13a8df18e49405cf410064402538"
+        },
+        {
+            "date": 1733367601755,
             "name": "C:\\Users\\arthu\\Desktop\\backend-tcc\\src\\Logs\\2024-12-05-combined.log",
-            "hash": "cd3b4470aac635d53cfa9319d55f10413e14f04adf23a3e7b9360067a9a136e0"
+            "hash": "b5946d18063101a6b449bcd56c6ccc74f45ad70c4c5720b19547950ebf5d1d23"
         }
     ],
     "hashType": "sha256"
