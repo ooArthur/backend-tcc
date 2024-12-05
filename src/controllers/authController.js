@@ -5,7 +5,7 @@ const User = require('../models/User');
 
 // Configurações para o JWT
 const JWT_SECRET = process.env.JWT_SECRET;
-const JWT_EXPIRATION = '1m';
+const JWT_EXPIRATION = '45m';
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_REFRESH_EXPIRATION = '7d';
 

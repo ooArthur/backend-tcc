@@ -286,7 +286,7 @@ exports.requestPasswordReset = async (req, res) => {
 
 // Redefinir Senha
 exports.resetPassword = async (req, res) => {
-    const token = req.query; 
+    const token = req.query.token; 
 
     const { newPassword } = req.body;
 

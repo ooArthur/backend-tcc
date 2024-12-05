@@ -16150,3 +16150,500 @@
 2024-12-04 19:52:21 [INFO]: Consulta de avisos e contas banidas realizada com sucesso.
 2024-12-04 19:52:29 [INFO]: IP: 127.0.0.1 - POST /api/auth/logout
 2024-12-04 19:52:29 [INFO]: Usuário com e-mail arthuradmin@gmail.com deslogado com sucesso.
+2024-12-04 23:01:04 [INFO]: Server is running on port 5000
+2024-12-04 23:01:05 [INFO]: MongoDB conectado com sucesso!
+2024-12-04 23:34:24 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 23:34:24 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.empresa@gmail.com e a senha correta é: 123  $2a$10$3327KpDeIURh9lqqykjmzeHjV9kkZhoRXwFGqwf2tRSrfb5T3qSUe
+2024-12-04 23:34:28 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 23:34:28 [INFO]: Usuário autenticado com sucesso: arthur.empresa@gmail.com
+2024-12-04 23:34:28 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:34:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-favorites
+2024-12-04 23:34:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 23:34:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 23:34:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-favorites
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:29 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:29 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:32 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:32 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:32 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:32 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:33 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:35 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:35 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:34:35 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:35 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:34:35 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:34:35 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:52 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:52 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:34:52 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:34:52 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:34:52 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 6750d018d04193472e2608ae
+2024-12-04 23:35:18 [INFO]: IP: 127.0.0.1 - POST /api/user/company/vacancy/create-vacancy
+2024-12-04 23:35:18 [INFO]: Vaga de emprego criada com sucesso: "teste" pela empresa: Arthur (ID: 6750d018d04193472e2608ae)
+2024-12-04 23:35:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancy/67511166281dbb748c92474d
+2024-12-04 23:35:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-interested/67511166281dbb748c92474d
+2024-12-04 23:35:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/67511166281dbb748c92474d/status-count
+2024-12-04 23:35:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-interested/67511166281dbb748c92474d
+2024-12-04 23:35:22 [INFO]: Status das candidaturas obtido para a vaga 67511166281dbb748c92474d da empresa 6750d018d04193472e2608ae
+2024-12-04 23:35:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancy/67511166281dbb748c92474d
+2024-12-04 23:35:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/67511166281dbb748c92474d/status-count
+2024-12-04 23:35:22 [INFO]: Status das candidaturas obtido para a vaga 67511166281dbb748c92474d da empresa 6750d018d04193472e2608ae
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 23:35:39 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:35:39 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:35:39 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:35:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/
+2024-12-04 23:35:51 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/list-vacancies
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-04 23:35:51 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidates
+2024-12-04 23:35:52 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:35:59 [INFO]: IP: 127.0.0.1 - POST /api/auth/logout
+2024-12-04 23:35:59 [INFO]: Usuário com e-mail arthur.empresa@gmail.com deslogado com sucesso.
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-04 23:39:22 [INFO]: Usuário autenticado com sucesso: arthur.candidato@gmail.com
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:39:22 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:39:22 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:39:22 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:22 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:39:22 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:22 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:23 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:23 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:39:23 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:23 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:23 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:23 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:39:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:39:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:39:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:39:27 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:39:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:39:27 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:39:36 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:39:36 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:39:37 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:37 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:39:37 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:37 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:37 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:37 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:37 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:39:38 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:39:38 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:38 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:39:38 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:39:38 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:39:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:39:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:39:40 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:39:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:39:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:39:40 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:43:05 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:06 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:06 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:06 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:06 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:43:06 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:06 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:06 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:43:07 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:08 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:43:08 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:43:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:43:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:43:09 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:43:09 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:43:09 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:43:24 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:43:24 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:24 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:43:24 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:24 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:24 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:43:53 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:43:53 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:53 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:43:53 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:43:53 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:43:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:43:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:43:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:43:54 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:43:54 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:43:54 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:44:07 [INFO]: IP: 127.0.0.1 - POST /api/report/create-report
+2024-12-04 23:44:07 [INFO]: Denúncia criada com sucesso. Tipo: vacancy, ID do alvo: 67511166281dbb748c92474d
+2024-12-04 23:44:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:44:26 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:44:26 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:44:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:44:27 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:44:27 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:44:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:44:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:44:31 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:44:36 [INFO]: IP: 127.0.0.1 - POST /api/report/create-report
+2024-12-04 23:44:45 [INFO]: IP: 127.0.0.1 - POST /api/user/company/vacancy/add-interested
+2024-12-04 23:44:45 [INFO]: Candidato com ID 6750d205d04193472e2608ba adicionado à vaga com ID 67511166281dbb748c92474d.
+2024-12-04 23:44:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:46:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:46:45 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:46:45 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:46:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:46:50 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:46:50 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:48:19 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:48:19 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:48:20 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:48:20 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:48:20 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:48:20 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:48:20 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:48:20 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:48:20 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:53:10 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:10 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:53:10 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:10 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:10 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:53:10 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:11 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:53:11 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:53:11 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:53:11 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:53:12 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:53:12 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:28 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:53:28 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:53:28 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:28 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:28 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:53:29 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:53:29 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:53:29 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:53:29 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:53:29 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:53:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:53:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:53:31 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:53:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:53:31 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:53:31 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:54:16 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:54:16 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:54:16 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:54:16 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:54:16 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:54:16 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:54:17 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:54:17 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:54:17 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:54:17 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:54:17 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:54:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:54:17 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:54:22 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:54:22 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:54:22 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:54:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:54:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:54:24 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:54:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:54:24 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:54:24 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:57:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:57:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:57:41 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:57:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:57:41 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:57:41 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:57:48 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:57:48 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:57:49 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:57:49 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:57:49 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:57:49 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:57:49 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:57:49 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:57:49 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:58:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:58:17 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:17 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:17 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:58:17 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:58:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:58:18 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:58:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:58:18 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:58:18 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:58:32 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:58:32 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:58:33 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:58:33 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:33 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:58:33 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:58:33 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:58:33 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:33 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:58:40 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:58:40 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:40 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:58:40 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-companies
+2024-12-04 23:58:40 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:58:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:58:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:58:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/list-company/6750d018d04193472e2608ae
+2024-12-04 23:58:42 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:58:42 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/company-vacancies/6750d018d04193472e2608ae
+2024-12-04 23:58:42 [INFO]: Vagas encontradas para empresa: 6750d018d04193472e2608ae
+2024-12-04 23:59:06 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:59:06 [INFO]: IP: 127.0.0.1 - GET /api/user/me
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:59:07 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/applications-today
+2024-12-04 23:59:07 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:59:07 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:59:07 [INFO]: Nenhuma vaga recomendada para o candidato com ID 6750d205d04193472e2608ba.
+2024-12-04 23:59:07 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-candidate/
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/candidate/list-favorites
+2024-12-04 23:59:07 [INFO]: Candidato encontrado com o id: 6750d205d04193472e2608ba
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-04 23:59:07 [INFO]: IP: 127.0.0.1 - GET /api/user/company/vacancy/vacancies-applied
