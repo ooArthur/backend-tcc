@@ -34,10 +34,10 @@ exports.createCompany = async (req, res) => {
             return res.status(400).json({ error: 'A senha deve ter no mínimo 8 caracteres.' });
         }
 
-        const telephoneRegex = /^\(\d{2}\) \d{5}-\d{4}$/;
+        const telephoneRegex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
         if (!telephoneRegex.test(telephone)) {
-            return res.status(400).json({ error: 'O telefone da empresa deve seguir o formato (XX) XXXXX-XXXX.' });
-        }
+            return res.status(400).json({ error: 'O telefone da empresa deve seguir o formato (XX) XXXX-XXXX ou (XX) XXXXX-XXXX.' });
+        }      
 
         const cepRegex = /^\d{8}$/;
         if (!address.cep || !cepRegex.test(address.cep)) {

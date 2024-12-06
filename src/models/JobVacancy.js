@@ -44,7 +44,8 @@
                     'Atendimento ao Cliente',
                     'Design',
                     'Operações',
-                    'Construção Civil'
+                    'Construção Civil',
+                    'Outros'
                 ],
                 required: true
             },
