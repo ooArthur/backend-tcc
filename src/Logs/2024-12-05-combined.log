@@ -667,3 +667,40 @@
 2024-12-05 12:00:00 [INFO]: Tokens expirados removidos: 0
 2024-12-05 12:04:32 [INFO]: Server is running on port 5000
 
+2024-12-05 21:37:32 [INFO]: Server is running on port 5000
+2024-12-05 21:37:33 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 21:38:01 [INFO]: Server is running on port 5000
+2024-12-05 21:38:01 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 21:38:36 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 21:38:36 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com
+2024-12-05 21:39:04 [INFO]: Server is running on port 5000
+2024-12-05 21:39:05 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 21:39:07 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 21:39:07 [WARN]: Senha fornecida: 12
+2024-12-05 21:39:07 [WARN]: Senha armazenada (criptografada): $2a$10$1boXqHviNUi.zAL638gpzeDL0pQKSIJxe2lAv9qefsvoIi3cIZpEm
+2024-12-05 21:39:08 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com
+2024-12-05 21:39:34 [INFO]: Server is running on port 5000
+2024-12-05 21:39:34 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 21:41:53 [INFO]: Server is running on port 5000
+2024-12-05 21:41:53 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 21:44:56 [INFO]: IP: 127.0.0.1 - POST /api/user/candidate/create-candidate
+2024-12-05 21:44:56 [WARN]: O telefone deve estar no formato (XX) XXXXX-XXXX e ter 13 caracteres.
+2024-12-05 21:45:12 [INFO]: IP: 127.0.0.1 - POST /api/user/company/create-company
+2024-12-05 21:46:45 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 21:46:45 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com
+2024-12-05 21:46:50 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 21:46:50 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com
+2024-12-05 21:46:52 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 21:46:52 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com
+2024-12-05 21:47:00 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 21:47:00 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com
+2024-12-05 21:47:03 [INFO]: IP: 127.0.0.1 - POST /api/auth/login
+2024-12-05 21:47:03 [WARN]: Tentativa de login com senha incorreta para o e-mail: arthur.candidato@gmail.com
+2024-12-05 21:47:34 [INFO]: Server is running on port 5000
+2024-12-05 21:47:35 [INFO]: MongoDB conectado com sucesso!
+2024-12-05 22:00:00 [INFO]: Tokens expirados removidos: 0
+2024-12-05 22:00:00 [INFO]: Nenhuma vaga antiga para remover.
+2024-12-05 22:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-12-05 22:00:00 [ERROR]: Erro ao remover usuários não verificados: Report is not defined
+2024-12-05 22:53:03 [INFO]: Server is running on port 5000
+2024-12-05 22:53:05 [INFO]: MongoDB conectado com sucesso!

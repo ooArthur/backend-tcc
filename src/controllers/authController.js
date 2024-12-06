@@ -52,9 +52,10 @@ exports.login = async (req, res) => {
             return res.status(403).json({ error: 'Usuário banido. Entre em contato com o suporte.' });
         }
 
+        // Verifica a senha
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
-            logger.warn(`Tentativa de login com senha incorreta para o e-mail: ${email} e a senha correta é: ${password}  ${user.password}`);
+            logger.warn(`Tentativa de login com senha incorreta para o e-mail: ${email}`);
             return res.status(401).json({ error: 'Senha incorreta. Tente novamente.' });
         }
 

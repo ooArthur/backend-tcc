@@ -1,4 +1,4 @@
-    const User = require('../models/User');
+const User = require('../models/User');
 const logger = require('../config/logger');
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
@@ -11,6 +11,7 @@ const ResetToken = require('../models/ResetToken');
 const { sendPasswordResetEmail } = require('./emailController');
 const VerificationCode = require('../models/VerificationCode');
 const JobApplicationStatus = require('../models/JobApplicationStatus')
+const Report = require('../models/Report')
 
 exports.removeUnverifiedUsers = async () => {
     try {
