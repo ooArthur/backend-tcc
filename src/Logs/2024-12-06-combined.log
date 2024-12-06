@@ -2702,3 +2702,385 @@
 2024-12-06 11:33:49 [INFO]: IP: 10.92.208.24 - GET /api/user/company/list-companies
 2024-12-06 11:33:49 [INFO]: IP: 10.92.208.24 - GET /api/user/company/list-companies
 2024-12-06 11:33:49 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidates
+2024-12-06 12:48:08 [INFO]: Server is running on port 5000
+2024-12-06 12:48:08 [INFO]: MongoDB conectado com sucesso!
+2024-12-06 12:49:33 [INFO]: IP: 10.92.208.24 - POST /api/auth/login
+2024-12-06 12:49:34 [INFO]: Usuário autenticado com sucesso: vitor.candidato@gmail.com
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/me
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-favorites
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/applications-today
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-favorites
+2024-12-06 12:49:34 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/applications-today
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-06 12:49:34 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:34 [INFO]: Vagas recomendadas encontradas para o candidato com ID 6752d690688172b5dbb0a6df.
+2024-12-06 12:49:35 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:35 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-06 12:49:35 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:35 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-06 12:49:35 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:35 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:49:35 [INFO]: Vagas recomendadas encontradas para o candidato com ID 6752d690688172b5dbb0a6df.
+2024-12-06 12:49:35 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-06 12:49:35 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:35 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:48 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:49:48 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:48 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:48 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:49:48 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:48 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:48 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:49:48 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:49:50 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:50 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-06 12:49:50 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:50 [INFO]: Vagas recomendadas encontradas para o candidato com ID 6752d690688172b5dbb0a6df.
+2024-12-06 12:49:50 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:51 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:51 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/recommend-jobvacancies
+2024-12-06 12:49:51 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:49:51 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:51 [INFO]: Vagas recomendadas encontradas para o candidato com ID 6752d690688172b5dbb0a6df.
+2024-12-06 12:49:51 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:49:51 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 12:49:51 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 12:53:05 [INFO]: IP: 10.92.208.25 - POST /api/auth/login
+2024-12-06 12:53:06 [WARN]: Tentativa de login com senha incorreta para o e-mail: auranext@gmail.com
+2024-12-06 12:53:12 [INFO]: IP: 10.92.208.25 - POST /api/auth/login
+2024-12-06 12:53:13 [WARN]: Tentativa de login com senha incorreta para o e-mail: auranext@gmail.com
+2024-12-06 12:53:48 [INFO]: IP: 10.92.208.25 - POST /api/auth/login
+2024-12-06 12:53:48 [INFO]: Usuário autenticado com sucesso: senaisp@gmail.com
+2024-12-06 12:53:48 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 12:53:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 12:53:48 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 12:53:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 12:53:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 12:53:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 12:53:49 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 12:53:49 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 12:53:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:53:49 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:53:55 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:53:55 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:55 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:53:56 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:53:56 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:56 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:53:56 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:56 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:53:56 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:53:56 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:53:56 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:53:56 [WARN]: Nenhuma vaga encontrada para essa empresa. Id da empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:55:06 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/create-vacancy
+2024-12-06 12:55:06 [INFO]: Vaga de emprego criada com sucesso: "Auxiliar de produção" pela empresa: SENAI - COTIA (ID: 67530aeeb195b70906d341dc)
+2024-12-06 12:55:08 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancy/67531e5a788107b1146fcc83
+2024-12-06 12:55:08 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 12:55:08 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-interested/67531e5a788107b1146fcc83
+2024-12-06 12:55:08 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 12:55:08 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancy/67531e5a788107b1146fcc83
+2024-12-06 12:55:08 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-interested/67531e5a788107b1146fcc83
+2024-12-06 12:55:08 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 12:55:08 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 12:56:18 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 12:56:18 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 12:56:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:56:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 12:56:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 12:56:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 12:56:18 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 12:56:18 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 12:56:19 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:56:19 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:56:19 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 12:56:19 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 12:56:19 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 12:56:19 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 12:56:26 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancy/67531e5a788107b1146fcc83
+2024-12-06 12:56:26 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 12:56:26 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-interested/67531e5a788107b1146fcc83
+2024-12-06 12:56:26 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 12:56:26 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 12:56:26 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancy/67531e5a788107b1146fcc83
+2024-12-06 12:56:26 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 12:56:26 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-interested/67531e5a788107b1146fcc83
+2024-12-06 12:57:41 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-details/67531e5a788107b1146fcc83/67531d0e6c1e9616579b55bd
+2024-12-06 12:57:41 [INFO]: Detalhes do candidato com ID 67531d0e6c1e9616579b55bd carregados.
+2024-12-06 13:00:00 [INFO]: Nenhum usuário não verificado para remover.
+2024-12-06 13:00:00 [INFO]: Nenhuma vaga antiga para remover.
+2024-12-06 13:00:00 [INFO]: Tokens expirados removidos: 0
+2024-12-06 13:00:00 [INFO]: Códigos de verificação expirados removidos: 0
+2024-12-06 13:02:06 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:02:06 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 13:02:06 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 13:02:06 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:02:06 [INFO]: IP: 10.92.208.24 - GET /api/user/candidate/list-candidate/
+2024-12-06 13:02:06 [INFO]: Candidato encontrado com o id: 6752d690688172b5dbb0a6df
+2024-12-06 13:02:06 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:02:06 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:02:14 [INFO]: IP: 10.92.208.24 - POST /api/user/company/vacancy/add-interested
+2024-12-06 13:02:14 [INFO]: Candidato com ID 6752d690688172b5dbb0a6df adicionado à vaga com ID 67531e5a788107b1146fcc83.
+2024-12-06 13:02:14 [INFO]: IP: 10.92.208.24 - GET /api/user/company/vacancy/vacancies-applied
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:02:23 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:02:23 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:02:23 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:02:23 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:02:23 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:02:23 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:02:23 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:02:23 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:02:27 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-interested/67531e5a788107b1146fcc83
+2024-12-06 13:02:27 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancy/67531e5a788107b1146fcc83
+2024-12-06 13:02:27 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:02:27 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:02:27 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancy/67531e5a788107b1146fcc83
+2024-12-06 13:02:27 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-interested/67531e5a788107b1146fcc83
+2024-12-06 13:02:27 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:02:27 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:02:30 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-details/67531e5a788107b1146fcc83/6752d690688172b5dbb0a6df
+2024-12-06 13:02:30 [INFO]: Detalhes do candidato com ID 6752d690688172b5dbb0a6df carregados.
+2024-12-06 13:10:37 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-details/67531e5a788107b1146fcc83/67531d0e6c1e9616579b55bd
+2024-12-06 13:10:37 [INFO]: Detalhes do candidato com ID 67531d0e6c1e9616579b55bd carregados.
+2024-12-06 13:10:41 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:41 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:42 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:42 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:43 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:43 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:43 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:43 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:43 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:43 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:43 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:43 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:44 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:44 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:44 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:45 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:45 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:45 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:45 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:45 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:45 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:45 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:46 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:46 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:46 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:46 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:46 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:47 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:47 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:47 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:48 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - POST /api/user/company/vacancy/vacancy-status/update
+2024-12-06 13:10:48 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:48 [INFO]: Status da candidatura atualizado para o candidato com ID 67531d0e6c1e9616579b55bd e vaga com ID 67531e5a788107b1146fcc83. Novo status: Dispensado
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:48 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:48 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:49 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:49 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:49 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:49 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:49 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:50 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:50 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:50 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:50 [INFO]: E-mail de status de candidatura (Dispensado) enviado com sucesso para pedrofeliix0706@gmail.com
+2024-12-06 13:10:50 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/67531e5a788107b1146fcc83/status-count
+2024-12-06 13:10:50 [INFO]: Status das candidaturas obtido para a vaga 67531e5a788107b1146fcc83 da empresa 67530aeeb195b70906d341dc
+2024-12-06 13:10:52 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-details/67531e5a788107b1146fcc83/6752d690688172b5dbb0a6df
+2024-12-06 13:10:52 [INFO]: Detalhes do candidato com ID 6752d690688172b5dbb0a6df carregados.
+2024-12-06 13:10:54 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-details/67531e5a788107b1146fcc83/6752d690688172b5dbb0a6df
+2024-12-06 13:10:54 [INFO]: Detalhes do candidato com ID 6752d690688172b5dbb0a6df carregados.
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:11:00 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:11:00 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:00 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:11:01 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:11:01 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:11:01 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:11:01 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:11:01 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:01 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:11:01 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:11:18 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:11:18 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:11:18 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:11:18 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:11:18 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:11:18 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:11:18 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:11:18 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:11:40 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:11:40 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:11:40 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:11:40 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:11:40 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:11:40 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:11:40 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:11:40 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:07 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:12:07 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:12:07 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:12:07 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:12:07 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:12:07 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:12:07 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:12:07 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:13 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:13 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:13 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:13 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:12:18 [INFO]: IP: 10.92.208.25 - PUT /api/user/company/update-company/67530aeeb195b70906d341dc
+2024-12-06 13:12:18 [INFO]: Empresa atualizada com sucesso. ID: 67530aeeb195b70906d341dc
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/me
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:16:11 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:16:11 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/candidate-status-counts
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/get-company-job-stats
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:16:11 [INFO]: Contagem de status das candidaturas para a empresa com ID 67530aeeb195b70906d341dc realizada com sucesso.
+2024-12-06 13:16:11 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:16:11 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-favorites
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:16:12 [WARN]: Nenhum candidato favorito encontrado para favoritos gerais da empresa 67530aeeb195b70906d341dc.
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/recommend-candidates
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/list-vacancies
+2024-12-06 13:16:12 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/list-company/
+2024-12-06 13:16:12 [INFO]: IP: 10.92.208.25 - GET /api/user/company/vacancy/company-vacancies/
+2024-12-06 13:16:12 [INFO]: Vagas encontradas para empresa: 67530aeeb195b70906d341dc
